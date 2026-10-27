@@ -1,0 +1,17 @@
+/build*/
+/deps/
+/out/
+/test-output/
+/deliverables/
+/.vs/
+CMakeUserPresets.json
+__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.zip
