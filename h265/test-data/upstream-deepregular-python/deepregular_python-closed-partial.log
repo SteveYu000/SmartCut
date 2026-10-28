@@ -1,0 +1,20 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-192616\source-closed.mp4
+        hevc Main@L3.0 192x112 25.000fps yuv420p progressive sar=1 434kbps  dur=9.600s
+        10 access points, mean GOP 0.960s, all closed
+
+plan  : 1 range(s), 8.560s output
+  keep 0.520 -> 9.080
+    reencode     0.520 ->    0.960  ( 0.440s)
+        copy     0.960 ->    8.640  ( 7.680s)
+    reencode     8.640 ->    9.080  ( 0.440s)
+        copied 7.680s (89.7%), re-encoded 0.880s (10.3%)
+
+encoder: libx265
+render:
+  [0] reencode     0.520 ->    0.960  ( 0.440s)
+  [1]     copy     0.960 ->    8.640  ( 7.680s)
+  [2] reencode     8.640 ->    9.080  ( 0.440s)
+
+wrote E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-193211\deepregular_python-closed-partial.mp4
+
+STDERR

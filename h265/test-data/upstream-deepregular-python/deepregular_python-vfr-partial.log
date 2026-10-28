@@ -1,0 +1,16 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-192616\source-vfr.mp4
+        hevc Main@L3.0 192x112 18.809fps yuv420p progressive sar=1 323kbps  dur=12.760s
+        10 access points, mean GOP 1.280s, 9 open (leading pictures, referenced -- cannot start a copy there)
+
+plan  : 1 range(s), 11.378s output
+  keep 0.691 -> 12.069
+    reencode     0.691 ->   12.069  (11.378s)
+        copied 0.000s (0.0%), re-encoded 11.378s (100.0%)
+
+encoder: libx265
+render:
+  [0] reencode     0.691 ->   12.069  (11.378s)
+
+wrote E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-193211\deepregular_python-vfr-partial.mp4
+
+STDERR

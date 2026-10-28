@@ -1,0 +1,4 @@
+# Keep source reproducible on Windows; preserve recorded evidence byte for byte.
+* text=auto eol=lf
+test-data/** -text -whitespace
+docs/evidence/** -text -whitespace

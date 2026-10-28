@@ -1,0 +1,15 @@
+/build*/
+/deps/
+/test-output/
+/.vs/
+__pycache__/
+*.py[cod]
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.zip
+CMakeUserPresets.json

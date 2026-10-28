@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-data\\fixtures\\source-closed.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\integration-20261027-195651\\closed-one-stsd.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "stsd",
+  "access": "cra",
+  "lossless_boundaries": false,
+  "time_base": [1,12800],
+  "input_frames": 240,
+  "irap_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 0,
+  "encoded_frames": 1,
+  "decoded_frames": 24,
+  "duration_ticks": 512,
+  "decode_delay_ticks": 0,
+  "elapsed_seconds": 0.0255693,
+  "units": [
+    {"mode":"encode","begin":23,"end":24,"cra_to_bla":false,"epoch_begin":0,"epoch_end":24,"output_start_ticks":0}
+  ]
+}

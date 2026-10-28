@@ -1,0 +1,96 @@
+{
+  "run": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\upstream-20261027-195552",
+  "cases": [
+    {
+      "upstream": "skeskinen",
+      "fixture": "open",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          93
+        ],
+        [
+          312,
+          429
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\experiments-20261027-195128\\source-open.mp4",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\upstream-20261027-195552\\skeskinen-open-copy_gap.mp4",
+        "--frames",
+        "--keep",
+        "24,92,312,428"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\skeskinen-smartcut",
+      "exit_code": 0,
+      "expected_frames": 186,
+      "decoded_frames": 186,
+      "packets": 186,
+      "exact_vcl": 138,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "vcl_multiset_preserved": 138,
+      "barcode_errors": [],
+      "min_psnr": 44.935661180113165,
+      "issues": [],
+      "passed": true,
+      "seconds": 0.7887394999997923
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "open",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          93
+        ],
+        [
+          312,
+          429
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\experiments-20261027-195128\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-output\\upstream-20261027-195552\\deepregular_python-open-copy_gap.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.960000000-3.720000000",
+        "--keep",
+        "12.480000000-17.160000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 0,
+      "expected_frames": 186,
+      "decoded_frames": 186,
+      "packets": 186,
+      "exact_vcl": 0,
+      "normalized_vcl": 0,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 0,
+      "decoded_pts_mismatches": 132,
+      "vcl_multiset_preserved": 0,
+      "barcode_errors": [],
+      "min_psnr": 38.31341843044597,
+      "issues": [
+        "decoded_pts"
+      ],
+      "passed": false,
+      "seconds": 1.3059341000043787
+    }
+  ],
+  "fixture_sha256": {
+    "open": "39a41f995b95a1d0d64d1782e70f59f0109c3288749d8f70c1a7e6bfa0f5b272"
+  },
+  "ffmpeg_version": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers\r\nbuilt with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)\r\nconfiguration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libxml2 --enable-libvmaf --disable-libxcb --disable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-lcms2 --enable-vulkan --enable-libshaderc --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --disable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-vapoursynth --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20261025\r\nlibavutil      60. 26.103 / 60. 26.103\r\nlibavcodec     62. 28.103 / 62. 28.103\r\nlibavformat    62. 12.103 / 62. 12.103\r\nlibavdevice    62.  3.103 / 62.  3.103\r\nlibavfilter    11. 14.103 / 11. 14.103\r\nlibswscale      9.  5.103 /  9.  5.103\r\nlibswresample   6.  3.103 /  6.  3.103\r\n\r\nExiting with exit code 0\r\n"
+}

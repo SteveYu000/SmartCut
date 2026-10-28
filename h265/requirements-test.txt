@@ -1,0 +1,4 @@
+numpy==2.3.5
+# The upstream skeskinen comparison additionally requires:
+# av==16.0.1
+# tqdm==4.67.1

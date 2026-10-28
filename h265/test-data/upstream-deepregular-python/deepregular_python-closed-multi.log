@@ -1,0 +1,27 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-192616\source-closed.mp4
+        hevc Main@L3.0 192x112 25.000fps yuv420p progressive sar=1 434kbps  dur=9.600s
+        10 access points, mean GOP 0.960s, all closed
+
+plan  : 2 range(s), 7.800s output
+  keep 0.520 -> 3.240
+    reencode     0.520 ->    0.960  ( 0.440s)
+        copy     0.960 ->    2.880  ( 1.920s)
+    reencode     2.880 ->    3.240  ( 0.360s)
+  keep 4.000 -> 9.080
+    reencode     4.000 ->    4.800  ( 0.800s)
+        copy     4.800 ->    8.640  ( 3.840s)
+    reencode     8.640 ->    9.080  ( 0.440s)
+        copied 5.760s (73.8%), re-encoded 2.040s (26.2%)
+
+encoder: libx265
+render:
+  [0] reencode     0.520 ->    0.960  ( 0.440s)
+  [1]     copy     0.960 ->    2.880  ( 1.920s)
+  [2] reencode     2.880 ->    3.240  ( 0.360s)
+  [3] reencode     4.000 ->    4.800  ( 0.800s)
+  [4]     copy     4.800 ->    8.640  ( 3.840s)
+  [5] reencode     8.640 ->    9.080  ( 0.440s)
+
+wrote E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-193211\deepregular_python-closed-multi.mp4
+
+STDERR
