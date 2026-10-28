@@ -1,0 +1,32 @@
+{
+  "id": "h264/mixed_open_idr/multiple",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "multiple",
+  "ranges": [
+    [
+      1,
+      29
+    ],
+    [
+      47,
+      121
+    ],
+    [
+      191,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\multiple",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.7806128000083845,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 151
+}

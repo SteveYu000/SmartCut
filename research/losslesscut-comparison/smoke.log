@@ -1,0 +1,35 @@
+h264/closed_b3_id0/full True [] 240 240
+h264/closed_b3_id0/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h265/closed/full True [] 240 240
+h265/open/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 215 1
+{
+  "h264": {
+    "total": 2,
+    "passed": 1,
+    "correctness_passed": 1,
+    "issues": {
+      "frame_count": 1,
+      "pts": 1,
+      "decoded_pts": 1,
+      "duration": 1,
+      "frame_identity": 1,
+      "quality_below_30dB": 1
+    }
+  },
+  "h265": {
+    "total": 2,
+    "passed": 1,
+    "correctness_passed": 1,
+    "issues": {
+      "frame_count": 1,
+      "decode_error": 1,
+      "strict_decode": 1,
+      "pts": 1,
+      "decoded_pts": 1,
+      "duration": 1,
+      "frame_identity": 1,
+      "copied_pixels": 1,
+      "quality_below_30dB": 1
+    }
+  }
+}

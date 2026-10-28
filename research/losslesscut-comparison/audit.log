@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "h264": {
+      "total": 130,
+      "app_reported_output": 124,
+      "passed": 19,
+      "correctness_passed": 21,
+      "issues": {
+        "frame_count": 102,
+        "pts": 101,
+        "decoded_pts": 101,
+        "duration": 91,
+        "frame_identity": 63,
+        "quality_below_30dB": 63,
+        "decode_error": 12,
+        "strict_decode": 12,
+        "copied_pixels": 14,
+        "app_export_error": 6,
+        "missing_video_track": 1
+      }
+    },
+    "h265": {
+      "total": 110,
+      "app_reported_output": 81,
+      "passed": 9,
+      "correctness_passed": 10,
+      "issues": {
+        "frame_count": 71,
+        "decode_error": 33,
+        "strict_decode": 33,
+        "pts": 69,
+        "decoded_pts": 68,
+        "duration": 69,
+        "frame_identity": 41,
+        "copied_pixels": 20,
+        "quality_below_30dB": 41,
+        "app_export_error": 29,
+        "missing_video_track": 2
+      }
+    }
+  },
+  "crosscheck": [
+    {
+      "case": "h264/closed_b3_id0/full",
+      "pinned_frames": 240,
+      "bundled_frames": 240,
+      "pixels_equal": true,
+      "pinned_decode_errors": false,
+      "bundled_decode_errors": false
+    },
+    {
+      "case": "h264/closed_b3_id0/both_edges",
+      "pinned_frames": 215,
+      "bundled_frames": 215,
+      "pixels_equal": true,
+      "pinned_decode_errors": false,
+      "bundled_decode_errors": false,
+      "first_frame_ids": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "last_frame_ids": [
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228
+      ],
+      "missing_requested_ids": [
+        23
+      ],
+      "unexpected_frame_ids": [
+        227,
+        228
+      ]
+    },
+    {
+      "case": "h265/open/partial",
+      "pinned_frames": 215,
+      "bundled_frames": 215,
+      "pixels_equal": true,
+      "pinned_decode_errors": true,
+      "bundled_decode_errors": true
+    }
+  ],
+  "cuda_control": {
+    "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\publish-SmartCut\\h265\\test-data\\experiments\\gpu-main10-hev1.mp4",
+    "passed": true,
+    "software_frames": 195,
+    "hardware_frames": 195,
+    "log": ""
+  },
+  "quality_flags_without_identity_failure": 0
+}

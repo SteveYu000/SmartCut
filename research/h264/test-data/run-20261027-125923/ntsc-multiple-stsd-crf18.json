@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "input": "./test-data/run-20261027-125923/source-ntsc.mp4",
+  "output": "./test-data/run-20261027-125923/ntsc-multiple-stsd-crf18.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "stsd",
+  "lossless_full_encode_fallback": false,
+  "time_base": [
+    1,
+    30000
+  ],
+  "input_frames": 240,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 120,
+  "encoded_frames": 31,
+  "decoded_frames": 78,
+  "duration_ticks": 151151,
+  "decode_delay_ticks": 2002,
+  "elapsed_seconds": 0.0554495,
+  "units": [
+    {
+      "mode": "encode",
+      "begin": 1,
+      "end": 24,
+      "decode_begin": 0,
+      "decode_end": 24,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "encode",
+      "begin": 24,
+      "end": 29,
+      "decode_begin": 24,
+      "decode_end": 48,
+      "output_start_ticks": 23023
+    },
+    {
+      "mode": "encode",
+      "begin": 47,
+      "end": 48,
+      "decode_begin": 24,
+      "decode_end": 48,
+      "output_start_ticks": 28028
+    },
+    {
+      "mode": "copy",
+      "begin": 48,
+      "end": 72,
+      "decode_begin": 48,
+      "decode_end": 72,
+      "output_start_ticks": 29029
+    },
+    {
+      "mode": "copy",
+      "begin": 72,
+      "end": 96,
+      "decode_begin": 72,
+      "decode_end": 96,
+      "output_start_ticks": 53053
+    },
+    {
+      "mode": "copy",
+      "begin": 96,
+      "end": 120,
+      "decode_begin": 96,
+      "decode_end": 120,
+      "output_start_ticks": 77077
+    },
+    {
+      "mode": "encode",
+      "begin": 120,
+      "end": 121,
+      "decode_begin": 120,
+      "decode_end": 144,
+      "output_start_ticks": 101101
+    },
+    {
+      "mode": "encode",
+      "begin": 191,
+      "end": 192,
+      "decode_begin": 168,
+      "decode_end": 192,
+      "output_start_ticks": 102102
+    },
+    {
+      "mode": "copy",
+      "begin": 192,
+      "end": 216,
+      "decode_begin": 192,
+      "decode_end": 216,
+      "output_start_ticks": 103103
+    },
+    {
+      "mode": "copy",
+      "begin": 216,
+      "end": 240,
+      "decode_begin": 216,
+      "decode_end": 240,
+      "output_start_ticks": 127127
+    }
+  ]
+}

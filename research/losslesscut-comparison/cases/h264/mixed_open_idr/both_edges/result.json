@@ -1,0 +1,118 @@
+{
+  "id": "h264/mixed_open_idr/both_edges",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "both_edges",
+  "ranges": [
+    [
+      13,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\both_edges",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-mixed_open_idr-both_edges-1793202607570451300-00.00.00.520-00.00.09.080-0.mp4"
+    ]
+  },
+  "export_seconds": 0.7546443000028376,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\both_edges\\output.mp4",
+  "output_sha256": "b37420a6ea72f6293b4603178a07e147cde975b33ac937c945b4ed280dd13e76",
+  "expected_frames": 214,
+  "decoded_frames": 209,
+  "samples": 218,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      22
+    ],
+    [
+      11,
+      24,
+      22
+    ],
+    [
+      12,
+      25,
+      22
+    ],
+    [
+      13,
+      26,
+      1023
+    ],
+    [
+      14,
+      27,
+      1015
+    ],
+    [
+      15,
+      28,
+      1023
+    ],
+    [
+      16,
+      29,
+      1023
+    ],
+    [
+      17,
+      30,
+      1023
+    ],
+    [
+      18,
+      31,
+      1023
+    ],
+    [
+      19,
+      32,
+      1023
+    ],
+    [
+      20,
+      33,
+      1023
+    ],
+    [
+      21,
+      34,
+      1023
+    ]
+  ],
+  "baseline_copied_frames": 72,
+  "decode_log": "w\r\n[vist#0:0/h264 @ 00000000007b8540] [dec:h264 @ 00000000007cb3c0] Error submitting packet to decoder: Invalid data found when processing input\r\n[h264 @ 0000000002da2980] reference count overflow\r\n[h264 @ 0000000002da2980] no frame!\r\n[h264 @ 0000000002d63e40] Reference 4 >= 3\r\n[h264 @ 0000000002d63e40] error while decoding MB 7 1, bytestream 2168\r\n[h264 @ 0000000002d10840] Reference 2 >= 2\r\n[h264 @ 0000000002d10840] error while decoding MB 1 0, bytestream 1517\r\n[h264 @ 0000000002e26440] reference count overflow\r\n[h264 @ 0000000002e26440] no frame!\r\n[h264 @ 000000000089e640] Missing reference picture, default is 65692\r\n[h264 @ 0000000002e6ad40] Missing reference picture, default is 65700\r\n[h264 @ 0000000002e95c40] Missing reference picture, default is 65700\r\n[h264 @ 0000000002dbd780] reference count overflow\r\n[h264 @ 0000000002dbd780] no frame!\r\n[h264 @ 0000000002ed4d00] Missing reference picture, default is 65700\r\n    Last message repeated 1 times\r\n[h264 @ 0000000002f034c0] mmco: unref short failure\r\n[h264 @ 0000000002ed4d00] Reference 3 >= 3\r\n[h264 @ 0000000002ed4d00] error while decoding MB 8 5, bytestream 2061\r\n[h264 @ 0000000002f034c0] Missing reference picture, default is 65708\r\n[h264 @ 0000000002f19840] Missing reference picture, default is 65708\r\n[h264 @ 0000000002f19840] Reference 2 >= 2\r\n[h264 @ 0000000002f19840] error while decoding MB 0 0, bytestream 1179\r\n[h264 @ 0000000002f53080] reference picture missing during reorder\r\n    Last message repeated 3 times\r\n[h264 @ 0000000002f53080] Missing reference picture, default is 65708\r\n    Last message repeated 3 times\r\n[h264 @ 0000000002f537c0] Missing reference picture, default is 65708\r\n[h264 @ 0000000002cdd400] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000007b8540] [dec:h264 @ 00000000007cb3c0] Error submitting packet to decoder: Invalid data found when processing input\r\n[h264 @ 0000000002da2280] Reference 3 >= 2\r\n[h264 @ 0000000002da2280] error while decoding MB 0 0, bytestream 1594\r\n[h264 @ 0000000002da2980] reference picture missing during reorder\r\n[h264 @ 0000000002da2980] Missing reference picture, default is 65716\r\n[h264 @ 0000000002da2980] left block unavailable for requested intra mode\r\n[h264 @ 0000000002da2980] error while decoding MB 0 0, bytestream 3038\r\n[h264 @ 0000000002d10840] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000007b8540] [dec:h264 @ 00000000007cb3c0] Error submitting packet to decoder: Invalid data found when processing input\r\n    Last message repeated 1 times\r\n",
+  "strict_decode_log": "[h264 @ 0000000002df2480] reference count 3 overflow\r\n[h264 @ 0000000002d9fd00] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000002d9fd00] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000002f63040] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000007728c0] [dec:h264 @ 000000000075f540] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 00000000007728c0] [dec:h264 @ 000000000075f540] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 00000000007728c0] [dec:h264 @ 000000000075f540] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 00000000007728c0] [dec:h264 @ 000000000075f540] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 210,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.12,
+  "expected_duration_seconds": 8.56,
+  "duration_seconds": 8.6,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 206,
+  "min_frame_psnr_db": 12.736833189945639,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

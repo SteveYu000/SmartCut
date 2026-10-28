@@ -1,0 +1,7 @@
+2026-10-28T16:11:33.155Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.931 ms
+2026-10-28T16:11:33.294Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\negative\avc-invalid-nal\negative-avc-invalid-nal-1793203893083978300.mp4 -hide_banner
+2026-10-28T16:11:33.370Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 121.271 ms
+2026-10-28T16:11:33.696Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 74.488 ms
+2026-10-28T16:11:33.699Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 4.019 ms
+2026-10-28T16:11:33.705Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\negative\avc-invalid-nal\negative-avc-invalid-nal-1793203893083978300.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\negative-avc-invalid-nal-1793203893083978300-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T16:11:33.780Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 146.414 ms

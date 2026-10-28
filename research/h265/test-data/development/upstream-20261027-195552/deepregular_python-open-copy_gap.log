@@ -1,0 +1,19 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\experiments-20261027-195128\source-open.mp4
+        hevc Main@L3.0 192x112 25.000fps yuv420p progressive sar=1 432kbps  dur=32.000s
+        34 access points, mean GOP 0.960s, 33 open (leading pictures, referenced -- cannot start a copy there)
+
+plan  : 2 range(s), 7.440s output
+  keep 0.960 -> 3.720
+    reencode     0.960 ->    3.720  ( 2.760s)
+  keep 12.480 -> 17.160
+    reencode    12.480 ->   17.160  ( 4.680s)
+        copied 0.000s (0.0%), re-encoded 7.440s (100.0%)
+
+encoder: libx265
+render:
+  [0] reencode     0.960 ->    3.720  ( 2.760s)
+  [1] reencode    12.480 ->   17.160  ( 4.680s)
+
+wrote E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-195552\deepregular_python-open-copy_gap.mp4
+
+STDERR

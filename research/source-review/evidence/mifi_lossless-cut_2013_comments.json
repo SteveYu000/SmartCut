@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/mifi/lossless-cut/issues/comments/2132146569",
+    "html_url": "https://github.com/mifi/lossless-cut/issues/2013#issuecomment-2132146569",
+    "issue_url": "https://api.github.com/repos/mifi/lossless-cut/issues/2013",
+    "id": 2132146569,
+    "node_id": "IC_kwDOBE_gac5_FfmJ",
+    "user": {
+      "login": "mifi",
+      "id": 402547,
+      "node_id": "MDQ6VXNlcjQwMjU0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/402547?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mifi",
+      "html_url": "https://github.com/mifi",
+      "followers_url": "https://api.github.com/users/mifi/followers",
+      "following_url": "https://api.github.com/users/mifi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mifi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mifi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mifi/subscriptions",
+      "organizations_url": "https://api.github.com/users/mifi/orgs",
+      "repos_url": "https://api.github.com/users/mifi/repos",
+      "events_url": "https://api.github.com/users/mifi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mifi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2024-05-26T09:09:59Z",
+    "updated_at": "2024-05-26T09:09:59Z",
+    "body": "Thanks for your data points. Smart cut is still experimental but it is being tracked in #126",
+    "author_association": "OWNER",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/mifi/lossless-cut/issues/comments/2132146569/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

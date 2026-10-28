@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-fullrange_sar-adjacent_inside-1793202716488794400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.52,
+      "name": "0"
+    },
+    {
+      "start": 0.52,
+      "end": 0.96,
+      "name": "1"
+    }
+  ]
+}

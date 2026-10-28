@@ -1,0 +1,113 @@
+{
+  "id": "h265/closed/cra_leading",
+  "codec": "h265",
+  "fixture": "closed",
+  "cut": "cra_leading",
+  "ranges": [
+    [
+      22,
+      74
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\cra_leading",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-closed-cra_leading-1793202734473684400-00.00.00.880-00.00.02.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.4129733000008855,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\cra_leading\\output.mp4",
+  "output_sha256": "f2267f461288eaa961d96fbf1715a523b54c81cb1a72b50b961fa8bf0c6b980d",
+  "expected_frames": 52,
+  "decoded_frames": 53,
+  "samples": 53,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      1,
+      23,
+      24
+    ],
+    [
+      2,
+      24,
+      25
+    ],
+    [
+      3,
+      25,
+      26
+    ],
+    [
+      4,
+      26,
+      27
+    ],
+    [
+      5,
+      27,
+      28
+    ],
+    [
+      6,
+      28,
+      29
+    ],
+    [
+      7,
+      29,
+      30
+    ],
+    [
+      8,
+      30,
+      31
+    ],
+    [
+      9,
+      31,
+      32
+    ],
+    [
+      10,
+      32,
+      33
+    ],
+    [
+      11,
+      33,
+      34
+    ],
+    [
+      12,
+      34,
+      35
+    ]
+  ],
+  "baseline_copied_frames": 48,
+  "pts_mismatches": 1,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 2.08,
+  "duration_seconds": 2.04,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 50,
+  "min_frame_psnr_db": 16.07736896891078,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

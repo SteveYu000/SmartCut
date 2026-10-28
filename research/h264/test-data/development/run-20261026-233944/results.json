@@ -1,0 +1,4137 @@
+{
+  "run": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944",
+  "cases": [
+    {
+      "fixture": "closed_b3_id0",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0140553,
+      "verification_seconds": 0.3152568000004976,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0143853,
+      "verification_seconds": 0.13968880000174977,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0135264,
+      "verification_seconds": 0.13699660000565927,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0129861,
+      "verification_seconds": 0.13393429999996442,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.057536,
+      "verification_seconds": 0.1869150999991689,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.0430431,
+      "verification_seconds": 0.17116119999991497,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0140021,
+      "verification_seconds": 0.10420549999980722,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.01419,
+      "verification_seconds": 0.11054490000242367,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0218605,
+      "verification_seconds": 0.1173211999994237,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.021102,
+      "verification_seconds": 0.11839799999870593,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.070293,
+      "verification_seconds": 0.19178999999712687,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.0678755,
+      "verification_seconds": 0.18752189999941038,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0083625,
+      "verification_seconds": 0.11591780000162544,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0086793,
+      "verification_seconds": 0.1123689000014565,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0152223,
+      "verification_seconds": 0.1528533000018797,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0135138,
+      "verification_seconds": 0.14378360000409884,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0138876,
+      "verification_seconds": 0.14304450000054203,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0147701,
+      "verification_seconds": 0.1381517999980133,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.0465158,
+      "verification_seconds": 0.17793279999750666,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.0448894,
+      "verification_seconds": 0.17813380000006873,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0137682,
+      "verification_seconds": 0.10825309999927413,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0146118,
+      "verification_seconds": 0.10991030000150204,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0223221,
+      "verification_seconds": 0.11697209999692859,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0205603,
+      "verification_seconds": 0.11638339999626623,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.0688212,
+      "verification_seconds": 0.2049101000011433,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.0668119,
+      "verification_seconds": 0.186290799996641,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0088123,
+      "verification_seconds": 0.11289750000287313,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id3",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0089499,
+      "verification_seconds": 0.1154201999961515,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id3-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0178147,
+      "verification_seconds": 0.1486328000028152,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0171244,
+      "verification_seconds": 0.14788029999908758,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0154291,
+      "verification_seconds": 0.13834290000522742,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0162054,
+      "verification_seconds": 0.14196280000032857,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.389536055359926,
+      "cli_seconds": 0.0408649,
+      "verification_seconds": 0.17125720000331057,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.389536055359926,
+      "cli_seconds": 0.0446424,
+      "verification_seconds": 0.17600070000480628,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.278533940986165,
+      "cli_seconds": 0.0131946,
+      "verification_seconds": 0.10761579999962123,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.278533940986165,
+      "cli_seconds": 0.0146707,
+      "verification_seconds": 0.10807560000102967,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.278533940986165,
+      "cli_seconds": 0.0185763,
+      "verification_seconds": 0.11452420000568964,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.278533940986165,
+      "cli_seconds": 0.019977,
+      "verification_seconds": 0.11897609999869019,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.492704881165906,
+      "cli_seconds": 0.0640997,
+      "verification_seconds": 0.1857674999992014,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.492704881165906,
+      "cli_seconds": 0.0600749,
+      "verification_seconds": 0.18254190000152448,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0089657,
+      "verification_seconds": 0.11228980000305455,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "baseline",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0192247,
+      "verification_seconds": 0.12281730000540847,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\baseline-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0136207,
+      "verification_seconds": 0.1435427000033087,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.050278,
+      "verification_seconds": 0.18016069999430329,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 0,
+      "encoded_frames": 192,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.781129258209255,
+      "cli_seconds": 0.156345,
+      "verification_seconds": 0.28891960000328254,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 0,
+      "encoded_frames": 192,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.781129258209255,
+      "cli_seconds": 0.152199,
+      "verification_seconds": 0.28472100000362843,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 40.211062557736284,
+      "cli_seconds": 0.16084,
+      "verification_seconds": 0.2949105999941821,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 40.211062557736284,
+      "cli_seconds": 0.159916,
+      "verification_seconds": 0.29396619999897666,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 40.82296283332907,
+      "cli_seconds": 0.0483418,
+      "verification_seconds": 0.1441874000011012,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 40.82296283332907,
+      "cli_seconds": 0.0509833,
+      "verification_seconds": 0.14192200000252342,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.72990843779587,
+      "cli_seconds": 0.0498029,
+      "verification_seconds": 0.14713149999442976,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 240,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.72990843779587,
+      "cli_seconds": 0.0502049,
+      "verification_seconds": 0.1475910000008298,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 0,
+      "encoded_frames": 151,
+      "decoded_frames": 720,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.6111638990069,
+      "cli_seconds": 0.237746,
+      "verification_seconds": 0.35954649999621324,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 0,
+      "encoded_frames": 151,
+      "decoded_frames": 720,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.6111638990069,
+      "cli_seconds": 0.231995,
+      "verification_seconds": 0.3519003999972483,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 0,
+      "encoded_frames": 48,
+      "decoded_frames": 480,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.570292059225935,
+      "cli_seconds": 0.130321,
+      "verification_seconds": 0.2384299999976065,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "open_gop",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 0,
+      "encoded_frames": 48,
+      "decoded_frames": 480,
+      "idr_epochs": 1,
+      "non_idr_key_packets": 9,
+      "min_encoded_psnr_db": 39.570292059225935,
+      "cli_seconds": 0.141239,
+      "verification_seconds": 0.2465513999995892,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\open_gop-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0133487,
+      "verification_seconds": 0.14590540000062902,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0129471,
+      "verification_seconds": 0.1455357000013464,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 72,
+      "encoded_frames": 120,
+      "decoded_frames": 168,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.74897956425571,
+      "cli_seconds": 0.130605,
+      "verification_seconds": 0.26689669999905163,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 72,
+      "encoded_frames": 120,
+      "decoded_frames": 168,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.74897956425571,
+      "cli_seconds": 0.132393,
+      "verification_seconds": 0.26369960000010906,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 72,
+      "encoded_frames": 142,
+      "decoded_frames": 168,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.94464800250298,
+      "cli_seconds": 0.134312,
+      "verification_seconds": 0.2670527000009315,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 72,
+      "encoded_frames": 142,
+      "decoded_frames": 168,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.94464800250298,
+      "cli_seconds": 0.131838,
+      "verification_seconds": 0.26346420000481885,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 96,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 40.82296283332907,
+      "cli_seconds": 0.0248151,
+      "verification_seconds": 0.1209376999977394,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 96,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 40.82296283332907,
+      "cli_seconds": 0.0255981,
+      "verification_seconds": 0.11956959999952232,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 96,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.72990843779587,
+      "cli_seconds": 0.0253564,
+      "verification_seconds": 0.11663070000213338,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 96,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.72990843779587,
+      "cli_seconds": 0.025616,
+      "verification_seconds": 0.11514989999704994,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 0,
+      "encoded_frames": 151,
+      "decoded_frames": 336,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.6111638990069,
+      "cli_seconds": 0.179553,
+      "verification_seconds": 0.3024695000058273,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 0,
+      "encoded_frames": 151,
+      "decoded_frames": 336,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.6111638990069,
+      "cli_seconds": 0.201563,
+      "verification_seconds": 0.3239785999976448,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 0,
+      "encoded_frames": 48,
+      "decoded_frames": 192,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.570292059225935,
+      "cli_seconds": 0.0882744,
+      "verification_seconds": 0.19135790000291308,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "mixed_open_idr",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 0,
+      "encoded_frames": 48,
+      "decoded_frames": 192,
+      "idr_epochs": 3,
+      "non_idr_key_packets": 7,
+      "min_encoded_psnr_db": 39.570292059225935,
+      "cli_seconds": 0.114288,
+      "verification_seconds": 0.22519540000212146,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\mixed_open_idr-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0140437,
+      "verification_seconds": 0.169932400000107,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.01369,
+      "verification_seconds": 0.17344949999824166,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0128282,
+      "verification_seconds": 0.14987249999830965,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0123231,
+      "verification_seconds": 0.15382230000250274,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.989328352027826,
+      "cli_seconds": 0.0699338,
+      "verification_seconds": 0.22101600000314647,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.989328352027826,
+      "cli_seconds": 0.0474944,
+      "verification_seconds": 0.1871979999996256,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.80863734003032,
+      "cli_seconds": 0.0236446,
+      "verification_seconds": 0.11602149999816902,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.80863734003032,
+      "cli_seconds": 0.0146577,
+      "verification_seconds": 0.10758350000105565,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.67062586053617,
+      "cli_seconds": 0.0217111,
+      "verification_seconds": 0.11900920000334736,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.67062586053617,
+      "cli_seconds": 0.0220277,
+      "verification_seconds": 0.11338579999573994,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.063913532423825,
+      "cli_seconds": 0.0734428,
+      "verification_seconds": 0.2137118999962695,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.063913532423825,
+      "cli_seconds": 0.0722572,
+      "verification_seconds": 0.2142801000009058,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0084049,
+      "verification_seconds": 0.11661789999925531,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0085038,
+      "verification_seconds": 0.11601019999943674,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0150554,
+      "verification_seconds": 0.1454502999986289,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0149938,
+      "verification_seconds": 0.15490270000009332,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0146652,
+      "verification_seconds": 0.14059180000185734,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0146173,
+      "verification_seconds": 0.14015759999892907,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.685982541321934,
+      "cli_seconds": 0.0469448,
+      "verification_seconds": 0.17812460000277497,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.685982541321934,
+      "cli_seconds": 0.0477562,
+      "verification_seconds": 0.18352900000172667,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.47262827088869,
+      "cli_seconds": 0.0141154,
+      "verification_seconds": 0.1085631999958423,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.47262827088869,
+      "cli_seconds": 0.0144842,
+      "verification_seconds": 0.10470550000172807,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.45905162306397,
+      "cli_seconds": 0.0216178,
+      "verification_seconds": 0.11474670000461629,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.45905162306397,
+      "cli_seconds": 0.0228938,
+      "verification_seconds": 0.11968179999530548,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.549336826632356,
+      "cli_seconds": 0.0677603,
+      "verification_seconds": 0.19143630000326084,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.549336826632356,
+      "cli_seconds": 0.0680914,
+      "verification_seconds": 0.19268069999816362,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0094343,
+      "verification_seconds": 0.11020360000111395,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "multi_slice",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0095042,
+      "verification_seconds": 0.118608700002369,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\multi_slice-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0137176,
+      "verification_seconds": 0.14151029999629827,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0147223,
+      "verification_seconds": 0.14395459999650484,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.109099,
+      "verification_seconds": 0.2357278999988921,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0131463,
+      "verification_seconds": 0.13256929999624845,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.31374102826482,
+      "cli_seconds": 0.0421269,
+      "verification_seconds": 0.16448649999802,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.31374102826482,
+      "cli_seconds": 0.0641818,
+      "verification_seconds": 0.18923200000426732,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.98787584646442,
+      "cli_seconds": 0.0747425,
+      "verification_seconds": 0.1688912000026903,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.98787584646442,
+      "cli_seconds": 0.0139276,
+      "verification_seconds": 0.10795570000482257,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.60736011643451,
+      "cli_seconds": 0.020346,
+      "verification_seconds": 0.117762900001253,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.60736011643451,
+      "cli_seconds": 0.0203234,
+      "verification_seconds": 0.10949039999832166,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.10635441257047,
+      "cli_seconds": 0.0616313,
+      "verification_seconds": 0.18004340000334196,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.10635441257047,
+      "cli_seconds": 0.062532,
+      "verification_seconds": 0.17737879999913275,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0088338,
+      "verification_seconds": 0.11639139999897452,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "ntsc",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0083026,
+      "verification_seconds": 0.12997599999653175,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\ntsc-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0150297,
+      "verification_seconds": 0.1481147999948007,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0144303,
+      "verification_seconds": 0.14586979999876348,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0127901,
+      "verification_seconds": 0.1365025000050082,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0129619,
+      "verification_seconds": 0.1385085000001709,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.72263746889971,
+      "cli_seconds": 0.0444228,
+      "verification_seconds": 0.17461520000506425,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.72263746889971,
+      "cli_seconds": 0.0485988,
+      "verification_seconds": 0.18171269999584183,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 41.31984446702499,
+      "cli_seconds": 0.0142657,
+      "verification_seconds": 0.10904470000241417,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 41.31984446702499,
+      "cli_seconds": 0.0148648,
+      "verification_seconds": 0.10794520000490593,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 41.27940337957877,
+      "cli_seconds": 0.0216388,
+      "verification_seconds": 0.11836750000657048,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 41.27940337957877,
+      "cli_seconds": 0.0214223,
+      "verification_seconds": 0.12263229999371106,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.7666236065784,
+      "cli_seconds": 0.0712667,
+      "verification_seconds": 0.1940598000001046,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.7666236065784,
+      "cli_seconds": 0.0704106,
+      "verification_seconds": 0.19460479999543168,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0096432,
+      "verification_seconds": 0.11612299999978859,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "vfr",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0086923,
+      "verification_seconds": 0.11437909999949625,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\vfr-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "full",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0158653,
+      "verification_seconds": 0.14929729999857955,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-full-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "full",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 240,
+      "copied_frames": 240,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0138831,
+      "verification_seconds": 0.13978700000006938,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-full-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "aligned",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0229761,
+      "verification_seconds": 0.146423500002129,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-aligned-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "aligned",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 192,
+      "copied_frames": 192,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0131417,
+      "verification_seconds": 0.13783919999696082,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-aligned-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "both_edges",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.0456387,
+      "verification_seconds": 0.17417549999663606,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-both_edges-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "both_edges",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 192,
+      "encoded_frames": 22,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.810663336755375,
+      "cli_seconds": 0.0463158,
+      "verification_seconds": 0.23534859999926994,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-both_edges-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "single_frame",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0144302,
+      "verification_seconds": 0.10779200000251876,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-single_frame-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "single_frame",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 1,
+      "copied_frames": 0,
+      "encoded_frames": 1,
+      "decoded_frames": 24,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0141405,
+      "verification_seconds": 0.10993379999854369,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-single_frame-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "cross_idr",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0205485,
+      "verification_seconds": 0.1136871999988216,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-cross_idr-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "cross_idr",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 2,
+      "copied_frames": 0,
+      "encoded_frames": 2,
+      "decoded_frames": 48,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 40.487915256318374,
+      "cli_seconds": 0.0200788,
+      "verification_seconds": 0.11471820000588195,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-cross_idr-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "multiple",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.0778905,
+      "verification_seconds": 0.19219799999700626,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-multiple-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "multiple",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          1,
+          29
+        ],
+        [
+          47,
+          121
+        ],
+        [
+          191,
+          240
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 151,
+      "copied_frames": 120,
+      "encoded_frames": 31,
+      "decoded_frames": 120,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 39.6170180104001,
+      "cli_seconds": 0.0701623,
+      "verification_seconds": 0.1886618999997154,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-multiple-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "adjacent",
+      "mode": "avc3",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0084096,
+      "verification_seconds": 0.1153686999969068,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-adjacent-avc3-crf18.mp4"
+    },
+    {
+      "fixture": "offset",
+      "label": "adjacent",
+      "mode": "stsd",
+      "crf": 18,
+      "ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          24,
+          48
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 48,
+      "copied_frames": 48,
+      "encoded_frames": 0,
+      "decoded_frames": 0,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": null,
+      "cli_seconds": 0.0086868,
+      "verification_seconds": 0.11155239999789046,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\offset-adjacent-stsd-crf18.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "lossless",
+      "mode": "avc3",
+      "crf": 0,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 99.0,
+      "cli_seconds": 0.307442,
+      "verification_seconds": 0.4562218999999459,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-lossless-avc3-crf0.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "lossless",
+      "mode": "avc3",
+      "crf": 0,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 99.0,
+      "cli_seconds": 0.375976,
+      "verification_seconds": 0.5600636000017403,
+      "stsd_entries": [
+        1
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-lossless-avc3-crf0.mp4"
+    },
+    {
+      "fixture": "closed_b3_id0",
+      "label": "lossless",
+      "mode": "stsd",
+      "crf": 0,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 99.0,
+      "cli_seconds": 0.278121,
+      "verification_seconds": 0.4288400000004913,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\closed_b3_id0-lossless-stsd-crf0.mp4"
+    },
+    {
+      "fixture": "high10",
+      "label": "lossless",
+      "mode": "stsd",
+      "crf": 0,
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "status": "pass",
+      "output_frames": 214,
+      "copied_frames": 0,
+      "encoded_frames": 214,
+      "decoded_frames": 240,
+      "idr_epochs": 10,
+      "non_idr_key_packets": 0,
+      "min_encoded_psnr_db": 99.0,
+      "cli_seconds": 0.345753,
+      "verification_seconds": 0.5271744999990915,
+      "stsd_entries": [
+        2
+      ],
+      "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\development\\run-20261026-233944\\high10-lossless-stsd-crf0.mp4"
+    }
+  ],
+  "negative_tests": [
+    {
+      "label": "empty_range",
+      "status": "pass",
+      "stderr": "ERROR: Invalid, overlapping, unsorted, or out-of-bounds --keep range\r\n"
+    },
+    {
+      "label": "out_of_bounds",
+      "status": "pass",
+      "stderr": "ERROR: Invalid, overlapping, unsorted, or out-of-bounds --keep range\r\n"
+    },
+    {
+      "label": "overlap",
+      "status": "pass",
+      "stderr": "ERROR: Invalid, overlapping, unsorted, or out-of-bounds --keep range\r\n"
+    },
+    {
+      "label": "nan_quality",
+      "status": "pass",
+      "stderr": "ERROR: CRF must be within 0..51\r\n"
+    },
+    {
+      "label": "bad_mode",
+      "status": "pass",
+      "stderr": "ERROR: --ps-mode must be avc3 or stsd\r\n"
+    },
+    {
+      "label": "existing_output",
+      "status": "pass",
+      "stderr": "ERROR: Output already exists; no files were overwritten\r\n"
+    },
+    {
+      "label": "same_as_input",
+      "status": "pass",
+      "stderr": "ERROR: Output already exists; no files were overwritten\r\n"
+    },
+    {
+      "label": "two_video_streams",
+      "status": "pass",
+      "stderr": "ERROR: Exactly one video stream is supported (including cover art)\r\n"
+    },
+    {
+      "label": "interlaced",
+      "status": "pass",
+      "stderr": "ERROR: Only positively identified progressive video is supported\r\n"
+    },
+    {
+      "label": "other_codec",
+      "status": "pass",
+      "stderr": "ERROR: Video codec must be H.264\r\n"
+    }
+  ],
+  "ablations": [
+    {
+      "label": "remove_parameter_restore",
+      "status": "pass",
+      "removed_parameter_nals": 2,
+      "decoder_exit": 0,
+      "decoder_log": "[h264 @ 0000000002c30340] chroma_log2_weight_denom 12 is out of range\r\n[h264 @ 0000000002c30340] illegal reordering_of_pic_nums_idc 6\r\n[h264 @ 0000000002c30340] illegal reordering_of_pic_nums_idc 32\r\n[h264 @ 0000000002c30340] illegal reordering_of_pic_nums_idc 7\r\n[h264 @ 0000000002c30340] reference count 3 overflow\r\n[h264 @ 0000000002c30340] illegal reordering_of_pic_nums_idc 4\r\n[h264 @ 0000000002da3880] QP 4294967251 out of range\r\n[h264 @ 0000000002da3880] no frame!\r\n[h264 @ 0000000002dcbd00] chroma_log2_weight_denom 12 is out of range\r\n[h264 @ 0000000002dcbd00] deblocking_filter_idc 32 out of range\r\n[h264 @ 0000000002dcbd00] no frame!\r\n[h264 @ 0000000002de2540] illegal modification_of_pic_nums_idc 6\r\n[h264 @ 0000000002de2540] no frame!\r\n[h264 @ 0000000002c30340] reference overflow 105 > 15 or 0 > 15\r\n[h264 @ 0000000002e27380] Missing reference picture, default is 2\r\n[h264 @ 0000000002e27380] co located POCs unavailable\r\n[h264 @ 0000000002e27380] Reference 3 >= 3\r\n[h264 @ 0000000002e27380] error while decoding MB 0 3, bytestream 867\r\n[h264 @ 0000000002e26c00] reference count overflow\r\n[h264 @ 0000000002e26c00] no frame!\r\n[h264 @ 0000000002bd7140] illegal modification_of_pic_nums_idc 32\r\n[h264 @ 0000000002bd7140] no frame!\r\n[h264 @ 0000000002bdcd80] reference count overflow\r\n[h264 @ 0000000002bdcd80] no frame!\r\n[h264 @ 0000000002bdd140] reference count overflow\r\n[h264 @ 0000000002bdd140] no frame!\r\n[h264 @ 0000000002c70ec0] reference count overflow\r\n[h264 @ 0000000002c70ec0] ",
+      "corruption_detected": true
+    }
+  ],
+  "fixtures": {
+    "closed_b3_id0": {
+      "sha256": "733a93ba2c92f471bb0c3959ff81f8832dfd94dd7f81d5b1b71936a09e681ae3",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0"
+    },
+    "closed_b3_id3": {
+      "sha256": "8b6210df45754db463ef7affb690c2b9f991b786513012c2cd5b4a57f06f1062",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0:sps-id=3"
+    },
+    "baseline": {
+      "sha256": "c902eefd93a1bfdcade9aabd3b6d49a10c3ddcd6c5532a30520cc0bb4b8aac80",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0:bframes=0:cabac=0:8x8dct=0"
+    },
+    "open_gop": {
+      "sha256": "dd535b2c9de8ed4856397fdad159c63e17be0e6011d54abe22ca05b90e26b404",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0:open-gop=1"
+    },
+    "mixed_open_idr": {
+      "sha256": "ef99b4048753daee5aabf4be8754662da12673d463e3d14154d2fd40867281d7",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0:open-gop=1"
+    },
+    "high10": {
+      "sha256": "3c79bc938fc8187d14cf5f6371926ecbc86d00aa89654c8538cfea1180cbaf27",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p10le",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0"
+    },
+    "multi_slice": {
+      "sha256": "6f228cacc634111604f4e3cf161d678a0894d91321a1076806af4fa62f98660a",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0:slices=4"
+    },
+    "ntsc": {
+      "sha256": "2ed2cafb5de91b93eba3b04d29a0571f27538f42d688e90371bb30f79e20d2f2",
+      "frames": 240,
+      "time_base": "1/30000",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0"
+    },
+    "vfr": {
+      "sha256": "0dd2057c58a55bb7b472a2392ed3e77570770273d0d066a26d2885c2fd04542c",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0"
+    },
+    "offset": {
+      "sha256": "ad1e1ec37f9b99a325491f09fc0d4a2d2da44cdd4a78aa466543a8f42137877c",
+      "frames": 240,
+      "time_base": "1/12800",
+      "pix_fmt": "yuv420p",
+      "x264_params": "keyint=24:min-keyint=24:scenecut=0:bframes=3:b-adapt=0:ref=4:open-gop=0"
+    }
+  },
+  "summary": {
+    "cases": {
+      "pass": 144,
+      "fail": 0
+    },
+    "negative_tests": {
+      "pass": 10,
+      "fail": 0
+    },
+    "ablations": {
+      "pass": 1,
+      "fail": 0
+    }
+  }
+}

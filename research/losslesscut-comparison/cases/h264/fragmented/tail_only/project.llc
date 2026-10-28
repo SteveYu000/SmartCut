@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-fragmented-tail_only-1793202694132641700.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

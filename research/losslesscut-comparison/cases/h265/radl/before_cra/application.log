@@ -1,0 +1,7 @@
+2026-10-28T15:54:33.738Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.610 ms
+2026-10-28T15:54:33.827Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h265\radl\before_cra\h265-radl-before_cra-1793202873618304200.mp4 -hide_banner
+2026-10-28T15:54:33.883Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 63.713 ms
+2026-10-28T15:54:34.207Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 72.942 ms
+2026-10-28T15:54:34.209Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 2.110 ms
+2026-10-28T15:54:34.258Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h265\radl\before_cra\h265-radl-before_cra-1793202873618304200.mp4 -t 0.920000 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -video_track_timescale 12800 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h265-radl-before_cra-1793202873618304200-00.00.00.000-00.00.00.920-0.mp4
+2026-10-28T15:54:34.309Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 174.832 ms

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-closed_b3_id0.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 9.08,
+      "name": "smoke"
+    }
+  ]
+}

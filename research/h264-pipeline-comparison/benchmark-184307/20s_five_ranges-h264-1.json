@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-1.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "avc3",
+  "lossless_full_encode_fallback": false,
+  "time_base": [
+    1,
+    15360
+  ],
+  "input_frames": 600,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 0,
+  "encoded_frames": 470,
+  "decoded_frames": 535,
+  "duration_ticks": 240640,
+  "decode_delay_ticks": 0,
+  "elapsed_seconds": 8.26312,
+  "units": [
+    {
+      "mode": "encode",
+      "begin": 13,
+      "end": 60,
+      "decode_begin": 0,
+      "decode_end": 60,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "encode",
+      "begin": 60,
+      "end": 107,
+      "decode_begin": 60,
+      "decode_end": 120,
+      "output_start_ticks": 24064
+    },
+    {
+      "mode": "encode",
+      "begin": 133,
+      "end": 180,
+      "decode_begin": 120,
+      "decode_end": 180,
+      "output_start_ticks": 48128
+    },
+    {
+      "mode": "encode",
+      "begin": 180,
+      "end": 227,
+      "decode_begin": 180,
+      "decode_end": 240,
+      "output_start_ticks": 72192
+    },
+    {
+      "mode": "encode",
+      "begin": 253,
+      "end": 300,
+      "decode_begin": 240,
+      "decode_end": 300,
+      "output_start_ticks": 96256
+    },
+    {
+      "mode": "encode",
+      "begin": 300,
+      "end": 347,
+      "decode_begin": 300,
+      "decode_end": 360,
+      "output_start_ticks": 120320
+    },
+    {
+      "mode": "encode",
+      "begin": 373,
+      "end": 420,
+      "decode_begin": 360,
+      "decode_end": 420,
+      "output_start_ticks": 144384
+    },
+    {
+      "mode": "encode",
+      "begin": 420,
+      "end": 467,
+      "decode_begin": 420,
+      "decode_end": 480,
+      "output_start_ticks": 168448
+    },
+    {
+      "mode": "encode",
+      "begin": 493,
+      "end": 540,
+      "decode_begin": 480,
+      "decode_end": 540,
+      "output_start_ticks": 192512
+    },
+    {
+      "mode": "encode",
+      "begin": 540,
+      "end": 587,
+      "decode_begin": 540,
+      "decode_end": 600,
+      "output_start_ticks": 216576
+    }
+  ]
+}

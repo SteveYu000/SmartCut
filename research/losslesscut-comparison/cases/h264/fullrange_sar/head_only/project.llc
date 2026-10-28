@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-fullrange_sar-head_only-1793202707623540800.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

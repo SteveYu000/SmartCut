@@ -1,0 +1,117 @@
+{
+  "id": "h264/fragmented/adjacent",
+  "codec": "h264",
+  "fixture": "fragmented",
+  "cut": "adjacent",
+  "ranges": [
+    [
+      0,
+      24
+    ],
+    [
+      24,
+      48
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fragmented\\adjacent",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-fragmented-adjacent-1793202699714834800-cut-merged-1793202701145.mp4"
+    ]
+  },
+  "export_seconds": 0.9852905000152532,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fragmented\\adjacent\\output.mp4",
+  "output_sha256": "78b9b825cc703ba595e9ab8d3c3a0ac46e6241c9cbe26c499e61810fb48faf44",
+  "expected_frames": 48,
+  "decoded_frames": 54,
+  "samples": 54,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      2,
+      1
+    ],
+    [
+      3,
+      3,
+      2
+    ],
+    [
+      4,
+      4,
+      3
+    ],
+    [
+      5,
+      5,
+      4
+    ],
+    [
+      6,
+      6,
+      5
+    ],
+    [
+      7,
+      7,
+      6
+    ],
+    [
+      8,
+      8,
+      7
+    ],
+    [
+      9,
+      9,
+      8
+    ],
+    [
+      10,
+      10,
+      9
+    ],
+    [
+      11,
+      11,
+      10
+    ],
+    [
+      12,
+      12,
+      11
+    ]
+  ],
+  "baseline_copied_frames": 48,
+  "pts_mismatches": 53,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.24,
+  "expected_duration_seconds": 1.92,
+  "duration_seconds": 1.84,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 48,
+  "min_frame_psnr_db": 15.107389550968378,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "supp-\u4e2d\u6587\u97f3\u8f68\u5728\u524d-avc-1793203221322333200.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

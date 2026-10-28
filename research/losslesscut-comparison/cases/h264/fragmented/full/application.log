@@ -1,0 +1,7 @@
+2026-10-28T15:51:29.207Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.904 ms
+2026-10-28T15:51:29.310Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\full\h264-fragmented-full-1793202689134065700.mp4 -hide_banner
+2026-10-28T15:51:29.369Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 69.850 ms
+2026-10-28T15:51:29.687Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 66.496 ms
+2026-10-28T15:51:29.690Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.105 ms
+2026-10-28T15:51:29.694Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\full\h264-fragmented-full-1793202689134065700.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-fragmented-full-1793202689134065700-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T15:51:29.758Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 137.401 ms

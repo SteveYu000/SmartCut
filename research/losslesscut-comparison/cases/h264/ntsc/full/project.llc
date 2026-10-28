@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-ntsc-full-1793202646752894500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 8.008,
+      "name": "0"
+    }
+  ]
+}

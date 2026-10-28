@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-offset-cra_leading-1793202801699837100.mp4",
+  "cutSegments": [
+    {
+      "start": 0.88,
+      "end": 2.96,
+      "name": "0"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\fixtures\\source-nvenc.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-195651\\nvenc-cra_exact-stsd.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "stsd",
+  "access": "cra",
+  "lossless_boundaries": false,
+  "time_base": [
+    1,
+    12800
+  ],
+  "input_frames": 240,
+  "irap_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 168,
+  "encoded_frames": 21,
+  "decoded_frames": 24,
+  "duration_ticks": 96768,
+  "decode_delay_ticks": 1024,
+  "elapsed_seconds": 0.100058,
+  "units": [
+    {
+      "mode": "copy",
+      "begin": 24,
+      "end": 48,
+      "cra_to_bla": false,
+      "epoch_begin": 24,
+      "epoch_end": 48,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "copy",
+      "begin": 48,
+      "end": 72,
+      "cra_to_bla": false,
+      "epoch_begin": 48,
+      "epoch_end": 72,
+      "output_start_ticks": 12288
+    },
+    {
+      "mode": "copy",
+      "begin": 72,
+      "end": 96,
+      "cra_to_bla": false,
+      "epoch_begin": 72,
+      "epoch_end": 96,
+      "output_start_ticks": 24576
+    },
+    {
+      "mode": "copy",
+      "begin": 96,
+      "end": 120,
+      "cra_to_bla": false,
+      "epoch_begin": 96,
+      "epoch_end": 120,
+      "output_start_ticks": 36864
+    },
+    {
+      "mode": "copy",
+      "begin": 120,
+      "end": 144,
+      "cra_to_bla": false,
+      "epoch_begin": 120,
+      "epoch_end": 144,
+      "output_start_ticks": 49152
+    },
+    {
+      "mode": "copy",
+      "begin": 144,
+      "end": 168,
+      "cra_to_bla": false,
+      "epoch_begin": 144,
+      "epoch_end": 168,
+      "output_start_ticks": 61440
+    },
+    {
+      "mode": "copy",
+      "begin": 168,
+      "end": 192,
+      "cra_to_bla": false,
+      "epoch_begin": 168,
+      "epoch_end": 192,
+      "output_start_ticks": 73728
+    },
+    {
+      "mode": "encode",
+      "begin": 192,
+      "end": 213,
+      "cra_to_bla": false,
+      "epoch_begin": 192,
+      "epoch_end": 216,
+      "output_start_ticks": 86016
+    }
+  ]
+}

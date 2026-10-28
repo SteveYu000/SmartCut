@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-closed-cra_leading-1793202734473684400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.88,
+      "end": 2.96,
+      "name": "0"
+    }
+  ]
+}

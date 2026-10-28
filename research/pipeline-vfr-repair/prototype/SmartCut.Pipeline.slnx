@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SmartCut.Cli/SmartCut.Cli.csproj" />
+    <Project Path="src/SmartCut.Core/SmartCut.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SmartCut.Tests/SmartCut.Tests.csproj" />
+  </Folder>
+</Solution>

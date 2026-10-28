@@ -1,0 +1,14 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-192616\source-main10.mp4
+        hevc Main 10@L3.0 192x112 25.000fps yuv420p10le progressive sar=1 424kbps  dur=9.600s
+        10 access points, mean GOP 0.960s, 9 open (leading pictures, referenced -- cannot start a copy there)
+
+plan  : 1 range(s), 9.600s output
+  keep 0.000 -> 9.600
+        copy     0.000 ->    9.600  ( 9.600s)
+        copied 9.600s (100.0%), re-encoded 0.000s (0.0%)
+render:
+  [0]     copy     0.000 ->    9.600  ( 9.600s)
+
+wrote E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-193211\deepregular_python-main10-full.mp4
+
+STDERR

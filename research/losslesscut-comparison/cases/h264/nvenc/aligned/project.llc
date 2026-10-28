@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-nvenc-aligned-1793202719228849000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

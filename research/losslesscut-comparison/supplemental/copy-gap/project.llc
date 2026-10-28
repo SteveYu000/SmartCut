@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "supp-copy-gap-1793203217033072600.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 3.72,
+      "name": "0"
+    },
+    {
+      "start": 12.48,
+      "end": 17.16,
+      "name": "1"
+    }
+  ]
+}

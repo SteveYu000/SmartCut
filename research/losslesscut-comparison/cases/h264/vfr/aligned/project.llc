@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-aligned-1793202661805050400.mp4",
+  "cutSegments": [
+    {
+      "start": 1.28,
+      "end": 11.52,
+      "name": "0"
+    }
+  ]
+}

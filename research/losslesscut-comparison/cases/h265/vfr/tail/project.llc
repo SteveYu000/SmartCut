@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-vfr-tail-1793202780977313700.mp4",
+  "cutSegments": [
+    {
+      "start": 11.36,
+      "end": 12.76,
+      "name": "0"
+    }
+  ]
+}

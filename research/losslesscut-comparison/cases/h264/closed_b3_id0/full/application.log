@@ -1,0 +1,7 @@
+2026-10-28T15:48:27.652Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 1.315 ms
+2026-10-28T15:48:27.756Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\closed_b3_id0\full\h264-closed_b3_id0-full-1793202507476120500.mp4 -hide_banner
+2026-10-28T15:48:27.837Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 92.567 ms
+2026-10-28T15:48:28.141Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 51.578 ms
+2026-10-28T15:48:28.144Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.999 ms
+2026-10-28T15:48:28.149Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\closed_b3_id0\full\h264-closed_b3_id0-full-1793202507476120500.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-closed_b3_id0-full-1793202507476120500-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T15:48:28.213Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 123.507 ms

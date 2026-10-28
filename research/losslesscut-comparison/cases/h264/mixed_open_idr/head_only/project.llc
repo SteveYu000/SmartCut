@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-mixed_open_idr-head_only-1793202609412746900.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

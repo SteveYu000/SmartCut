@@ -1,0 +1,45 @@
+{
+  "id": "h265/offset/before_cra",
+  "codec": "h265",
+  "fixture": "offset",
+  "cut": "before_cra",
+  "ranges": [
+    [
+      0,
+      23
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\before_cra",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-offset-before_cra-1793202815003408800-00.00.00.000-00.00.00.920-0.mp4"
+    ]
+  },
+  "export_seconds": 0.23639119998551905,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\before_cra\\output.mp4",
+  "output_sha256": "91741a2ff55eae027e26d01ff40e9a92c187593e2bbc014750481b923ad2dbbc",
+  "expected_frames": 23,
+  "decoded_frames": 23,
+  "samples": 23,
+  "issues": [],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 21,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.92,
+  "duration_seconds": 0.92,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 0,
+  "min_frame_psnr_db": 39.474504152786174,
+  "copy_efficiency_passed": false,
+  "correctness_passed": true,
+  "passed": false
+}

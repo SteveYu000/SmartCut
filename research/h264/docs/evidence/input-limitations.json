@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "avc3",
+    "exit": 1,
+    "stderr": "ERROR: Changing in-band SPS/PPS is outside the supported input contract\r\n"
+  },
+  {
+    "mode": "stsd",
+    "exit": 1,
+    "stderr": "ERROR: Changing sample descriptions are unsupported as input\r\n"
+  }
+]

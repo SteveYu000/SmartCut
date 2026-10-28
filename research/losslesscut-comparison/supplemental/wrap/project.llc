@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "supp-wrap-1793203215281832500.mp4",
+  "cutSegments": [
+    {
+      "start": 9.32,
+      "end": 19.56,
+      "name": "0"
+    },
+    {
+      "start": 21.08,
+      "end": 29.56,
+      "name": "1"
+    }
+  ]
+}

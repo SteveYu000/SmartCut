@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-open-tail-1793202753836483500.mp4",
+  "cutSegments": [
+    {
+      "start": 8.52,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

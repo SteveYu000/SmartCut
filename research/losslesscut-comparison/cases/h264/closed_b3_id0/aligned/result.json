@@ -1,0 +1,50 @@
+{
+  "id": "h264/closed_b3_id0/aligned",
+  "codec": "h264",
+  "fixture": "closed_b3_id0",
+  "cut": "aligned",
+  "ranges": [
+    [
+      24,
+      216
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\closed_b3_id0\\aligned",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-closed_b3_id0-aligned-1793202556548390300-00.00.00.960-00.00.08.640-0.mp4"
+    ]
+  },
+  "export_seconds": 0.13417459998163395,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\closed_b3_id0\\aligned\\output.mp4",
+  "output_sha256": "04efcf1b1842cc4fe0b6962cd7d4130846cfe45e4d915f3e0ec7c52fae331aac",
+  "expected_frames": 192,
+  "decoded_frames": 194,
+  "samples": 194,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 192,
+  "normalized_vcl": 192,
+  "pixel_identical": 192,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 192,
+  "pts_mismatches": 2,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 7.68,
+  "duration_seconds": 7.76,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 192,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,118 @@
+{
+  "id": "h265/main10/partial",
+  "codec": "h265",
+  "fixture": "main10",
+  "cut": "partial",
+  "ranges": [
+    [
+      13,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\main10\\partial",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-main10-partial-1793202759215607100-00.00.00.520-00.00.09.080-0.mp4"
+    ]
+  },
+  "export_seconds": 0.4643031000159681,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\main10\\partial\\output.mp4",
+  "output_sha256": "8d7efc3b27513ced928c21d0ee7635eb62fdb5e6302d084984e400646cd9a448",
+  "expected_frames": 214,
+  "decoded_frames": 215,
+  "samples": 218,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      24
+    ],
+    [
+      11,
+      24,
+      25
+    ],
+    [
+      12,
+      25,
+      26
+    ],
+    [
+      13,
+      26,
+      27
+    ],
+    [
+      14,
+      27,
+      28
+    ],
+    [
+      15,
+      28,
+      29
+    ],
+    [
+      16,
+      29,
+      30
+    ],
+    [
+      17,
+      30,
+      31
+    ],
+    [
+      18,
+      31,
+      32
+    ],
+    [
+      19,
+      32,
+      33
+    ],
+    [
+      20,
+      33,
+      34
+    ],
+    [
+      21,
+      34,
+      35
+    ]
+  ],
+  "baseline_copied_frames": 189,
+  "decode_log": "[hevc @ 0000000002e0d680] Could not find ref with POC 20\r\n[hevc @ 0000000002e0d680] Error constructing the frame RPS.\r\n[hevc @ 0000000002e0da00] Could not find ref with POC 20\r\n[hevc @ 0000000002e0da00] Error constructing the frame RPS.\r\n[hevc @ 0000000003e6eb80] Could not find ref with POC 22\r\n[hevc @ 0000000003e6eb80] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000003d3fc00] Could not find ref with POC 20\r\n[hevc @ 0000000003d3fc00] Error constructing the frame RPS.\r\n[hevc @ 0000000003d5ea80] Could not find ref with POC 20\r\n[hevc @ 0000000003d5ea80] Error constructing the frame RPS.\r\n[hevc @ 0000000003d6b540] Could not find ref with POC 22\r\n[hevc @ 0000000003d6b540] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 00000000007e56c0] [dec:hevc @ 00000000007e1840] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007e56c0] [dec:hevc @ 00000000007e1840] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007e56c0] [dec:hevc @ 00000000007e1840] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000007e56c0] [dec:hevc @ 00000000007e1840] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 210,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.12,
+  "expected_duration_seconds": 8.56,
+  "duration_seconds": 8.6,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 206,
+  "min_frame_psnr_db": 15.440952950267588,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

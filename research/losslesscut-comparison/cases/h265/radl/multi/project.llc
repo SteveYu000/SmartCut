@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-radl-multi-1793202862226080000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 3.24,
+      "name": "0"
+    },
+    {
+      "start": 4.0,
+      "end": 9.08,
+      "name": "1"
+    }
+  ]
+}

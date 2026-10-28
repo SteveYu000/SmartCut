@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-fullrange_sar-aligned-1793202705051913000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "h264/mixed_open_idr/adjacent_inside",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "adjacent_inside",
+  "ranges": [
+    [
+      0,
+      13
+    ],
+    [
+      13,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\adjacent_inside",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-mixed_open_idr-adjacent_inside-1793202616656012100-cut-merged-1793202617885.mp4"
+    ]
+  },
+  "export_seconds": 0.9031998999998905,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\adjacent_inside\\output.mp4",
+  "output_sha256": "c409967926243eaa6c924f92aace8a19b1dad8cba31dfb6b004c2607146cf08d",
+  "expected_frames": 24,
+  "decoded_frames": 31,
+  "samples": 31,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 13,
+  "normalized_vcl": 13,
+  "pixel_identical": 13,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      13,
+      13,
+      14
+    ],
+    [
+      14,
+      14,
+      16
+    ],
+    [
+      15,
+      15,
+      13
+    ],
+    [
+      16,
+      16,
+      14
+    ],
+    [
+      17,
+      17,
+      15
+    ],
+    [
+      18,
+      18,
+      16
+    ],
+    [
+      19,
+      19,
+      17
+    ],
+    [
+      20,
+      20,
+      18
+    ],
+    [
+      21,
+      21,
+      19
+    ],
+    [
+      22,
+      22,
+      20
+    ],
+    [
+      23,
+      23,
+      21
+    ]
+  ],
+  "baseline_copied_frames": 0,
+  "decode_log": "[h264 @ 00000000001dca00] top block unavailable for requested intra mode -1\r\n[h264 @ 00000000001dca00] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000002e5dd40] mmco: unref short failure\r\n[h264 @ 0000000002e87440] Reference 3 >= 2\r\n[h264 @ 0000000002e87440] error while decoding MB 0 0, bytestream 1297\r\n",
+  "strict_decode_log": "[h264 @ 00000000007fdf00] top block unavailable for requested intra mode -1\r\n[h264 @ 00000000007fdf00] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000002ee2140] mmco: unref short failure\r\n[vist#0:0/h264 @ 000000000072b080] [dec:h264 @ 0000000002cebb40] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 000000000072b080] [dec:h264 @ 0000000002cebb40] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 000000000072b080] [dec:h264 @ 0000000002cebb40] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 000000000072b080] [dec:h264 @ 0000000002cebb40] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 11,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.04,
+  "expected_duration_seconds": 0.96,
+  "duration_seconds": 1.12,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 18,
+  "min_frame_psnr_db": 16.938449442953505,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

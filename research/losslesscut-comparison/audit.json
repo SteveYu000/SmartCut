@@ -1,0 +1,305 @@
+{
+  "dates_beijing": "2026-10-28 to 2026-10-29",
+  "application": "LosslessCut 3.70.2 official Windows x64 portable",
+  "application_source_commit": "2610284b6c9a68db124a7a2ef436464ce41ea1d2",
+  "official_asset": "https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z",
+  "expected_official_asset_sha256": "1740c5f17b952c04cf1b1612cf32f56c68a88105c045199526c7ea9678d309b0",
+  "download_sha256": "1740c5f17b952c04cf1b1612cf32f56c68a88105c045199526c7ea9678d309b0",
+  "app_exe_sha256": "55994a59edfaad38d3b69c4440243ba9e5aa455842041e267eece0799c22ab6c",
+  "app_asar_sha256": "0fd274ceaabe45433d62f6c4627e6a9a6b389af9956ce169da9ef9165093fdc4",
+  "bundled_ffmpeg": "ffmpeg version n8.1.3-18-g46d899d7a0-20261020 Copyright (c) 2000-2026 the FFmpeg developers",
+  "oracle_ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers",
+  "source_commit": "c1a5d14667b3d82e47a970c93c5efff1e25f9ae1",
+  "input_fixtures_byte_identical": true,
+  "case_input_copies_byte_identical": true,
+  "saved_output_hashes_match": true,
+  "source_fixture_count": 24,
+  "saved_main_outputs": 205,
+  "summary": {
+    "h264": {
+      "total": 130,
+      "app_reported_output": 124,
+      "passed": 19,
+      "correctness_passed": 21,
+      "issues": {
+        "frame_count": 102,
+        "pts": 101,
+        "decoded_pts": 101,
+        "duration": 91,
+        "frame_identity": 63,
+        "quality_below_30dB": 63,
+        "decode_error": 12,
+        "strict_decode": 12,
+        "copied_pixels": 14,
+        "app_export_error": 6,
+        "missing_video_track": 1
+      }
+    },
+    "h265": {
+      "total": 110,
+      "app_reported_output": 81,
+      "passed": 9,
+      "correctness_passed": 10,
+      "issues": {
+        "frame_count": 71,
+        "decode_error": 33,
+        "strict_decode": 33,
+        "pts": 69,
+        "decoded_pts": 68,
+        "duration": 69,
+        "frame_identity": 41,
+        "copied_pixels": 20,
+        "quality_below_30dB": 41,
+        "app_export_error": 29,
+        "missing_video_track": 2
+      }
+    }
+  },
+  "by_fixture": [
+    {
+      "codec": "h264",
+      "fixture": "closed_b3_id0",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "closed",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "open",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "closed_b3_id3",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "baseline",
+      "total": 10,
+      "correctness_passed": 5,
+      "passed": 5
+    },
+    {
+      "codec": "h264",
+      "fixture": "open_gop",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "mixed_open_idr",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "high10",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "multi_slice",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "ntsc",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "vfr",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "offset",
+      "total": 10,
+      "correctness_passed": 5,
+      "passed": 3
+    },
+    {
+      "codec": "h264",
+      "fixture": "fragmented",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "fullrange_sar",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h264",
+      "fixture": "nvenc",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "main10",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "vfr",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "ntsc",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "offset",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 0
+    },
+    {
+      "codec": "h265",
+      "fixture": "fragmented",
+      "total": 10,
+      "correctness_passed": 0,
+      "passed": 0
+    },
+    {
+      "codec": "h265",
+      "fixture": "multislice",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "color_sar",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "radl",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    },
+    {
+      "codec": "h265",
+      "fixture": "nvenc",
+      "total": 10,
+      "correctness_passed": 1,
+      "passed": 1
+    }
+  ],
+  "decoder_crosscheck": [
+    {
+      "case": "h264/closed_b3_id0/full",
+      "pinned_frames": 240,
+      "bundled_frames": 240,
+      "pixels_equal": true,
+      "pinned_decode_errors": false,
+      "bundled_decode_errors": false
+    },
+    {
+      "case": "h264/closed_b3_id0/both_edges",
+      "pinned_frames": 215,
+      "bundled_frames": 215,
+      "pixels_equal": true,
+      "pinned_decode_errors": false,
+      "bundled_decode_errors": false,
+      "first_frame_ids": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "last_frame_ids": [
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228
+      ],
+      "missing_requested_ids": [
+        23
+      ],
+      "unexpected_frame_ids": [
+        227,
+        228
+      ]
+    },
+    {
+      "case": "h265/open/partial",
+      "pinned_frames": 215,
+      "bundled_frames": 215,
+      "pixels_equal": true,
+      "pinned_decode_errors": true,
+      "bundled_decode_errors": true
+    }
+  ],
+  "cuda_positive_control": {
+    "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\experiments\\gpu-main10-hev1.mp4",
+    "passed": true,
+    "software_frames": 195,
+    "hardware_frames": 195,
+    "log": ""
+  },
+  "quality_flags_without_frame_identity_failure": 0,
+  "notes": [
+    "No LosslessCut or bundled FFmpeg code was changed.",
+    "Only distinct media/range combinations are counted: AVC avc3/stsd and HEVC hev1/stsd mode variants are not duplicated for the native app.",
+    "Correctness is independent of copy efficiency; passed additionally requires at least the baseline positional VCL copy count.",
+    "Protocol setup failures are retained in results.harness_attempts, excluded from the 240 product cases.",
+    "Synthetic rawvideo output timing is used only during pixel extraction; real packet/frame PTS is independently checked.",
+    "HTTP event bodies remain pending because the official await-event route aborts on IncomingMessage.close. This does not alter export logic."
+  ]
+}

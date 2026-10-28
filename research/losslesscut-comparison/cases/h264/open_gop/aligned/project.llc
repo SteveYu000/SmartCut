@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-open_gop-aligned-1793202594498407400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\experiments-20261027-200513\\source-open.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\experiments-20261027-200513\\copy-gap-hev1-bla0.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "hev1",
+  "access": "cra",
+  "lossless_boundaries": false,
+  "time_base": [
+    1,
+    12800
+  ],
+  "input_frames": 800,
+  "irap_epochs": 34,
+  "non_idr_key_packets": 33,
+  "copied_frames": 186,
+  "encoded_frames": 0,
+  "decoded_frames": 0,
+  "duration_ticks": 95232,
+  "decode_delay_ticks": 1024,
+  "elapsed_seconds": 0.0141891,
+  "units": [
+    {
+      "mode": "copy",
+      "begin": 24,
+      "end": 45,
+      "cra_to_bla": false,
+      "epoch_begin": 21,
+      "epoch_end": 45,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "copy",
+      "begin": 45,
+      "end": 69,
+      "cra_to_bla": false,
+      "epoch_begin": 45,
+      "epoch_end": 69,
+      "output_start_ticks": 10752
+    },
+    {
+      "mode": "copy",
+      "begin": 69,
+      "end": 93,
+      "cra_to_bla": false,
+      "epoch_begin": 69,
+      "epoch_end": 93,
+      "output_start_ticks": 23040
+    },
+    {
+      "mode": "copy",
+      "begin": 312,
+      "end": 333,
+      "cra_to_bla": false,
+      "epoch_begin": 309,
+      "epoch_end": 333,
+      "output_start_ticks": 35328
+    },
+    {
+      "mode": "copy",
+      "begin": 333,
+      "end": 357,
+      "cra_to_bla": false,
+      "epoch_begin": 333,
+      "epoch_end": 357,
+      "output_start_ticks": 46080
+    },
+    {
+      "mode": "copy",
+      "begin": 357,
+      "end": 381,
+      "cra_to_bla": false,
+      "epoch_begin": 357,
+      "epoch_end": 381,
+      "output_start_ticks": 58368
+    },
+    {
+      "mode": "copy",
+      "begin": 381,
+      "end": 405,
+      "cra_to_bla": false,
+      "epoch_begin": 381,
+      "epoch_end": 405,
+      "output_start_ticks": 70656
+    },
+    {
+      "mode": "copy",
+      "begin": 405,
+      "end": 429,
+      "cra_to_bla": false,
+      "epoch_begin": 405,
+      "epoch_end": 429,
+      "output_start_ticks": 82944
+    }
+  ]
+}

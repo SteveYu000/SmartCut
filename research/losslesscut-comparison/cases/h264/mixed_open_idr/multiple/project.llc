@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-mixed_open_idr-multiple-1793202613733205900.mp4",
+  "cutSegments": [
+    {
+      "start": 0.04,
+      "end": 1.16,
+      "name": "0"
+    },
+    {
+      "start": 1.88,
+      "end": 4.84,
+      "name": "1"
+    },
+    {
+      "start": 7.64,
+      "end": 9.6,
+      "name": "2"
+    }
+  ]
+}

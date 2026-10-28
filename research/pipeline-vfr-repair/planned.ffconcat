@@ -1,0 +1,5 @@
+ffconcat version 1.0
+file 'E:/DesktopPlus/Works/Code/SmartCut/research/h264-pipeline-comparison/diagnostics/vfr/run-20261028-105359-4776568/unit000.mp4'
+duration 0.080000
+file 'E:/DesktopPlus/Works/Code/SmartCut/research/h264-pipeline-comparison/diagnostics/vfr/run-20261028-105359-4776568/unit001.mp4'
+duration 0.040000

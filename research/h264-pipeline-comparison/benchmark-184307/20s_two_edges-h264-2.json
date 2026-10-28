@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-2.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "avc3",
+  "lossless_full_encode_fallback": false,
+  "time_base": [
+    1,
+    15360
+  ],
+  "input_frames": 600,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 480,
+  "encoded_frames": 94,
+  "decoded_frames": 107,
+  "duration_ticks": 293888,
+  "decode_delay_ticks": 1024,
+  "elapsed_seconds": 2.13601,
+  "units": [
+    {
+      "mode": "encode",
+      "begin": 13,
+      "end": 60,
+      "decode_begin": 0,
+      "decode_end": 60,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "copy",
+      "begin": 60,
+      "end": 120,
+      "decode_begin": 60,
+      "decode_end": 120,
+      "output_start_ticks": 24064
+    },
+    {
+      "mode": "copy",
+      "begin": 120,
+      "end": 180,
+      "decode_begin": 120,
+      "decode_end": 180,
+      "output_start_ticks": 54784
+    },
+    {
+      "mode": "copy",
+      "begin": 180,
+      "end": 240,
+      "decode_begin": 180,
+      "decode_end": 240,
+      "output_start_ticks": 85504
+    },
+    {
+      "mode": "copy",
+      "begin": 240,
+      "end": 300,
+      "decode_begin": 240,
+      "decode_end": 300,
+      "output_start_ticks": 116224
+    },
+    {
+      "mode": "copy",
+      "begin": 300,
+      "end": 360,
+      "decode_begin": 300,
+      "decode_end": 360,
+      "output_start_ticks": 146944
+    },
+    {
+      "mode": "copy",
+      "begin": 360,
+      "end": 420,
+      "decode_begin": 360,
+      "decode_end": 420,
+      "output_start_ticks": 177664
+    },
+    {
+      "mode": "copy",
+      "begin": 420,
+      "end": 480,
+      "decode_begin": 420,
+      "decode_end": 480,
+      "output_start_ticks": 208384
+    },
+    {
+      "mode": "copy",
+      "begin": 480,
+      "end": 540,
+      "decode_begin": 480,
+      "decode_end": 540,
+      "output_start_ticks": 239104
+    },
+    {
+      "mode": "encode",
+      "begin": 540,
+      "end": 587,
+      "decode_begin": 540,
+      "decode_end": 600,
+      "output_start_ticks": 269824
+    }
+  ]
+}

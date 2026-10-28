@@ -1,2 +1,0 @@
-file 'baseline-high10-head.mp4'
-file 'baseline-high10-tail.mp4'

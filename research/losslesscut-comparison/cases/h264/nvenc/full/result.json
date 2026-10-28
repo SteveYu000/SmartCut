@@ -1,0 +1,45 @@
+{
+  "id": "h264/nvenc/full",
+  "codec": "h264",
+  "fixture": "nvenc",
+  "cut": "full",
+  "ranges": [
+    [
+      0,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\nvenc\\full",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-nvenc-full-1793202718230138500-00.00.00.000-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.0979016000055708,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\nvenc\\full\\output.mp4",
+  "output_sha256": "16da6e678267fdd5c086f1042b92c40623ad6763550cc7b173d7645c9d58069f",
+  "expected_frames": 240,
+  "decoded_frames": 240,
+  "samples": 240,
+  "issues": [],
+  "exact_vcl": 240,
+  "normalized_vcl": 240,
+  "pixel_identical": 240,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 240,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 9.6,
+  "duration_seconds": 9.6,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 240,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": true,
+  "correctness_passed": true,
+  "passed": true
+}

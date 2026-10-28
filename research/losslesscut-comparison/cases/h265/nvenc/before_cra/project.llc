@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-nvenc-before_cra-1793202888720156600.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.92,
+      "name": "0"
+    }
+  ]
+}

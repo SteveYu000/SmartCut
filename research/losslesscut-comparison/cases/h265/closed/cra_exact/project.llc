@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-closed-cra_exact-1793202739642560300.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 8.52,
+      "name": "0"
+    }
+  ]
+}

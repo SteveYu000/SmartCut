@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-vfr-cra_leading-1793202773798521100.mp4",
+  "cutSegments": [
+    {
+      "start": 1.16,
+      "end": 3.92,
+      "name": "0"
+    }
+  ]
+}

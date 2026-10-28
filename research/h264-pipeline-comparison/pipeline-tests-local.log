@@ -1,0 +1,387 @@
+VSTest 版本 18.7.0 (x64)
+
+正在启动测试执行，请稍候...
+在文件 E:\DesktopPlus\Works\Code\SmartCut\outputs\h264-pipeline-comparison-20261028\test-results-local\vstest.log 中记录 Vstest 诊断
+总共 1 个测试文件与指定模式相匹配。
+Logging TestHost Diagnostics in file: E:\DesktopPlus\Works\Code\SmartCut\outputs\h264-pipeline-comparison-20261028\test-results-local\vstest.host.26-10-28_18-49-09_56107_5.log
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v4.0.0+05679a7ab5 (64-bit .NET 10.0.14)
+[xUnit.net 00:00:00.11]   Discovering: SmartCut.Tests
+[xUnit.net 00:00:00.17]   Discovered:  SmartCut.Tests
+[xUnit.net 00:00:00.21]   Starting:    SmartCut.Tests
+  已通过 SmartCut.Tests.PlannerTests.BothEdgesProducesEncodeCopyEncodeAndMergesTheCopyEpochs [13 ms]
+  已通过 SmartCut.Tests.PlannerTests.AdjacentKeepsMergeBeforePlanning [1 ms]
+  已通过 SmartCut.Tests.PlannerTests.OutputTimeIsTheSourceIntervalShiftedByTheAccumulatedUnitDuration [4 ms]
+  已通过 SmartCut.Tests.PlannerTests.EncodingUnitsCoverSelectedFramesEvenWhenDecodeOrderIsReordered [< 1 ms]
+  已通过 SmartCut.Tests.PlannerTests.InvalidKeepRangesAreRejected [1 ms]
+  已通过 SmartCut.Tests.PlannerTests.AudioTrackWithoutASampleRateIsPlannedAsNoRange [1 ms]
+  已通过 SmartCut.Tests.PlannerTests.AudioWindowsFallBackToSecondsWhenTheSampleArithmeticDoesNotDivide [< 1 ms]
+  已通过 SmartCut.Tests.PlannerTests.AudioWindowsAreSampleExactWhenTheVideoGridDividesIntoTheSampleRate [1 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "tail_only") [754 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "both_edges") [914 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "head_only") [788 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "tail_only") [725 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "adjacent") [536 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "full") [617 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "single_frame") [625 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "aligned") [556 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "cross_idr") [887 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "adjacent") [661 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "single_frame") [610 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "adjacent_inside") [545 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "cross_idr") [780 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "single_frame") [616 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "adjacent_inside") [541 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "single_frame") [596 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "adjacent") [537 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "adjacent") [792 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "cross_idr") [750 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "aligned") [568 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "full") [581 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "head_only") [712 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "both_edges") [883 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "head_only") [701 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "head_only") [706 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "adjacent") [553 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "adjacent_inside") [543 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "head_only") [722 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "both_edges") [865 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "full") [573 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "adjacent") [559 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "single_frame") [607 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "head_only") [723 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "head_only") [712 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "full") [568 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "aligned") [551 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "tail_only") [715 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "adjacent") [533 ms]
+[xUnit.net 00:00:35.49]     SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "cross_idr") [FAIL]
+[xUnit.net 00:00:35.49]       1 presentation times differ from the plan
+[xUnit.net 00:00:35.49]       Stack Trace:
+[xUnit.net 00:00:35.49]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(99,0): at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut)
+[xUnit.net 00:00:35.49]            at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+[xUnit.net 00:00:35.49]            at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "full") [552 ms]
+  失败 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "cross_idr") [750 ms]
+  错误消息:
+   1 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 99
+   at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "single_frame") [606 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "full") [569 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "adjacent_inside") [546 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "tail_only") [722 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "adjacent_inside") [541 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "full") [582 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "cross_idr") [748 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "cross_idr") [802 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "aligned") [931 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "adjacent") [528 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "head_only") [708 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "adjacent_inside") [526 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "adjacent_inside") [520 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "full") [573 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "cross_idr") [764 ms]
+[xUnit.net 00:00:46.50]     SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "multiple") [FAIL]
+[xUnit.net 00:00:46.50]       127 presentation times differ from the plan
+[xUnit.net 00:00:46.50]       Stack Trace:
+[xUnit.net 00:00:46.50]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(81,0): at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut)
+[xUnit.net 00:00:46.50]            at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+[xUnit.net 00:00:46.50]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "multiple") [1 s]
+  错误消息:
+   127 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 81
+   at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "single_frame") [612 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "full") [614 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "adjacent") [570 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "aligned") [550 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "tail_only") [767 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "both_edges") [887 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "tail_only") [806 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "adjacent_inside") [669 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "tail_only") [900 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "adjacent_inside") [1 s]
+[xUnit.net 00:00:57.41]     SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "head_only") [FAIL]
+[xUnit.net 00:00:57.41]       192 presentation times differ from the plan
+[xUnit.net 00:00:57.41]       Stack Trace:
+[xUnit.net 00:00:57.41]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(81,0): at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut)
+[xUnit.net 00:00:57.41]            at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+[xUnit.net 00:00:57.41]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "head_only") [684 ms]
+  错误消息:
+   192 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 81
+   at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "single_frame") [595 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "single_frame") [675 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "adjacent_inside") [601 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "aligned") [615 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "adjacent") [526 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "adjacent") [840 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "cross_idr") [621 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "tail_only") [710 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "aligned") [577 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "full") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "both_edges") [792 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "both_edges") [865 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "aligned") [553 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "tail_only") [706 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "adjacent") [663 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "adjacent_inside") [538 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "aligned") [585 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "adjacent_inside") [522 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "tail_only") [696 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "adjacent_inside") [532 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "full") [588 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "aligned") [758 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "aligned") [550 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "head_only") [918 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "tail_only") [730 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "aligned") [575 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "full") [591 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "cross_idr") [744 ms]
+[xUnit.net 00:01:23.00]     SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "tail_only") [FAIL]
+[xUnit.net 00:01:23.00]       11 presentation times differ from the plan
+[xUnit.net 00:01:23.01]       Stack Trace:
+[xUnit.net 00:01:23.01]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(81,0): at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut)
+[xUnit.net 00:01:23.01]            at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+[xUnit.net 00:01:23.01]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "tail_only") [709 ms]
+  错误消息:
+   11 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 81
+   at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "multi_slice", cut: "single_frame") [616 ms]
+[xUnit.net 00:01:24.48]     SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "both_edges") [FAIL]
+[xUnit.net 00:01:24.48]       203 presentation times differ from the plan
+[xUnit.net 00:01:24.48]       Stack Trace:
+[xUnit.net 00:01:24.48]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(81,0): at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut)
+[xUnit.net 00:01:24.48]            at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+[xUnit.net 00:01:24.48]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "vfr", cut: "both_edges") [858 ms]
+  错误消息:
+   203 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(String fixture, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 81
+   at InvokeStub_PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id0", cut: "head_only") [794 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "cross_idr") [755 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "cross_idr") [751 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "aligned") [574 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "head_only") [786 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fullrange_sar", cut: "cross_idr") [776 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "single_frame") [605 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "adjacent") [540 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "offset", cut: "single_frame") [608 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "mixed_open_idr", cut: "tail_only") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "ntsc", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "closed_b3_id3", cut: "full") [560 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "open_gop", cut: "cross_idr") [591 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "baseline", cut: "both_edges") [967 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "nvenc", cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "fragmented", cut: "single_frame") [609 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: "high10", cut: "head_only") [764 ms]
+[xUnit.net 00:01:42.58]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "both_edges") [FAIL]
+[xUnit.net 00:01:42.58]       203 presentation times differ from the plan
+[xUnit.net 00:01:42.58]       Stack Trace:
+[xUnit.net 00:01:42.58]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:42.58]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:01:42.58]            at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "both_edges") [1 s]
+  错误消息:
+   203 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "tail_only") [1 s]
+[xUnit.net 00:01:45.88]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "adjacent") [FAIL]
+[xUnit.net 00:01:45.88]       audio stream 1: 10 impulses, expected 11; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:01:45.88]       Stack Trace:
+[xUnit.net 00:01:45.88]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:45.88]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:01:45.88]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:01:46.85]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "full") [FAIL]
+[xUnit.net 00:01:46.85]       audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:01:46.85]       Stack Trace:
+[xUnit.net 00:01:46.85]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:46.85]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:01:46.85]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "adjacent") [860 ms]
+  错误消息:
+   audio stream 1: 10 impulses, expected 11; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "full") [970 ms]
+  错误消息:
+   audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:01:47.73]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "adjacent") [FAIL]
+[xUnit.net 00:01:47.73]       audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:01:47.73]       Stack Trace:
+[xUnit.net 00:01:47.73]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:47.73]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:01:47.73]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "adjacent") [878 ms]
+  错误消息:
+   audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "head_only") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "head_only") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "tail_only") [1 s]
+[xUnit.net 00:01:52.50]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "head_only") [FAIL]
+[xUnit.net 00:01:52.50]       192 presentation times differ from the plan
+[xUnit.net 00:01:52.50]       Stack Trace:
+[xUnit.net 00:01:52.50]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:52.50]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:01:52.50]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "head_only") [1 s]
+  错误消息:
+   192 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:01:54.25]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "multiple") [FAIL]
+[xUnit.net 00:01:54.25]       127 presentation times differ from the plan
+[xUnit.net 00:01:54.25]       Stack Trace:
+[xUnit.net 00:01:54.25]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:01:54.25]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:01:54.25]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "multiple") [1 s]
+  错误消息:
+   127 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "head_only") [1 s]
+[xUnit.net 00:02:00.18]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "tail_only") [FAIL]
+[xUnit.net 00:02:00.19]       11 presentation times differ from the plan
+[xUnit.net 00:02:00.19]       Stack Trace:
+[xUnit.net 00:02:00.19]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:00.19]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:00.19]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "tail_only") [1 s]
+  错误消息:
+   11 presentation times differ from the plan
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:02:01.33]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "full") [FAIL]
+[xUnit.net 00:02:01.33]       audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 59 impulses, expected 60; audio stream 2: impulse count differs, position check inconclusive
+[xUnit.net 00:02:01.33]       Stack Trace:
+[xUnit.net 00:02:01.33]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:01.33]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:01.33]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:02:02.27]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "full") [FAIL]
+[xUnit.net 00:02:02.27]       audio stream 1: 50 impulses, expected 51; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:02:02.27]       Stack Trace:
+[xUnit.net 00:02:02.27]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:02.27]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:02.27]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "full") [1 s]
+  错误消息:
+   audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 59 impulses, expected 60; audio stream 2: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "full") [944 ms]
+  错误消息:
+   audio stream 1: 50 impulses, expected 51; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "tail_only") [1 s]
+[xUnit.net 00:02:04.53]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "adjacent") [FAIL]
+[xUnit.net 00:02:04.53]       audio stream 1: 15 impulses, expected 16; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:02:04.53]       Stack Trace:
+[xUnit.net 00:02:04.53]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:04.53]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:04.53]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "adjacent") [921 ms]
+  错误消息:
+   audio stream 1: 15 impulses, expected 16; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:02:05.59]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "adjacent") [FAIL]
+[xUnit.net 00:02:05.59]       audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 11 impulses, expected 12; audio stream 2: impulse count differs, position check inconclusive
+[xUnit.net 00:02:05.59]       Stack Trace:
+[xUnit.net 00:02:05.59]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:05.59]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:05.59]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+[xUnit.net 00:02:06.60]     SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "full") [FAIL]
+[xUnit.net 00:02:06.60]       audio stream 1: 79 impulses, expected 80; audio stream 1: impulse count differs, position check inconclusive
+[xUnit.net 00:02:06.60]       Stack Trace:
+[xUnit.net 00:02:06.60]         E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs(157,0): at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut)
+[xUnit.net 00:02:06.60]            at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+[xUnit.net 00:02:06.60]            at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "adjacent") [1 s]
+  错误消息:
+   audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 11 impulses, expected 12; audio stream 2: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  失败 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "vfr", tracks: 1, cut: "full") [1 s]
+  错误消息:
+   audio stream 1: 79 impulses, expected 80; audio stream 1: impulse count differs, position check inconclusive
+  堆栈跟踪:
+     at SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(String fixture, Int32 tracks, String cut) in E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\pipeline\tests\SmartCut.Tests\PipelineIntegrationTests.cs:line 157
+   at InvokeStub_PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(Object, Span`1)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 1, cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "ntsc", tracks: 1, cut: "multiple") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: "closed_b3_id0", tracks: 2, cut: "both_edges") [1 s]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.SecondVideoStreamIsRejected [145 ms]
+[xUnit.net 00:02:11.94]   Finished:    SmartCut.Tests
+  已通过 SmartCut.Tests.PipelineIntegrationTests.NonH264InputIsRejected [382 ms]
+  已通过 SmartCut.Tests.PipelineIntegrationTests.ExistingOutputIsNeverOverwritten [242 ms]
+结果文件: E:\DesktopPlus\Works\Code\SmartCut\outputs\h264-pipeline-comparison-20261028\test-results-local\pipeline.trx
+
+测试运行失败。
+测试总数: 165
+     通过数: 148
+     失败数: 17
+总时间: 2.2044 分钟

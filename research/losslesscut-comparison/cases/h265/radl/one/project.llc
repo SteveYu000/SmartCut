@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-radl-one-1793202865527578600.mp4",
+  "cutSegments": [
+    {
+      "start": 0.92,
+      "end": 0.96,
+      "name": "0"
+    }
+  ]
+}

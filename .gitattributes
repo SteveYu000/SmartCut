@@ -1,0 +1,13 @@
+# Source uses stable newlines; recorded evidence keeps its exact bytes.
+* text=auto eol=lf
+*.md -text -whitespace
+research/**/test-data/** -text -whitespace
+research/**/docs/evidence/** -text -whitespace
+research/**/*.json -text -whitespace
+research/**/*.llc -text -whitespace
+research/**/*.log -text -whitespace
+research/**/*.trx -text -whitespace
+research/**/*.framemd5 -text -whitespace
+*.patch -text -whitespace
+*.pdf binary
+*.docx binary

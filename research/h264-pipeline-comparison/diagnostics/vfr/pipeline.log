@@ -1,0 +1,5 @@
+smartcut-pipeline: 240 frames, 10 IDR epochs, 0 key-flag non-IDR samples, time_base 1/12800, yuv420p, profile High, tag avc1
+warning: more than half of the selection needs encoding under the IDR-only safety policy (2 of 2)
+warning: --no-audio: output contains video only
+verify: 1 presentation times differ from the plan
+verify: fail

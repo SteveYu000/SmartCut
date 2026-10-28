@@ -1,0 +1,982 @@
+[
+  {
+    "case": "vfr-full",
+    "expected_seconds": "319/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 12760,
+        "seconds": 12.76
+      },
+      "moov/trak/tkhd": {
+        "duration": 12760
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            12760,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 163328,
+        "seconds": 12.76
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 163328,
+        "last": [
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ],
+          [
+            3,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-aligned",
+    "expected_seconds": "256/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 10240,
+        "seconds": 10.24
+      },
+      "moov/trak/tkhd": {
+        "duration": 10240
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            10240,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 131072,
+        "seconds": 10.24
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 131072,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-both_edges",
+    "expected_seconds": "57/5",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 11400,
+        "seconds": 11.4
+      },
+      "moov/trak/tkhd": {
+        "duration": 11400
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            11400,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 145920,
+        "seconds": 11.4
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 145920,
+        "last": [
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-head_only",
+    "expected_seconds": "271/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 10840,
+        "seconds": 10.84
+      },
+      "moov/trak/tkhd": {
+        "duration": 10840
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            10840,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 138752,
+        "seconds": 10.84
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 138752,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-tail_only",
+    "expected_seconds": "54/5",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 10800,
+        "seconds": 10.8
+      },
+      "moov/trak/tkhd": {
+        "duration": 10800
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            10800,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 138240,
+        "seconds": 10.8
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 138240,
+        "last": [
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-single_frame",
+    "expected_seconds": "2/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 80,
+        "seconds": 0.08
+      },
+      "moov/trak/tkhd": {
+        "duration": 80
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            80,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 1024,
+        "seconds": 0.08
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 1024,
+        "last": [
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-cross_idr",
+    "expected_seconds": "3/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 120,
+        "seconds": 0.12
+      },
+      "moov/trak/tkhd": {
+        "duration": 120
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            120,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 1536,
+        "seconds": 0.12
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 1536,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            1,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-multiple",
+    "expected_seconds": "201/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 8040,
+        "seconds": 8.04
+      },
+      "moov/trak/tkhd": {
+        "duration": 8040
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            8040,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 102912,
+        "seconds": 8.04
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 102912,
+        "last": [
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ],
+          [
+            3,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-adjacent",
+    "expected_seconds": "64/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 2560,
+        "seconds": 2.56
+      },
+      "moov/trak/tkhd": {
+        "duration": 2560
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            2560,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 32768,
+        "seconds": 2.56
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 32768,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-adjacent_inside",
+    "expected_seconds": "32/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 1280,
+        "seconds": 1.28
+      },
+      "moov/trak/tkhd": {
+        "duration": 1280
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            1280,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 16384,
+        "seconds": 1.28
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 16384,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-single-long",
+    "expected_seconds": "2/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 80,
+        "seconds": 0.08
+      },
+      "moov/trak/tkhd": {
+        "duration": 80
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            80,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 1024,
+        "seconds": 0.08
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 1024,
+        "last": [
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-head-ends-long",
+    "expected_seconds": "3/5",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 600,
+        "seconds": 0.6
+      },
+      "moov/trak/tkhd": {
+        "duration": 600
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            600,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 7680,
+        "seconds": 0.6
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 7680,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-both-ends-long",
+    "expected_seconds": "287/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 11480,
+        "seconds": 11.48
+      },
+      "moov/trak/tkhd": {
+        "duration": 11480
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            11480,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 146944,
+        "seconds": 11.48
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 146944,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-single-copy-epoch",
+    "expected_seconds": "32/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 1280,
+        "seconds": 1.28
+      },
+      "moov/trak/tkhd": {
+        "duration": 1280
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            1280,
+            1536
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 16384,
+        "seconds": 1.28
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 16384,
+        "last": [
+          [
+            1,
+            1024
+          ],
+          [
+            2,
+            512
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-last-long",
+    "expected_seconds": "1/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 40,
+        "seconds": 0.04
+      },
+      "moov/trak/tkhd": {
+        "duration": 40
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            40,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 512,
+        "seconds": 0.04
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 512,
+        "last": [
+          [
+            1,
+            512
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-head-two-long",
+    "expected_seconds": "2/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 80,
+        "seconds": 0.08
+      },
+      "moov/trak/tkhd": {
+        "duration": 80
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            80,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 1024,
+        "seconds": 0.08
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 1024,
+        "last": [
+          [
+            1,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "vfr-extra-disjoint-long",
+    "expected_seconds": "6/25",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 240,
+        "seconds": 0.24
+      },
+      "moov/trak/tkhd": {
+        "duration": 240
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            240,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 12800,
+        "duration": 3072,
+        "seconds": 0.24
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 3072,
+        "last": [
+          [
+            3,
+            1024
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "ntsc-80-single-frame-joins",
+    "expected_seconds": "1001/375",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 2670,
+        "seconds": 2.67
+      },
+      "moov/trak/tkhd": {
+        "duration": 2670
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            2670,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 30000,
+        "duration": 80080,
+        "seconds": 2.6693333333333333
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 80080,
+        "last": [
+          [
+            80,
+            1001
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "fine-vfr-both",
+    "expected_seconds": "107119/15000",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 7142,
+        "seconds": 7.142
+      },
+      "moov/trak/tkhd": {
+        "duration": 7142
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            7142,
+            6009
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 90000,
+        "duration": 642714,
+        "seconds": 7.141266666666667
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 642714,
+        "last": [
+          [
+            1,
+            3005
+          ],
+          [
+            1,
+            3001
+          ],
+          [
+            1,
+            3004
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "case": "fine-vfr-80-single-frame-joins",
+    "expected_seconds": "3004/1125",
+    "checks": {
+      "mdhd_exact": true,
+      "stts_decode_span_exact": true,
+      "mvhd_correct_rounding": true,
+      "tkhd_correct_rounding": true,
+      "elst_correct_rounding": true
+    },
+    "passed": true,
+    "boxes": {
+      "moov/mvhd": {
+        "timescale": 1000,
+        "duration": 2671,
+        "seconds": 2.671
+      },
+      "moov/trak/tkhd": {
+        "duration": 2671
+      },
+      "moov/trak/edts/elst": {
+        "entries": [
+          [
+            2671,
+            0
+          ]
+        ]
+      },
+      "moov/trak/mdia/mdhd": {
+        "timescale": 90000,
+        "duration": 240320,
+        "seconds": 2.6702222222222223
+      },
+      "moov/trak/mdia/minf/stbl/stts": {
+        "decode_duration": 240320,
+        "last": [
+          [
+            80,
+            3004
+          ]
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "id": "h264/offset/single_frame",
+  "codec": "h264",
+  "fixture": "offset",
+  "cut": "single_frame",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\offset\\single_frame",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-offset-single_frame-1793202681484572400-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.1474723000137601,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\offset\\single_frame\\output.mp4",
+  "output_sha256": "c3c0bf90b8da3c1c3fc50cfb03b91eb0068867ffef0f928ec6caa23187264c03",
+  "expected_frames": 1,
+  "decoded_frames": 1,
+  "samples": 1,
+  "issues": [],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 0,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.04,
+  "duration_seconds": 0.04,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 0,
+  "min_frame_psnr_db": 40.584857608529944,
+  "copy_efficiency_passed": true,
+  "correctness_passed": true,
+  "passed": true
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-ntsc-adjacent_inside-1793202659067429500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.4337666666666667,
+      "name": "0"
+    },
+    {
+      "start": 0.4337666666666667,
+      "end": 0.8008,
+      "name": "1"
+    }
+  ]
+}

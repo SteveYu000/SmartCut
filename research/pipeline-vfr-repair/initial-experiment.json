@@ -1,0 +1,43 @@
+{
+  "explicit_duration_concat": {
+    "packets": [
+      {
+        "pts": 0,
+        "dts": 0,
+        "duration": 1024
+      },
+      {
+        "pts": 1024,
+        "dts": 1024,
+        "duration": 512
+      }
+    ],
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "time_base": "1/12800",
+        "start_time": "0.000000",
+        "duration": "0.120000"
+      }
+    ]
+  },
+  "setts_single_frame": {
+    "packets": [
+      {
+        "pts": 0,
+        "dts": 0,
+        "duration": 1024
+      }
+    ],
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "time_base": "1/12800",
+        "start_time": "0.000000",
+        "duration": "0.080000"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/ozmartian/vidcutter/issues/comments/407000426",
+    "html_url": "https://github.com/ozmartian/vidcutter/issues/175#issuecomment-407000426",
+    "issue_url": "https://api.github.com/repos/ozmartian/vidcutter/issues/175",
+    "id": 407000426,
+    "node_id": "MDEyOklzc3VlQ29tbWVudDQwNzAwMDQyNg==",
+    "user": {
+      "login": "CL-Jeremy",
+      "id": 1714243,
+      "node_id": "MDQ6VXNlcjE3MTQyNDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1714243?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/CL-Jeremy",
+      "html_url": "https://github.com/CL-Jeremy",
+      "followers_url": "https://api.github.com/users/CL-Jeremy/followers",
+      "following_url": "https://api.github.com/users/CL-Jeremy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/CL-Jeremy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/CL-Jeremy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/CL-Jeremy/subscriptions",
+      "organizations_url": "https://api.github.com/users/CL-Jeremy/orgs",
+      "repos_url": "https://api.github.com/users/CL-Jeremy/repos",
+      "events_url": "https://api.github.com/users/CL-Jeremy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/CL-Jeremy/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2018-07-23T09:42:17Z",
+    "updated_at": "2018-07-23T09:42:17Z",
+    "body": "If this remains a problem to you , feel free to take a look of my new branch, by cloning it from my fork with\n`git clone -b new_smartcut --single-branch --depth 2 https://github.com/CL-Jeremy/vidcutter.git`.\nI suppose compiling wouldn't be a problem on Linux. You may still want to get the latest mpv library though.\nWhat I basically do in my fork is to demux the (presumably sole) video stream from the file and do the smart cutting job on it alone. Other streams are cut out, trimmed and later muxed in independently from the smartcut process. Also the order of the general arguments for cutting is altered such that it makes more sense to me. You may change them back if you encounter problems with those.",
+    "author_association": "NONE",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/ozmartian/vidcutter/issues/comments/407000426/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

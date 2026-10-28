@@ -1,0 +1,17 @@
+
+STDERR
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\__main__.py", line 3, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\cli.py", line 77, in main
+    info = probe(args.input)
+           ^^^^^^^^^^^^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\probe.py", line 88, in probe
+    raw = json.loads(_run([
+                     ^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\probe.py", line 17, in _run
+    raise ProbeError(f"{args[0]} failed: {proc.stderr.strip()[:800]}")
+smartcut.probe.ProbeError: ffprobe failed: test-output\upstream-20261027-192616\source-closed.mp4: No such file or directory

@@ -1,0 +1,102 @@
+{
+  "id": "h264/nvenc/adjacent_inside",
+  "codec": "h264",
+  "fixture": "nvenc",
+  "cut": "adjacent_inside",
+  "ranges": [
+    [
+      0,
+      13
+    ],
+    [
+      13,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\nvenc\\adjacent_inside",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-nvenc-adjacent_inside-1793202731260469600-cut-merged-1793202732399.mp4"
+    ]
+  },
+  "export_seconds": 0.7247121999971569,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\nvenc\\adjacent_inside\\output.mp4",
+  "output_sha256": "497a1cfe9f2f1a31f91d781fa9238aa4d4704e1ce19e5a894a256c98c7c86154",
+  "expected_frames": 24,
+  "decoded_frames": 30,
+  "samples": 30,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 15,
+  "normalized_vcl": 15,
+  "pixel_identical": 15,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      15,
+      15,
+      16
+    ],
+    [
+      16,
+      16,
+      13
+    ],
+    [
+      17,
+      17,
+      14
+    ],
+    [
+      18,
+      18,
+      15
+    ],
+    [
+      19,
+      19,
+      16
+    ],
+    [
+      20,
+      20,
+      17
+    ],
+    [
+      21,
+      21,
+      18
+    ],
+    [
+      22,
+      22,
+      19
+    ],
+    [
+      23,
+      23,
+      20
+    ]
+  ],
+  "baseline_copied_frames": 24,
+  "pts_mismatches": 7,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.04,
+  "expected_duration_seconds": 0.96,
+  "duration_seconds": 1.2,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 16,
+  "min_frame_psnr_db": 16.046363049742638,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

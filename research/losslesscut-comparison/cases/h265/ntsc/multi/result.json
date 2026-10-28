@@ -1,0 +1,122 @@
+{
+  "id": "h265/ntsc/multi",
+  "codec": "h265",
+  "fixture": "ntsc",
+  "cut": "multi",
+  "ranges": [
+    [
+      13,
+      81
+    ],
+    [
+      100,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\multi",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-ntsc-multi-1793202789161954900-cut-merged-1793202790810.mp4"
+    ]
+  },
+  "export_seconds": 1.3504615999991074,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\multi\\output.mp4",
+  "output_sha256": "dfc2e856d58465ab57f965c76eef5189a7093b462a52d806c32ffbe7d0dd1747",
+  "expected_frames": 195,
+  "decoded_frames": 197,
+  "samples": 203,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 107,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      24
+    ],
+    [
+      11,
+      24,
+      25
+    ],
+    [
+      12,
+      25,
+      26
+    ],
+    [
+      13,
+      26,
+      27
+    ],
+    [
+      14,
+      27,
+      28
+    ],
+    [
+      15,
+      28,
+      29
+    ],
+    [
+      16,
+      29,
+      30
+    ],
+    [
+      17,
+      30,
+      31
+    ],
+    [
+      18,
+      31,
+      32
+    ],
+    [
+      19,
+      32,
+      33
+    ],
+    [
+      20,
+      33,
+      34
+    ],
+    [
+      21,
+      34,
+      35
+    ]
+  ],
+  "baseline_copied_frames": 138,
+  "decode_log": "[hevc @ 0000000002d9eb40] Could not find ref with POC 20\r\n[hevc @ 0000000002d9eb40] Error constructing the frame RPS.\r\n[hevc @ 0000000003de8180] Could not find ref with POC 20\r\n[hevc @ 0000000003de8180] Error constructing the frame RPS.\r\n[hevc @ 0000000003e04080] Could not find ref with POC 22\r\n[hevc @ 0000000003e04080] Error constructing the frame RPS.\r\n[hevc @ 0000000003de8180] Could not find ref with POC 116\r\n[hevc @ 0000000003de8180] Error constructing the frame RPS.\r\n[hevc @ 0000000003e04080] Could not find ref with POC 116\r\n[hevc @ 0000000003e04080] Error constructing the frame RPS.\r\n[hevc @ 0000000003e16f00] Could not find ref with POC 118\r\n[hevc @ 0000000003e16f00] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002c2ea40] Could not find ref with POC 20\r\n[hevc @ 0000000002c2ea40] Error constructing the frame RPS.\r\n[hevc @ 0000000003c935c0] Could not find ref with POC 20\r\n[hevc @ 0000000003c935c0] Error constructing the frame RPS.\r\n[hevc @ 0000000003c9fc80] Could not find ref with POC 22\r\n[hevc @ 0000000003c9fc80] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 000000000010f500] [dec:hevc @ 00000000001193c0] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 000000000010f500] [dec:hevc @ 00000000001193c0] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 000000000010f500] [dec:hevc @ 00000000001193c0] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 000000000010f500] [dec:hevc @ 00000000001193c0] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 195,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.2002,
+  "expected_duration_seconds": 6.5065,
+  "duration_seconds": 6.573233,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 170,
+  "min_frame_psnr_db": 12.461037559444495,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

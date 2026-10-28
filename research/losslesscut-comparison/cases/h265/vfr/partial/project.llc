@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-vfr-partial-1793202772493134400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.68,
+      "end": 12.08,
+      "name": "0"
+    }
+  ]
+}

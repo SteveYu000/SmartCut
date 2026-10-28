@@ -1,0 +1,113 @@
+{
+  "id": "h265/closed/tail",
+  "codec": "h265",
+  "fixture": "closed",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\tail",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-closed-tail-1793202740675103400-00.00.08.520-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.4645056000154,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\tail\\output.mp4",
+  "output_sha256": "82e19d21cdaeb2d1ba7b5b48bc83d4088c98a1db2654de2f8f496f28a2c5ea21",
+  "expected_frames": 27,
+  "decoded_frames": 26,
+  "samples": 26,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      2,
+      215,
+      216
+    ],
+    [
+      3,
+      216,
+      217
+    ],
+    [
+      4,
+      217,
+      218
+    ],
+    [
+      5,
+      218,
+      219
+    ],
+    [
+      6,
+      219,
+      220
+    ],
+    [
+      7,
+      220,
+      221
+    ],
+    [
+      8,
+      221,
+      222
+    ],
+    [
+      9,
+      222,
+      223
+    ],
+    [
+      10,
+      223,
+      224
+    ],
+    [
+      11,
+      224,
+      225
+    ],
+    [
+      12,
+      225,
+      226
+    ],
+    [
+      13,
+      226,
+      227
+    ]
+  ],
+  "baseline_copied_frames": 24,
+  "pts_mismatches": 1,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 1.08,
+  "duration_seconds": 0.96,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 24,
+  "min_frame_psnr_db": 17.07543449578921,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

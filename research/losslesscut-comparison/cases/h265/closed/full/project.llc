@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-closed-full-1793202509855293300.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

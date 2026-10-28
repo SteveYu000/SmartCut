@@ -1,0 +1,45 @@
+{
+  "id": "h265/open/full",
+  "codec": "h265",
+  "fixture": "open",
+  "cut": "full",
+  "ranges": [
+    [
+      0,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\open\\full",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-open-full-1793202750338653600-00.00.00.000-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.17066630002227612,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\open\\full\\output.mp4",
+  "output_sha256": "8cb897c1b418ab589a944d5cacc30d22e5bc295c320b28247fa6d2d05fc757c5",
+  "expected_frames": 240,
+  "decoded_frames": 240,
+  "samples": 240,
+  "issues": [],
+  "exact_vcl": 240,
+  "normalized_vcl": 240,
+  "pixel_identical": 240,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 240,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 9.6,
+  "duration_seconds": 9.6,
+  "codec_tag": "hvc1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 240,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": true,
+  "correctness_passed": true,
+  "passed": true
+}

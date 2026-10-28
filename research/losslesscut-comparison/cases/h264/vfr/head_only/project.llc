@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-head_only-1793202664088728400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.68,
+      "end": 11.52,
+      "name": "0"
+    }
+  ]
+}

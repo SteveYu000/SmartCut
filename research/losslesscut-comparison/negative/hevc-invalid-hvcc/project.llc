@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "negative-hevc-invalid-hvcc-1793203894912638900.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-radl-partial-1793202859415735700.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

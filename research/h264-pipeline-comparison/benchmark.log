@@ -1,0 +1,37 @@
+{"arm": "h264", "repeat": 0, "wall_seconds": 7.43347449999419, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 0, "wall_seconds": 7.392391100001987, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 1, "wall_seconds": 3.6771666999848094, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 1, "wall_seconds": 2.0342599999858066, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 2, "wall_seconds": 2.2302926999982446, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 2, "wall_seconds": 4.239034799975343, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 3, "wall_seconds": 4.503532800008543, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 3, "wall_seconds": 2.406305300013628, "copied_frames": 480, "encoded_frames": 94}
+{"case": "20s_two_edges", "h264_median_seconds": 2.2302926999982446, "pipeline_median_seconds": 4.239034799975343, "pipeline_over_h264": 1.9006629936862902}
+{"arm": "h264", "repeat": 0, "wall_seconds": 0.6782353000016883, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "pipeline", "repeat": 0, "wall_seconds": 2.5144651000155136, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "pipeline", "repeat": 1, "wall_seconds": 2.6089679000142496, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "h264", "repeat": 1, "wall_seconds": 0.6755349000159185, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "h264", "repeat": 2, "wall_seconds": 0.6335797000210732, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "pipeline", "repeat": 2, "wall_seconds": 2.93590869999025, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "pipeline", "repeat": 3, "wall_seconds": 4.00923490000423, "copied_frames": 480, "encoded_frames": 0}
+{"arm": "h264", "repeat": 3, "wall_seconds": 0.7660715999954846, "copied_frames": 480, "encoded_frames": 0}
+{"case": "20s_copy_only", "h264_median_seconds": 0.6755349000159185, "pipeline_median_seconds": 2.93590869999025, "pipeline_over_h264": 4.346050366784999}
+{"arm": "h264", "repeat": 0, "wall_seconds": 2.1356634000258055, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 0, "wall_seconds": 7.4246254000172485, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 1, "wall_seconds": 6.769564099988202, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 1, "wall_seconds": 3.461158999998588, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 2, "wall_seconds": 5.838213299983181, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 2, "wall_seconds": 11.105471699993359, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "pipeline", "repeat": 3, "wall_seconds": 6.351765900006285, "copied_frames": 480, "encoded_frames": 94}
+{"arm": "h264", "repeat": 3, "wall_seconds": 3.3073282999976072, "copied_frames": 480, "encoded_frames": 94}
+{"case": "60s_late_selection", "h264_median_seconds": 3.461158999998588, "pipeline_median_seconds": 6.769564099988202, "pipeline_over_h264": 1.9558662575140187}
+{"arm": "h264", "repeat": 0, "wall_seconds": 7.528991400002269, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "pipeline", "repeat": 0, "wall_seconds": 9.735336599987932, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "pipeline", "repeat": 1, "wall_seconds": 9.999483599996893, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "h264", "repeat": 1, "wall_seconds": 8.370522699988214, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "h264", "repeat": 2, "wall_seconds": 8.02773500001058, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "pipeline", "repeat": 2, "wall_seconds": 9.262317899992922, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "pipeline", "repeat": 3, "wall_seconds": 8.301954999973532, "copied_frames": 0, "encoded_frames": 470}
+{"arm": "h264", "repeat": 3, "wall_seconds": 7.383171399997082, "copied_frames": 0, "encoded_frames": 470}
+{"case": "20s_five_ranges", "h264_median_seconds": 8.02773500001058, "pipeline_median_seconds": 9.262317899992922, "pipeline_over_h264": 1.1537896928561686}
+Complete: E:\DesktopPlus\Works\Code\SmartCut\outputs\h264-pipeline-comparison-20261028\comparison-benchmark.json

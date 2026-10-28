@@ -1,0 +1,7 @@
+2026-10-28T15:51:21.616Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.696 ms
+2026-10-28T15:51:21.720Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\offset\single_frame\h264-offset-single_frame-1793202681484572400.mp4 -hide_banner
+2026-10-28T15:51:21.772Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 63.217 ms
+2026-10-28T15:51:22.099Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 62.365 ms
+2026-10-28T15:51:22.102Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.167 ms
+2026-10-28T15:51:22.156Z info: ffmpeg -hide_banner -ss 0.920000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\offset\single_frame\h264-offset-single_frame-1793202681484572400.mp4 -ss 0 -t 0.040000 -map 0:0 -c:0 h264 -b:0 523864 -ignore_unknown -video_track_timescale 12800 -bf 2 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-offset-single_frame-1793202681484572400-00.00.00.920-00.00.00.960-0.mp4
+2026-10-28T15:51:22.221Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 183.962 ms

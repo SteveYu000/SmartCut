@@ -1,0 +1,24 @@
+{
+  "id": "h265/vfr/tail",
+  "codec": "h265",
+  "fixture": "vfr",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\vfr\\tail",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.6323280000069644,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 27
+}

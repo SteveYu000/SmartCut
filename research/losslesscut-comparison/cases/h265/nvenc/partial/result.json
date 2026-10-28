@@ -1,0 +1,54 @@
+{
+  "id": "h265/nvenc/partial",
+  "codec": "h265",
+  "fixture": "nvenc",
+  "cut": "partial",
+  "ranges": [
+    [
+      13,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\partial",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-nvenc-partial-1793202874675531700-00.00.00.520-00.00.09.080-0.mp4"
+    ]
+  },
+  "export_seconds": 0.5818139999755658,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\partial\\output.mp4",
+  "output_sha256": "d56f4f6e0f51f2887926dd9cc72169eb71473013a0de142aebfd79a58770de01",
+  "expected_frames": 214,
+  "decoded_frames": 10,
+  "samples": 216,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 192,
+  "decode_log": "RPS.\r\n[hevc @ 0000000002d04700] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003b310c0] Invalid number of merging MVP candidates: 232.\r\n[hevc @ 0000000002d17bc0] Could not find ref with POC 20\r\n[hevc @ 0000000002d17bc0] Error constructing the frame RPS.\r\n[hevc @ 0000000002d1df80] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d1e340] chroma_log2_weight_denom -109 is invalid\r\n[hevc @ 0000000002d1eb00] Could not find ref with POC -3\r\n[hevc @ 0000000002d1eb00] Could not find ref with POC -4\r\n[hevc @ 0000000002d1eb00] Could not find ref with POC -5\r\n[hevc @ 0000000002d1eb00] Error constructing the frame RPS.\r\n[hevc @ 0000000003b85480] Could not find ref with POC 0\r\n[hevc @ 0000000003b85480] Error constructing the frame RPS.\r\n[hevc @ 0000000003ba9580] Could not find ref with POC 0\r\n[hevc @ 0000000003ba9580] Could not find ref with POC -1\r\n[hevc @ 0000000003ba9580] Could not find ref with POC -2\r\n[hevc @ 0000000003ba9580] Error constructing the frame RPS.\r\n[hevc @ 0000000003ba8e40] Duplicate POC in a sequence: 8.\r\n[hevc @ 0000000002c6c1c0] Could not find ref with POC 1\r\n[hevc @ 0000000002c6c1c0] Could not find ref with POC 0\r\n[hevc @ 0000000002c6c1c0] Could not find ref with POC -1\r\n[hevc @ 0000000002c6c1c0] Could not find ref with POC -2\r\n[hevc @ 0000000002c6c1c0] Could not find ref with POC -7\r\n[hevc @ 0000000002c6c1c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c7a940] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002c7b040] Could not find ref with POC 4\r\n[hevc @ 0000000002c7b040] Could not find ref with POC 3\r\n[hevc @ 0000000002c7b040] Could not find ref with POC 2\r\n[hevc @ 0000000002c7b040] Could not find ref with POC 1\r\n[hevc @ 0000000002c7b040] Could not find ref with POC -3\r\n[hevc @ 0000000002c7b040] Error constructing the frame RPS.\r\n[hevc @ 0000000002ca4d80] Invalid number of merging MVP candidates: 252.\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC 5\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC 4\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC 3\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC 2\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC -2\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC -3\r\n[hevc @ 0000000002cc2e80] Could not find ref with POC -4\r\n[hevc @ 0000000002cc2e80] Error constructing the frame RPS.\r\n[hevc @ 0000000002cdb4c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cf0600] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d04700] Invalid number of merging MVP candidates: 255.\r\n",
+  "strict_decode_log": "e1db40] Error constructing the frame RPS.\r\n[hevc @ 0000000003e1d7c0] chroma_log2_weight_denom -113 is invalid\r\n[hevc @ 0000000002cea100] Could not find ref with POC 1\r\n[hevc @ 0000000002cea100] Could not find ref with POC 0\r\n[hevc @ 0000000002cea100] Could not find ref with POC -1\r\n[hevc @ 0000000002cea100] Could not find ref with POC -2\r\n[hevc @ 0000000002cea100] Could not find ref with POC -7\r\n[hevc @ 0000000002cea100] Error constructing the frame RPS.\r\n[hevc @ 0000000002cc0500] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d02740] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d17000] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d349c0] Could not find ref with POC 5\r\n[hevc @ 0000000002d349c0] Could not find ref with POC 4\r\n[hevc @ 0000000002d349c0] Could not find ref with POC 3\r\n[hevc @ 0000000002d349c0] Could not find ref with POC 2\r\n[hevc @ 0000000002d349c0] Could not find ref with POC -2\r\n[hevc @ 0000000002d349c0] Could not find ref with POC -3\r\n[hevc @ 0000000002d349c0] Could not find ref with POC -4\r\n[hevc @ 0000000002d349c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002d4afc0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d66880] Could not find ref with POC 7\r\n[hevc @ 0000000002d66880] Could not find ref with POC 6\r\n[hevc @ 0000000002d66880] Could not find ref with POC 5\r\n[hevc @ 0000000002d66880] Could not find ref with POC 1\r\n[hevc @ 0000000002d66880] Error constructing the frame RPS.\r\n[hevc @ 0000000002d664c0] chroma_log2_weight_denom -12 is invalid\r\n[hevc @ 0000000002d67380] Could not find ref with POC 7\r\n[hevc @ 0000000002d67380] Could not find ref with POC 6\r\n[hevc @ 0000000002d67380] Could not find ref with POC 2\r\n[hevc @ 0000000002d67380] Could not find ref with POC 1\r\n[hevc @ 0000000002d67380] Could not find ref with POC 0\r\n[hevc @ 0000000002d67380] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 0000000000665c80] [dec:hevc @ 0000000000661840] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000665c80] [dec:hevc @ 0000000000661840] Error processing packet in decoder: Invalid data found when processing input\r\n[hevc @ 0000000002d66c40] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 0000000000665c80] [dec:hevc @ 0000000000661840] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000665c80] [dec:hevc @ 0000000000661840] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 2,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 8.56,
+  "duration_seconds": 8.6,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 203,
+  "min_frame_psnr_db": 40.66109644317215,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

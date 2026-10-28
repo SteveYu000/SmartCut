@@ -1,0 +1,7 @@
+2026-10-28T15:50:19.543Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.789 ms
+2026-10-28T15:50:19.678Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\high10\aligned\h264-high10-aligned-1793202619452824400.mp4 -hide_banner
+2026-10-28T15:50:19.732Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 105.986 ms
+2026-10-28T15:50:20.049Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 66.137 ms
+2026-10-28T15:50:20.052Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.424 ms
+2026-10-28T15:50:20.104Z info: ffmpeg -hide_banner -ss 0.960000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\high10\aligned\h264-high10-aligned-1793202619452824400.mp4 -t 7.680000 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -video_track_timescale 12800 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-high10-aligned-1793202619452824400-00.00.00.960-00.00.08.640-0.mp4
+2026-10-28T15:50:20.166Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 164.796 ms

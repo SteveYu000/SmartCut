@@ -1,0 +1,941 @@
+{
+  "repository_commit": "c1a5d14667b3d82e47a970c93c5efff1e25f9ae1",
+  "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers",
+  "cpp_exe_sha256": "1b0a03b3fde834d9b8462fd07d55772f1ae2d29a0fba522bf797a1834222aee2",
+  "source_sha256": "65df143e3117cab156e162513914964a0c2a381c0b5dcea0c6a4bc6b737d9666",
+  "method": "One warmup per implementation and case, then 3 interleaved end-to-end runs; warm filesystem cache; no audio; no verify in timer; original encoder/thread settings retained.",
+  "cases": [
+    {
+      "case": "20s_two_edges",
+      "source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+      "keeps": [
+        [
+          13,
+          587
+        ]
+      ],
+      "runs": [
+        {
+          "arm": "h264",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 7.43347449999419,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-0.json",
+            "--keep",
+            "13:587"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 7.392391100001987,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-0.json",
+            "--keep",
+            "13:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 3.6771666999848094,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-1.json",
+            "--keep",
+            "13:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 2.0342599999858066,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-1.json",
+            "--keep",
+            "13:587"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 2.2302926999982446,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-2.json",
+            "--keep",
+            "13:587"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 4.239034799975343,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-2.json",
+            "--keep",
+            "13:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 4.503532800008543,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-pipeline-3.json",
+            "--keep",
+            "13:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 2.406305300013628,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_two_edges-h264-3.json",
+            "--keep",
+            "13:587"
+          ]
+        }
+      ],
+      "validation": {
+        "h264": {
+          "passed": true,
+          "frames": 574,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        },
+        "pipeline": {
+          "passed": true,
+          "frames": 574,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        }
+      },
+      "h264_median_seconds": 2.2302926999982446,
+      "pipeline_median_seconds": 4.239034799975343,
+      "pipeline_over_h264": 1.9006629936862902
+    },
+    {
+      "case": "20s_copy_only",
+      "source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+      "keeps": [
+        [
+          60,
+          540
+        ]
+      ],
+      "runs": [
+        {
+          "arm": "h264",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 0.6782353000016883,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-0.json",
+            "--keep",
+            "60:540"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 2.5144651000155136,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-0.json",
+            "--keep",
+            "60:540",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 2.6089679000142496,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-1.json",
+            "--keep",
+            "60:540",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 0.6755349000159185,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-1.json",
+            "--keep",
+            "60:540"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 0.6335797000210732,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-2.json",
+            "--keep",
+            "60:540"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 2.93590869999025,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-2.json",
+            "--keep",
+            "60:540",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 4.00923490000423,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-3.json",
+            "--keep",
+            "60:540",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 0.7660715999954846,
+          "copied_frames": 480,
+          "encoded_frames": 0,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-3.json",
+            "--keep",
+            "60:540"
+          ]
+        }
+      ],
+      "validation": {
+        "h264": {
+          "passed": true,
+          "frames": 480,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        },
+        "pipeline": {
+          "passed": true,
+          "frames": 480,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        }
+      },
+      "h264_median_seconds": 0.6755349000159185,
+      "pipeline_median_seconds": 2.93590869999025,
+      "pipeline_over_h264": 4.346050366784999
+    },
+    {
+      "case": "60s_late_selection",
+      "source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+      "keeps": [
+        [
+          1213,
+          1787
+        ]
+      ],
+      "runs": [
+        {
+          "arm": "h264",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 2.1356634000258055,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-0.json",
+            "--keep",
+            "1213:1787"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 7.4246254000172485,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-0.json",
+            "--keep",
+            "1213:1787",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 6.769564099988202,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-1.json",
+            "--keep",
+            "1213:1787",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 3.461158999998588,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-1.json",
+            "--keep",
+            "1213:1787"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 5.838213299983181,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-2.json",
+            "--keep",
+            "1213:1787"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 11.105471699993359,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-2.json",
+            "--keep",
+            "1213:1787",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 6.351765900006285,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-pipeline-3.json",
+            "--keep",
+            "1213:1787",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 3.3073282999976072,
+          "copied_frames": 480,
+          "encoded_frames": 94,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\source-60s.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\60s_late_selection-h264-3.json",
+            "--keep",
+            "1213:1787"
+          ]
+        }
+      ],
+      "validation": {
+        "h264": {
+          "passed": true,
+          "frames": 574,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        },
+        "pipeline": {
+          "passed": true,
+          "frames": 574,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        }
+      },
+      "h264_median_seconds": 3.461158999998588,
+      "pipeline_median_seconds": 6.769564099988202,
+      "pipeline_over_h264": 1.9558662575140187
+    },
+    {
+      "case": "20s_five_ranges",
+      "source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+      "keeps": [
+        [
+          13,
+          107
+        ],
+        [
+          133,
+          227
+        ],
+        [
+          253,
+          347
+        ],
+        [
+          373,
+          467
+        ],
+        [
+          493,
+          587
+        ]
+      ],
+      "runs": [
+        {
+          "arm": "h264",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 7.528991400002269,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-0.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 0,
+          "warmup": true,
+          "wall_seconds": 9.735336599987932,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-0.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-0.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-0.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 9.999483599996893,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-1.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 1,
+          "warmup": false,
+          "wall_seconds": 8.370522699988214,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-1.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-1.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-1.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 8.02773500001058,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-2.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 2,
+          "warmup": false,
+          "wall_seconds": 9.262317899992922,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-2.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-2.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-2.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "pipeline",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 8.301954999973532,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\artifacts\\bin\\SmartCut.Cli\\release\\SmartCut.Cli.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-pipeline-3.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587",
+            "--no-audio",
+            "--ffmpeg-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin",
+            "--work-dir",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307"
+          ]
+        },
+        {
+          "arm": "h264",
+          "repeat": 3,
+          "warmup": false,
+          "wall_seconds": 7.383171399997082,
+          "copied_frames": 0,
+          "encoded_frames": 470,
+          "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-3.mp4",
+          "command": [
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-smart-render\\build\\Release\\smart_render.exe",
+            "-i",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+            "-o",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-3.mp4",
+            "--report",
+            "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_five_ranges-h264-3.json",
+            "--keep",
+            "13:107",
+            "--keep",
+            "133:227",
+            "--keep",
+            "253:347",
+            "--keep",
+            "373:467",
+            "--keep",
+            "493:587"
+          ]
+        }
+      ],
+      "validation": {
+        "h264": {
+          "passed": true,
+          "frames": 470,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        },
+        "pipeline": {
+          "passed": true,
+          "frames": 470,
+          "pts": "exact",
+          "dts": "monotonic_and_le_pts",
+          "duration": "within_1us",
+          "strict_decode": "no_errors"
+        }
+      },
+      "h264_median_seconds": 8.02773500001058,
+      "pipeline_median_seconds": 9.262317899992922,
+      "pipeline_over_h264": 1.1537896928561686
+    }
+  ]
+}

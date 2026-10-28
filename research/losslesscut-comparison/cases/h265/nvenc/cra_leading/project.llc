@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-nvenc-cra_leading-1793202876081272300.mp4",
+  "cutSegments": [
+    {
+      "start": 0.88,
+      "end": 2.96,
+      "name": "0"
+    }
+  ]
+}

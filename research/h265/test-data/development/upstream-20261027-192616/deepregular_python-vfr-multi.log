@@ -1,0 +1,34 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\publish-SmartCut\h265\test-output\upstream-20261027-192616\source-vfr.mp4
+        hevc Main@L3.0 192x112 18.809fps yuv420p progressive sar=1 323kbps  dur=12.760s
+        10 access points, mean GOP 1.280s, 9 open (leading pictures, referenced -- cannot start a copy there)
+
+plan  : 2 range(s), 10.367s output
+  keep 0.691 -> 4.306
+    reencode     0.691 ->    4.306  ( 3.615s)
+  keep 5.317 -> 12.069
+    reencode     5.317 ->   12.069  ( 6.752s)
+        copied 0.000s (0.0%), re-encoded 10.367s (100.0%)
+
+encoder: libx265
+render:
+  [0] reencode     0.691 ->    4.306  ( 3.615s)
+
+STDERR
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\__main__.py", line 3, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\cli.py", line 141, in main
+    render(info, plans, args.output, opts)
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\renderer.py", line 319, in render
+    _render_video_segment(info, seg, piece, opts)
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\renderer.py", line 201, in _render_video_segment
+    _run_ffmpeg(args, opts)
+  File "E:\DesktopPlus\Works\Code\SmartCut\sources\DeepRegular-SmartCut\smartcut\renderer.py", line 169, in _run_ffmpeg
+    raise RenderError("ffmpeg failed:\n" + proc.stderr.strip()[-2000:])
+smartcut.renderer.RenderError: ffmpeg failed:
+[out#0/hevc @ 0000000002f78200] Error opening output C:\Users\Steve\AppData\Local\Packages\sandbox.{2297461c-fbea-40b3-aa91-f4309dbc8d23}\AC\Temp\smartcut-n7tijokv\seg0000_reencode.hevc: Permission denied
+Error opening output file C:\Users\Steve\AppData\Local\Packages\sandbox.{2297461c-fbea-40b3-aa91-f4309dbc8d23}\AC\Temp\smartcut-n7tijokv\seg0000_reencode.hevc.
+Error opening output files: Permission denied

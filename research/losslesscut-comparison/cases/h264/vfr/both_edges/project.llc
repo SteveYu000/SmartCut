@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-both_edges-1793202662796893100.mp4",
+  "cutSegments": [
+    {
+      "start": 0.68,
+      "end": 12.08,
+      "name": "0"
+    }
+  ]
+}

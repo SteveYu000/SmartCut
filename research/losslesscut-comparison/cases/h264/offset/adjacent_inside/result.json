@@ -1,0 +1,49 @@
+{
+  "id": "h264/offset/adjacent_inside",
+  "codec": "h264",
+  "fixture": "offset",
+  "cut": "adjacent_inside",
+  "ranges": [
+    [
+      0,
+      13
+    ],
+    [
+      13,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\offset\\adjacent_inside",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-offset-adjacent_inside-1793202687378726600-cut-merged-1793202688555.mp4"
+    ]
+  },
+  "export_seconds": 0.521282900008373,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\offset\\adjacent_inside\\output.mp4",
+  "output_sha256": "a48b8f225ecfa6cdf98ccdaa18bca9bfb9b890f0feae15ba5b71c4bf1191f363",
+  "expected_frames": 24,
+  "decoded_frames": 24,
+  "samples": 24,
+  "issues": [],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 24,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.96,
+  "duration_seconds": 0.96,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 0,
+  "min_frame_psnr_db": 41.02381467918253,
+  "copy_efficiency_passed": false,
+  "correctness_passed": true,
+  "passed": false
+}

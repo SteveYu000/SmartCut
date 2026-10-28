@@ -1,0 +1,45 @@
+{
+  "id": "h265/ntsc/full",
+  "codec": "h265",
+  "fixture": "ntsc",
+  "cut": "full",
+  "ranges": [
+    [
+      0,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\full",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-ntsc-full-1793202791353400500-00.00.00.000-00.00.08.008-0.mp4"
+    ]
+  },
+  "export_seconds": 0.13546200000564568,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\full\\output.mp4",
+  "output_sha256": "2ef624effa3963169082c781273c4fa476ba3962ce0f84e8af050d576524051c",
+  "expected_frames": 240,
+  "decoded_frames": 240,
+  "samples": 240,
+  "issues": [],
+  "exact_vcl": 240,
+  "normalized_vcl": 240,
+  "pixel_identical": 240,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 240,
+  "pts_mismatches": 0,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": true,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 8.008,
+  "duration_seconds": 8.008,
+  "codec_tag": "hvc1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 240,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": true,
+  "correctness_passed": true,
+  "passed": true
+}

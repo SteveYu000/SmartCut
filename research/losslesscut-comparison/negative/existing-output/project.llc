@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "negative-existing-1793203903553386900.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

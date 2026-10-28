@@ -4,19 +4,19 @@
 根据对现有的开源项目的搜索和调查，我发现这些项目各有不足，且对视频格式的支持有限。因此，我提出本项目，一方面对现有项目的实现方法进行测试，另一方面根据测试结果判断本项目应该采用什么办法比较好，最终做出一个支持格式全面，鲁棒性良好的程序。
 
 ## 调查结果
-[Smart_Rendering源码研究报告](Smart_Rendering源码研究报告.md)
+[Smart_Rendering源码研究报告](research/source-review/REPORT.md)
 
 ## 寻找共同开发者
 我深知，本项目会是一个很大的工程，需要经过繁复的测试和验证，因此，我期待各位有意愿的开发者的参与。
 
 **贡献要求**：
 1. 项目采用GPL-3.0许可证，您的提交应该符合许可证要求。
-2. 项目包含 C++ 与 CMake 实现的 `h264/`、`h265/`，直接链接 FFmpeg 库；`pipeline/` 用 C# 与 dotnet CLI，调用官方 ffmpeg/ffprobe 进程。
+2. 项目包含 C++ 与 CMake 实现的 `research/h264/`、`research/h265/`，直接链接 FFmpeg 库；`research/pipeline/` 用 C# 与 dotnet CLI，调用官方 ffmpeg/ffprobe 进程。
 3. 您应该首先对现有项目的实现方法进行对比测试之后决定采用哪一种方法作为本项目的实现，对于自己原创的方案，应该与现有方案进行对比，说明原创方案的必要性。总的来说，必须以测试结果作为依据，不可盲目采用某一种方案。
 4. 本项目遵循“不重复造轮子”的原则，尽量复用ffmpeg已有的组件，自己只写最核心的部分。
 
 ## 项目阶段
-- [x] mp4/avc编码的可行方案已经通过测试[测试报告](h264/docs/IMPLEMENTATION_REPORT.md)。
-- [x] mp4/avc 的第二套实现：C# + 官方 FFmpeg 进程管线，含音频轨，165 个端到端与逻辑用例通过[实现说明](pipeline/README.md)。
-- [x] mp4/hevc 编码的可行方案已完成限定输入范围的测试：[设计与测试结论](h265/docs/IMPLEMENTATION_REPORT.md)，[源码及复现步骤](h265/README.md)。
+- [x] mp4/avc编码的可行方案已经通过测试[测试报告](research/h264/docs/IMPLEMENTATION_REPORT.md)。
+- [x] mp4/avc 的第二套实现：C# + 官方 FFmpeg 进程管线，含音频轨，165 个端到端与逻辑用例通过[实现说明](research/pipeline/README.md)。
+- [x] mp4/hevc 编码的可行方案已完成限定输入范围的测试：[设计与测试结论](research/h265/docs/IMPLEMENTATION_REPORT.md)，[源码及复现步骤](research/h265/README.md)。
 - [x] 决定音频部分如果不是关键帧分割，采用全量重编码。原因是：1.音频编码速度较快。2.音频重编码对音质损失不明显，要求高的可以选择无损格式。

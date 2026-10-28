@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/mifi/lossless-cut/issues/comments/2273742322",
+    "html_url": "https://github.com/mifi/lossless-cut/issues/2050#issuecomment-2273742322",
+    "issue_url": "https://api.github.com/repos/mifi/lossless-cut/issues/2050",
+    "id": 2273742322,
+    "node_id": "IC_kwDOBE_gac6Hho3y",
+    "user": {
+      "login": "mifi",
+      "id": 402547,
+      "node_id": "MDQ6VXNlcjQwMjU0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/402547?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mifi",
+      "html_url": "https://github.com/mifi",
+      "followers_url": "https://api.github.com/users/mifi/followers",
+      "following_url": "https://api.github.com/users/mifi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mifi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mifi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mifi/subscriptions",
+      "organizations_url": "https://api.github.com/users/mifi/orgs",
+      "repos_url": "https://api.github.com/users/mifi/repos",
+      "events_url": "https://api.github.com/users/mifi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mifi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2024-08-07T15:27:27Z",
+    "updated_at": "2024-08-07T15:27:27Z",
+    "body": "Thanks for your detailed report. since this is a problem with smart cut (which is experimental) I will close this issue. but it's a good data point for improving smart cut, so i've referenced it from #126",
+    "author_association": "OWNER",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/mifi/lossless-cut/issues/comments/2273742322/reactions",
+      "total_count": 1,
+      "+1": 1,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

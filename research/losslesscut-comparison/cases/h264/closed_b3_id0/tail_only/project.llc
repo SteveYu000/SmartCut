@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-closed_b3_id0-tail_only-1793202559461799800.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

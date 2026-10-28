@@ -1,0 +1,188 @@
+{
+  "before": {
+    "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\test-results-local\\pipeline.trx",
+    "counts": {
+      "Passed": 148,
+      "Failed": 17
+    },
+    "groups": {
+      "video": {
+        "Passed": 125,
+        "Failed": 5
+      },
+      "logic": {
+        "Passed": 8
+      },
+      "audio": {
+        "Passed": 12,
+        "Failed": 12
+      },
+      "negative": {
+        "Passed": 3
+      }
+    },
+    "failures": [
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 79 impulses, expected 80; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 15 impulses, expected 16; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"tail_only\")",
+        "outcome": "Failed",
+        "message": "11 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"multiple\")",
+        "outcome": "Failed",
+        "message": "127 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 11 impulses, expected 12; audio stream 2: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 50 impulses, expected 51; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"both_edges\")",
+        "outcome": "Failed",
+        "message": "203 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"tail_only\")",
+        "outcome": "Failed",
+        "message": "11 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 59 impulses, expected 60; audio stream 2: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"multiple\")",
+        "outcome": "Failed",
+        "message": "127 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"head_only\")",
+        "outcome": "Failed",
+        "message": "192 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"head_only\")",
+        "outcome": "Failed",
+        "message": "192 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"both_edges\")",
+        "outcome": "Failed",
+        "message": "203 presentation times differ from the plan"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 10 impulses, expected 11; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"cross_idr\")",
+        "outcome": "Failed",
+        "message": "1 presentation times differ from the plan"
+      }
+    ]
+  },
+  "after": {
+    "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\pipeline-vfr-repair\\test-results\\pipeline-vfr-repaired.trx",
+    "counts": {
+      "Passed": 157,
+      "Failed": 8
+    },
+    "groups": {
+      "logic": {
+        "Passed": 8
+      },
+      "video": {
+        "Passed": 130
+      },
+      "negative": {
+        "Passed": 3
+      },
+      "audio": {
+        "Passed": 16,
+        "Failed": 8
+      }
+    },
+    "failures": [
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 50 impulses, expected 51; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 59 impulses, expected 60; audio stream 2: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 11 impulses, expected 12; audio stream 2: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 10 impulses, expected 11; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"adjacent\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 15 impulses, expected 16; audio stream 1: impulse count differs, position check inconclusive"
+      },
+      {
+        "name": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"full\")",
+        "outcome": "Failed",
+        "message": "audio stream 1: 79 impulses, expected 80; audio stream 1: impulse count differs, position check inconclusive"
+      }
+    ]
+  },
+  "fixed": [
+    "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"both_edges\")",
+    "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"head_only\")",
+    "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"multiple\")",
+    "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"tail_only\")",
+    "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"both_edges\")",
+    "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"cross_idr\")",
+    "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"head_only\")",
+    "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"multiple\")",
+    "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"tail_only\")"
+  ],
+  "new_failures": []
+}

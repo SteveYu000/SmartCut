@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-cross_idr-1793202668059934900.mp4",
+  "cutSegments": [
+    {
+      "start": 1.2,
+      "end": 1.32,
+      "name": "0"
+    }
+  ]
+}

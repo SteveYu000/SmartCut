@@ -1,0 +1,120 @@
+{
+  "id": "h264/vfr/multiple",
+  "codec": "h264",
+  "fixture": "vfr",
+  "cut": "multiple",
+  "ranges": [
+    [
+      1,
+      29
+    ],
+    [
+      47,
+      121
+    ],
+    [
+      191,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\vfr\\multiple",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-vfr-multiple-1793202669231353500-cut-merged-1793202670883.mp4"
+    ]
+  },
+  "export_seconds": 1.397183799999766,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\vfr\\multiple\\output.mp4",
+  "output_sha256": "f16192928cb54b59c3439760e95aa08dcbc12f7fc13a7f3567a5abfe3261ffb9",
+  "expected_frames": 151,
+  "decoded_frames": 155,
+  "samples": 155,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 5,
+  "normalized_vcl": 5,
+  "pixel_identical": 5,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      28,
+      47,
+      30
+    ],
+    [
+      29,
+      48,
+      32
+    ],
+    [
+      30,
+      49,
+      47
+    ],
+    [
+      31,
+      50,
+      48
+    ],
+    [
+      32,
+      51,
+      49
+    ],
+    [
+      33,
+      52,
+      50
+    ],
+    [
+      34,
+      53,
+      51
+    ],
+    [
+      35,
+      54,
+      52
+    ],
+    [
+      36,
+      55,
+      53
+    ],
+    [
+      37,
+      56,
+      54
+    ],
+    [
+      38,
+      57,
+      55
+    ],
+    [
+      39,
+      58,
+      56
+    ]
+  ],
+  "baseline_copied_frames": 120,
+  "pts_mismatches": 130,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.24,
+  "expected_duration_seconds": 8.04,
+  "duration_seconds": 8.04,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 126,
+  "min_frame_psnr_db": 11.891266706823275,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

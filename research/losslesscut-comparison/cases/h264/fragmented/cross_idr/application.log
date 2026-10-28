@@ -1,0 +1,7 @@
+2026-10-28T15:51:36.588Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.700 ms
+2026-10-28T15:51:36.693Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\cross_idr\h264-fragmented-cross_idr-1793202696480368500.mp4 -hide_banner
+2026-10-28T15:51:36.745Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 64.258 ms
+2026-10-28T15:51:37.048Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 40.125 ms
+2026-10-28T15:51:37.049Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 2.013 ms
+2026-10-28T15:51:37.106Z info: ffmpeg -hide_banner -ss 0.920000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\cross_idr\h264-fragmented-cross_idr-1793202696480368500.mp4 -ss 0 -t 0.080000 -map 0:0 -c:0 h264 -b:0 523864 -ignore_unknown -video_track_timescale 12800 -bf 2 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-fragmented-cross_idr-1793202696480368500-00.00.00.920-00.00.01.000-0.mp4
+2026-10-28T15:51:37.170Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 161.982 ms

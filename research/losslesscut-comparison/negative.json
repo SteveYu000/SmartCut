@@ -1,0 +1,55 @@
+[
+  {
+    "name": "avc-invalid-nal",
+    "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\bad-length.mp4",
+    "input_sha256": "00fc5510eb87999f8f7e5495e118b6eae76a089f00ee2a89498007389d0a242b",
+    "export_event": {
+      "eventName": "export-complete",
+      "paths": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\negative-avc-invalid-nal-1793203893083978300-00.00.00.000-00.00.09.600-0.mp4"
+      ]
+    },
+    "export_seconds": 0.10867250000592321,
+    "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\negative\\avc-invalid-nal\\output.mp4",
+    "output_sha256": "065426236c9aab457a2278352d49bab37264e31c55bc35354bcb86dc238a3287",
+    "passed": false,
+    "observation": "application_returned_output_for_malformed_input",
+    "output_bytes": 476995
+  },
+  {
+    "name": "hevc-invalid-nal",
+    "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\experiments\\negative-invalid-nal-length.mp4",
+    "input_sha256": "4658ce91a7d77c25ba2f93bdc1e1850632fe46f83f4db0f485ed0bcf2e043b76",
+    "export_event": {
+      "eventName": "export-complete",
+      "paths": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\negative-hevc-invalid-nal-1793203894002847700-00.00.00.000-00.00.09.600-0.mp4"
+      ]
+    },
+    "export_seconds": 0.15867349997279234,
+    "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\negative\\hevc-invalid-nal\\output.mp4",
+    "output_sha256": "88958cfc83a7eac526ccb1b9e140a9a28b67587d29d2c1a48fb185289f2b16a7",
+    "passed": false,
+    "observation": "application_returned_output_for_malformed_input",
+    "output_bytes": 522966
+  },
+  {
+    "name": "hevc-invalid-hvcc",
+    "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\experiments\\negative-invalid-hvcc-array.mp4",
+    "input_sha256": "7b7984a2c75672116c84be38d366167cdbbd66006b7c1a631b77b49af17ad96f",
+    "passed": null,
+    "observation": "no_completed_export_observed",
+    "error": "timed out"
+  },
+  {
+    "name": "existing-output",
+    "passed": true,
+    "export_event": {
+      "eventName": "export-complete",
+      "paths": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\negative-existing-1793203903553386900-00.00.00.000-00.00.09.600-0.mp4"
+      ]
+    },
+    "sentinel_unchanged": true
+  }
+]

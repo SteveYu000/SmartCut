@@ -1,0 +1,114 @@
+{
+  "id": "h265/radl/partial",
+  "codec": "h265",
+  "fixture": "radl",
+  "cut": "partial",
+  "ranges": [
+    [
+      13,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\partial",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-radl-partial-1793202859415735700-00.00.00.520-00.00.09.080-0.mp4"
+    ]
+  },
+  "export_seconds": 0.6740151999983937,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\partial\\output.mp4",
+  "output_sha256": "97ef44970bff2a3ffe23b06ec4e998f35df5975050b7d9c3d4201c1e7d8817c8",
+  "expected_frames": 214,
+  "decoded_frames": 217,
+  "samples": 217,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      22
+    ],
+    [
+      11,
+      24,
+      23
+    ],
+    [
+      12,
+      25,
+      24
+    ],
+    [
+      13,
+      26,
+      25
+    ],
+    [
+      14,
+      27,
+      26
+    ],
+    [
+      15,
+      28,
+      27
+    ],
+    [
+      16,
+      29,
+      28
+    ],
+    [
+      17,
+      30,
+      29
+    ],
+    [
+      18,
+      31,
+      30
+    ],
+    [
+      19,
+      32,
+      31
+    ],
+    [
+      20,
+      33,
+      32
+    ],
+    [
+      21,
+      34,
+      33
+    ]
+  ],
+  "baseline_copied_frames": 192,
+  "pts_mismatches": 208,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.08,
+  "expected_duration_seconds": 8.56,
+  "duration_seconds": 8.6,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 205,
+  "min_frame_psnr_db": 15.418800559421772,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,58 @@
+{
+  "id": "h265/nvenc/adjacent",
+  "codec": "h265",
+  "fixture": "nvenc",
+  "cut": "adjacent",
+  "ranges": [
+    [
+      0,
+      21
+    ],
+    [
+      21,
+      69
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\adjacent",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-nvenc-adjacent-1793202886946164200-cut-merged-1793202888267.mp4"
+    ]
+  },
+  "export_seconds": 0.7981473999971058,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\adjacent\\output.mp4",
+  "output_sha256": "c530000966be493bbbc9994424b98d086d95725c0933a0aeb02e63224ee730fd",
+  "expected_frames": 69,
+  "decoded_frames": 72,
+  "samples": 74,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 24,
+  "normalized_vcl": 24,
+  "pixel_identical": 69,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 48,
+  "decode_log": "[hevc @ 0000000002d951c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d94300] Could not find ref with POC 2\r\n[hevc @ 0000000002d94300] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002d6c880] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dc00c0] Could not find ref with POC 2\r\n[hevc @ 0000000003dc00c0] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 0000000000807e40] [dec:hevc @ 000000000071f500] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000807e40] [dec:hevc @ 000000000071f500] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000807e40] [dec:hevc @ 000000000071f500] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000807e40] [dec:hevc @ 000000000071f500] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 5,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 2.76,
+  "duration_seconds": 2.96,
+  "codec_tag": "hvc1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 69,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

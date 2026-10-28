@@ -1,0 +1,50 @@
+{
+  "id": "h264/fullrange_sar/single_frame",
+  "codec": "h264",
+  "fixture": "fullrange_sar",
+  "cut": "single_frame",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fullrange_sar\\single_frame",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-fullrange_sar-single_frame-1793202710190599900-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.5851237000024412,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fullrange_sar\\single_frame\\output.mp4",
+  "output_sha256": "b3834bda55dc7487146a00a60797714b38ae264bdc28292a11c156e4b42468de",
+  "expected_frames": 1,
+  "decoded_frames": 4,
+  "samples": 4,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 0,
+  "pts_mismatches": 3,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.04,
+  "duration_seconds": 0.08,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 0,
+  "min_frame_psnr_db": 40.06989594983433,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

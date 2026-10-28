@@ -1,0 +1,53 @@
+{
+  "id": "h265/nvenc/one",
+  "codec": "h265",
+  "fixture": "nvenc",
+  "cut": "one",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\one",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-nvenc-one-1793202880675885000-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.4042147999862209,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\nvenc\\one\\output.mp4",
+  "output_sha256": "7eab9273af5c0709f1d98cc4714086637c530461a0d89c5733c35e12b0828cf5",
+  "expected_frames": 1,
+  "decoded_frames": 1,
+  "samples": 5,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 0,
+  "decode_log": "[hevc @ 0000000002d667c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d66f40] Invalid number of merging MVP candidates: 243.\r\n[hevc @ 0000000002d67700] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d9de00] Could not find ref with POC -1\r\n[hevc @ 0000000002d9de00] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002b9c500] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 00000000001dee40] [dec:hevc @ 00000000000ef500] Decoding error: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000001dee40] [dec:hevc @ 00000000000ef500] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000001dee40] [dec:hevc @ 00000000000ef500] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000001dee40] [dec:hevc @ 00000000000ef500] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/wrapped_avframe @ 0000000002b97fc0] [enc:wrapped_avframe @ 0000000002bc1e00] Could not open encoder before EOF\r\n[vost#0:0/wrapped_avframe @ 0000000002b97fc0] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/wrapped_avframe @ 0000000002b97fc0] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/null @ 00000000001de6c0] Nothing was written into output file, because at least one of its streams received no packets.\r\n",
+  "pts_mismatches": 4,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.04,
+  "duration_seconds": 0.08,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 0,
+  "min_frame_psnr_db": 43.88973645257966,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-offset-before_cra-1793202815003408800.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.92,
+      "name": "0"
+    }
+  ]
+}

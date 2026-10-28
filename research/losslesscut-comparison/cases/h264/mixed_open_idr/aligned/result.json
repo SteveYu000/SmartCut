@@ -1,0 +1,54 @@
+{
+  "id": "h264/mixed_open_idr/aligned",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "aligned",
+  "ranges": [
+    [
+      24,
+      216
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\aligned",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-mixed_open_idr-aligned-1793202606365764200-00.00.00.960-00.00.08.640-0.mp4"
+    ]
+  },
+  "export_seconds": 0.12033559998963028,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\aligned\\output.mp4",
+  "output_sha256": "9b0718f6a45f5ce335bdf8a4fb3e2ff78c749406590b16a58b159dd37efb6bc8",
+  "expected_frames": 192,
+  "decoded_frames": 194,
+  "samples": 197,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 192,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 72,
+  "decode_log": "[h264 @ 0000000002c63fc0] mmco: unref short failure\r\n",
+  "strict_decode_log": "[h264 @ 0000000002cedc00] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000746a40] [dec:h264 @ 0000000000741c80] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000746a40] [dec:h264 @ 0000000000741c80] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000746a40] [dec:h264 @ 0000000000741c80] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 0000000000746a40] [dec:h264 @ 0000000000741c80] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/wrapped_avframe @ 0000000002ceefc0] [enc:wrapped_avframe @ 0000000002cf8900] Could not open encoder before EOF\r\n[vost#0:0/wrapped_avframe @ 0000000002ceefc0] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/wrapped_avframe @ 0000000002ceefc0] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/null @ 0000000000747200] Nothing was written into output file, because at least one of its streams received no packets.\r\n",
+  "pts_mismatches": 197,
+  "first_pts_seconds": -0.12,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.12,
+  "expected_duration_seconds": 7.68,
+  "duration_seconds": 7.88,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 192,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

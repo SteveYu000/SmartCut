@@ -1,0 +1,49 @@
+{
+  "id": "h264/multi_slice/cross_idr",
+  "codec": "h264",
+  "fixture": "multi_slice",
+  "cut": "cross_idr",
+  "ranges": [
+    [
+      23,
+      25
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\multi_slice\\cross_idr",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-multi_slice-cross_idr-1793202639816957700-00.00.00.920-00.00.01.000-0.mp4"
+    ]
+  },
+  "export_seconds": 0.39833729999372736,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\multi_slice\\cross_idr\\output.mp4",
+  "output_sha256": "f03d329d8ffcc64bf5d5b3537212b73015d0b136fdd699769bb6354d4e719a92",
+  "expected_frames": 2,
+  "decoded_frames": 4,
+  "samples": 4,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 1,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 0,
+  "pts_mismatches": 2,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.08,
+  "duration_seconds": 0.08,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 1,
+  "min_frame_psnr_db": 41.48953703132647,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

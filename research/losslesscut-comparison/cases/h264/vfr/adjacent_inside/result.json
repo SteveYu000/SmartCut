@@ -1,0 +1,113 @@
+{
+  "id": "h264/vfr/adjacent_inside",
+  "codec": "h264",
+  "fixture": "vfr",
+  "cut": "adjacent_inside",
+  "ranges": [
+    [
+      0,
+      13
+    ],
+    [
+      13,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\vfr\\adjacent_inside",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-vfr-adjacent_inside-1793202672880448100-cut-merged-1793202674057.mp4"
+    ]
+  },
+  "export_seconds": 0.9678545000206213,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\vfr\\adjacent_inside\\output.mp4",
+  "output_sha256": "275ae2d0e727a3ed89aa11a3c5439b5a837ad571f4431470fc28c90b63466c7a",
+  "expected_frames": 24,
+  "decoded_frames": 29,
+  "samples": 29,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 14,
+  "normalized_vcl": 14,
+  "pixel_identical": 13,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      13,
+      13,
+      14
+    ],
+    [
+      14,
+      14,
+      16
+    ],
+    [
+      15,
+      15,
+      13
+    ],
+    [
+      16,
+      16,
+      14
+    ],
+    [
+      17,
+      17,
+      15
+    ],
+    [
+      18,
+      18,
+      16
+    ],
+    [
+      19,
+      19,
+      17
+    ],
+    [
+      20,
+      20,
+      18
+    ],
+    [
+      21,
+      21,
+      19
+    ],
+    [
+      22,
+      22,
+      20
+    ],
+    [
+      23,
+      23,
+      21
+    ]
+  ],
+  "baseline_copied_frames": 24,
+  "pts_mismatches": 11,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.04,
+  "expected_duration_seconds": 1.28,
+  "duration_seconds": 1.44,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 15,
+  "min_frame_psnr_db": 16.943478567367535,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

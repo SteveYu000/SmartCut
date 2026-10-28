@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-ntsc-cross_idr-1793202654013307200.mp4",
+  "cutSegments": [
+    {
+      "start": 0.7674333333333333,
+      "end": 0.8341666666666666,
+      "name": "0"
+    }
+  ]
+}

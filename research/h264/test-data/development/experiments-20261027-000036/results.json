@@ -1,0 +1,85 @@
+{
+  "supplemental": [
+    {
+      "case": "unicode_paths_audio_first_ignored",
+      "mode": "avc3",
+      "status": "pass"
+    },
+    {
+      "case": "unicode_paths_audio_first_ignored",
+      "mode": "stsd",
+      "status": "pass"
+    },
+    {
+      "case": "seek_all_advertised_idrs",
+      "mode": "avc3",
+      "status": "pass"
+    },
+    {
+      "case": "seek_all_advertised_idrs",
+      "mode": "stsd",
+      "status": "pass"
+    },
+    {
+      "case": "corrupt_nal_rejected_no_output",
+      "status": "pass"
+    }
+  ],
+  "concat_baseline": [
+    {
+      "fixture": "closed_b3_id0",
+      "mux_exit": 0,
+      "mux_log": "",
+      "decoded_frames": 216,
+      "expected_frames": 214,
+      "copy_matches_at_expected_positions": 203,
+      "expected_copy_frames": 203,
+      "decode_exit": 0,
+      "decode_log": ""
+    },
+    {
+      "fixture": "open_gop",
+      "mux_exit": 0,
+      "mux_log": "[vost#0:0/copy @ 0000000002d52b80] Non-monotonic DTS; previous: 4096, current: 3072; changing to 4097. This may result in incorrect timestamps in the output file.\r\n[vost#0:0/copy @ 0000000002d52b80] Non-monotonic DTS; previous: 4097, current: 3584; changing to 4098. This may result in incorrect timestamps in the output file.\r\n[vost#0:0/copy @ 0000000002d52b80] Non-monotonic DTS; previous: 4098, current: 4096; changing to 4099. This may result in incorrect timestamps in the output file.\r\n",
+      "decoded_frames": 195,
+      "expected_frames": 214,
+      "copy_matches_at_expected_positions": 0,
+      "expected_copy_frames": 203,
+      "decode_exit": 0,
+      "decode_log": "[h264 @ 0000000002932540] reference count 3 overflow\r\n[h264 @ 000000000089e7c0] top block unavailable for requested intra mode -1\r\n[h264 @ 000000000089e7c0] error while decoding MB 0 0, bytestream 5318\r\n[h264 @ 0000000002ea1c80] mmco: unref short failure\r\n[h264 @ 0000000002932540] reference count 3 overflow\r\n[h264 @ 0000000002e8ad80] Reference 5 >= 3\r\n[h264 @ 0000000002e8ad80] error while decoding MB 0 6, bytestream 1523\r\n[h264 @ 0000000002ea1c80] Reference 3 >= 2\r\n[h264 @ 0000000002ea1c80] error while decoding MB 4 1, bytestream 1378\r\n[h264 @ 0000000002eda800] Reference 4 >= 2\r\n[h264 @ 0000000002eda800] error while decoding MB 0 0, bytestream 1297\r\n[h264 @ 0000000002932540] reference count 3 overflow\r\n[h264 @ 0000000002931540] Reference 2 >= 2\r\n[h264 @ 0000000002931540] error while decoding MB 10 1, bytestream 1275\r\n[h264 @ 00000000028f21c0] Reference 4 >= 2\r\n[h264 @ 00000000028f21c0] error while decoding MB 0 0, bytestream 1573\r\n[h264 @ 00000000028f2c00] reference count overflow\r\n[h264 @ 00000000028f2c00] no frame!\r\n[h264 @ 00000000028f3380] Reference 3 >= 3\r\n[h264 @ 00000000028f3380] error while decoding MB 9 0, bytestream 1940\r\n[h264 @ 00000000028a1140] Reference 3 >= 2\r\n[h264 @ 00000000028a1140] error while decoding MB 0 0, bytestream 1498\r\n[h264 @ 0000000002932540] reference count 3 overflow\r\n[h264 @ 00000000028a1740] Reference 2 >= 2\r\n[h264 @ 00000000028a1740] error while decoding MB 1 1, bytestream 1428\r\n[h264 @ 0000000002de5240] reference count overflow\r\n[h264 @ 0000"
+    },
+    {
+      "fixture": "high10",
+      "mux_exit": 0,
+      "mux_log": "",
+      "decoded_frames": 216,
+      "expected_frames": 214,
+      "copy_matches_at_expected_positions": 203,
+      "expected_copy_frames": 203,
+      "decode_exit": 0,
+      "decode_log": ""
+    }
+  ],
+  "benchmark": {
+    "width": 1920,
+    "height": 1080,
+    "source_frames": 600,
+    "output_frames": 574,
+    "copied_frames": 480,
+    "encoded_frames": 94,
+    "smart_seconds": [
+      2.134404699994775,
+      1.7642740000010235,
+      2.352295500000764
+    ],
+    "full_encode_seconds": [
+      2.3251915000000736,
+      2.123906100001477,
+      2.754836799998884
+    ],
+    "smart_median_seconds": 2.134404699994775,
+    "full_median_seconds": 2.3251915000000736,
+    "speedup": 1.0893864223620597,
+    "note": "Local synthetic workload, warm filesystem cache; not an encoder/quality-equivalence benchmark."
+  }
+}

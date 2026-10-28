@@ -1,0 +1,117 @@
+{
+  "id": "h265/closed/multi",
+  "codec": "h265",
+  "fixture": "closed",
+  "cut": "multi",
+  "ranges": [
+    [
+      13,
+      81
+    ],
+    [
+      100,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\multi",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-closed-multi-1793202735757511600-cut-merged-1793202737418.mp4"
+    ]
+  },
+  "export_seconds": 1.2332097999751568,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\closed\\multi\\output.mp4",
+  "output_sha256": "c8d70e2c73aaa2ef8e9b6fa8c0521127bd4328030de9da6df1b6818634926c85",
+  "expected_frames": 195,
+  "decoded_frames": 197,
+  "samples": 197,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 107,
+  "normalized_vcl": 107,
+  "pixel_identical": 107,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      24
+    ],
+    [
+      11,
+      24,
+      25
+    ],
+    [
+      12,
+      25,
+      26
+    ],
+    [
+      13,
+      26,
+      27
+    ],
+    [
+      14,
+      27,
+      28
+    ],
+    [
+      15,
+      28,
+      29
+    ],
+    [
+      16,
+      29,
+      30
+    ],
+    [
+      17,
+      30,
+      31
+    ],
+    [
+      18,
+      31,
+      32
+    ],
+    [
+      19,
+      32,
+      33
+    ],
+    [
+      20,
+      33,
+      34
+    ],
+    [
+      21,
+      34,
+      35
+    ]
+  ],
+  "baseline_copied_frames": 144,
+  "pts_mismatches": 5,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.04,
+  "expected_duration_seconds": 7.8,
+  "duration_seconds": 7.88,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 164,
+  "min_frame_psnr_db": 12.458112291029726,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

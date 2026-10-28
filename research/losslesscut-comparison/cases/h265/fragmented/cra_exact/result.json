@@ -1,0 +1,117 @@
+{
+  "id": "h265/fragmented/cra_exact",
+  "codec": "h265",
+  "fixture": "fragmented",
+  "cut": "cra_exact",
+  "ranges": [
+    [
+      24,
+      213
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\fragmented\\cra_exact",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-fragmented-cra_exact-1793202823489054900-00.00.00.960-00.00.08.520-0.mp4"
+    ]
+  },
+  "export_seconds": 0.41097029999946244,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\fragmented\\cra_exact\\output.mp4",
+  "output_sha256": "6ed8d7d5e45c62d81286a0d4b229b287517500cc93af3aeb4923896dcea4a1e9",
+  "expected_frames": 189,
+  "decoded_frames": 192,
+  "samples": 195,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      1,
+      25,
+      24
+    ],
+    [
+      2,
+      26,
+      25
+    ],
+    [
+      3,
+      27,
+      26
+    ],
+    [
+      4,
+      28,
+      27
+    ],
+    [
+      5,
+      29,
+      28
+    ],
+    [
+      6,
+      30,
+      29
+    ],
+    [
+      7,
+      31,
+      30
+    ],
+    [
+      8,
+      32,
+      31
+    ],
+    [
+      9,
+      33,
+      32
+    ],
+    [
+      10,
+      34,
+      33
+    ],
+    [
+      11,
+      35,
+      34
+    ],
+    [
+      12,
+      36,
+      35
+    ]
+  ],
+  "baseline_copied_frames": 189,
+  "decode_log": "[hevc @ 0000000002d91880] Could not find ref with POC 20\r\n[hevc @ 0000000002d91880] Error constructing the frame RPS.\r\n[hevc @ 0000000002dd89c0] Could not find ref with POC 20\r\n[hevc @ 0000000002dd89c0] Error constructing the frame RPS.\r\n[hevc @ 000000000089ec40] Could not find ref with POC 22\r\n[hevc @ 000000000089ec40] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002c85d40] Could not find ref with POC 20\r\n[hevc @ 0000000002c85d40] Error constructing the frame RPS.\r\n[hevc @ 00000000008bbec0] Could not find ref with POC 20\r\n[hevc @ 00000000008bbec0] Error constructing the frame RPS.\r\n[hevc @ 00000000008bc700] Could not find ref with POC 22\r\n[hevc @ 00000000008bc700] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 00000000007d8540] [dec:hevc @ 00000000007cf540] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007d8540] [dec:hevc @ 00000000007cf540] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007d8540] [dec:hevc @ 00000000007cf540] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000007d8540] [dec:hevc @ 00000000007cf540] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 194,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.2,
+  "expected_duration_seconds": 7.56,
+  "duration_seconds": 7.52,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 189,
+  "min_frame_psnr_db": 15.41319956265799,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

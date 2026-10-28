@@ -1,0 +1,274 @@
+h264/closed_b3_id0/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/closed_b3_id0/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/closed_b3_id0/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/closed_b3_id0/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/closed_b3_id0/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/closed_b3_id0/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/closed_b3_id0/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/closed_b3_id0/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/closed_b3_id3/full True [] 240 240
+h264/closed_b3_id3/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/closed_b3_id3/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h264/closed_b3_id3/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/closed_b3_id3/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/closed_b3_id3/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/closed_b3_id3/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/closed_b3_id3/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/closed_b3_id3/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/closed_b3_id3/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/baseline/full True [] 240 240
+h264/baseline/aligned True [] 192 192
+h264/baseline/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 213 0
+h264/baseline/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 202 0
+h264/baseline/tail_only True [] 203 203
+h264/baseline/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 2 0
+h264/baseline/cross_idr True [] 2 1
+h264/baseline/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 150 0
+h264/baseline/adjacent True [] 48 48
+h264/baseline/adjacent_inside False ['frame_identity', 'quality_below_30dB'] 24 13
+h264/open_gop/full True [] 240 240
+h264/open_gop/aligned False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 194 0
+h264/open_gop/both_edges False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 194 1
+h264/open_gop/head_only False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 185 1
+h264/open_gop/tail_only False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 205 0
+h264/open_gop/single_frame False ['app_export_error'] None None
+h264/open_gop/cross_idr False ['app_export_error'] None None
+h264/open_gop/multiple False ['app_export_error'] None None
+h264/open_gop/adjacent False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 54 24
+h264/open_gop/adjacent_inside False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 31 13
+h264/mixed_open_idr/full True [] 240 240
+h264/mixed_open_idr/aligned False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 194 0
+h264/mixed_open_idr/both_edges False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 209 1
+h264/mixed_open_idr/head_only False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 198 1
+h264/mixed_open_idr/tail_only False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 205 0
+h264/mixed_open_idr/single_frame False ['app_export_error'] None None
+h264/mixed_open_idr/cross_idr False ['app_export_error'] None None
+h264/mixed_open_idr/multiple False ['app_export_error'] None None
+h264/mixed_open_idr/adjacent False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 54 24
+h264/mixed_open_idr/adjacent_inside False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 31 13
+h264/high10/full True [] 240 240
+h264/high10/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/high10/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h264/high10/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/high10/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/high10/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/high10/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/high10/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/high10/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/high10/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/multi_slice/full True [] 240 240
+h264/multi_slice/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/multi_slice/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h264/multi_slice/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/multi_slice/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/multi_slice/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/multi_slice/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/multi_slice/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/multi_slice/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/multi_slice/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/ntsc/full True [] 240 240
+h264/ntsc/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/ntsc/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h264/ntsc/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/ntsc/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/ntsc/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/ntsc/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/ntsc/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/ntsc/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/ntsc/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/vfr/full True [] 240 240
+h264/vfr/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/vfr/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration'] 216 203
+h264/vfr/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 192
+h264/vfr/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/vfr/single_frame False ['frame_count', 'pts', 'decoded_pts'] 4 0
+h264/vfr/cross_idr False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 1
+h264/vfr/multiple False ['frame_count', 'pts', 'decoded_pts', 'frame_identity', 'quality_below_30dB'] 155 5
+h264/vfr/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 52 26
+h264/vfr/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 29 14
+h264/offset/full True [] 240 240
+h264/offset/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 195 1
+h264/offset/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 217 1
+h264/offset/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 206 1
+h264/offset/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 206 1
+h264/offset/single_frame True [] 1 0
+h264/offset/cross_idr True [] 2 0
+h264/offset/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 155 0
+h264/offset/adjacent False [] 48 0
+h264/offset/adjacent_inside False [] 24 0
+h264/fragmented/full True [] 240 240
+h264/fragmented/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 195 0
+h264/fragmented/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 217 1
+h264/fragmented/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 206 1
+h264/fragmented/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 206 0
+h264/fragmented/single_frame False ['harness_or_inspection_error'] None None
+h264/fragmented/cross_idr False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 1 0
+h264/fragmented/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 157 0
+h264/fragmented/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 54 0
+h264/fragmented/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 27 0
+h264/fullrange_sar/full True [] 240 240
+h264/fullrange_sar/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 194 192
+h264/fullrange_sar/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h264/fullrange_sar/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 204 0
+h264/fullrange_sar/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 205 203
+h264/fullrange_sar/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h264/fullrange_sar/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 4 1
+h264/fullrange_sar/multiple False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 154 0
+h264/fullrange_sar/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 52 25
+h264/fullrange_sar/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 28 13
+h264/nvenc/full True [] 240 240
+h264/nvenc/aligned False ['frame_count', 'pts', 'decoded_pts', 'duration'] 195 192
+h264/nvenc/both_edges False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 216 0
+h264/nvenc/head_only False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 205 0
+h264/nvenc/tail_only False ['frame_count', 'pts', 'decoded_pts', 'duration'] 206 203
+h264/nvenc/single_frame False ['frame_count', 'pts', 'decoded_pts', 'duration'] 5 0
+h264/nvenc/cross_idr False ['frame_count', 'pts', 'decoded_pts'] 5 1
+h264/nvenc/multiple False ['frame_count', 'pts', 'decoded_pts', 'frame_identity', 'quality_below_30dB'] 156 0
+h264/nvenc/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 54 25
+h264/nvenc/adjacent_inside False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 30 15
+h265/closed/partial False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 215 0
+h265/closed/cra_leading False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 53 0
+h265/closed/multi False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 197 107
+h265/closed/one False ['frame_count', 'pts', 'decoded_pts', 'duration'] 4 0
+h265/closed/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 189
+h265/closed/tail False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 26 0
+h265/closed/tiny_disjoint False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 10 1
+h265/closed/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 72 21
+h265/closed/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/open/cra_leading False ['app_export_error'] None None
+h265/open/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 197 1
+h265/open/full True [] 240 240
+h265/open/one False ['app_export_error'] None None
+h265/open/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/open/tail False ['app_export_error'] None None
+h265/open/tiny_disjoint False ['app_export_error'] None None
+h265/open/adjacent False ['app_export_error'] None None
+h265/open/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/main10/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 215 1
+h265/main10/cra_leading False ['app_export_error'] None None
+h265/main10/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 197 1
+h265/main10/full True [] 240 240
+h265/main10/one False ['app_export_error'] None None
+h265/main10/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/main10/tail False ['app_export_error'] None None
+h265/main10/tiny_disjoint False ['app_export_error'] None None
+h265/main10/adjacent False ['app_export_error'] None None
+h265/main10/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/vfr/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'copied_pixels'] 216 1
+h265/vfr/cra_leading False ['app_export_error'] None None
+h265/vfr/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 199 1
+h265/vfr/full True [] 240 240
+h265/vfr/one False ['app_export_error'] None None
+h265/vfr/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/vfr/tail False ['app_export_error'] None None
+h265/vfr/tiny_disjoint False ['app_export_error'] None None
+h265/vfr/adjacent False ['app_export_error'] None None
+h265/vfr/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/ntsc/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 215 1
+h265/ntsc/cra_leading False ['app_export_error'] None None
+h265/ntsc/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 197 1
+h265/ntsc/full True [] 240 240
+h265/ntsc/one False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 4 0
+h265/ntsc/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/ntsc/tail False ['app_export_error'] None None
+h265/ntsc/tiny_disjoint False ['app_export_error'] None None
+h265/ntsc/adjacent False ['app_export_error'] None None
+h265/ntsc/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/offset/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 217 0
+h265/offset/cra_leading False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 53 1
+h265/offset/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 201 0
+h265/offset/full False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 240 0
+h265/offset/one False ['harness_or_inspection_error'] None None
+h265/offset/cra_exact False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 192 0
+h265/offset/tail False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 2 0
+h265/offset/tiny_disjoint False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 4 0
+h265/offset/adjacent False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 69 2
+h265/offset/before_cra False [] 23 0
+h265/fragmented/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 217 0
+h265/fragmented/cra_leading False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 53 0
+h265/fragmented/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 201 0
+h265/fragmented/full False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 241 0
+h265/fragmented/one False ['harness_or_inspection_error'] None None
+h265/fragmented/cra_exact False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 192 0
+h265/fragmented/tail False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 2 0
+h265/fragmented/tiny_disjoint False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 8 0
+h265/fragmented/adjacent False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 72 0
+h265/fragmented/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 26 0
+h265/multislice/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'copied_pixels'] 10 1
+h265/multislice/cra_leading False ['app_export_error'] None None
+h265/multislice/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 29 1
+h265/multislice/full True [] 240 240
+h265/multislice/one False ['app_export_error'] None None
+h265/multislice/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/multislice/tail False ['app_export_error'] None None
+h265/multislice/tiny_disjoint False ['app_export_error'] None None
+h265/multislice/adjacent False ['app_export_error'] None None
+h265/multislice/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/color_sar/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 215 1
+h265/color_sar/cra_leading False ['app_export_error'] None None
+h265/color_sar/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 197 1
+h265/color_sar/full True [] 240 240
+h265/color_sar/one False ['app_export_error'] None None
+h265/color_sar/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/color_sar/tail False ['app_export_error'] None None
+h265/color_sar/tiny_disjoint False ['app_export_error'] None None
+h265/color_sar/adjacent False ['app_export_error'] None None
+h265/color_sar/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/radl/partial False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 217 1
+h265/radl/cra_leading False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 55 1
+h265/radl/multi False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 201 1
+h265/radl/full True [] 240 240
+h265/radl/one False ['frame_count', 'pts', 'decoded_pts', 'duration'] 6 0
+h265/radl/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 191 0
+h265/radl/tail False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 28 1
+h265/radl/tiny_disjoint False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'copied_pixels', 'quality_below_30dB'] 14 1
+h265/radl/adjacent False ['frame_count', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 74 22
+h265/radl/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 25 23
+h265/nvenc/partial False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 10 0
+h265/nvenc/cra_leading False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 1 0
+h265/nvenc/multi False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 10 0
+h265/nvenc/full True [] 240 240
+h265/nvenc/one False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'duration'] 1 0
+h265/nvenc/cra_exact False ['frame_count', 'pts', 'decoded_pts', 'duration'] 192 189
+h265/nvenc/tail False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 2 0
+h265/nvenc/tiny_disjoint False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration', 'frame_identity', 'quality_below_30dB'] 4 0
+h265/nvenc/adjacent False ['frame_count', 'decode_error', 'strict_decode', 'pts', 'decoded_pts', 'duration'] 72 24
+h265/nvenc/before_cra False ['frame_count', 'pts', 'decoded_pts', 'duration'] 26 23
+{
+  "h264": {
+    "total": 130,
+    "passed": 19,
+    "correctness_passed": 21,
+    "issues": {
+      "frame_count": 101,
+      "pts": 101,
+      "decoded_pts": 101,
+      "duration": 91,
+      "frame_identity": 63,
+      "quality_below_30dB": 63,
+      "decode_error": 12,
+      "strict_decode": 12,
+      "copied_pixels": 14,
+      "app_export_error": 6,
+      "harness_or_inspection_error": 1
+    }
+  },
+  "h265": {
+    "total": 110,
+    "passed": 9,
+    "correctness_passed": 10,
+    "issues": {
+      "frame_count": 69,
+      "decode_error": 33,
+      "strict_decode": 33,
+      "pts": 69,
+      "decoded_pts": 68,
+      "duration": 69,
+      "frame_identity": 41,
+      "copied_pixels": 20,
+      "quality_below_30dB": 41,
+      "app_export_error": 29,
+      "harness_or_inspection_error": 2
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "tool": "smartcut-pipeline",
+  "tool_version": "0.1.0",
+  "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-pipeline-3.mp4",
+  "input_frames": 600,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "time_base": [
+    1,
+    15360
+  ],
+  "segments": 1,
+  "copied_frames": 480,
+  "encoded_frames": 0,
+  "expected_frames": 480,
+  "duration_ticks": 245760,
+  "audio_tracks": [],
+  "elapsed_seconds": 3.764,
+  "warnings": [
+    "--no-audio: output contains video only"
+  ],
+  "units": [
+    {
+      "mode": "copy",
+      "begin": 60,
+      "end": 540,
+      "packet_begin": 60,
+      "packet_end": 540,
+      "output_start_ticks": 0,
+      "duration_ticks": 245760
+    }
+  ],
+  "verification": "not_requested"
+}

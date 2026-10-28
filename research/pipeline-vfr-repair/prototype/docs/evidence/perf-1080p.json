@@ -1,0 +1,57 @@
+{
+  "source": "benchmark-1080p.mp4 (1080p, 30 fps, 600 frames, x264)",
+  "keep": "13:587",
+  "pipeline_seconds": [
+    2.754,
+    2.602,
+    2.71
+  ],
+  "full_encode_seconds": [
+    4.603,
+    4.83,
+    4.545
+  ],
+  "pipeline_median": 2.71,
+  "full_encode_median": 4.603,
+  "ratio": 1.7,
+  "pipeline_command": "src/SmartCut.Cli/bin/Release/net10.0/SmartCut.Cli.exe -i SOURCE -o OUT --keep 13:587 --no-audio",
+  "full_encode_command": "ffmpeg -v error -y -i benchmark-1080p.mp4 -vf select='between(n,13,586)' -fps_mode passthrough -c:v libx264 -preset medium -crf 18 -bf 0 -g 100000 -x264-params scenecut=0:open-gop=0:bframes=0:keyint=100000 -pix_fmt yuv420p -an OUT",
+  "runs": {
+    "pipeline_run1": {
+      "seconds": 2.754,
+      "copied_frames": 480,
+      "encoded_frames": 94,
+      "expected_frames": 574,
+      "segments": 3,
+      "elapsed_seconds": 2.392,
+      "duration_ticks": 293888
+    },
+    "full_encode_run1": {
+      "seconds": 4.603
+    },
+    "pipeline_run2": {
+      "seconds": 2.602,
+      "copied_frames": 480,
+      "encoded_frames": 94,
+      "expected_frames": 574,
+      "segments": 3,
+      "elapsed_seconds": 2.252,
+      "duration_ticks": 293888
+    },
+    "full_encode_run2": {
+      "seconds": 4.83
+    },
+    "pipeline_run3": {
+      "seconds": 2.71,
+      "copied_frames": 480,
+      "encoded_frames": 94,
+      "expected_frames": 574,
+      "segments": 3,
+      "elapsed_seconds": 2.35,
+      "duration_ticks": 293888
+    },
+    "full_encode_run3": {
+      "seconds": 4.545
+    }
+  }
+}

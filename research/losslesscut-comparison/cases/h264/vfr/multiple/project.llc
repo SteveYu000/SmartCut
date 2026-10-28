@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-multiple-1793202669231353500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.04,
+      "end": 1.52,
+      "name": "0"
+    },
+    {
+      "start": 2.48,
+      "end": 6.44,
+      "name": "1"
+    },
+    {
+      "start": 10.16,
+      "end": 12.76,
+      "name": "2"
+    }
+  ]
+}

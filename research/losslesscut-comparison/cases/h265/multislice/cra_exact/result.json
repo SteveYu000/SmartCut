@@ -1,0 +1,50 @@
+{
+  "id": "h265/multislice/cra_exact",
+  "codec": "h265",
+  "fixture": "multislice",
+  "cut": "cra_exact",
+  "ranges": [
+    [
+      24,
+      213
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\multislice\\cra_exact",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-multislice-cra_exact-1793202839150493200-00.00.00.960-00.00.08.520-0.mp4"
+    ]
+  },
+  "export_seconds": 0.1397270000015851,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\multislice\\cra_exact\\output.mp4",
+  "output_sha256": "cbec90817c73731d3d7207f86a209590d89615874a4c986192ec85f3d5c1f6a0",
+  "expected_frames": 189,
+  "decoded_frames": 191,
+  "samples": 194,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 189,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 189,
+  "pts_mismatches": 194,
+  "first_pts_seconds": -0.12,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.12,
+  "expected_duration_seconds": 7.56,
+  "duration_seconds": 7.72,
+  "codec_tag": "hvc1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 189,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

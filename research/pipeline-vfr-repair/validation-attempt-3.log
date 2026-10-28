@@ -1,0 +1,21 @@
+vfr-full True [] 12.76 0.0
+vfr-aligned False ['duration'] 10.2 0.0
+vfr-both_edges True [] 11.4 0.0
+vfr-head_only False ['duration'] 10.76 0.0
+vfr-tail_only True [] 10.8 0.0
+vfr-single_frame True [] 0.08 0.0
+vfr-cross_idr True [] 0.12 0.0
+vfr-multiple False ['duration'] 7.96 0.0
+vfr-adjacent False ['duration'] 2.52 0.0
+vfr-adjacent_inside False ['duration'] 1.24 0.0
+vfr-extra-single-long True [] 0.08 0.0
+vfr-extra-head-ends-long True [] 0.6 0.0
+vfr-extra-both-ends-long True [] 11.48 0.0
+vfr-extra-single-copy-epoch False ['duration'] 1.24 0.0
+vfr-extra-last-long True [] 0.04 0.0
+vfr-extra-head-two-long True [] 0.08 0.0
+vfr-extra-disjoint-long True [] 0.24 0.0
+ntsc-80-single-frame-joins True [] 2.669333 0.0
+fine-vfr-both True [] 7.141267 0.0
+fine-vfr-80-single-frame-joins True [] 2.670222 0.0
+PASS 14 / 20

@@ -1,0 +1,7 @@
+2026-10-28T15:49:53.650Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.807 ms
+2026-10-28T15:49:53.752Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\open_gop\full\h264-open_gop-full-1793202593565858600.mp4 -hide_banner
+2026-10-28T15:49:53.806Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 61.767 ms
+2026-10-28T15:49:54.132Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 74.463 ms
+2026-10-28T15:49:54.135Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.261 ms
+2026-10-28T15:49:54.137Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\open_gop\full\h264-open_gop-full-1793202593565858600.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-open_gop-full-1793202593565858600-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T15:49:54.197Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 139.236 ms

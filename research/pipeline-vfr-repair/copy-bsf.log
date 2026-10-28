@@ -1,0 +1,330 @@
+{
+  "plain": {
+    "count": 48,
+    "first": [
+      {
+        "pts": 0,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": 2560,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 1024,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 30720,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 31232,
+        "dts": 30720,
+        "duration": 512
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.520000"
+    }
+  },
+  "duration-only": {
+    "count": 48,
+    "first": [
+      {
+        "pts": -1024,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": -512,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 0,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 29696,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 30720,
+        "dts": 30720,
+        "duration": 1024
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.480000"
+    }
+  },
+  "prescale": {
+    "count": 48,
+    "first": [
+      {
+        "pts": -1024,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": -512,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 0,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 29696,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 30720,
+        "dts": 30720,
+        "duration": 1024
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.480000"
+    }
+  },
+  "explicit-pts-dts": {
+    "count": 48,
+    "first": [
+      {
+        "pts": 0,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": 2560,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 1024,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 30720,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 31232,
+        "dts": 30720,
+        "duration": 1024
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.520000"
+    }
+  },
+  "last-display-duration": {
+    "count": 48,
+    "first": [
+      {
+        "pts": 0,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": 2560,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 1024,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 30720,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 31232,
+        "dts": 30720,
+        "duration": 512
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.520000"
+    }
+  },
+  "all-duration": {
+    "count": 48,
+    "first": [
+      {
+        "pts": 0,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": 2560,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 1024,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 30720,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 31232,
+        "dts": 30720,
+        "duration": 1024
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.560000"
+    }
+  },
+  "last-duration-1536": {
+    "count": 48,
+    "first": [
+      {
+        "pts": 0,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": 2560,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 1024,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 30720,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 31232,
+        "dts": 30720,
+        "duration": 1536
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.560000"
+    }
+  },
+  "remux": {
+    "count": 48,
+    "first": [
+      {
+        "pts": -1024,
+        "dts": -1024,
+        "duration": 512
+      },
+      {
+        "pts": -512,
+        "dts": -512,
+        "duration": 512
+      },
+      {
+        "pts": 0,
+        "dts": 0,
+        "duration": 512
+      },
+      {
+        "pts": 512,
+        "dts": 512,
+        "duration": 512
+      }
+    ],
+    "last": [
+      {
+        "pts": 29696,
+        "dts": 29696,
+        "duration": 1024
+      },
+      {
+        "pts": 30720,
+        "dts": 30720,
+        "duration": 1024
+      }
+    ],
+    "stream": {
+      "time_base": "1/12800",
+      "duration": "2.480000"
+    }
+  }
+}

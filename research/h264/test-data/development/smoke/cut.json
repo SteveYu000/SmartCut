@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "input": "test-output/smoke/closed.mp4",
+  "output": "test-output/smoke/cut.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "avc3",
+  "time_base": [1,12800],
+  "input_frames": 200,
+  "idr_epochs": 8,
+  "non_idr_key_packets": 0,
+  "copied_frames": 150,
+  "encoded_frames": 24,
+  "decoded_frames": 50,
+  "duration_ticks": 89088,
+  "decode_delay_ticks": 1024,
+  "elapsed_seconds": 0.0500255,
+  "units": [
+    {"mode":"encode","begin":13,"end":25,"decode_begin":0,"decode_end":25,"output_start_ticks":0},
+    {"mode":"copy","begin":25,"end":50,"decode_begin":25,"decode_end":50,"output_start_ticks":6144},
+    {"mode":"copy","begin":50,"end":75,"decode_begin":50,"decode_end":75,"output_start_ticks":18944},
+    {"mode":"copy","begin":75,"end":100,"decode_begin":75,"decode_end":100,"output_start_ticks":31744},
+    {"mode":"copy","begin":100,"end":125,"decode_begin":100,"decode_end":125,"output_start_ticks":44544},
+    {"mode":"copy","begin":125,"end":150,"decode_begin":125,"decode_end":150,"output_start_ticks":57344},
+    {"mode":"copy","begin":150,"end":175,"decode_begin":150,"decode_end":175,"output_start_ticks":70144},
+    {"mode":"encode","begin":175,"end":187,"decode_begin":175,"decode_end":200,"output_start_ticks":82944}
+  ]
+}

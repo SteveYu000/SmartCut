@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-offset-cross_idr-1793202682420658000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.92,
+      "end": 1.0,
+      "name": "0"
+    }
+  ]
+}

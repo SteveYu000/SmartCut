@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-28",
+  "groups": {
+    "video": {
+      "passed": 125,
+      "failed": 5,
+      "total": 130
+    },
+    "logic": {
+      "passed": 8,
+      "failed": 0,
+      "total": 8
+    },
+    "audio": {
+      "passed": 12,
+      "failed": 12,
+      "total": 24
+    },
+    "negative": {
+      "passed": 3,
+      "failed": 0,
+      "total": 3
+    }
+  },
+  "total": 165,
+  "passed": 148,
+  "failures": [
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"full\")",
+      "group": "audio",
+      "message": "audio stream 1: 79 impulses, expected 80; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"adjacent\")",
+      "group": "audio",
+      "message": "audio stream 1: 15 impulses, expected 16; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"tail_only\")",
+      "group": "video",
+      "message": "11 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"adjacent\")",
+      "group": "audio",
+      "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"multiple\")",
+      "group": "audio",
+      "message": "127 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"adjacent\")",
+      "group": "audio",
+      "message": "audio stream 1: 11 impulses, expected 12; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 11 impulses, expected 12; audio stream 2: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"full\")",
+      "group": "audio",
+      "message": "audio stream 1: 50 impulses, expected 51; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"both_edges\")",
+      "group": "audio",
+      "message": "203 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"tail_only\")",
+      "group": "audio",
+      "message": "11 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 2, cut: \"full\")",
+      "group": "audio",
+      "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive; audio stream 2: 59 impulses, expected 60; audio stream 2: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"multiple\")",
+      "group": "video",
+      "message": "127 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"head_only\")",
+      "group": "video",
+      "message": "192 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"vfr\", tracks: 1, cut: \"head_only\")",
+      "group": "audio",
+      "message": "192 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"both_edges\")",
+      "group": "video",
+      "message": "203 presentation times differ from the plan"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"closed_b3_id0\", tracks: 1, cut: \"full\")",
+      "group": "audio",
+      "message": "audio stream 1: 59 impulses, expected 60; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.AudioTrackIsTrimmedToTheSameWindowsAsTheVideo(fixture: \"ntsc\", tracks: 1, cut: \"adjacent\")",
+      "group": "audio",
+      "message": "audio stream 1: 10 impulses, expected 11; audio stream 1: impulse count differs, position check inconclusive"
+    },
+    {
+      "test": "SmartCut.Tests.PipelineIntegrationTests.PipelineMatchesItsOwnPlanAndTheEngineCounts(fixture: \"vfr\", cut: \"cross_idr\")",
+      "group": "video",
+      "message": "1 presentation times differ from the plan"
+    }
+  ],
+  "h264_sources_match_archived_build_manifest": {
+    "src/engine.cpp": true,
+    "src/engine.hpp": true,
+    "src/main.cpp": true
+  },
+  "test_packages_resolved_from_local_cache": [
+    "coverlet.collector/10.0.1",
+    "Microsoft.NET.Test.Sdk/18.9.0",
+    "Microsoft.TestPlatform.TestHost/18.9.0",
+    "xunit/2.9.3",
+    "xunit.runner.visualstudio/4.0.0"
+  ],
+  "notes": [
+    "Initial sandboxed testhost connection timed out before tests ran; successful host connection used normal local execution.",
+    "InvalidKeepRangesAreRejected has five InlineData rows but this runner reports the method as one test result, giving 8 logic results and 165 total.",
+    "FFmpeg is n8.1.3-24-g92611900bb-20261025 for this rerun, different from pipeline README git-2026-10-24-d8990137ee.",
+    "Only the benchmark and pipeline suite were rerun; the complete h264 matrix results are archived evidence."
+  ]
+}

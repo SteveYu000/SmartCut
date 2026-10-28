@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-color_sar-before_cra-1793202858367207500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.92,
+      "name": "0"
+    }
+  ]
+}

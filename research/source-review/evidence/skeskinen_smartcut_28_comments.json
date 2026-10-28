@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/skeskinen/smartcut/issues/comments/4351744314",
+    "html_url": "https://github.com/skeskinen/smartcut/issues/28#issuecomment-4351744314",
+    "issue_url": "https://api.github.com/repos/skeskinen/smartcut/issues/28",
+    "id": 4351744314,
+    "node_id": "IC_kwDOMqpAqc8AAAABA2JZOg",
+    "user": {
+      "login": "skeskinen",
+      "id": 908332,
+      "node_id": "MDQ6VXNlcjkwODMzMg==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/908332?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/skeskinen",
+      "html_url": "https://github.com/skeskinen",
+      "followers_url": "https://api.github.com/users/skeskinen/followers",
+      "following_url": "https://api.github.com/users/skeskinen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/skeskinen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/skeskinen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/skeskinen/subscriptions",
+      "organizations_url": "https://api.github.com/users/skeskinen/orgs",
+      "repos_url": "https://api.github.com/users/skeskinen/repos",
+      "events_url": "https://api.github.com/users/skeskinen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/skeskinen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2026-04-30T10:38:35Z",
+    "updated_at": "2026-04-30T10:38:35Z",
+    "body": "Hi,\n\nLike it says in the Readme, this repo has not been updated since early this year.\n\n- The code is no longer integrated with SMC and maintaining a separate open source repo got too difficult.\n-  New performance & correctness fixes are only in [SMC](https://smartmediacutter.com/).\n- The SMC executable has the same CLI syntax, e.g. .\\smart-media-cutter.exe input.mp4 output.mp4 --keep 10,20\n\nThe current version of smartcut in SMC is very different from this code, and handles framerates and pts in a more robust way. \n\nThere's also bunch of new tests that are intended to catch issues where the fps and/or CFR/VFR status changes.\n\n",
+    "author_association": "OWNER",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/skeskinen/smartcut/issues/comments/4351744314/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "id": "h265/multislice/multi",
+  "codec": "h265",
+  "fixture": "multislice",
+  "cut": "multi",
+  "ranges": [
+    [
+      13,
+      81
+    ],
+    [
+      100,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\multislice\\multi",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-multislice-multi-1793202834659531700-cut-merged-1793202836263.mp4"
+    ]
+  },
+  "export_seconds": 1.3142882999964058,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\multislice\\multi\\output.mp4",
+  "output_sha256": "631968d723b447074c660f715743022d3d6b4c965845d7f9ba760cf0026c7feb",
+  "expected_frames": 195,
+  "decoded_frames": 29,
+  "samples": 203,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      10,
+      23,
+      100
+    ],
+    [
+      11,
+      24,
+      101
+    ],
+    [
+      12,
+      25,
+      102
+    ],
+    [
+      13,
+      26,
+      103
+    ],
+    [
+      14,
+      27,
+      104
+    ],
+    [
+      15,
+      28,
+      105
+    ],
+    [
+      16,
+      29,
+      106
+    ],
+    [
+      17,
+      30,
+      107
+    ],
+    [
+      18,
+      31,
+      108
+    ],
+    [
+      19,
+      32,
+      109
+    ],
+    [
+      20,
+      33,
+      110
+    ],
+    [
+      21,
+      34,
+      111
+    ]
+  ],
+  "baseline_copied_frames": 138,
+  "decode_log": " 0000000002d49a00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d49a00] PPS changed between slices.\r\n[hevc @ 0000000002d60b40] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d60b40] PPS changed between slices.\r\n[hevc @ 0000000002d77e80] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d77e80] PPS changed between slices.\r\n[hevc @ 0000000002d94180] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d94180] PPS changed between slices.\r\n[hevc @ 0000000003da8c00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003da8c00] PPS changed between slices.\r\n[hevc @ 0000000003dc4680] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dc4680] PPS changed between slices.\r\n[hevc @ 0000000003dd1fc0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dd1fc0] PPS changed between slices.\r\n[hevc @ 0000000003dd2380] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dd2380] PPS changed between slices.\r\n[hevc @ 0000000003dd2740] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dd2740] PPS changed between slices.\r\n[hevc @ 0000000003dd1880] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dd1880] PPS changed between slices.\r\n[hevc @ 0000000003dd14c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dd14c0] PPS changed between slices.\r\n[hevc @ 0000000002ce7600] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002ce7600] PPS changed between slices.\r\n[hevc @ 0000000002cd8180] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cd8180] PPS changed between slices.\r\n[hevc @ 0000000002cf6dc0] Could not find ref with POC -38\r\n[hevc @ 0000000002cf6dc0] Error constructing the frame RPS.\r\n[hevc @ 0000000002cf6dc0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cf7d80] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cf7d80] PPS changed between slices.\r\n[hevc @ 0000000002d34f00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d34f00] PPS changed between slices.\r\n[hevc @ 0000000002d49a00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d49a00] PPS changed between slices.\r\n[hevc @ 0000000002d60b40] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d60b40] PPS changed between slices.\r\n[hevc @ 0000000002d77e80] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d77e80] PPS changed between slices.\r\n[hevc @ 0000000002d94180] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d94180] PPS changed between slices.\r\n[hevc @ 0000000003da8c00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003da8c00] PPS changed between slices.\r\n[hevc @ 0000000003dc4680] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003dc4680] PPS changed between slices.\r\n",
+  "strict_decode_log": "[hevc @ 0000000003dc1640] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d9ce40] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d9ea00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003e06c00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003e14f80] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000003e15e40] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cbd780] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cd1fc0] Could not find ref with POC 26\r\n[hevc @ 0000000002cd1fc0] Error constructing the frame RPS.\r\n[hevc @ 0000000002ce1600] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002cdefc0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d357c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d4b540] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d615c0] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d76e00] alignment_bit_equal_to_one=0\r\n[hevc @ 0000000002d90a40] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 0000000000718540] [dec:hevc @ 0000000000711c80] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000718540] [dec:hevc @ 0000000000711c80] Error processing packet in decoder: Invalid data found when processing input\r\n[hevc @ 0000000003db7c00] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 0000000000718540] [dec:hevc @ 0000000000711c80] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000718540] [dec:hevc @ 0000000000711c80] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 195,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.24,
+  "expected_duration_seconds": 7.8,
+  "duration_seconds": 7.88,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 170,
+  "min_frame_psnr_db": 12.44222871762046,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

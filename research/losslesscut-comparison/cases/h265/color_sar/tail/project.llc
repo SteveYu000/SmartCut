@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-color_sar-tail-1793202853792653200.mp4",
+  "cutSegments": [
+    {
+      "start": 8.52,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

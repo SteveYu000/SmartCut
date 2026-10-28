@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "supp-\u4e2d\u6587\u97f3\u8f68\u5728\u524d-hevc-1793203222955293200.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

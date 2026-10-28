@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "tool": "smartcut-pipeline",
+  "tool_version": "0.1.0",
+  "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\run-20261027-125923\\source-vfr.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\pipeline-vfr-repair\\validation-010241\\vfr-extra-single-long.mp4",
+  "input_frames": 240,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "time_base": [
+    1,
+    12800
+  ],
+  "segments": 1,
+  "copied_frames": 0,
+  "encoded_frames": 1,
+  "expected_frames": 1,
+  "duration_ticks": 1024,
+  "audio_tracks": [],
+  "elapsed_seconds": 0.267,
+  "warnings": [
+    "more than half of the selection needs encoding under the IDR-only safety policy (1 of 1)",
+    "--no-audio: output contains video only"
+  ],
+  "units": [
+    {
+      "mode": "encode",
+      "begin": 23,
+      "end": 24,
+      "packet_begin": 21,
+      "packet_end": 22,
+      "output_start_ticks": 0,
+      "duration_ticks": 1024
+    }
+  ],
+  "verification": "not_requested"
+}

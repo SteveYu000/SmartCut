@@ -1,0 +1,67 @@
+{
+  "id": "h265/fragmented/tail",
+  "codec": "h265",
+  "fixture": "fragmented",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\fragmented\\tail",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-fragmented-tail-1793202824768940600-00.00.08.520-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.4612747999781277,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\fragmented\\tail\\output.mp4",
+  "output_sha256": "f6ca5ad770efe97228454c4151bcffd1ac07c934f689bdf10c6e04807a3fdccc",
+  "expected_frames": 27,
+  "decoded_frames": 2,
+  "samples": 28,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      0,
+      213,
+      216
+    ],
+    [
+      1,
+      214,
+      216
+    ]
+  ],
+  "baseline_copied_frames": 24,
+  "decode_log": "44c0] Could not find ref with POC -40\r\n[hevc @ 0000000002c844c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c839c0] Could not find ref with POC -38\r\n[hevc @ 0000000002c839c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c84140] Could not find ref with POC -36\r\n[hevc @ 0000000002c84140] Error constructing the frame RPS.\r\n[hevc @ 0000000002c83d80] Could not find ref with POC -36\r\n[hevc @ 0000000002c83d80] Error constructing the frame RPS.\r\n[hevc @ 0000000002c84880] Could not find ref with POC -36\r\n[hevc @ 0000000002c84880] Error constructing the frame RPS.\r\n[hevc @ 0000000003d3fbc0] Could not find ref with POC -34\r\n[hevc @ 0000000003d3fbc0] Error constructing the frame RPS.\r\n[hevc @ 0000000003d40e40] Could not find ref with POC -32\r\n[hevc @ 0000000003d40e40] Error constructing the frame RPS.\r\n[hevc @ 0000000003d3f840] Could not find ref with POC -32\r\n[hevc @ 0000000003d3f840] Error constructing the frame RPS.\r\n[hevc @ 0000000003d42480] Could not find ref with POC -32\r\n[hevc @ 0000000003d42480] Error constructing the frame RPS.\r\n[hevc @ 0000000002c0e180] Could not find ref with POC -30\r\n[hevc @ 0000000002c0e180] Error constructing the frame RPS.\r\n[hevc @ 0000000002c442c0] Could not find ref with POC -28\r\n[hevc @ 0000000002c442c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c22b40] Could not find ref with POC -28\r\n[hevc @ 0000000002c22b40] Error constructing the frame RPS.\r\n[hevc @ 000000000088e480] Could not find ref with POC -28\r\n[hevc @ 000000000088e480] Error constructing the frame RPS.\r\n[hevc @ 0000000002c84c40] Could not find ref with POC -26\r\n[hevc @ 0000000002c84c40] Error constructing the frame RPS.\r\n[hevc @ 0000000002c83280] Could not find ref with POC -24\r\n[hevc @ 0000000002c83280] Error constructing the frame RPS.\r\n[hevc @ 0000000002c83600] Could not find ref with POC -24\r\n[hevc @ 0000000002c83600] Error constructing the frame RPS.\r\n[hevc @ 0000000002c844c0] Could not find ref with POC -24\r\n[hevc @ 0000000002c844c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c839c0] Could not find ref with POC -22\r\n[hevc @ 0000000002c839c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c84140] Could not find ref with POC -20\r\n[hevc @ 0000000002c84140] Error constructing the frame RPS.\r\n[hevc @ 0000000002c83d80] Could not find ref with POC -20\r\n[hevc @ 0000000002c83d80] Error constructing the frame RPS.\r\n[hevc @ 0000000002c84880] Could not find ref with POC -20\r\n[hevc @ 0000000002c84880] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "002d43f00] Could not find ref with POC -44\r\n[hevc @ 0000000002d43f00] Error constructing the frame RPS.\r\n[hevc @ 0000000002d67fc0] Could not find ref with POC -44\r\n[hevc @ 0000000002d67fc0] Error constructing the frame RPS.\r\n[hevc @ 000000000085eb40] Could not find ref with POC -42\r\n[hevc @ 000000000085eb40] Error constructing the frame RPS.\r\n[hevc @ 0000000002d9ec00] Could not find ref with POC -40\r\n[hevc @ 0000000002d9ec00] Error constructing the frame RPS.\r\n[hevc @ 0000000002db3b00] Could not find ref with POC -40\r\n[hevc @ 0000000002db3b00] Error constructing the frame RPS.\r\n[hevc @ 0000000002dc8a40] Could not find ref with POC -40\r\n[hevc @ 0000000002dc8a40] Error constructing the frame RPS.\r\n[hevc @ 0000000002de5b00] Could not find ref with POC -38\r\n[hevc @ 0000000002de5b00] Error constructing the frame RPS.\r\n[hevc @ 0000000003df9c00] Could not find ref with POC -36\r\n[hevc @ 0000000003df9c00] Error constructing the frame RPS.\r\n[hevc @ 0000000003e17b00] Could not find ref with POC -36\r\n[hevc @ 0000000003e17b00] Error constructing the frame RPS.\r\n[hevc @ 0000000003e27a00] Could not find ref with POC -36\r\n[hevc @ 0000000003e27a00] Error constructing the frame RPS.\r\n[hevc @ 0000000003e43940] Could not find ref with POC -34\r\n[hevc @ 0000000003e43940] Error constructing the frame RPS.\r\n[hevc @ 0000000003e57840] Could not find ref with POC -32\r\n[hevc @ 0000000003e57840] Error constructing the frame RPS.\r\n[hevc @ 0000000003e77580] Could not find ref with POC -32\r\n[hevc @ 0000000003e77580] Error constructing the frame RPS.\r\n[hevc @ 0000000003e75f40] Could not find ref with POC -32\r\n[hevc @ 0000000003e75f40] Error constructing the frame RPS.\r\n[hevc @ 0000000002d187c0] Could not find ref with POC -30\r\n[hevc @ 0000000002d187c0] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 0000000000779d00] [dec:hevc @ 0000000000776800] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000779d00] [dec:hevc @ 0000000000776800] Error processing packet in decoder: Invalid data found when processing input\r\n[hevc @ 0000000002d23880] Could not find ref with POC -28\r\n[hevc @ 0000000002d23880] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 0000000000779d00] [dec:hevc @ 0000000000776800] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000779d00] [dec:hevc @ 0000000000776800] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 27,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.2,
+  "expected_duration_seconds": 1.08,
+  "duration_seconds": 0.84,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 27,
+  "min_frame_psnr_db": 16.995277435781976,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,7 @@
+2026-10-28T15:50:51.968Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.841 ms
+2026-10-28T15:50:52.069Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\ntsc\tail_only\h264-ntsc-tail_only-1793202651828232000.mp4 -hide_banner
+2026-10-28T15:50:52.125Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 63.319 ms
+2026-10-28T15:50:52.452Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 74.456 ms
+2026-10-28T15:50:52.454Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 2.976 ms
+2026-10-28T15:50:52.506Z info: ffmpeg -hide_banner -ss 0.800800 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\ntsc\tail_only\h264-ntsc-tail_only-1793202651828232000.mp4 -t 6.773433 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -video_track_timescale 30000 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-ntsc-tail_only-1793202651828232000-00.00.00.801-00.00.07.574-0.mp4
+2026-10-28T15:50:52.568Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 190.702 ms

@@ -1,0 +1,50 @@
+{
+  "id": "h265/radl/one",
+  "codec": "h265",
+  "fixture": "radl",
+  "cut": "one",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\one",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-radl-one-1793202865527578600-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.7543724999995902,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\one\\output.mp4",
+  "output_sha256": "f0d14e80a8a4288feed2b0adbb1ce6c4661dc3bae1dd8d901ad4ba54c81e6446",
+  "expected_frames": 1,
+  "decoded_frames": 6,
+  "samples": 6,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 0,
+  "pts_mismatches": 5,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.04,
+  "duration_seconds": 0.08,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 1,
+  "min_frame_psnr_db": 43.979962080337025,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

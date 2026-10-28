@@ -1,0 +1,28 @@
+{
+  "id": "h265/open/adjacent",
+  "codec": "h265",
+  "fixture": "open",
+  "cut": "adjacent",
+  "ranges": [
+    [
+      0,
+      21
+    ],
+    [
+      21,
+      69
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\open\\adjacent",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.5691204000031576,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 69
+}

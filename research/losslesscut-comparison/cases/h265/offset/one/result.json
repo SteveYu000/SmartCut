@@ -1,0 +1,38 @@
+{
+  "id": "h265/offset/one",
+  "codec": "h265",
+  "fixture": "offset",
+  "cut": "one",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\one",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-offset-one-1793202807097675000-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.22085669997613877,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\one\\output.mp4",
+  "output_sha256": "cdd2d98e4a3ca605f4ca548cab2a562199eb2584f06201d10885041c28928e44",
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "missing_video_track",
+    "frame_count"
+  ],
+  "error": "Official app returned an MP4 with no video track",
+  "decoded_frames": 0,
+  "samples": 0,
+  "inspection_note": "Initial inspection raised StopIteration; bundled ffprobe independently confirms an empty container. This is a product-output failure.",
+  "expected_frames": 1,
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "baseline_copied_frames": 0,
+  "copy_efficiency_passed": false
+}

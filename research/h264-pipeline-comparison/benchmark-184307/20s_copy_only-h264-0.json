@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\experiments-20261027-130026\\benchmark-1080p.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264-pipeline-comparison\\benchmark-184307\\20s_copy_only-h264-0.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "avc3",
+  "lossless_full_encode_fallback": false,
+  "time_base": [
+    1,
+    15360
+  ],
+  "input_frames": 600,
+  "idr_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 480,
+  "encoded_frames": 0,
+  "decoded_frames": 0,
+  "duration_ticks": 245760,
+  "decode_delay_ticks": 1024,
+  "elapsed_seconds": 0.650608,
+  "units": [
+    {
+      "mode": "copy",
+      "begin": 60,
+      "end": 120,
+      "decode_begin": 60,
+      "decode_end": 120,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "copy",
+      "begin": 120,
+      "end": 180,
+      "decode_begin": 120,
+      "decode_end": 180,
+      "output_start_ticks": 30720
+    },
+    {
+      "mode": "copy",
+      "begin": 180,
+      "end": 240,
+      "decode_begin": 180,
+      "decode_end": 240,
+      "output_start_ticks": 61440
+    },
+    {
+      "mode": "copy",
+      "begin": 240,
+      "end": 300,
+      "decode_begin": 240,
+      "decode_end": 300,
+      "output_start_ticks": 92160
+    },
+    {
+      "mode": "copy",
+      "begin": 300,
+      "end": 360,
+      "decode_begin": 300,
+      "decode_end": 360,
+      "output_start_ticks": 122880
+    },
+    {
+      "mode": "copy",
+      "begin": 360,
+      "end": 420,
+      "decode_begin": 360,
+      "decode_end": 420,
+      "output_start_ticks": 153600
+    },
+    {
+      "mode": "copy",
+      "begin": 420,
+      "end": 480,
+      "decode_begin": 420,
+      "decode_end": 480,
+      "output_start_ticks": 184320
+    },
+    {
+      "mode": "copy",
+      "begin": 480,
+      "end": 540,
+      "decode_begin": 480,
+      "decode_end": 540,
+      "output_start_ticks": 215040
+    }
+  ]
+}

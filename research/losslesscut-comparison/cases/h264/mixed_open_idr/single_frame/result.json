@@ -1,0 +1,24 @@
+{
+  "id": "h264/mixed_open_idr/single_frame",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "single_frame",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\single_frame",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.4162019999930635,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 1
+}

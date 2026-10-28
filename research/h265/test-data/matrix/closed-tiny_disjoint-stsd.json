@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\fixtures\\source-closed.mp4",
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-195651\\closed-tiny_disjoint-stsd.mp4",
+  "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+  "ps_mode": "stsd",
+  "access": "cra",
+  "lossless_boundaries": false,
+  "time_base": [
+    1,
+    12800
+  ],
+  "input_frames": 240,
+  "irap_epochs": 10,
+  "non_idr_key_packets": 0,
+  "copied_frames": 0,
+  "encoded_frames": 7,
+  "decoded_frames": 53,
+  "duration_ticks": 3584,
+  "decode_delay_ticks": 0,
+  "elapsed_seconds": 0.0908399,
+  "units": [
+    {
+      "mode": "encode",
+      "begin": 1,
+      "end": 3,
+      "cra_to_bla": false,
+      "epoch_begin": 0,
+      "epoch_end": 24,
+      "output_start_ticks": 0
+    },
+    {
+      "mode": "encode",
+      "begin": 22,
+      "end": 24,
+      "cra_to_bla": false,
+      "epoch_begin": 0,
+      "epoch_end": 24,
+      "output_start_ticks": 1024
+    },
+    {
+      "mode": "encode",
+      "begin": 24,
+      "end": 25,
+      "cra_to_bla": false,
+      "epoch_begin": 24,
+      "epoch_end": 48,
+      "output_start_ticks": 2048
+    },
+    {
+      "mode": "encode",
+      "begin": 71,
+      "end": 72,
+      "cra_to_bla": false,
+      "epoch_begin": 48,
+      "epoch_end": 72,
+      "output_start_ticks": 2560
+    },
+    {
+      "mode": "encode",
+      "begin": 72,
+      "end": 73,
+      "cra_to_bla": false,
+      "epoch_begin": 72,
+      "epoch_end": 96,
+      "output_start_ticks": 3072
+    }
+  ]
+}

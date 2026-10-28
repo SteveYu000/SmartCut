@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-vfr-adjacent-1793202783700176200.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 1.12,
+      "name": "0"
+    },
+    {
+      "start": 1.12,
+      "end": 3.68,
+      "name": "1"
+    }
+  ]
+}

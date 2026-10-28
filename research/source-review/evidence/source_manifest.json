@@ -1,0 +1,44 @@
+[
+  {
+    "repository": "DeepRegular/SmartCut",
+    "sha": "84252659110ad34e1af02689f3013badc1561a1e",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "skeskinen/smartcut",
+    "sha": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\skeskinen-smartcut",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "MediaMolder/mediamolder",
+    "sha": "9e51f8f761588e2e3c5ef87e9f11dfd5c091ac58",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mediamolder",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "mifi/lossless-cut",
+    "sha": "3ef357d88d51d8a2a36e5bf3c041b3a269bfbc5a",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\lossless-cut",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "ozmartian/vidcutter",
+    "sha": "62d9b0657fd841c74a8d5bb184512ddaddacbce2",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\vidcutter",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "anyc/avcut",
+    "sha": "7704c26c95a4540a43e5c9ce9c6470595a78eddc",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\avcut",
+    "as_of": "2026-10-25"
+  },
+  {
+    "repository": "fishman/virtualdub",
+    "sha": "388a9e98ff08b9b546e4c053c3781a760f5ff976",
+    "local_source": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\virtualdub-mirror",
+    "as_of": "2026-10-25"
+  }
+]

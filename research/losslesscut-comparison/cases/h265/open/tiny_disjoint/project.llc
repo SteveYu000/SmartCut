@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-open-tiny_disjoint-1793202755318912700.mp4",
+  "cutSegments": [
+    {
+      "start": 0.04,
+      "end": 0.12,
+      "name": "0"
+    },
+    {
+      "start": 0.88,
+      "end": 1.0,
+      "name": "1"
+    },
+    {
+      "start": 2.84,
+      "end": 2.92,
+      "name": "2"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+2026-10-28T16:11:43.663Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.829 ms
+2026-10-28T16:11:43.791Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\negative\existing-output\negative-existing-1793203903553386900.mp4 -hide_banner
+2026-10-28T16:11:43.852Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 80.813 ms
+2026-10-28T16:11:44.175Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 69.771 ms
+2026-10-28T16:11:44.177Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.696 ms
+2026-10-28T16:11:44.183Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\negative\existing-output\negative-existing-1793203903553386900.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\negative-existing-1793203903553386900-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T16:11:44.251Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 146.838 ms

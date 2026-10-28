@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-closed_b3_id0-aligned-1793202556548390300.mp4",
+  "cutSegments": [
+    {
+      "start": 0.96,
+      "end": 8.64,
+      "name": "0"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "h265/vfr/partial",
+  "codec": "h265",
+  "fixture": "vfr",
+  "cut": "partial",
+  "ranges": [
+    [
+      13,
+      227
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\vfr\\partial",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-vfr-partial-1793202772493134400-00.00.00.680-00.00.12.080-0.mp4"
+    ]
+  },
+  "export_seconds": 0.45897010000771843,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\vfr\\partial\\output.mp4",
+  "output_sha256": "0c883aae8287dbeb5f1d93cf541dea26b47768bf35c68b8cbb4f0ce77bc86ff7",
+  "expected_frames": 214,
+  "decoded_frames": 216,
+  "samples": 219,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "copied_pixels"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 203,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [],
+  "baseline_copied_frames": 189,
+  "decode_log": "[hevc @ 0000000002c8eb40] Could not find ref with POC 20\r\n[hevc @ 0000000002c8eb40] Error constructing the frame RPS.\r\n[hevc @ 0000000003ce87c0] Could not find ref with POC 20\r\n[hevc @ 0000000003ce87c0] Error constructing the frame RPS.\r\n[hevc @ 0000000003d08500] Could not find ref with POC 22\r\n[hevc @ 0000000003d08500] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000003e21640] Could not find ref with POC 20\r\n[hevc @ 0000000003e21640] Error constructing the frame RPS.\r\n[hevc @ 0000000003e2d600] Could not find ref with POC 20\r\n[hevc @ 0000000003e2d600] Error constructing the frame RPS.\r\n[hevc @ 0000000003e508c0] Could not find ref with POC 22\r\n[hevc @ 0000000003e508c0] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 0000000000708540] [dec:hevc @ 0000000000701c80] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000708540] [dec:hevc @ 0000000000701c80] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000708540] [dec:hevc @ 0000000000701c80] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000708540] [dec:hevc @ 0000000000701c80] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 210,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.2,
+  "expected_duration_seconds": 11.4,
+  "duration_seconds": 11.48,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 206,
+  "min_frame_psnr_db": 39.25290992732724,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

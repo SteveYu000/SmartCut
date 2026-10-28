@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-vfr-adjacent_inside-1793202672880448100.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.68,
+      "name": "0"
+    },
+    {
+      "start": 0.68,
+      "end": 1.28,
+      "name": "1"
+    }
+  ]
+}

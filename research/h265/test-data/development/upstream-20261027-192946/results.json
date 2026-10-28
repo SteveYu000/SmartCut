@@ -1,0 +1,516 @@
+{
+  "run": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946",
+  "cases": [
+    {
+      "upstream": "deepregular_python",
+      "fixture": "closed",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-closed-partial.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.1274350999883609
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "closed",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-closed-cra_leading.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.880000000-2.960000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.11636010000074748
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "closed",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-closed-multi.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-3.240000000",
+        "--keep",
+        "4.000000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.10229180000897031
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "closed",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-closed-full.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.000000000-9.600000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.09914040000876412
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "open",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-open-partial.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.11337409999396186
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "open",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-open-cra_leading.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.880000000-2.960000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.09869520000938792
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "open",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-open-multi.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-3.240000000",
+        "--keep",
+        "4.000000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.10699280000699218
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "open",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-open-full.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.000000000-9.600000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.11390579999715555
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-main10-partial.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.1150115999917034
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "main10",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-main10-cra_leading.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.880000000-2.960000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.11141359999601264
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-main10-multi.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.520000000-3.240000000",
+        "--keep",
+        "4.000000000-9.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.10456429999612737
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "main10",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-main10-full.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.000000000-9.600000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.10250010000891052
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-vfr-partial.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.680000000-12.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.11008159999619238
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "vfr",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-vfr-cra_leading.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "1.160000000-3.920000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.10182509999140166
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-vfr-multi.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.680000000-4.320000000",
+        "--keep",
+        "5.320000000-12.080000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.1042108000110602
+    },
+    {
+      "upstream": "deepregular_python",
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "test-output\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192946\\deepregular_python-vfr-full.mp4",
+        "--video-encoder",
+        "libx265",
+        "--keep",
+        "0.000000000-12.760000000"
+      ],
+      "cwd": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\DeepRegular-SmartCut",
+      "exit_code": 1,
+      "passed": false,
+      "issues": [
+        "process_exit"
+      ],
+      "seconds": 0.1129650000075344
+    }
+  ],
+  "fixture_sha256": {
+    "closed": "9a028abfcd8d39d05d54b559228b642bde9eef45bb3ef41d6f50a2f0d5b6df10",
+    "open": "214cdd18b39e3ee43e2344eeaa115f54bb10991211472150174f8f51293334ca",
+    "main10": "a10de1683d5b0b3a2dfd154b6cbde136f27dfa23542ce3fe9677c1411502cd15",
+    "vfr": "310a4b53aa7c649b445ee737eaf2a6d1397ef292825ee9c881be037431bb3fcf"
+  },
+  "ffmpeg_version": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers\r\nbuilt with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)\r\nconfiguration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libxml2 --enable-libvmaf --disable-libxcb --disable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-lcms2 --enable-vulkan --enable-libshaderc --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --disable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-vapoursynth --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20261025\r\nlibavutil      60. 26.103 / 60. 26.103\r\nlibavcodec     62. 28.103 / 62. 28.103\r\nlibavformat    62. 12.103 / 62. 12.103\r\nlibavdevice    62.  3.103 / 62.  3.103\r\nlibavfilter    11. 14.103 / 11. 14.103\r\nlibswscale      9.  5.103 /  9.  5.103\r\nlibswresample   6.  3.103 /  6.  3.103\r\n\r\nExiting with exit code 0\r\n"
+}

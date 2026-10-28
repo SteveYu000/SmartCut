@@ -1,0 +1,7 @@
+2026-10-28T15:52:32.909Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.806 ms
+2026-10-28T15:52:33.012Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h265\open\cra_exact\h265-open-cra_exact-1793202752745094400.mp4 -hide_banner
+2026-10-28T15:52:33.062Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 61.146 ms
+2026-10-28T15:52:33.379Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 64.233 ms
+2026-10-28T15:52:33.381Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.063 ms
+2026-10-28T15:52:33.430Z info: ffmpeg -hide_banner -ss 0.960000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h265\open\cra_exact\h265-open-cra_exact-1793202752745094400.mp4 -t 7.560000 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -video_track_timescale 12800 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h265-open-cra_exact-1793202752745094400-00.00.00.960-00.00.08.520-0.mp4
+2026-10-28T15:52:33.535Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 220.505 ms

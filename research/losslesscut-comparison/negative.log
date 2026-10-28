@@ -1,0 +1,4 @@
+avc-invalid-nal False application_returned_output_for_malformed_input
+hevc-invalid-nal False application_returned_output_for_malformed_input
+hevc-invalid-hvcc None no_completed_export_observed
+existing-output True

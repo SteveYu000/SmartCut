@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-closed_b3_id3-cross_idr-1793202574043354900.mp4",
+  "cutSegments": [
+    {
+      "start": 0.92,
+      "end": 1.0,
+      "name": "0"
+    }
+  ]
+}

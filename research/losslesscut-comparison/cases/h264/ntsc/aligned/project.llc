@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-ntsc-aligned-1793202648110115500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.8008,
+      "end": 7.2072,
+      "name": "0"
+    }
+  ]
+}

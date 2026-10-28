@@ -1,0 +1,7 @@
+2026-10-28T15:51:35.622Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.823 ms
+2026-10-28T15:51:35.723Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\single_frame\h264-fragmented-single_frame-1793202695475067000.mp4 -hide_banner
+2026-10-28T15:51:35.777Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 62.688 ms
+2026-10-28T15:51:36.104Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 75.462 ms
+2026-10-28T15:51:36.107Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.883 ms
+2026-10-28T15:51:36.160Z info: ffmpeg -hide_banner -ss 0.920000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\fragmented\single_frame\h264-fragmented-single_frame-1793202695475067000.mp4 -ss 0 -t 0.040000 -map 0:0 -c:0 h264 -b:0 523864 -ignore_unknown -video_track_timescale 12800 -bf 2 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-fragmented-single_frame-1793202695475067000-00.00.00.920-00.00.00.960-0.mp4
+2026-10-28T15:51:36.296Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 266.590 ms

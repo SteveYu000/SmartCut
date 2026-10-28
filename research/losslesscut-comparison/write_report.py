@@ -1,0 +1,138 @@
+"""Render the written findings from the saved, audited evidence."""
+from collections import Counter
+import json
+from pathlib import Path
+
+root=Path(__file__).resolve().parent
+data=json.loads((root/'results.json').read_text(encoding='utf-8'))
+audit=json.loads((root/'audit.json').read_text(encoding='utf-8'))
+extra=json.loads((root/'supplemental.json').read_text(encoding='utf-8'))
+negative=json.loads((root/'negative.json').read_text(encoding='utf-8'))
+
+def table(headers,rows):
+    return '\n'.join(['| '+' | '.join(headers)+' |','|'+'|'.join('---' for _ in headers)+'|']+
+                     ['| '+' | '.join(str(x).replace('|','/') for x in row)+' |' for row in rows])
+
+summary=[]
+for codec in ('h264','h265'):
+    x=audit['summary'][codec]
+    rows=[r for r in data['cases'] if r['codec']==codec and r['cut']!='full']
+    summary.append([codec.upper(),x['total'],x['app_reported_output'],x['correctness_passed'],x['passed'],
+                    f"{sum(r.get('correctness_passed',False) for r in rows)}/{len(rows)}"])
+fixture_table=table(['编码','素材','正确性通过/总数','同时达到基线复制量'],
+                    [[r['codec'],r['fixture'],f"{r['correctness_passed']}/{r['total']}",r['passed']] for r in audit['by_fixture']])
+issues_table=table(['检查失败/导出结果','H.264 用例数','HEVC 用例数'],
+                   [[issue,audit['summary']['h264']['issues'].get(issue,0),audit['summary']['h265']['issues'].get(issue,0)]
+                    for issue in ('app_export_error','missing_video_track','frame_count','pts','decoded_pts','duration','strict_decode','frame_identity','copied_pixels')])
+seek_rows=[]
+for label in sorted({r['case'] for r in extra['seek']}):
+    rows=[r for r in extra['seek'] if r['case']==label]
+    seek_rows.append([label,sum(r['passed'] for r in rows),len(rows)])
+text=f'''# LosslessCut Smart Cut：H.264 / HEVC 同素材测试报告
+
+测试时间：2026-10-28 晚至 2026-10-29 凌晨，北京时间。
+
+**结论：LosslessCut 3.70.2 的 Smart Cut 无法通过本项目的这两套严格测试。**H.264 正确性通过 21/130，HEVC 通过 10/110。若另外要求保留的原始压缩画面数量不少于本项目基线，分别为 19/130、9/110。多数通过项是整片复制；真正发生剪切的用例正确性分别为 8/117 和 1/99。
+
+这是该组边界、B 帧、Open GOP、时间戳及容器压力样本的结果，不能换算成所有日常视频的成功率。测试没有修改或修复 LosslessCut。
+
+## 测试对象与可比范围
+
+使用官方 Windows x64 便携包 [v3.70.2](https://github.com/mifi/lossless-cut/releases/tag/v3.70.2)，对应源码提交 `2610284b6c9a68db124a7a2ef436464ce41ea1d2`。发布包 SHA-256 与 GitHub 公布值一致：`1740c5f17b952c04cf1b1612cf32f56c68a88105c045199526c7ea9678d309b0`。
+
+产品实际使用捆绑的 `{data['bundled_ffmpeg']}`。验收沿用本项目 SDK `{data['oracle_ffmpeg']}`，并用产品捆绑解码器交叉核验了代表性成功/失败样本；三例的解码帧数、像素及错误结论均相同。
+
+通过官方 HTTP API 打开 `.llc` 工程、启用 Smart Cut 并实际导出。没有用自写 FFmpeg 命令配方代替产品，也没有使用普通关键帧剪切来冒充 Smart Cut。使用独立配置和输出目录；多选区开启自动合并，输出 MP4。主矩阵输入只有视频，补充的音轨在前素材通过产品的音轨选择功能排除音频，与原测试一致。
+
+24 份输入与仓库原素材逐字节一致并验证 SHA-256。H.264 为 13 类素材 × 10 种剪辑；HEVC 为 11 类 × 10 种剪辑。显示帧半开区间 `[A,B)` 根据源显示 PTS 换算为工程秒数，源首帧作为零点，不用平均 FPS 换算 VFR。
+
+本项目的 avc3/stsd、hev1/stsd 各自是两种输出实现。LosslessCut 没有对应的 Smart Cut 模式开关，因此对每组素材/剪切只测试产品原生输出一次，共 240 个不同组合，未重复计成 480 次。本项目专用的 QP0/无损回退、IDR-only 开关和源码内部消融也没有产品端的等价选项，列为不适用，不计入通过率。
+
+## 主矩阵结果
+
+{table(['编码','用例','应用报告生成文件','正确性通过','正确性与复制量均通过','实际剪切用例正确性'],summary)}
+
+“正确性”要求严格软件解码无错误；期望帧数、样本数和实际解码帧数一致；显示帧号正确；真实包/解码帧 PTS 符合选区拼接；DTS 单调且不大于 PTS；实际总时长符合源显示间隔；复制 VCL 对应画面像素不变；其余画面逐帧 PSNR 不低于 30 dB；色彩、SAR 等元数据符合原判据。像素提取使用独立合成时钟，防止把 rawvideo mux 的时钟舍入误认为视频解码错误，真实 PTS 另行检查。
+
+“复制量”单独统计：在满足正确性的基础上，要求按输出位置匹配的原始 VCL 数量不低于相同选区的 C++ 基线。HEVC 允许与原判据相同的 CRA/BLA 头部类型规范化。复制效率不足不会被描述成画面损坏。
+
+3 个输出只有容器头，没有任何视频轨：`h264/fragmented/single_frame`、`h265/offset/one`、`h265/fragmented/one`。应用通过 export-complete 返回了文件路径，文件大小仅约 258～262 字节。已用产品捆绑 ffprobe 独立确认；它们归为输出失败，而非测试脚本失败。
+
+{fixture_table}
+
+失败原因可以在同一用例重叠，以下数量不能相加：
+
+{issues_table}
+
+全部低 PSNR 项同时存在画面帧号错误，因此低 PSNR 统计主要反映错帧/参考损坏，不能单独解释成边界编码码率不足。
+
+## 能直接复现的问题
+
+**H.264 首尾非对齐，帧数不只多一帧。**`closed_b3_id0` 保留 `[13,227)`，应为 214 帧。实际 215 帧，条码顺序为：
+
+```text
+期望：13, 14, ... 22, 23, 24, ... 226
+实际：13, 14, ... 22,     24, ... 226, 227, 228
+```
+
+即少了源第 23 帧，又带入了选区外的 227、228 帧。该文件正常软件解码无报错，说明“FFmpeg 成功”“播放器能播”不能作为逐帧正确的充分条件。其 VCL 多重集合仍保留了 203 个目标原始画面，但顺序位置已经偏移，不能据此认定无损剪切正确。
+
+日志中边界编码为 `-ss 0.520000 ... -t 0.400000`，只覆盖 13～22 帧。对应源码 [useFfmpegOperations.ts](https://github.com/mifi/lossless-cut/blob/v3.70.2/src/renderer/src/hooks/useFfmpegOperations.ts#L722-L728) 为避免重复而从下一关键帧时间减去一个 frameDuration；在该半开区间语义下实测丢掉第 23 帧。末端继续采用压缩包 `-t` 裁剪，带 B 帧的样本又包含了目标末尾以后的画面。
+
+**本应单帧的剪辑会进入额外复制分支。**H.264 `closed_b3_id0` 的 `[23,24)` 实际得到 4 帧。下一关键帧时间恰好等于选区结束，源码使用 `losslessCutFrom > cutTo` 判断全段编码，没有覆盖相等的情况；复制函数的最短时长保护又生成了 `-t 0.033333` 的复制部分，再与单帧编码部分拼接。实际命令保存于对应 case 的 application.log。
+
+**HEVC 带入不可用参考画面。**`open` 的 `[13,227)` 输出含 218 个样本、解出 215 帧，期望 214 帧，同时出现参考关系错误、复制画面像素改变与时间轴错误。捆绑解码器与项目验收解码器结果一致。
+
+**正确但复制效率下降。**H.264 非零时间起点素材的 `adjacent`、`adjacent_inside`，以及 HEVC 的 `offset/before_cra`，画面与时间轴通过，但原本能复制的画面被全部重新编码。分别有 48、24、21 个基线复制帧，而产品位置匹配的 VCL 复制数为 0。它们只计入正确性通过，不计入同时达到基线复制量的通过。
+
+## 补充测试
+
+{table(['原有补充场景','结果','主要观察'],[
+ ['800 帧 HEVC，跨 POC-LSB 回绕的两段选区','失败','应用未返回完整输出'],
+ ['800 帧 HEVC，CRA 起点纯复制跨间隙拼接','失败','期望 186 帧，实际解出 167 帧，并有解码/顺序错误'],
+ ['320×192 Main10，多选区','失败','期望 195 帧，软件解出 197 帧且有参考错误'],
+ ['H.264 中文路径、音轨在前、只选视频','失败','路径和视频轨选择成功，但剪切仍为 215/214 帧'],
+ ['HEVC 中文路径、音轨在前、只选视频','失败','路径和轨道选择成功，但剪切及参考关系失败']])}
+
+纯复制跨间隙案例的日志中没有视频重编码调用，因此不能把这例失败归因于新旧编码器参数集差异；还需要处理压缩包边界、CRA/RASL 与 POC/参考状态。
+
+从输出中每一个已声明同步点启动新 demuxer/decoder，要求后续像素与该输出的线性解码后缀一致：
+
+{table(['输出示例','通过同步点','同步点总数'],seek_rows)}
+
+H.264 这一个示例能正确随机访问，但其选区画面仍然错误，两项性质应分开判断。
+
+CUDA 检查中，LosslessCut Main10 输出只在严格解码中得到 10 帧后因参考帧错误停止，无法与软件结果一致。原项目同场景的正常输出作为阳性对照，CUDA 与软件均为 195 帧，像素完全一致，证明设备与检查命令可用。该产品输出的软件解码也已经有错误，不能把结果推广成所有 LosslessCut 文件均不兼容硬件。
+
+## 拒绝与保护测试
+
+{table(['条件','观察','判定'],[
+ ['原 H.264 坏 NAL 长度输入','仍返回导出文件','未达到本项目的主动拒绝条件'],
+ ['原 HEVC 坏 NAL 长度输入','仍返回导出文件','未达到本项目的主动拒绝条件'],
+ ['原 HEVC 损坏 hvcC','未收到完成导出事件','未判定；不能把超时直接当作明确拒绝'],
+ ['既有输出保护','哨兵字节保持不变','通过']])}
+
+其他编码/多视频轨的拒绝、内部参数非法值等属于本项目的输入合同或 CLI 接口，不能要求支持范围不同的应用按同样条件拒绝，未机械计为 LosslessCut 的失败。
+
+## 对项目设计的意义
+
+这些结果支持保留显示帧索引、精确的首尾范围、包/帧双重计数、画面条码、PTS/DTS/时长与复制像素检查。源片段能正常解码和 VCL 数据未改都不足以证明剪辑正确。HEVC 的原生关键帧并不自动解决跨段参考、leading pictures 和 POC 状态。
+
+结果也没有证明所有格式都必须重编号 SPS-ID 或必须使用多个 stsd。H.264 的示例能够正常软件解码并通过随机访问，主要问题已能从首尾范围处理解释；参数集传递与区间正确性需要分别验收。HEVC 的其他错误需要继续按具体码流验证，报告没有把它们统一归因于某一个 SPS/PPS 字段。
+
+## 证据与复现
+
+- [逐项结果 CSV](matrix.csv)、[完整主矩阵 JSON](results.json)、[审计与发布包哈希](audit.json)。
+- [补充测试](supplemental.json)、[负例与保护测试](negative.json)。
+- [主测试脚本](run_suite.py)、[补充脚本](supplemental.py)、[负例脚本](negative.py)、[审计脚本](audit.py)。
+- cases/ 下每个用例保留输入副本、工程、实际应用命令日志、输出 MP4（若生成）和 result.json。supplemental/ 与 negative/ 保存对应额外证据。
+- application.stdout.log 保存完整官方程序运行轨迹。发布程序、捆绑 FFmpeg 和源码归档仅位于本次本地工作目录。
+
+正式 240 个用例都验证 export-start 对应当前素材，并等待 export-complete，不以 HTTP 200 直接认定导出成功。官方 API 的事件端点在普通 POST 请求结束时会自行触发 abort，本脚本以保持未结束的非 JSON 请求体等待事件；仅调整 HTTP 等待方式，未改变程序或编码参数。调试期 HTTP 404/事件订阅失败保留在 harness_attempts 中，不计入产品统计。
+
+24 份原素材哈希与全部 205 个主矩阵输出哈希均已复核；没有遗留未归类的主矩阵测试框架错误。原项目源码及仓库工作区未修改。
+
+复现时使用独立配置启动官方便携包：`--http-api 49327 --config-dir <config目录> --disable-networking`，配置应保持 enableSmartCut=true、autoMerge=true、exportConfirmEnabled=false、autoSaveProjectFile=false、独立输出目录、隐藏完成通知。产品 FFmpeg 路径使用默认捆绑版本。然后执行 run_suite.py、supplemental.py、negative.py、audit.py。run_suite.py 可从 results.json 续跑；要重做完整测试，应使用新的工作目录并按本机目录调整脚本顶部路径。
+'''
+(root/'REPORT.md').write_text(text,encoding='utf-8')
+print(root/'REPORT.md')

@@ -1,0 +1,62 @@
+{
+  "id": "h265/ntsc/one",
+  "codec": "h265",
+  "fixture": "ntsc",
+  "cut": "one",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\one",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-ntsc-one-1793202792420120500-00.00.00.767-00.00.00.801-0.mp4"
+    ]
+  },
+  "export_seconds": 0.6201487999933306,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\ntsc\\one\\output.mp4",
+  "output_sha256": "157bbb37046d8d21d71794cc45414148da6a86a8f31be6bcc514704d3b3f8681",
+  "expected_frames": 1,
+  "decoded_frames": 4,
+  "samples": 7,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      0,
+      23,
+      24
+    ]
+  ],
+  "baseline_copied_frames": 0,
+  "decode_log": "[hevc @ 0000000002c649c0] Could not find ref with POC 20\r\n[hevc @ 0000000002c649c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c851c0] Could not find ref with POC 20\r\n[hevc @ 0000000002c851c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002ca3a00] Could not find ref with POC 22\r\n[hevc @ 0000000002ca3a00] Error constructing the frame RPS.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002c689c0] Could not find ref with POC 20\r\n[hevc @ 0000000002c689c0] Error constructing the frame RPS.\r\n[hevc @ 0000000002c7d640] Could not find ref with POC 20\r\n[hevc @ 0000000002c7d640] Error constructing the frame RPS.\r\n[hevc @ 0000000002c99ac0] Could not find ref with POC 22\r\n[hevc @ 0000000002c99ac0] Error constructing the frame RPS.\r\n[vist#0:0/hevc @ 00000000006ff500] [dec:hevc @ 0000000000716680] Decoding error: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000006ff500] [dec:hevc @ 0000000000716680] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000006ff500] [dec:hevc @ 0000000000716680] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000006ff500] [dec:hevc @ 0000000000716680] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 6,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 0.03336666666666667,
+  "duration_seconds": 0.066733,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 1,
+  "min_frame_psnr_db": 17.70586482305696,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

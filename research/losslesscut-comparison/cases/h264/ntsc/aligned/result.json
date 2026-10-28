@@ -1,0 +1,50 @@
+{
+  "id": "h264/ntsc/aligned",
+  "codec": "h264",
+  "fixture": "ntsc",
+  "cut": "aligned",
+  "ranges": [
+    [
+      24,
+      216
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\ntsc\\aligned",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-ntsc-aligned-1793202648110115500-00.00.00.801-00.00.07.207-0.mp4"
+    ]
+  },
+  "export_seconds": 0.13875839998945594,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\ntsc\\aligned\\output.mp4",
+  "output_sha256": "a56e6ccfd3fe5b9790b4cec94ec812e0d3d6866239a6d1b6eb5d2298bbcade68",
+  "expected_frames": 192,
+  "decoded_frames": 194,
+  "samples": 194,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration"
+  ],
+  "exact_vcl": 192,
+  "normalized_vcl": 192,
+  "pixel_identical": 192,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [],
+  "baseline_copied_frames": 192,
+  "pts_mismatches": 2,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.0,
+  "expected_duration_seconds": 6.4064,
+  "duration_seconds": 6.473133,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 192,
+  "min_frame_psnr_db": null,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

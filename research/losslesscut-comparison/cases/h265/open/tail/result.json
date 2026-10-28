@@ -1,0 +1,24 @@
+{
+  "id": "h265/open/tail",
+  "codec": "h265",
+  "fixture": "open",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\open\\tail",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.45269550001830794,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 27
+}

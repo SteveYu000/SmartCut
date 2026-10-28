@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-ntsc-partial-1793202786016412400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.4337666666666667,
+      "end": 7.574233333333333,
+      "name": "0"
+    }
+  ]
+}

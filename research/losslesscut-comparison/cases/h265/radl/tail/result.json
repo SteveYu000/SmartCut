@@ -1,0 +1,114 @@
+{
+  "id": "h265/radl/tail",
+  "codec": "h265",
+  "fixture": "radl",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\tail",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-radl-tail-1793202868365745200-00.00.08.520-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.6623173000116367,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\radl\\tail\\output.mp4",
+  "output_sha256": "7d2b0d695e23741981854448b68ec3ee546b096a126e05f8f6bd84211e372e69",
+  "expected_frames": 27,
+  "decoded_frames": 28,
+  "samples": 28,
+  "issues": [
+    "frame_count",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 1,
+  "normalized_vcl": 1,
+  "pixel_identical": 0,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      2,
+      215,
+      214
+    ],
+    [
+      3,
+      216,
+      215
+    ],
+    [
+      4,
+      217,
+      216
+    ],
+    [
+      5,
+      218,
+      217
+    ],
+    [
+      6,
+      219,
+      218
+    ],
+    [
+      7,
+      220,
+      219
+    ],
+    [
+      8,
+      221,
+      220
+    ],
+    [
+      9,
+      222,
+      221
+    ],
+    [
+      10,
+      223,
+      222
+    ],
+    [
+      11,
+      224,
+      223
+    ],
+    [
+      12,
+      225,
+      224
+    ],
+    [
+      13,
+      226,
+      225
+    ]
+  ],
+  "baseline_copied_frames": 26,
+  "pts_mismatches": 26,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.08,
+  "expected_duration_seconds": 1.08,
+  "duration_seconds": 0.96,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 26,
+  "min_frame_psnr_db": 17.07543449578921,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

@@ -1,0 +1,247 @@
+{
+  "vfr": {
+    "pipeline_exit": 1,
+    "expected_pts_seconds": [
+      0.0,
+      0.08000000000000007
+    ],
+    "h264": {
+      "pts_seconds": [
+        0.0,
+        0.08
+      ],
+      "stream_duration": "0.120000",
+      "packets": [
+        {
+          "pts": 0,
+          "dts": 0,
+          "duration": 1024
+        },
+        {
+          "pts": 1024,
+          "dts": 1024,
+          "duration": 512
+        }
+      ],
+      "time_base": "1/12800"
+    },
+    "pipeline": {
+      "pts_seconds": [
+        0.0,
+        0.04
+      ],
+      "stream_duration": "0.080000",
+      "packets": [
+        {
+          "pts": 0,
+          "dts": 0,
+          "duration": 512
+        },
+        {
+          "pts": 512,
+          "dts": 512,
+          "duration": 512
+        }
+      ],
+      "time_base": "1/12800"
+    },
+    "segments": {
+      "run-20261028-105359-4776568\\unit000.mp4": {
+        "pts_seconds": [
+          1.2
+        ],
+        "stream_duration": "0.040000",
+        "packets": [
+          {
+            "pts": 15360,
+            "dts": 15360,
+            "duration": 512
+          }
+        ],
+        "time_base": "1/12800"
+      },
+      "run-20261028-105359-4776568\\unit001.mp4": {
+        "pts_seconds": [
+          1.28
+        ],
+        "stream_duration": "0.040000",
+        "packets": [
+          {
+            "pts": 16384,
+            "dts": 16384,
+            "duration": 512
+          }
+        ],
+        "time_base": "1/12800"
+      }
+    }
+  },
+  "audio": {
+    "pipeline_exit": 1,
+    "threshold": 0.554681658744812,
+    "source_samples": 460800,
+    "output_samples": 460800,
+    "source_events": [
+      0,
+      7680,
+      15360,
+      23040,
+      30720,
+      38400,
+      46080,
+      53760,
+      61440,
+      69120,
+      76800,
+      84480,
+      92160,
+      99840,
+      107520,
+      115200,
+      122880,
+      130560,
+      138240,
+      145920,
+      153600,
+      161280,
+      168960,
+      176640,
+      184320,
+      192000,
+      199680,
+      207360,
+      215040,
+      222720,
+      230400,
+      238080,
+      245760,
+      253440,
+      261120,
+      268800,
+      276480,
+      284160,
+      291840,
+      299520,
+      307200,
+      314880,
+      322560,
+      330240,
+      337920,
+      345600,
+      353280,
+      360960,
+      368640,
+      376320,
+      384000,
+      391680,
+      399360,
+      407040,
+      414720,
+      422400,
+      430080,
+      437760,
+      445440,
+      453120
+    ],
+    "output_events": [
+      7680,
+      15360,
+      23040,
+      30720,
+      38400,
+      46080,
+      53760,
+      61440,
+      69120,
+      76800,
+      84480,
+      92160,
+      99840,
+      107520,
+      115200,
+      122880,
+      130560,
+      138240,
+      145920,
+      153600,
+      161280,
+      168960,
+      176640,
+      184320,
+      192000,
+      199680,
+      207360,
+      215040,
+      222720,
+      230400,
+      238080,
+      245760,
+      253440,
+      261120,
+      268800,
+      276480,
+      284160,
+      291840,
+      299520,
+      307200,
+      314880,
+      322560,
+      330240,
+      337920,
+      345600,
+      353280,
+      360960,
+      368640,
+      376320,
+      384000,
+      391680,
+      399360,
+      407040,
+      414720,
+      422400,
+      430080,
+      437760,
+      445440,
+      453120
+    ],
+    "missing_near_source_samples": [
+      0
+    ],
+    "missing_windows": [
+      {
+        "sample": 0,
+        "source_peak": 0.9262113571166992,
+        "output_peak": 0.5107969641685486
+      }
+    ],
+    "verification": {
+      "passed": false,
+      "frames": 240,
+      "expected_frames": 240,
+      "pts_mismatches": 0,
+      "zero_gaps": 0,
+      "copy_frames_checked": 240,
+      "copy_frames_matching": 240,
+      "min_encoded_region_psnr_db": null,
+      "decode_warning": null,
+      "audio": [
+        {
+          "stream_index": 1,
+          "codec": "aac",
+          "expected_samples": 460800,
+          "decoded_samples": 460800,
+          "sample_delta": 0,
+          "impulses_expected": 60,
+          "impulses_found": 59,
+          "median_offset_ms": 0,
+          "max_residual_ms": "inconclusive",
+          "note": "impulse count differs"
+        }
+      ],
+      "problems": [
+        "audio stream 1: 59 impulses, expected 60",
+        "audio stream 1: impulse count differs, position check inconclusive"
+      ]
+    }
+  }
+}

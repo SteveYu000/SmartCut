@@ -1,0 +1,2822 @@
+{
+  "description": "Unchanged SmartCut.Core.Verifier plus the original pipeline integration test's copy-coverage assertion, applied to saved official LosslessCut 3.70.2 outputs. No re-export.",
+  "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers",
+  "core_dll": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\pipeline-crosscheck\\artifacts\\bin\\PipelineCrosscheck\\release\\SmartCut.Core.dll",
+  "total": 130,
+  "passed": 19,
+  "cases": [
+    {
+      "id": "h264/closed_b3_id0/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id0/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.174016,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.17 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id0/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id0/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.910846,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.91 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id0/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id0/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.584858,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id0/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.584858,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id0/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 49,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.016553,
+        "decode_warning": "[null @ 000000000077fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000077fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "49 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 000000000077fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000077fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 12.02 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id0/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000012b96c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000012b96c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 00000000012b96c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000012b96c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id0/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 000000000096fd80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 000000000096fd80] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 000000000096fd80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 000000000096fd80] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id3/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id3/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id3/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.174016,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.17 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id3/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.912635,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.91 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id3/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id3/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.672443,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id3/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.672443,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/closed_b3_id3/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 49,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.016553,
+        "decode_warning": "[null @ 000000000105fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000105fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "49 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 000000000105fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000105fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 12.02 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id3/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000000b667c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 0000000000b667c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 0000000000b667c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 0000000000b667c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/closed_b3_id3/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000001630000] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 0000000001630000] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 0000000001630000] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 0000000001630000] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/baseline/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/aligned",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 192,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 213,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.432425,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 213 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.43 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/baseline/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 202,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 191,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.948365,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 202 != planned 203",
+          "copied pictures differ at 191/191 positions",
+          "re-encoded region PSNR 27.95 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/baseline/tail_only",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 203,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 2,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 43.228084,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 2 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/cross_idr",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 2,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 43.228084,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 150,
+        "expected_frames": 151,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 119,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.255897,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 150 != planned 151",
+          "copied pictures differ at 119/119 positions",
+          "re-encoded region PSNR 12.26 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/baseline/adjacent",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 48,
+        "expected_frames": 48,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 48,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/baseline/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 24,
+        "expected_frames": 24,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "copied pictures differ at 11/24 positions"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/open_gop/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 197,
+        "expected_frames": 192,
+        "pts_mismatches": 192,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[h264 @ 0000000003028900] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000009f67c0] [dec:h264 @ 0000000000adee00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000",
+        "audio": [],
+        "problems": [
+          "frame count 197 != planned 192",
+          "192 presentation times differ from the plan",
+          "strict decode reported: [h264 @ 0000000003028900] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000009f67c0] [dec:h264 @ 0000000000adee00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 218,
+        "expected_frames": 214,
+        "pts_mismatches": 206,
+        "zero_gaps": 2,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 15.20276,
+        "decode_warning": "[h264 @ 0000000002c813c0] reference count 3 overflow\r\n[h264 @ 0000000002e99040] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000002e99040] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+        "audio": [],
+        "problems": [
+          "frame count 218 != planned 214",
+          "206 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "strict decode reported: [h264 @ 0000000002c813c0] reference count 3 overflow\r\n[h264 @ 0000000002e99040] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000002e99040] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+          "re-encoded region PSNR 15.20 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 207,
+        "expected_frames": 203,
+        "pts_mismatches": 195,
+        "zero_gaps": 2,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 15.203491,
+        "decode_warning": "[h264 @ 00000000033e2c00] reference count 3 overflow\r\n[h264 @ 00000000033fc380] top block unavailable for requested intra mode -1\r\n[h264 @ 00000000033fc380] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+        "audio": [],
+        "problems": [
+          "frame count 207 != planned 203",
+          "195 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "strict decode reported: [h264 @ 00000000033e2c00] reference count 3 overflow\r\n[h264 @ 00000000033fc380] top block unavailable for requested intra mode -1\r\n[h264 @ 00000000033fc380] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+          "re-encoded region PSNR 15.20 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 208,
+        "expected_frames": 203,
+        "pts_mismatches": 203,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[h264 @ 0000000002f85600] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000855c40] [dec:h264 @ 0000000000869d00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000",
+        "audio": [],
+        "problems": [
+          "frame count 208 != planned 203",
+          "203 presentation times differ from the plan",
+          "strict decode reported: [h264 @ 0000000002f85600] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000855c40] [dec:h264 @ 0000000000869d00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/single_frame",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/open_gop/cross_idr",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/open_gop/multiple",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/open_gop/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 55,
+        "expected_frames": 48,
+        "pts_mismatches": 24,
+        "zero_gaps": 2,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.561787,
+        "decode_warning": "[h264 @ 0000000002ed4700] co located POCs unavailable\r\n[h264 @ 0000000002d0bfc0] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000621800] [dec:h264 @ 0000000002c2dac0] Error submitting packet to decoder: Invalid dat",
+        "audio": [],
+        "problems": [
+          "frame count 55 != planned 48",
+          "24 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "strict decode reported: [h264 @ 0000000002ed4700] co located POCs unavailable\r\n[h264 @ 0000000002d0bfc0] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000621800] [dec:h264 @ 0000000002c2dac0] Error submitting packet to decoder: Invalid dat",
+          "re-encoded region PSNR 19.56 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/open_gop/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 31,
+        "expected_frames": 24,
+        "pts_mismatches": 4,
+        "zero_gaps": 3,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 22.053554,
+        "decode_warning": "[h264 @ 000000000372e6c0] top block unavailable for requested intra mode -1\r\n[h264 @ 000000000372e6c0] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000003841dc0] mmco: unref short failure\r\n[vist#0:0/h264 @ 0",
+        "audio": [],
+        "problems": [
+          "frame count 31 != planned 24",
+          "4 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "strict decode reported: [h264 @ 000000000372e6c0] top block unavailable for requested intra mode -1\r\n[h264 @ 000000000372e6c0] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000003841dc0] mmco: unref short failure\r\n[vist#0:0/h264 @ 0",
+          "re-encoded region PSNR 22.05 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/mixed_open_idr/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/mixed_open_idr/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 197,
+        "expected_frames": 192,
+        "pts_mismatches": 192,
+        "zero_gaps": 0,
+        "copy_frames_checked": 72,
+        "copy_frames_matching": 72,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[h264 @ 00000000039b1780] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000013188c0] [dec:h264 @ 00000000039bad00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000",
+        "audio": [],
+        "problems": [
+          "frame count 197 != planned 192",
+          "192 presentation times differ from the plan",
+          "strict decode reported: [h264 @ 00000000039b1780] mmco: unref short failure\r\n[vist#0:0/h264 @ 00000000013188c0] [dec:h264 @ 00000000039bad00] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000"
+        ]
+      },
+      "baseline_copied_frames": 72,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/mixed_open_idr/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 218,
+        "expected_frames": 214,
+        "pts_mismatches": 206,
+        "zero_gaps": 2,
+        "copy_frames_checked": 72,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 14.354772,
+        "decode_warning": "[h264 @ 00000000033050c0] reference count 3 overflow\r\n[h264 @ 000000000335b640] top block unavailable for requested intra mode -1\r\n[h264 @ 000000000335b640] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+        "audio": [],
+        "problems": [
+          "frame count 218 != planned 214",
+          "206 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 72/72 positions",
+          "strict decode reported: [h264 @ 00000000033050c0] reference count 3 overflow\r\n[h264 @ 000000000335b640] top block unavailable for requested intra mode -1\r\n[h264 @ 000000000335b640] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+          "re-encoded region PSNR 14.35 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 72,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/mixed_open_idr/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 207,
+        "expected_frames": 203,
+        "pts_mismatches": 195,
+        "zero_gaps": 2,
+        "copy_frames_checked": 72,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 14.252193,
+        "decode_warning": "[h264 @ 0000000003000a00] reference count 3 overflow\r\n[h264 @ 0000000003019f00] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000003019f00] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+        "audio": [],
+        "problems": [
+          "frame count 207 != planned 203",
+          "195 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 72/72 positions",
+          "strict decode reported: [h264 @ 0000000003000a00] reference count 3 overflow\r\n[h264 @ 0000000003019f00] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000003019f00] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 000000000",
+          "re-encoded region PSNR 14.25 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 72,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/mixed_open_idr/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 208,
+        "expected_frames": 203,
+        "pts_mismatches": 203,
+        "zero_gaps": 0,
+        "copy_frames_checked": 72,
+        "copy_frames_matching": 72,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[h264 @ 00000000036be680] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000f3f500] [dec:h264 @ 0000000000f45680] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000",
+        "audio": [],
+        "problems": [
+          "frame count 208 != planned 203",
+          "203 presentation times differ from the plan",
+          "strict decode reported: [h264 @ 00000000036be680] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000f3f500] [dec:h264 @ 0000000000f45680] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000"
+        ]
+      },
+      "baseline_copied_frames": 72,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/mixed_open_idr/single_frame",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/mixed_open_idr/cross_idr",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/mixed_open_idr/multiple",
+      "passed": false,
+      "error": "LosslessCut did not return a completed output"
+    },
+    {
+      "id": "h264/mixed_open_idr/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 55,
+        "expected_frames": 48,
+        "pts_mismatches": 24,
+        "zero_gaps": 2,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.561787,
+        "decode_warning": "[h264 @ 0000000003354cc0] co located POCs unavailable\r\n[h264 @ 000000000337d040] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000a7f4c0] [dec:h264 @ 000000000309a980] Error submitting packet to decoder: Invalid dat",
+        "audio": [],
+        "problems": [
+          "frame count 55 != planned 48",
+          "24 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "strict decode reported: [h264 @ 0000000003354cc0] co located POCs unavailable\r\n[h264 @ 000000000337d040] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000a7f4c0] [dec:h264 @ 000000000309a980] Error submitting packet to decoder: Invalid dat",
+          "re-encoded region PSNR 19.56 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/mixed_open_idr/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 31,
+        "expected_frames": 24,
+        "pts_mismatches": 4,
+        "zero_gaps": 3,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 22.050493,
+        "decode_warning": "[h264 @ 0000000003d27200] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000003d27200] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000003c4ea80] mmco: unref short failure\r\n[vist#0:0/h264 @ 0",
+        "audio": [],
+        "problems": [
+          "frame count 31 != planned 24",
+          "4 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "strict decode reported: [h264 @ 0000000003d27200] top block unavailable for requested intra mode -1\r\n[h264 @ 0000000003d27200] error while decoding MB 0 0, bytestream 5314\r\n[h264 @ 0000000003c4ea80] mmco: unref short failure\r\n[vist#0:0/h264 @ 0",
+          "re-encoded region PSNR 22.05 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.190997,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.19 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/high10/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.940303,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.94 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/high10/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.930256,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.930256,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/high10/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 49,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.038358,
+        "decode_warning": "[null @ 0000000003640d80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000003640d80] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "49 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 0000000003640d80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000003640d80] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 12.04 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/high10/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000034a12c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000034a12c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 00000000034a12c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000034a12c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/high10/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000033fe200] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000033fe200] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 00000000033fe200] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000033fe200] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/multi_slice/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/multi_slice/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/multi_slice/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.174173,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.17 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/multi_slice/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.921199,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.92 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/multi_slice/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/multi_slice/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 41.489537,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/multi_slice/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 41.489537,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/multi_slice/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 49,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.021558,
+        "decode_warning": "[null @ 0000000000999c00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000000999c00] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "49 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 0000000000999c00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000000999c00] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 12.02 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/multi_slice/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000014b9ec0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000014b9ec0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 00000000014b9ec0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000014b9ec0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/multi_slice/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000009a67c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000009a67c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 00000000009a67c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000009a67c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/ntsc/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/ntsc/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/ntsc/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.172243,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.17 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/ntsc/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.884128,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.88 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/ntsc/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/ntsc/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 39.815086,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/ntsc/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 39.815086,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/ntsc/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 129,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.010185,
+        "decode_warning": "[null @ 0000000001336840] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000001336840] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "129 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 0000000001336840] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 0000000001336840] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 12.01 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/ntsc/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000000fa9c00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 0000000000fa9c00] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 0000000000fa9c00] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 0000000000fa9c00] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/ntsc/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000009ca080] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000009ca080] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 00000000009ca080] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000009ca080] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/vfr/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 216,
+        "expected_frames": 214,
+        "pts_mismatches": 203,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": 40.766498,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 216 != planned 214",
+          "203 presentation times differ from the plan"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 192,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": 40.766498,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203",
+          "192 presentation times differ from the plan"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 39.417403,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 1,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 39.417403,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2",
+          "1 presentation times differ from the plan"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/vfr/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 155,
+        "expected_frames": 151,
+        "pts_mismatches": 126,
+        "zero_gaps": 2,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 11.913411,
+        "decode_warning": "[null @ 000000000114fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 40 >= 40\r\n[null @ 000000000114fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 155 != planned 151",
+          "126 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 000000000114fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 40 >= 40\r\n[null @ 000000000114fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 11.91 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/vfr/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 14,
+        "zero_gaps": 0,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 000000000303b600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 37 >= 35\r\n[null @ 000000000303b600] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "14 presentation times differ from the plan",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 000000000303b600] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 37 >= 35\r\n[null @ 000000000303b600] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/vfr/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 29,
+        "expected_frames": 24,
+        "pts_mismatches": 6,
+        "zero_gaps": 0,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000001581380] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 21 >= 19\r\n[null @ 0000000001581380] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 29 != planned 24",
+          "6 presentation times differ from the plan",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 0000000001581380] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 21 >= 19\r\n[null @ 0000000001581380] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/offset/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 195,
+        "expected_frames": 192,
+        "pts_mismatches": 168,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000000b0fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 24 >= 23\r\n[null @ 0000000000b0fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 195 != planned 192",
+          "168 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 0000000000b0fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 24 >= 23\r\n[null @ 0000000000b0fd40] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 217,
+        "expected_frames": 214,
+        "pts_mismatches": 179,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.81638,
+        "decode_warning": "[null @ 0000000000802cc0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 35 >= 34\r\n[null @ 0000000000802cc0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 217 != planned 214",
+          "179 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 0000000000802cc0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 35 >= 34\r\n[null @ 0000000000802cc0] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 19.82 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 206,
+        "expected_frames": 203,
+        "pts_mismatches": 168,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 42.574862,
+        "decode_warning": "[null @ 00000000008f58c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 35 >= 34\r\n[null @ 00000000008f58c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 206 != planned 203",
+          "168 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 00000000008f58c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 35 >= 34\r\n[null @ 00000000008f58c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 206,
+        "expected_frames": 203,
+        "pts_mismatches": 179,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.81638,
+        "decode_warning": "[null @ 000000000332b740] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 24 >= 23\r\n[null @ 000000000332b740] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 206 != planned 203",
+          "179 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 000000000332b740] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 24 >= 23\r\n[null @ 000000000332b740] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 19.82 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/single_frame",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 1,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.584858,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/offset/cross_idr",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 2,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 39.855214,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/offset/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 155,
+        "expected_frames": 151,
+        "pts_mismatches": 121,
+        "zero_gaps": 2,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 12.26757,
+        "decode_warning": "[null @ 00000000012e8340] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 29 >= 29\r\n    Last message repeated 1 times\r\n[null @ 00000000012e8340] Application provided invalid, non mono",
+        "audio": [],
+        "problems": [
+          "frame count 155 != planned 151",
+          "121 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 00000000012e8340] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 29 >= 29\r\n    Last message repeated 1 times\r\n[null @ 00000000012e8340] Application provided invalid, non mono",
+          "re-encoded region PSNR 12.27 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 48,
+        "expected_frames": 48,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "copied pictures differ at 48/48 positions"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/offset/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 24,
+        "expected_frames": 24,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "copied pictures differ at 24/24 positions"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fragmented/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 195,
+        "expected_frames": 192,
+        "pts_mismatches": 191,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 195 != planned 192",
+          "191 presentation times differ from the plan",
+          "copied pictures differ at 192/192 positions"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 217,
+        "expected_frames": 214,
+        "pts_mismatches": 203,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.81638,
+        "decode_warning": "[null @ 00000000033cf380] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 11 >= 10\r\n[null @ 00000000033cf380] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 217 != planned 214",
+          "203 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 00000000033cf380] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 11 >= 10\r\n[null @ 00000000033cf380] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 19.82 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 206,
+        "expected_frames": 203,
+        "pts_mismatches": 192,
+        "zero_gaps": 2,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 42.415677,
+        "decode_warning": "[null @ 00000000034bf980] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 11 >= 10\r\n[null @ 00000000034bf980] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 206 != planned 203",
+          "192 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 192/192 positions",
+          "strict decode reported: [null @ 00000000034bf980] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 11 >= 10\r\n[null @ 00000000034bf980] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 206,
+        "expected_frames": 203,
+        "pts_mismatches": 202,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 19.81638,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 206 != planned 203",
+          "202 presentation times differ from the plan",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 19.82 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/single_frame",
+      "passed": false,
+      "error": "Sequence contains no matching element"
+    },
+    {
+      "id": "h264/fragmented/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 1,
+        "expected_frames": 2,
+        "pts_mismatches": 1,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 17.658477,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 1 != planned 2",
+          "1 presentation times differ from the plan",
+          "re-encoded region PSNR 17.66 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fragmented/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 157,
+        "expected_frames": 151,
+        "pts_mismatches": 150,
+        "zero_gaps": 4,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 11.638386,
+        "decode_warning": "[null @ 0000000000dffd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 31 >= 28\r\n[null @ 0000000000dffd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 157 != planned 151",
+          "150 presentation times differ from the plan",
+          "4 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 0000000000dffd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 31 >= 28\r\n[null @ 0000000000dffd40] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 11.64 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 54,
+        "expected_frames": 48,
+        "pts_mismatches": 47,
+        "zero_gaps": 2,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 0000000000983700] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 27 >= 23\r\n    Last message repeated 1 times\r\n[null @ 0000000000983700] Application provided invalid, non mono",
+        "audio": [],
+        "problems": [
+          "frame count 54 != planned 48",
+          "47 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 48/48 positions",
+          "strict decode reported: [null @ 0000000000983700] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 27 >= 23\r\n    Last message repeated 1 times\r\n[null @ 0000000000983700] Application provided invalid, non mono"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fragmented/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 27,
+        "expected_frames": 24,
+        "pts_mismatches": 23,
+        "zero_gaps": 2,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 1,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 000000000129b1c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 15 >= 12\r\n[null @ 000000000129b1c0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 27 != planned 24",
+          "23 presentation times differ from the plan",
+          "2 duplicate presentation times",
+          "copied pictures differ at 23/24 positions",
+          "strict decode reported: [null @ 000000000129b1c0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 15 >= 12\r\n[null @ 000000000129b1c0] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fullrange_sar/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fullrange_sar/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 194,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 194 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fullrange_sar/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 215,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 18.559367,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 215 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 18.56 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fullrange_sar/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 204,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 26.405848,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 204 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 26.41 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fullrange_sar/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fullrange_sar/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.069896,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fullrange_sar/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 4,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 40.069896,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 4 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/fullrange_sar/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 154,
+        "expected_frames": 151,
+        "pts_mismatches": 49,
+        "zero_gaps": 3,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 10.278525,
+        "decode_warning": "[null @ 000000000110fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000110fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 154 != planned 151",
+          "49 presentation times differ from the plan",
+          "3 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 000000000110fd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 30\r\n[null @ 000000000110fd40] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 10.28 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fullrange_sar/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 52,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000014afd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000014afd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 52 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 00000000014afd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 27\r\n[null @ 00000000014afd40] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/fullrange_sar/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 28,
+        "expected_frames": 24,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 13,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000008cfd80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000008cfd80] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 28 != planned 24",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 11/24 positions",
+          "strict decode reported: [null @ 00000000008cfd80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 15\r\n[null @ 00000000008cfd80] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/nvenc/full",
+      "passed": true,
+      "verification": {
+        "passed": true,
+        "frames": 240,
+        "expected_frames": 240,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 240,
+        "copy_frames_matching": 240,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": []
+      },
+      "baseline_copied_frames": 240,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/nvenc/aligned",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 195,
+        "expected_frames": 192,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 195 != planned 192"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/nvenc/both_edges",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 216,
+        "expected_frames": 214,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 20.191626,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 216 != planned 214",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 20.19 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/nvenc/head_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 205,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 27.915268,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 205 != planned 203",
+          "copied pictures differ at 192/192 positions",
+          "re-encoded region PSNR 27.92 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/nvenc/tail_only",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 206,
+        "expected_frames": 203,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 192,
+        "copy_frames_matching": 192,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 206 != planned 203"
+        ]
+      },
+      "baseline_copied_frames": 192,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/nvenc/single_frame",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 5,
+        "expected_frames": 1,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 41.407626,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 5 != planned 1"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/nvenc/cross_idr",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 5,
+        "expected_frames": 2,
+        "pts_mismatches": 0,
+        "zero_gaps": 0,
+        "copy_frames_checked": 0,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 41.407626,
+        "decode_warning": null,
+        "audio": [],
+        "problems": [
+          "frame count 5 != planned 2"
+        ]
+      },
+      "baseline_copied_frames": 0,
+      "copy_coverage_passed": true
+    },
+    {
+      "id": "h264/nvenc/multiple",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 156,
+        "expected_frames": 151,
+        "pts_mismatches": 120,
+        "zero_gaps": 4,
+        "copy_frames_checked": 120,
+        "copy_frames_matching": 0,
+        "min_encoded_region_psnr_db": 11.927712,
+        "decode_warning": "[null @ 00000000014f9fc0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 29\r\n[null @ 00000000014f9fc0] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 156 != planned 151",
+          "120 presentation times differ from the plan",
+          "4 duplicate presentation times",
+          "copied pictures differ at 120/120 positions",
+          "strict decode reported: [null @ 00000000014f9fc0] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 30 >= 29\r\n[null @ 00000000014f9fc0] Application provided invalid, non monotonically increasing dts to muxer i",
+          "re-encoded region PSNR 11.93 dB is below 30 dB"
+        ]
+      },
+      "baseline_copied_frames": 120,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/nvenc/adjacent",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 54,
+        "expected_frames": 48,
+        "pts_mismatches": 3,
+        "zero_gaps": 1,
+        "copy_frames_checked": 48,
+        "copy_frames_matching": 25,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 00000000007dfd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 26\r\n[null @ 00000000007dfd40] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 54 != planned 48",
+          "3 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 23/48 positions",
+          "strict decode reported: [null @ 00000000007dfd40] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 28 >= 26\r\n[null @ 00000000007dfd40] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 48,
+      "copy_coverage_passed": false
+    },
+    {
+      "id": "h264/nvenc/adjacent_inside",
+      "passed": false,
+      "verification": {
+        "passed": false,
+        "frames": 30,
+        "expected_frames": 24,
+        "pts_mismatches": 1,
+        "zero_gaps": 1,
+        "copy_frames_checked": 24,
+        "copy_frames_matching": 15,
+        "min_encoded_region_psnr_db": null,
+        "decode_warning": "[null @ 000000000148f580] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 16\r\n[null @ 000000000148f580] Application provided invalid, non monotonically increasing dts to muxer i",
+        "audio": [],
+        "problems": [
+          "frame count 30 != planned 24",
+          "1 presentation times differ from the plan",
+          "1 duplicate presentation times",
+          "copied pictures differ at 9/24 positions",
+          "strict decode reported: [null @ 000000000148f580] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 16 >= 16\r\n[null @ 000000000148f580] Application provided invalid, non monotonically increasing dts to muxer i"
+        ]
+      },
+      "baseline_copied_frames": 24,
+      "copy_coverage_passed": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "h264/fragmented/single_frame",
+  "codec": "h264",
+  "fixture": "fragmented",
+  "cut": "single_frame",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fragmented\\single_frame",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-fragmented-single_frame-1793202695475067000-00.00.00.920-00.00.00.960-0.mp4"
+    ]
+  },
+  "export_seconds": 0.21766110000316985,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\fragmented\\single_frame\\output.mp4",
+  "output_sha256": "bb0bd4308ad2a6d1b8ff47746a43534577645ead8d05aeba112eb9274a3f34b2",
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "missing_video_track",
+    "frame_count"
+  ],
+  "error": "Official app returned an MP4 with no video track",
+  "decoded_frames": 0,
+  "samples": 0,
+  "inspection_note": "Initial inspection raised StopIteration; bundled ffprobe independently confirms an empty container. This is a product-output failure.",
+  "expected_frames": 1,
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 0,
+  "baseline_copied_frames": 0,
+  "copy_efficiency_passed": false
+}

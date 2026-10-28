@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-fragmented-single_frame-1793202695475067000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.92,
+      "end": 0.96,
+      "name": "0"
+    }
+  ]
+}

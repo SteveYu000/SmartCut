@@ -1,0 +1,117 @@
+{
+  "id": "h265/offset/full",
+  "codec": "h265",
+  "fixture": "offset",
+  "cut": "full",
+  "ranges": [
+    [
+      0,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\full",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h265-offset-full-1793202805498917400-00.00.00.000-00.00.09.600-0.mp4"
+    ]
+  },
+  "export_seconds": 0.6776534999953583,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\full\\output.mp4",
+  "output_sha256": "df991894b537d9d22193df25069936d0285baaa74fd76e950ebfa24911054f71",
+  "expected_frames": 240,
+  "decoded_frames": 240,
+  "samples": 244,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 0,
+  "normalized_vcl": 0,
+  "pixel_identical": 168,
+  "copied_pixel_mismatches": 0,
+  "barcode_errors": [
+    [
+      51,
+      51,
+      35
+    ],
+    [
+      52,
+      52,
+      4
+    ],
+    [
+      53,
+      53,
+      5
+    ],
+    [
+      54,
+      54,
+      50
+    ],
+    [
+      55,
+      55,
+      51
+    ],
+    [
+      56,
+      56,
+      32
+    ],
+    [
+      57,
+      57,
+      33
+    ],
+    [
+      58,
+      58,
+      0
+    ],
+    [
+      59,
+      59,
+      0
+    ],
+    [
+      60,
+      60,
+      16
+    ],
+    [
+      61,
+      61,
+      33
+    ],
+    [
+      62,
+      62,
+      48
+    ]
+  ],
+  "baseline_copied_frames": 240,
+  "decode_log": "[hevc @ 0000000002bc7240] Duplicate POC in a sequence: 48.\r\n[hevc @ 0000000002bf5d40] Duplicate POC in a sequence: 46.\r\n[hevc @ 0000000002c0b980] Duplicate POC in a sequence: 45.\r\n[hevc @ 00000000001fbdc0] Duplicate POC in a sequence: 47.\r\n",
+  "strict_decode_log": "[hevc @ 0000000002c50580] Duplicate POC in a sequence: 48.\r\n[hevc @ 0000000002c4f6c0] Duplicate POC in a sequence: 46.\r\n[hevc @ 00000000008ad240] Duplicate POC in a sequence: 45.\r\n[hevc @ 00000000008aebc0] Duplicate POC in a sequence: 47.\r\n[vist#0:0/hevc @ 00000000007bf500] [dec:hevc @ 0000000002c5a540] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007bf500] [dec:hevc @ 0000000002c5a540] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000007bf500] [dec:hevc @ 0000000002c5a540] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000007bf500] [dec:hevc @ 0000000002c5a540] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 197,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.2,
+  "expected_duration_seconds": 9.6,
+  "duration_seconds": 9.56,
+  "codec_tag": "hev1",
+  "sample_description_count": 1,
+  "vcl_multiset_preserved": 195,
+  "min_frame_psnr_db": 18.211347778395773,
+  "copy_efficiency_passed": false,
+  "correctness_passed": false,
+  "passed": false
+}

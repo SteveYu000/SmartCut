@@ -1,0 +1,7 @@
+2026-10-28T15:49:58.184Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.733 ms
+2026-10-28T15:49:58.285Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\open_gop\tail_only\h264-open_gop-tail_only-1793202598089651500.mp4 -hide_banner
+2026-10-28T15:49:58.368Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 90.647 ms
+2026-10-28T15:49:58.685Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 65.349 ms
+2026-10-28T15:49:58.687Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 2.797 ms
+2026-10-28T15:49:58.737Z info: ffmpeg -hide_banner -ss 0.960000 -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\open_gop\tail_only\h264-open_gop-tail_only-1793202598089651500.mp4 -t 8.120000 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -video_track_timescale 12800 -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-open_gop-tail_only-1793202598089651500-00.00.00.960-00.00.09.080-0.mp4
+2026-10-28T15:49:58.801Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 180.997 ms

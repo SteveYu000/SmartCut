@@ -1,0 +1,122 @@
+{
+  "id": "h264/mixed_open_idr/adjacent",
+  "codec": "h264",
+  "fixture": "mixed_open_idr",
+  "cut": "adjacent",
+  "ranges": [
+    [
+      0,
+      24
+    ],
+    [
+      24,
+      48
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\adjacent",
+  "export_event": {
+    "eventName": "export-complete",
+    "paths": [
+      "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\exports\\h264-mixed_open_idr-adjacent-1793202615301484700-cut-merged-1793202616220.mp4"
+    ]
+  },
+  "export_seconds": 0.45688119999249466,
+  "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h264\\mixed_open_idr\\adjacent\\output.mp4",
+  "output_sha256": "9720c46f8738df21c72a767ba21c73520e1ea7cbbbd3e40fe9f12e3689413b44",
+  "expected_frames": 48,
+  "decoded_frames": 54,
+  "samples": 55,
+  "issues": [
+    "frame_count",
+    "decode_error",
+    "strict_decode",
+    "pts",
+    "decoded_pts",
+    "duration",
+    "frame_identity",
+    "copied_pixels",
+    "quality_below_30dB"
+  ],
+  "exact_vcl": 24,
+  "normalized_vcl": 24,
+  "pixel_identical": 23,
+  "copied_pixel_mismatches": 1,
+  "barcode_errors": [
+    [
+      23,
+      23,
+      16
+    ],
+    [
+      24,
+      24,
+      23
+    ],
+    [
+      25,
+      25,
+      17
+    ],
+    [
+      26,
+      26,
+      24
+    ],
+    [
+      27,
+      27,
+      24
+    ],
+    [
+      28,
+      28,
+      25
+    ],
+    [
+      29,
+      29,
+      26
+    ],
+    [
+      30,
+      30,
+      27
+    ],
+    [
+      31,
+      31,
+      28
+    ],
+    [
+      32,
+      32,
+      28
+    ],
+    [
+      33,
+      33,
+      29
+    ],
+    [
+      34,
+      34,
+      30
+    ]
+  ],
+  "baseline_copied_frames": 0,
+  "decode_log": "[h264 @ 0000000002ee6dc0] co located POCs unavailable\r\n[h264 @ 0000000002f0d000] mmco: unref short failure\r\n",
+  "strict_decode_log": "[h264 @ 0000000002d35700] co located POCs unavailable\r\n[h264 @ 0000000002d35c00] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000718540] [dec:h264 @ 0000000002c5f800] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000718540] [dec:h264 @ 0000000002c5f800] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000718540] [dec:h264 @ 0000000002c5f800] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 0000000000718540] [dec:h264 @ 0000000002c5f800] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+  "pts_mismatches": 31,
+  "first_pts_seconds": 0.0,
+  "normalized_pts_match": false,
+  "pts_max_error_seconds": 0.12,
+  "expected_duration_seconds": 1.92,
+  "duration_seconds": 2.08,
+  "codec_tag": "avc1",
+  "sample_description_count": null,
+  "vcl_multiset_preserved": 48,
+  "min_frame_psnr_db": 15.104409304710265,
+  "copy_efficiency_passed": true,
+  "correctness_passed": false,
+  "passed": false
+}

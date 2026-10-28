@@ -1,0 +1,8 @@
+VSTest 版本 18.7.0 (x64)
+
+正在启动测试执行，请稍候...
+总共 1 个测试文件与指定模式相匹配。
+vstest.console 进程未能在 90 秒后连接到 testhost 进程。出现此问题可能是因为计算机性能较低，请设置环境变量 VSTEST_CONNECTION_TIMEOUT，增加超时时间值。 The process with id 43576 was still running when this message was reported.
+结果文件: E:\DesktopPlus\Works\Code\SmartCut\outputs\h264-pipeline-comparison-20261028\test-results\pipeline.trx
+
+测试运行已中止。

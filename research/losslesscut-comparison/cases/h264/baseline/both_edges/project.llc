@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h264-baseline-both_edges-1793202582164373600.mp4",
+  "cutSegments": [
+    {
+      "start": 0.52,
+      "end": 9.08,
+      "name": "0"
+    }
+  ]
+}

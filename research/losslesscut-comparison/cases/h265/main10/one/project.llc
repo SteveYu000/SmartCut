@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-main10-one-1793202764879006000.mp4",
+  "cutSegments": [
+    {
+      "start": 0.92,
+      "end": 0.96,
+      "name": "0"
+    }
+  ]
+}

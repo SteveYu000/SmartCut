@@ -1,0 +1,19 @@
+{
+  "streams": [],
+  "format": {
+    "filename": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\offset\\one\\output.mp4",
+    "nb_streams": 0,
+    "nb_programs": 0,
+    "nb_stream_groups": 0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "format_long_name": "QuickTime / MOV",
+    "size": "258",
+    "probe_score": 100,
+    "tags": {
+      "major_brand": "isom",
+      "minor_version": "512",
+      "compatible_brands": "isomiso2mp41",
+      "encoder": "Lavf62.12.103"
+    }
+  }
+}

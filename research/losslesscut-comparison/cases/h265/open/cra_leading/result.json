@@ -1,0 +1,24 @@
+{
+  "id": "h265/open/cra_leading",
+  "codec": "h265",
+  "fixture": "open",
+  "cut": "cra_leading",
+  "ranges": [
+    [
+      22,
+      74
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\open\\cra_leading",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.4314425000047777,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 52
+}

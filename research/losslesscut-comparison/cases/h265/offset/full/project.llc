@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-offset-full-1793202805498917400.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 9.6,
+      "name": "0"
+    }
+  ]
+}

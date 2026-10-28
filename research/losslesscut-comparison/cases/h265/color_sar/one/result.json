@@ -1,0 +1,24 @@
+{
+  "id": "h265/color_sar/one",
+  "codec": "h265",
+  "fixture": "color_sar",
+  "cut": "one",
+  "ranges": [
+    [
+      23,
+      24
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\color_sar\\one",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.5260380000108853,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 1
+}

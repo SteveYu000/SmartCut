@@ -1,0 +1,4763 @@
+{
+  "run": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326",
+  "cases": [
+    {
+      "fixture": "closed",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-partial-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 192,
+      "normalized_vcl": 192,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 192,
+      "barcode_errors": [],
+      "min_psnr": 42.2266665568643,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-partial-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.401634,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 17920
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 30208
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 42496
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 54784
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 67072
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 79360
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 91648
+          },
+          {
+            "mode": "encode",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 103936
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "closed",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-partial-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 192,
+      "normalized_vcl": 192,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 192,
+      "barcode_errors": [],
+      "min_psnr": 42.2266665568643,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-partial-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.124485,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 17920
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 30208
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 42496
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 54784
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 67072
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 79360
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 91648
+          },
+          {
+            "mode": "encode",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 103936
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "closed",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-cra_leading-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 48,
+      "normalized_vcl": 48,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 48,
+      "barcode_errors": [],
+      "min_psnr": 42.49374786511879,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-cra_leading-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 48,
+        "encoded_frames": 4,
+        "decoded_frames": 26,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0518944,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 13312
+          },
+          {
+            "mode": "encode",
+            "begin": 72,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 25600
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "closed",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-cra_leading-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 48,
+      "normalized_vcl": 48,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 48,
+      "barcode_errors": [],
+      "min_psnr": 42.49374786511879,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-cra_leading-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 48,
+        "encoded_frames": 4,
+        "decoded_frames": 26,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.05037,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 13312
+          },
+          {
+            "mode": "encode",
+            "begin": 72,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 25600
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "closed",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-multi-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 144,
+      "normalized_vcl": 144,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 144,
+      "barcode_errors": [],
+      "min_psnr": 41.71121694160121,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-multi-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 68,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.242922,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 17920
+          },
+          {
+            "mode": "encode",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 30208
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 57344
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 69632
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 81920
+          },
+          {
+            "mode": "encode",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 94208
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "closed",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-multi-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 144,
+      "normalized_vcl": 144,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 144,
+      "barcode_errors": [],
+      "min_psnr": 41.71121694160121,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-multi-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 68,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.240097,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 17920
+          },
+          {
+            "mode": "encode",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 30208
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 57344
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 69632
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 81920
+          },
+          {
+            "mode": "encode",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 94208
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "closed",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-full-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-full-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0143525,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 12288
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 24576
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 36864
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 49152
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 61440
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 73728
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 86016
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 98304
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 110592
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "closed",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-full-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\closed-full-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 0,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.013076,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 24,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false,
+            "decode_begin": 24,
+            "decode_end": 48,
+            "output_start_ticks": 12288
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false,
+            "decode_begin": 48,
+            "decode_end": 72,
+            "output_start_ticks": 24576
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false,
+            "decode_begin": 72,
+            "decode_end": 96,
+            "output_start_ticks": 36864
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 96,
+            "decode_end": 120,
+            "output_start_ticks": 49152
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false,
+            "decode_begin": 120,
+            "decode_end": 144,
+            "output_start_ticks": 61440
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false,
+            "decode_begin": 144,
+            "decode_end": 168,
+            "output_start_ticks": 73728
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false,
+            "decode_begin": 168,
+            "decode_end": 192,
+            "output_start_ticks": 86016
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false,
+            "decode_begin": 192,
+            "decode_end": 216,
+            "output_start_ticks": 98304
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 216,
+            "decode_end": 240,
+            "output_start_ticks": 110592
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "open",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-partial-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 41.998094465827975,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-partial-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.141443,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 40960
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 53248
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 65536
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 77824
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 90112
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 102400
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "open",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-partial-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 41.998094465827975,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-partial-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.14349,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 40960
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 53248
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 65536
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 77824
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 90112
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 102400
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "open",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-cra_leading-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.10169605980696,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-cra_leading-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0648729,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 11776
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 24064
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "open",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-cra_leading-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.10169605980696,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-cra_leading-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0668493,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 11776
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 24064
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "open",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-multi-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 41.52789922978079,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-multi-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.691094,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 43520
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 55808
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 68096
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 80384
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 92672
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "open",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-multi-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 41.52789922978079,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-multi-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.29504,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 43520
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 55808
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 68096
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 80384
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 92672
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "open",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-full-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-full-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0145748,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 10752
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 23040
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 35328
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 47616
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 59904
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 72192
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 84480
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 96768
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 109056
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "open",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-full-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\open-full-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0138483,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 10752
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 23040
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 35328
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 47616
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 59904
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 72192
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 84480
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 96768
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 109056
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-partial-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 42.34269382155894,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-partial-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.163765,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 40960
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 53248
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 65536
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 77824
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 90112
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 102400
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-partial-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 42.34269382155894,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-partial-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.154881,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 40960
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 53248
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 65536
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 77824
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 90112
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 102400
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "main10",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-cra_leading-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.25157509968411,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-cra_leading-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0677562,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 11776
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 24064
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "main10",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-cra_leading-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.25157509968411,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-cra_leading-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 26624,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0702589,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1024
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 11776
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 24064
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-multi-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 41.8194464211126,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-multi-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.329028,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 43520
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 55808
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 68096
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 80384
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 92672
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-multi-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 41.8194464211126,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-multi-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.336277,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 4096
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 16384
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 28672
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 34816
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 43520
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 45056
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 55808
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 68096
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 80384
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 92672
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "main10",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-full-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-full-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0141576,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 10752
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 23040
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 35328
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 47616
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 59904
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 72192
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 84480
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 96768
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 109056
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "main10",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-full-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\main10-full-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 1024,
+        "elapsed_seconds": 0.0136626,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 10752
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 23040
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 35328
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 47616
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 59904
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 72192
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 84480
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 96768
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 109056
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-partial-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 42.821102053542326,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-partial-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 145920,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.148118,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 7680
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 22016
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 38400
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 54784
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 71168
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 87552
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 103936
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 120320
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 136704
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-partial-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "packets": 214,
+      "exact_vcl": 188,
+      "normalized_vcl": 189,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 189,
+      "barcode_errors": [],
+      "min_psnr": 42.821102053542326,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-partial-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "duration_ticks": 145920,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.148606,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 7680
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 22016
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 38400
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 54784
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 71168
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 87552
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 103936
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 120320
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 136704
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "vfr",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-cra_leading-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.931399512194055,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-cra_leading-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 35328,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.0664523,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1536
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 15872
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 32256
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "vfr",
+      "cut": "cra_leading",
+      "ranges": [
+        [
+          22,
+          74
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-cra_leading-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "22:74"
+      ],
+      "exit_code": 0,
+      "expected_frames": 52,
+      "decoded_frames": 52,
+      "packets": 52,
+      "exact_vcl": 44,
+      "normalized_vcl": 45,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 45,
+      "barcode_errors": [],
+      "min_psnr": 42.931399512194055,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-cra_leading-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 45,
+        "encoded_frames": 7,
+        "decoded_frames": 50,
+        "duration_ticks": 35328,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.0653004,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 22,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 1536
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 15872
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 74,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 32256
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-multi-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 42.47225517560438,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-multi-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 133120,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.30921,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 7680
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 22016
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 38400
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 46592
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 58368
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 60416
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 74752
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 91136
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 107520
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 123904
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-multi-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "exit_code": 0,
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "packets": 195,
+      "exact_vcl": 136,
+      "normalized_vcl": 138,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 138,
+      "barcode_errors": [],
+      "min_psnr": 42.47225517560438,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-multi-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 138,
+        "encoded_frames": 57,
+        "decoded_frames": 158,
+        "duration_ticks": 133120,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.298824,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "encode",
+            "begin": 21,
+            "end": 24,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 5632
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 45,
+            "cra_to_bla": true,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 7680
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 22016
+          },
+          {
+            "mode": "encode",
+            "begin": 69,
+            "end": 81,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 38400
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 46592
+          },
+          {
+            "mode": "encode",
+            "begin": 117,
+            "end": 120,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 58368
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 141,
+            "cra_to_bla": true,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 60416
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 74752
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 91136
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 107520
+          },
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 227,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 123904
+          }
+        ]
+      },
+      "sample_descriptions": 2
+    },
+    {
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "hev1",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-full-hev1.mp4",
+        "--ps-mode",
+        "hev1",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-full-hev1.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "hev1",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 163328,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.013577,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 14336
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 30720
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 47104
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 63488
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 79872
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 96256
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 112640
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 129024
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 145408
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    },
+    {
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "mode": "stsd",
+      "access": "cra",
+      "lossless": false,
+      "bla": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\build\\Release\\smart_render.exe",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-full-stsd.mp4",
+        "--ps-mode",
+        "stsd",
+        "--access",
+        "cra",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "packets": 240,
+      "exact_vcl": 240,
+      "normalized_vcl": 240,
+      "copy_pixel_mismatches": 0,
+      "pixel_identical": 240,
+      "barcode_errors": [],
+      "min_psnr": null,
+      "issues": [],
+      "passed": true,
+      "plan": {
+        "status": "completed",
+        "input": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+        "output": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\integration-20261027-194326\\vfr-full-stsd.mp4",
+        "ffmpeg": "n8.1.3-24-g92611900bb-20261025",
+        "ps_mode": "stsd",
+        "access": "cra",
+        "lossless_boundaries": false,
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "irap_epochs": 10,
+        "non_idr_key_packets": 9,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 163328,
+        "decode_delay_ticks": 1536,
+        "elapsed_seconds": 0.0152469,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 21,
+            "cra_to_bla": false,
+            "decode_begin": 0,
+            "decode_end": 21,
+            "output_start_ticks": 0
+          },
+          {
+            "mode": "copy",
+            "begin": 21,
+            "end": 45,
+            "cra_to_bla": false,
+            "decode_begin": 21,
+            "decode_end": 45,
+            "output_start_ticks": 14336
+          },
+          {
+            "mode": "copy",
+            "begin": 45,
+            "end": 69,
+            "cra_to_bla": false,
+            "decode_begin": 45,
+            "decode_end": 69,
+            "output_start_ticks": 30720
+          },
+          {
+            "mode": "copy",
+            "begin": 69,
+            "end": 93,
+            "cra_to_bla": false,
+            "decode_begin": 69,
+            "decode_end": 93,
+            "output_start_ticks": 47104
+          },
+          {
+            "mode": "copy",
+            "begin": 93,
+            "end": 117,
+            "cra_to_bla": false,
+            "decode_begin": 93,
+            "decode_end": 117,
+            "output_start_ticks": 63488
+          },
+          {
+            "mode": "copy",
+            "begin": 117,
+            "end": 141,
+            "cra_to_bla": false,
+            "decode_begin": 117,
+            "decode_end": 141,
+            "output_start_ticks": 79872
+          },
+          {
+            "mode": "copy",
+            "begin": 141,
+            "end": 165,
+            "cra_to_bla": false,
+            "decode_begin": 141,
+            "decode_end": 165,
+            "output_start_ticks": 96256
+          },
+          {
+            "mode": "copy",
+            "begin": 165,
+            "end": 189,
+            "cra_to_bla": false,
+            "decode_begin": 165,
+            "decode_end": 189,
+            "output_start_ticks": 112640
+          },
+          {
+            "mode": "copy",
+            "begin": 189,
+            "end": 213,
+            "cra_to_bla": false,
+            "decode_begin": 189,
+            "decode_end": 213,
+            "output_start_ticks": 129024
+          },
+          {
+            "mode": "copy",
+            "begin": 213,
+            "end": 240,
+            "cra_to_bla": false,
+            "decode_begin": 213,
+            "decode_end": 240,
+            "output_start_ticks": 145408
+          }
+        ]
+      },
+      "sample_descriptions": 1
+    }
+  ],
+  "fixtures": {
+    "closed": {
+      "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-closed.mp4",
+      "sha256": "9a028abfcd8d39d05d54b559228b642bde9eef45bb3ef41d6f50a2f0d5b6df10",
+      "profile": "Main",
+      "types": [
+        0,
+        1,
+        20
+      ]
+    },
+    "open": {
+      "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-open.mp4",
+      "sha256": "214cdd18b39e3ee43e2344eeaa115f54bb10991211472150174f8f51293334ca",
+      "profile": "Main",
+      "types": [
+        0,
+        1,
+        8,
+        9,
+        20,
+        21
+      ]
+    },
+    "main10": {
+      "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-main10.mp4",
+      "sha256": "a10de1683d5b0b3a2dfd154b6cbde136f27dfa23542ce3fe9677c1411502cd15",
+      "profile": "Main 10",
+      "types": [
+        0,
+        1,
+        8,
+        9,
+        20,
+        21
+      ]
+    },
+    "vfr": {
+      "path": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\development\\upstream-20261027-192616\\source-vfr.mp4",
+      "sha256": "310a4b53aa7c649b445ee737eaf2a6d1397ef292825ee9c881be037431bb3fcf",
+      "profile": "Main",
+      "types": [
+        0,
+        1,
+        8,
+        9,
+        20,
+        21
+      ]
+    }
+  },
+  "exe_sha256": "7bd0c3270ce08102d3ce62603605ba18827612f7291f6f47ad442cd8d5cecd96"
+}

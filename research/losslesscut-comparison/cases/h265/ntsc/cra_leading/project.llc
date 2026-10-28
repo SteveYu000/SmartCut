@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-ntsc-cra_leading-1793202787425421500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.7340666666666666,
+      "end": 2.469133333333333,
+      "name": "0"
+    }
+  ]
+}

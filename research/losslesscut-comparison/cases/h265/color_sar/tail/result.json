@@ -1,0 +1,24 @@
+{
+  "id": "h265/color_sar/tail",
+  "codec": "h265",
+  "fixture": "color_sar",
+  "cut": "tail",
+  "ranges": [
+    [
+      213,
+      240
+    ]
+  ],
+  "case_directory": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\losslesscut-comparison\\cases\\h265\\color_sar\\tail",
+  "export_event": {
+    "eventName": "export-complete"
+  },
+  "export_seconds": 0.5480408000003081,
+  "app_export_error": true,
+  "passed": false,
+  "correctness_passed": false,
+  "issues": [
+    "app_export_error"
+  ],
+  "expected_frames": 27
+}

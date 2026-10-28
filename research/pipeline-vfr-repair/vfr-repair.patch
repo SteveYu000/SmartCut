@@ -1,0 +1,144 @@
+--- a/research/pipeline/src/SmartCut.Core/PipelineRunner.cs
++++ b/research/pipeline/src/SmartCut.Core/PipelineRunner.cs
+@@ -103,13 +103,24 @@
+ 
+             var listPath = Path.Combine(_work, "list.txt");
+             var builder = new StringBuilder();
++            long previousBoundaryUs = 0;
+             foreach (var segment in segments)
++            {
+                 builder.Append("file '").Append(Path.GetFileName(segment.Path)).Append("'\n");
++                // Concat offsets the next file by this value. Round absolute
++                // boundaries, so fractional microseconds do not accumulate.
++                var nextBoundaryUs = ToMicroseconds(segment.Unit.OutputStartTicks + segment.Unit.DurationTicks, index);
++                var duration = (nextBoundaryUs - previousBoundaryUs) / 1_000_000m;
++                builder.Append("duration ").Append(duration.ToString("0.000000", CultureInfo.InvariantCulture)).Append('\n');
++                previousBoundaryUs = nextBoundaryUs;
++            }
+             File.WriteAllText(listPath, builder.ToString(), new UTF8Encoding(false));
++            var timelinePath = WriteTimelineFilter(index, plan);
+ 
+             var videoOnly = Path.Combine(_work, "video.mp4");
+             tools.FFmpeg(["-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", listPath,
+-                          "-c", "copy", "-tag:v", "avc3", "-an", "-movflags", "+faststart", videoOnly]);
++                          "-c", "copy", "-tag:v", "avc3", "-an", "-/bsf:v", timelinePath, "-video_track_timescale", index.TimeBaseDenominator.ToString(CultureInfo.InvariantCulture),
++                          "-movflags", "+faststart", videoOnly]);
+ 
+             IReadOnlyList<AudioTrackPlan> audioTracks = Array.Empty<AudioTrackPlan>();
+             var current = videoOnly;
+@@ -124,7 +135,7 @@
+                 else
+                 {
+                     var withAudio = Path.Combine(_work, "with-audio.mp4");
+-                    MuxAudio(index.InputPath, videoOnly, usable, withAudio, warnings);
++                    MuxAudio(index.InputPath, videoOnly, usable, withAudio, warnings, index, timelinePath);
+                     current = withAudio;
+                 }
+             }
+@@ -175,24 +186,25 @@
+             args.Add("-ss");
+             args.Add(seek.ToString(CultureInfo.InvariantCulture));
+             args.AddRange(["-i", videoSource, "-frames:v", unit.PacketCount.ToString(CultureInfo.InvariantCulture),
+-                           "-c", "copy", "-an", path]);
++                           "-c", "copy"]);
+         }
+         else
+         {
+             args.AddRange(["-i", videoSource, "-vf",
+                            $"select='between(n\\,{unit.DisplayBegin}\\,{unit.DisplayEnd - 1})'",
+-                           "-fps_mode", "passthrough", "-c:v", "libx264", "-preset", options.Preset,
++                           "-fps_mode", "passthrough", "-enc_time_base", $"{index.TimeBaseNumerator}/{index.TimeBaseDenominator}",
++                           "-c:v", "libx264", "-preset", options.Preset,
+                            "-crf", options.Crf.ToString(CultureInfo.InvariantCulture),
+                            "-bf", "0", "-g", "100000", "-x264-params", X264Params,
+                            "-pix_fmt", EncoderPixelFormat(index.Stream.PixFmt)]);
+             AppendColorArguments(args, index.Stream);
+-            args.AddRange(["-an", path]);
+-        }
++        }
++        args.AddRange(["-video_track_timescale", index.TimeBaseDenominator.ToString(CultureInfo.InvariantCulture), "-an", path]);
+         tools.FFmpeg(args);
+         return new Segment(unit, path, args);
+     }
+ 
+-    void MuxAudio(string source, string video, IReadOnlyList<AudioTrackPlan> tracks, string destination, List<string> warnings)
++    void MuxAudio(string source, string video, IReadOnlyList<AudioTrackPlan> tracks, string destination, List<string> warnings, VideoIndex index, string timelinePath)
+     {
+         var graph = new StringBuilder();
+         var maps = new List<string>();
+@@ -234,11 +246,74 @@
+         foreach (var map in maps) args.AddRange(["-map", map]);
+         args.AddRange(["-c:v", "copy", "-c:a", options.AudioCodec]);
+         if (options.AudioBitrate is not null) args.AddRange(["-b:a", options.AudioBitrate]);
+-        args.AddRange(["-movflags", "+faststart", destination]);
++        args.AddRange(["-/bsf:v", timelinePath, "-video_track_timescale", index.TimeBaseDenominator.ToString(CultureInfo.InvariantCulture), "-movflags", "+faststart", destination]);
+         tools.FFmpeg(args);
+     }
+ 
+     static string Num(double value) => value.ToString("G17", CultureInfo.InvariantCulture);
++
++    // Keep the VCL packet order and presentation times. Give every packet a
++    // monotonically increasing decode slot and enough common reorder delay.
++    // This is the same scheduling policy as h264/src/engine.cpp, expressed
++    // through stock setts rather than a native packet writer.
++    string WriteTimelineFilter(VideoIndex index, VideoPlan plan)
++    {
++        var slots = new List<long>();
++        var durations = new List<long>();
++        long delay = 0;
++        foreach (var unit in plan.Units)
++        {
++            var begin = index.Boundaries[(int)unit.DisplayBegin];
++            for (var n = 0; n < unit.FrameCount; n++)
++            {
++                var slot = unit.OutputStartTicks + index.Boundaries[(int)unit.DisplayBegin + n] - begin;
++                var rank = unit.Kind == UnitKind.Copy
++                    ? index.DecodeOrder[unit.PacketBegin + n].DisplayRank
++                    : (int)unit.DisplayBegin + n;
++                var pts = unit.OutputStartTicks + index.Boundaries[rank] - begin;
++                delay = Math.Max(delay, slot - pts);
++                slots.Add(slot);
++                durations.Add(index.Boundaries[rank + 1] - index.Boundaries[rank]);
++            }
++        }
++        var end = (int)plan.Units[^1].DisplayEnd;
++        durations[^1] = index.Boundaries[end] - index.Boundaries[end - 1];
++        var expression = $"setts=time_base={index.TimeBaseNumerator}/{index.TimeBaseDenominator}:prescale=1:pts=PTS:dts='({Lookup(slots)})-{delay}':duration='{Lookup(durations)}'";
++        var path = Path.Combine(_work, "timeline.bsf");
++        File.WriteAllText(path, expression, new UTF8Encoding(false));
++        return path;
++    }
++
++    // Collapse arithmetic runs, then use a balanced lookup tree. Loading the
++    // filter from a file avoids the Windows command-line length limit.
++    static string Lookup(IReadOnlyList<long> values)
++    {
++        var runs = new List<(int Begin, int End, long Value, long Step)>();
++        for (var begin = 0; begin < values.Count;)
++        {
++            var step = begin + 1 < values.Count ? values[begin + 1] - values[begin] : 0;
++            var end = Math.Min(begin + 2, values.Count);
++            while (end < values.Count && values[end] - values[end - 1] == step) end++;
++            runs.Add((begin, end, values[begin], step));
++            begin = end;
++        }
++        string Tree(int lo, int hi)
++        {
++            if (hi - lo == 1)
++            {
++                var r = runs[lo];
++                return r.Step == 0 ? r.Value.ToString(CultureInfo.InvariantCulture)
++                    : $"({r.Value}+(N-{r.Begin})*{r.Step})";
++            }
++            var mid = (lo + hi) / 2;
++            return $"if(lt(N,{runs[mid].Begin}),{Tree(lo, mid)},{Tree(mid, hi)})";
++        }
++        return Tree(0, runs.Count);
++    }
++
++    static long ToMicroseconds(long ticks, VideoIndex index) => checked((long)decimal.Round(
++        (decimal)ticks * index.TimeBaseNumerator * 1_000_000m / index.TimeBaseDenominator,
++        0, MidpointRounding.AwayFromZero));
+ 
+     static void AppendColorArguments(List<string> args, ProbeStream stream)
+     {

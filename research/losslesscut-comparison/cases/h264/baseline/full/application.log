@@ -1,0 +1,7 @@
+2026-10-28T15:49:40.355Z info: 127.0.0.1 POST /api/action/closeCurrentFile HTTP/1.1 200 - 0.712 ms
+2026-10-28T15:49:40.494Z info: ffprobe -of json -show_chapters -show_format -show_entries stream -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\baseline\full\h264-baseline-full-1793202580248075800.mp4 -hide_banner
+2026-10-28T15:49:40.547Z info: 127.0.0.1 POST /api/action/openFiles HTTP/1.1 200 - 98.604 ms
+2026-10-28T15:49:40.871Z info: 127.0.0.1 POST /api/await-event/export-start HTTP/1.1 200 - 72.265 ms
+2026-10-28T15:49:40.873Z info: 127.0.0.1 POST /api/action/export HTTP/1.1 200 - 3.148 ms
+2026-10-28T15:49:40.877Z info: ffmpeg -hide_banner -i E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\cases\h264\baseline\full\h264-baseline-full-1793202580248075800.mp4 -map 0:0 -c:0 copy -map_metadata 0 -movflags +faststart -ignore_unknown -f mp4 -y E:\DesktopPlus\Works\Code\SmartCut\outputs\losslesscut-comparison-20261028\exports\h264-baseline-full-1793202580248075800-00.00.00.000-00.00.09.600-0.mp4
+2026-10-28T15:49:40.945Z info: 127.0.0.1 POST /api/await-event/export-complete HTTP/1.1 200 - 121.836 ms

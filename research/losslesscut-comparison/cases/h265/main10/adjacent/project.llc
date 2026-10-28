@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "mediaFileName": "h265-main10-adjacent-1793202770267090500.mp4",
+  "cutSegments": [
+    {
+      "start": 0.0,
+      "end": 0.84,
+      "name": "0"
+    },
+    {
+      "start": 0.84,
+      "end": 2.76,
+      "name": "1"
+    }
+  ]
+}

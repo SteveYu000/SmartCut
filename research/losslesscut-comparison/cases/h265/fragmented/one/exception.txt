@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\DesktopPlus\Works\Code\SmartCut\research\losslesscut-comparison\run_suite.py", line 322, in main
+    row.update(check(codec,source,output,ranges,baseline))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\research\losslesscut-comparison\run_suite.py", line 137, in check
+    s, packets, tracks = probe(output)
+                         ^^^^^^^^^^^^^
+  File "E:\DesktopPlus\Works\Code\SmartCut\research\losslesscut-comparison\run_suite.py", line 104, in probe
+    s = next(s for s in d['streams'] if s['codec_type'] == 'video')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

@@ -1,0 +1,1 @@
+setts=time_base=1/30000:prescale=1:pts=PTS:dts='((0+(N-0)*1001))-0':duration='1001'
