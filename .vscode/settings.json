@@ -1,4 +1,0 @@
-{
-    "cmake.sourceDirectory": "${workspaceFolder}/research/h264",
-    "cmake.buildDirectory": "${workspaceFolder}/research/h264/build"
-}
