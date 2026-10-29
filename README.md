@@ -17,6 +17,6 @@
 
 ## 项目阶段
 - [x] mp4/avc编码的可行方案已经通过测试[测试报告](research/h264/docs/IMPLEMENTATION_REPORT.md)。
-- [x] mp4/avc 的第二套实现：C# + 官方 FFmpeg 进程管线，含音频轨，165 个端到端与逻辑用例通过[实现说明](research/pipeline/README.md)。
+- ~~[x] mp4/avc 的第二套实现：C# + 官方 FFmpeg 进程管线，含音频轨，165 个端到端与逻辑用例通过[实现说明](research/pipeline/README.md)。（方案已抛弃）~~
 - [x] mp4/hevc 编码的可行方案已完成限定输入范围的测试：[设计与测试结论](research/h265/docs/IMPLEMENTATION_REPORT.md)，[源码及复现步骤](research/h265/README.md)。
-- [x] 决定音频部分如果不是关键帧分割，采用全量重编码。原因是：1.音频编码速度较快。2.音频重编码对音质损失不明显，要求高的可以选择无损格式。
+- [x] 已完成首个实现，支持avc、hevc编码。

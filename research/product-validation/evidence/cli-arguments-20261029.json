@@ -1,0 +1,182 @@
+{
+  "executable_sha256": "c2d81d3b1e978b05f044f84d2fe9d3bbd93958f71432d48fe143c1a2115b280c",
+  "cases": [
+    {
+      "case": "reported-command-analyze",
+      "passed": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-y",
+        "-i",
+        "C:\\Users\\Steve\\Videos\\NVIDIA\\Minecraft\\Bad Apple！ 2026.05.16 - 20.29.43.01.mp4",
+        "-ss",
+        "0:23",
+        "-to",
+        "1:15",
+        "-map",
+        "0:v:0?",
+        "-map",
+        "0:a:0?",
+        "-c:v:0",
+        "libx265",
+        "-preset:v:0",
+        "slow",
+        "-tune:v:0",
+        "animation",
+        "-crf:v:0",
+        "24",
+        "-c:a:0",
+        "copy",
+        "-map_metadata",
+        "0",
+        "--analyze",
+        "C:\\Users\\Steve\\Videos\\NVIDIA\\Minecraft\\Bad Apple！ 2026.05.16 - 20.29.43.01_2026.10.29-18.12.59.mp4"
+      ],
+      "plan": {
+        "status": "analyzed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "E:\\DesktopPlus\\Works\\Code\\SmartCut\\build\\Release\\ffmpeg.exe",
+        "input": "C:\\Users\\Steve\\Videos\\NVIDIA\\Minecraft\\Bad Apple！ 2026.05.16 - 20.29.43.01.mp4",
+        "output": "C:\\Users\\Steve\\Videos\\NVIDIA\\Minecraft\\Bad Apple！ 2026.05.16 - 20.29.43.01_2026.10.29-18.12.59.mp4",
+        "video_encoder": "libx265",
+        "video_options": {
+          "crf": "24",
+          "preset": "slow",
+          "tune": "animation"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          },
+          {
+            "input_index": 1,
+            "requested_output_index": 1,
+            "type": "audio"
+          }
+        ],
+        "time_base": [
+          1,
+          15360
+        ],
+        "input_frames": 9391,
+        "copied_frames": 2993,
+        "encoded_frames": 127,
+        "decoded_frames": 0,
+        "duration_ticks": 798720,
+        "decode_delay_ticks": 512,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 1380,
+            "end": 1497,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 1497,
+            "end": 1500,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 1500,
+            "end": 1747,
+            "cra_to_bla": true
+          },
+          {
+            "mode": "copy",
+            "begin": 1747,
+            "end": 1996,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 1996,
+            "end": 2246,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 2246,
+            "end": 2498,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 2498,
+            "end": 2748,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 2748,
+            "end": 2996,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 2996,
+            "end": 3245,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 3245,
+            "end": 3498,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 3498,
+            "end": 3745,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 3745,
+            "end": 3996,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 3996,
+            "end": 4246,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 4246,
+            "end": 4493,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 4493,
+            "end": 4500,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0639668
+      }
+    },
+    {
+      "case": "extra-ffmpeg-command-token",
+      "passed": true,
+      "exit_code": 1,
+      "stderr": "smartcut: Unexpected positional argument 1 \"ffmpeg.exe\" before -i. Pass options directly after smartcut.exe; do not include another ffmpeg.exe command name. Quote paths containing spaces.\r\n"
+    },
+    {
+      "case": "split-output-filename",
+      "passed": true,
+      "exit_code": 1,
+      "stderr": "smartcut: Output filename must be the last argument; encountered argument 3 \"Bad\" followed by \"Apple.mp4\". Quote the entire input and output paths if they contain spaces.\r\n"
+    }
+  ]
+}

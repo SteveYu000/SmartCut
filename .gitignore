@@ -44,6 +44,7 @@
 **/empty-feed/
 **/dotnet-home/
 **/deliverables/
+**/smartcut-[0-9]*/
 .vs/
 *.py[cod]
 *.exe
@@ -63,3 +64,18 @@ CMakeUserPresets.json
 
 # Local cleanup manifests are summarized under research/.
 /workspace-organization-plan.json
+
+# Product run media/logs remain local; final result snapshots live in evidence/.
+/research/product-validation/matrix-20*/
+/research/product-validation/streams-20*/
+/research/product-validation/parameters-20*/
+/research/product-validation/timestamps-20*/
+/research/product-validation/run-20*/
+/research/product-validation/*-debug.*
+
+# Local validation pointers and exploratory state (canonical evidence is kept).
+/research/product-validation/*-latest.json
+/research/product-validation/regenerated-fixtures.json
+/research/product-validation/latest-run.txt
+/research/product-validation/first-smoke.json
+/research/product-validation/ntsc-negative-cts.json

@@ -1,0 +1,8 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {"name": "msvc", "generator": "Visual Studio 18 2026", "architecture": "x64", "binaryDir": "${sourceDir}/build"}
+  ],
+  "buildPresets": [{"name": "release", "configurePreset": "msvc", "configuration": "Release"}],
+  "testPresets": [{"name": "release", "configurePreset": "msvc", "configuration": "Release", "output": {"outputOnFailure": true}}]
+}
