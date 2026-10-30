@@ -10,9 +10,13 @@
 
 namespace smartcut {
 bool is_irap(AVCodecID codec, int type) {
+    if (codec == AV_CODEC_ID_AV1)
+        return type == 0;
     return codec == AV_CODEC_ID_H264 ? type == 5 : type >= 16 && type <= 21;
 }
 bool is_idr(AVCodecID codec, int type) {
+    if (codec == AV_CODEC_ID_AV1)
+        return type == 0;
     return codec == AV_CODEC_ID_H264 ? type == 5 : type == 19 || type == 20;
 }
 static bool rasl(int type) {
@@ -32,15 +36,18 @@ Input::Input(const std::string &filename, int video_stream) : video(video_stream
     auto *p = stream->codecpar;
     require(std::string(format.value->iformat->name).find("mov") != std::string::npos,
             "Smart rendering currently requires MP4 input");
-    require(p->codec_id == AV_CODEC_ID_H264 || p->codec_id == AV_CODEC_ID_HEVC,
-            "Selected video must be H.264 or HEVC");
+    require(p->codec_id == AV_CODEC_ID_H264 || p->codec_id == AV_CODEC_ID_HEVC ||
+                p->codec_id == AV_CODEC_ID_AV1,
+            "Selected video must be H.264, HEVC or AV1");
     bool avc = p->codec_id == AV_CODEC_ID_H264;
-    require(avc ? (p->codec_tag == MKTAG('a', 'v', 'c', '1') ||
-                   p->codec_tag == MKTAG('a', 'v', 'c', '3'))
-                : (p->codec_tag == MKTAG('h', 'v', 'c', '1') ||
-                   p->codec_tag == MKTAG('h', 'e', 'v', '1')),
+    bool av1 = p->codec_id == AV_CODEC_ID_AV1;
+    require(avc   ? (p->codec_tag == MKTAG('a', 'v', 'c', '1') ||
+                     p->codec_tag == MKTAG('a', 'v', 'c', '3'))
+            : av1 ? p->codec_tag == MKTAG('a', 'v', '0', '1')
+                  : (p->codec_tag == MKTAG('h', 'v', 'c', '1') ||
+                     p->codec_tag == MKTAG('h', 'e', 'v', '1')),
             "Unsupported or encrypted MP4 video sample entry");
-    require(p->field_order == AV_FIELD_PROGRESSIVE,
+    require(av1 || p->field_order == AV_FIELD_PROGRESSIVE,
             "Only positively identified progressive video is supported");
     require(p->width > 0 && p->height > 0, "Invalid video dimensions");
     require(p->format == AV_PIX_FMT_YUV420P || p->format == AV_PIX_FMT_YUVJ420P ||
@@ -51,7 +58,9 @@ Input::Input(const std::string &filename, int video_stream) : video(video_stream
         require(profile == AV_PROFILE_H264_BASELINE || profile == AV_PROFILE_H264_MAIN ||
                     profile == AV_PROFILE_H264_HIGH || profile == AV_PROFILE_H264_HIGH_10,
                 "Unsupported H.264 input profile");
-    } else
+    } else if (av1)
+        require(p->profile == AV_PROFILE_AV1_MAIN, "AV1 input must use Main profile");
+    else
         require(p->profile == AV_PROFILE_HEVC_MAIN || p->profile == AV_PROFILE_HEVC_MAIN_10,
                 "HEVC input must use Main or Main 10");
     require(stream->time_base.num > 0 && stream->time_base.den > 0, "Invalid video time base");
@@ -186,6 +195,8 @@ static int inspect_sample(const Index &idx, const AVPacket *packet) {
     return picture;
 }
 Index index_input(Input &input) {
+    if (input.stream->codecpar->codec_id == AV_CODEC_ID_AV1)
+        return index_av1(input);
     Index idx;
     idx.codec = input.stream->codecpar->codec_id;
     read_configuration(idx, input.stream->codecpar);
@@ -345,8 +356,11 @@ Plan make_plan(const Index &idx, const Options &options, AVRational tb, int64_t 
                               plan.units.back().epoch + 1 == e && plan.units.back().end == a &&
                               a == epoch.begin;
             int type = idx.samples[epoch.packet_begin].type;
-            if (idx.codec == AV_CODEC_ID_HEVC && type == 21 && !continuous && !epoch.has_radl &&
-                a <= epoch.rap && b == epoch.end) {
+            if (idx.codec == AV_CODEC_ID_AV1)
+                // Complete AV1 temporal units can end midway through an epoch.
+                append(e, a, b, a == epoch.begin, false);
+            else if (idx.codec == AV_CODEC_ID_HEVC && type == 21 && !continuous &&
+                     !epoch.has_radl && a <= epoch.rap && b == epoch.end) {
                 append(e, a, epoch.rap, false, false);
                 append(e, epoch.rap, b, true, true);
             } else if (full && (idx.codec == AV_CODEC_ID_H264 || type != 21 || continuous))
@@ -385,6 +399,11 @@ Bsf annex_b(const AVCodecParameters *params, AVRational tb) {
     check(av_bsf_init(result.get()), "Initialize bitstream filter");
     return result;
 }
+AVPixelFormat encoder_pixel_format(AVCodecID codec, int format) {
+    return codec == AV_CODEC_ID_AV1 && format == AV_PIX_FMT_YUVJ420P
+               ? AV_PIX_FMT_YUV420P
+               : static_cast<AVPixelFormat>(format);
+}
 Codec make_encoder(const Input &input, const AVCodec *codec,
                    const std::map<std::string, std::string> &values) {
     Codec context(avcodec_alloc_context3(codec));
@@ -392,9 +411,15 @@ Codec make_encoder(const Input &input, const AVCodec *codec,
     auto *p = input.stream->codecpar;
     context->width = p->width;
     context->height = p->height;
-    context->pix_fmt = static_cast<AVPixelFormat>(p->format);
+    context->pix_fmt = encoder_pixel_format(codec->id, p->format);
     context->time_base = input.stream->time_base;
     context->framerate = av_guess_frame_rate(input.format.value, input.stream, nullptr);
+    if (codec->id == AV_CODEC_ID_AV1) {
+        require(context->framerate.num > 0 && context->framerate.den > 0,
+                "AV1 encoder requires a valid nominal frame rate");
+        // Display ordinals are mapped back to source timestamps after encoding.
+        context->time_base = av_inv_q(context->framerate);
+    }
     context->sample_aspect_ratio =
         av_guess_sample_aspect_ratio(input.format.value, input.stream, nullptr);
     context->color_range = p->color_range;
@@ -410,7 +435,7 @@ Codec make_encoder(const Input &input, const AVCodec *codec,
     check(avcodec_open2(context.get(), codec, &options.value), "Open requested video encoder");
     require(av_dict_count(options.value) == 0, "Unrecognized video encoder option");
     require(context->width == p->width && context->height == p->height &&
-                context->pix_fmt == p->format,
+                context->pix_fmt == encoder_pixel_format(codec->id, p->format),
             "Encoded geometry/pixel format must match copied video");
     require(context->color_range == p->color_range &&
                 context->color_primaries == p->color_primaries &&
@@ -598,6 +623,11 @@ static bool high444(const AVCodecParameters *params) {
 }
 void encode_boundaries(Input &input, const Index &idx, Plan &plan, const AVCodec *encoder,
                        const std::map<std::string, std::string> &options, const Workspace &work) {
+    if (idx.codec == AV_CODEC_ID_AV1) {
+        encode_av1_boundaries(input, idx, plan, encoder, options, work);
+        calculate_delay(idx, plan);
+        return;
+    }
     // Validate AVOptions even for all-copy selections; no research quality,
     // preset, B-frame, GOP or encoder-thread defaults are injected here.
     {
@@ -709,7 +739,7 @@ std::optional<VideoPacket> VideoCursor::next() {
         p = read_source(input, sample);
         pts = sample.pts;
         p->flags = is_irap(index.codec, sample.type) ? AV_PKT_FLAG_KEY : 0;
-        params = input.stream->codecpar;
+        params = index.codec == AV_CODEC_ID_AV1 ? index.av1_params.get() : input.stream->codecpar;
         if (unit.patch_cra && ordinal == 0) {
             size_t pos = 0;
             while (pos < static_cast<size_t>(p->size)) {

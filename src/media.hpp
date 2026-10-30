@@ -147,6 +147,7 @@ struct Index {
     std::vector<Epoch> epochs;
     std::set<Bytes> parameter_sets;
     int nal_length{};
+    Params av1_params;
 };
 struct Input {
     Format format;
@@ -160,6 +161,8 @@ struct Input {
     }
 };
 Index index_input(Input &input);
+Index index_av1(Input &input);
+AVPixelFormat encoder_pixel_format(AVCodecID codec, int format);
 bool is_irap(AVCodecID codec, int type);
 bool is_idr(AVCodecID codec, int type);
 struct EncodedSample {
@@ -190,6 +193,9 @@ Codec make_encoder(const Input &input, const AVCodec *codec,
                    const std::map<std::string, std::string> &values);
 void encode_boundaries(Input &input, const Index &index, Plan &plan, const AVCodec *encoder,
                        const std::map<std::string, std::string> &options, const Workspace &work);
+void encode_av1_boundaries(Input &input, const Index &index, Plan &plan, const AVCodec *encoder,
+                           const std::map<std::string, std::string> &options,
+                           const Workspace &work);
 void calculate_delay(const Index &index, Plan &plan);
 Bsf annex_b(const AVCodecParameters *params, AVRational time_base);
 struct VideoPacket {

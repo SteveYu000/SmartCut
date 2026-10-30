@@ -155,7 +155,7 @@ Options parse_options(const std::vector<std::string> &args) {
     return result;
 }
 std::string help_text() {
-    return "SmartCut 1.0.0 - H.264 / HEVC MP4 smart rendering\n"
+    return "SmartCut 1.0.0 - H.264 / HEVC / AV1 MP4 smart rendering\n"
            "Usage: smartcut [global options] [-ss TIME] -i INPUT [-ss TIME] [-to TIME | -t TIME]\n"
            "                [-map 0:v:0?] [-map 0:a:0?] [-map 0:s?] [encoding options] OUTPUT.mp4\n"
            "Example: smartcut -hide_banner -y -i input.mp4 -ss 1:0:1 -to 2:0:1\n"
@@ -164,7 +164,7 @@ std::string help_text() {
            "Video encoder options apply only to re-encoded boundaries. The codec must\n"
            "match the source. Audio/subtitles use the original FFmpeg command pipeline\n"
            "over the entire selected interval, including -c:a copy / -c:s copy.\n"
-           "Supported input: local MP4, one selected progressive H.264/HEVC video,\n"
+           "Supported input: local MP4, one selected progressive H.264/HEVC/AV1 video,\n"
            "fixed configuration, 4:2:0 8/10 bit. Multiple audio/subtitle tracks allowed.\n"
            "Video filters, frame-rate/geometry conversion, multiple inputs/outputs are\n"
            "rejected. Encoder options use FFmpeg AVOptions; no CRF/preset/B-frame override.\n"

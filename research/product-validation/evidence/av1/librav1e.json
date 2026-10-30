@@ -1,0 +1,1594 @@
+{
+  "executable_sha256": "f54faec076631e59fc6c956f85feaf399960c7925e5fa35ad7e4be8af2e3deb6",
+  "encoder": "librav1e",
+  "cases": [
+    {
+      "fixture": "aom",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\aom-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 204,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.96963623808993,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4f5ccf1df982c860ff605f138dcfb7a1c81c33c0b30326dec3d3a2d0ace88e55",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-partial.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.400908
+      },
+      "archived_log": "logs/librav1e-aom-partial.log",
+      "log_sha256": "4a7d0f377158755ae02cbd576d15fcbe709e1705a3120caea9c91d829e93c00e"
+    },
+    {
+      "fixture": "aom",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\aom-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 165,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.96963623808993,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "cd5992dbe2e720fdb2ae3d8a39bddf476e5ce9ee08157b774506465d3ee04f65",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-multi.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 1.06606
+      },
+      "archived_log": "logs/librav1e-aom-multi.log",
+      "log_sha256": "3b07786871fe59da61e671e4b22592f2bed7a912f243bd08bb8eae83eb1935c4"
+    },
+    {
+      "fixture": "aom",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\aom-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.04037008249158,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0f2245d09c1ae761e61554910b0069d51d9bfae5990920018a67d7b7388b0c54",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-one.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 512,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0507499
+      },
+      "archived_log": "logs/librav1e-aom-one.log",
+      "log_sha256": "6104f5835263910081ec6257274d2a3b05c6ee1d2be622aba2715e549fa53f69"
+    },
+    {
+      "fixture": "aom",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\aom-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.04037008249158,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "aa1debd965bb6be6d11816f31ff2010b3d039f36e8cb6b237281f293eb33a4e6",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\aom-tiny.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0510639
+      },
+      "archived_log": "logs/librav1e-aom-tiny.log",
+      "log_sha256": "00fde474c482f697f081cbce7df5af44061890304c76bf4db5cd62ceb7f71b15"
+    },
+    {
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\main10-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 204,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 41.59081708998106,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "bd631384ef41e3fd9e055d825ccdc00a047207074c5f4d3f466c13aca3d93558",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-partial.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.458685
+      },
+      "archived_log": "logs/librav1e-main10-partial.log",
+      "log_sha256": "4a7d0f377158755ae02cbd576d15fcbe709e1705a3120caea9c91d829e93c00e"
+    },
+    {
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\main10-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 165,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 41.59081708998106,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "42df9c7a97a69904ab2d1c58878824d75dfca3f769755de14409b9529eae32c1",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-multi.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 1.24503
+      },
+      "archived_log": "logs/librav1e-main10-multi.log",
+      "log_sha256": "3b07786871fe59da61e671e4b22592f2bed7a912f243bd08bb8eae83eb1935c4"
+    },
+    {
+      "fixture": "main10",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\main10-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.01445130668812,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "6050c570dc70e4e78b15ccc82688649c517e0aedc6b1609aa504ef37d7a3e7e3",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-one.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 512,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0594903
+      },
+      "archived_log": "logs/librav1e-main10-one.log",
+      "log_sha256": "6104f5835263910081ec6257274d2a3b05c6ee1d2be622aba2715e549fa53f69"
+    },
+    {
+      "fixture": "main10",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\main10-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.01445130668812,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4429f716c9b61b25a8d9aabb1cc419a0c2701699f8ab93dcb5b95b1fe0ce11b1",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\main10-tiny.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0749267
+      },
+      "archived_log": "logs/librav1e-main10-tiny.log",
+      "log_sha256": "00fde474c482f697f081cbce7df5af44061890304c76bf4db5cd62ceb7f71b15"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\vfr-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 204,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.96963623808993,
+      "duration_seconds": 11.4,
+      "expected_duration_seconds": 11.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "967433e0faf04ce893dadb537b4e86ee6a2e6b46d389302ac709ec76e2a870b3",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-partial.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 145920,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.856155
+      },
+      "archived_log": "logs/librav1e-vfr-partial.log",
+      "log_sha256": "4a7d0f377158755ae02cbd576d15fcbe709e1705a3120caea9c91d829e93c00e"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\vfr-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 165,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.96963623808993,
+      "duration_seconds": 10.4,
+      "expected_duration_seconds": 10.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "a748d94d6db2010e6a9f4e1f53b5dfc4f6e48ad6594a64c4dc935faed349f069",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-multi.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 133120,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 1.50392
+      },
+      "archived_log": "logs/librav1e-vfr-multi.log",
+      "log_sha256": "3b07786871fe59da61e671e4b22592f2bed7a912f243bd08bb8eae83eb1935c4"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\vfr-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.04037008249158,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "d518b8df2af84862ca4cb27ede25c4d5051a4c661756a601bf9f16893831a42f",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-one.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0544114
+      },
+      "archived_log": "logs/librav1e-vfr-one.log",
+      "log_sha256": "6104f5835263910081ec6257274d2a3b05c6ee1d2be622aba2715e549fa53f69"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "librav1e",
+        "-speed",
+        "8",
+        "-qp",
+        "60",
+        "-threads",
+        "4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-174511\\vfr-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.04037008249158,
+      "duration_seconds": 0.12,
+      "expected_duration_seconds": 0.12,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "1b644a520823bffc2bc08415a71d670da43aab4ce16d713e37622741af77b4e6",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-174511\\vfr-tiny.mp4",
+        "video_encoder": "librav1e",
+        "video_options": {
+          "qp": "60",
+          "speed": "8",
+          "threads": "4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1536,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0510341
+      },
+      "archived_log": "logs/librav1e-vfr-tiny.log",
+      "log_sha256": "00fde474c482f697f081cbce7df5af44061890304c76bf4db5cd62ceb7f71b15"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 12
+  }
+}

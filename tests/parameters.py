@@ -200,7 +200,7 @@ try:
         ('unknown-encoder', ['-c:v', 'encoder_does_not_exist'], None, 'encoder'),
         ('unknown-option', ['-presett:v', 'slower'], None, 'option'),
         ('invalid-preset', ['-preset', 'invalid_preset'], None, 'encoder'),
-        ('copy-partial', ['-c:v', 'copy'], None, 'require an encoder'),
+        ('copy-partial', ['-c:v', 'copy'], None, 'Frame-exact boundaries require'),
         ('required-map-missing', ['-map', '0:v:99'], None, None),
         ('video-filter', ['-vf', 'scale=64:64'], None, 'full FFmpeg transcode'),
         ('fps-change', ['-r:v', '30'], None, 'full FFmpeg transcode'),

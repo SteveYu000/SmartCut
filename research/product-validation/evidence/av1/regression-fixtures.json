@@ -1,0 +1,125 @@
+{
+  "sdk": "${REPO}\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1",
+  "fixtures": [
+    {
+      "codec": "h264",
+      "name": "closed_b3_id0",
+      "sha256": "733a93ba2c92f471bb0c3959ff81f8832dfd94dd7f81d5b1b71936a09e681ae3"
+    },
+    {
+      "codec": "h264",
+      "name": "closed_b3_id3",
+      "sha256": "8b6210df45754db463ef7affb690c2b9f991b786513012c2cd5b4a57f06f1062"
+    },
+    {
+      "codec": "h264",
+      "name": "baseline",
+      "sha256": "c902eefd93a1bfdcade9aabd3b6d49a10c3ddcd6c5532a30520cc0bb4b8aac80"
+    },
+    {
+      "codec": "h264",
+      "name": "open_gop",
+      "sha256": "dd535b2c9de8ed4856397fdad159c63e17be0e6011d54abe22ca05b90e26b404"
+    },
+    {
+      "codec": "h264",
+      "name": "mixed_open_idr",
+      "sha256": "ef99b4048753daee5aabf4be8754662da12673d463e3d14154d2fd40867281d7"
+    },
+    {
+      "codec": "h264",
+      "name": "high10",
+      "sha256": "3c79bc938fc8187d14cf5f6371926ecbc86d00aa89654c8538cfea1180cbaf27"
+    },
+    {
+      "codec": "h264",
+      "name": "multi_slice",
+      "sha256": "6f228cacc634111604f4e3cf161d678a0894d91321a1076806af4fa62f98660a"
+    },
+    {
+      "codec": "h264",
+      "name": "ntsc",
+      "sha256": "2ed2cafb5de91b93eba3b04d29a0571f27538f42d688e90371bb30f79e20d2f2"
+    },
+    {
+      "codec": "h264",
+      "name": "vfr",
+      "sha256": "0dd2057c58a55bb7b472a2392ed3e77570770273d0d066a26d2885c2fd04542c"
+    },
+    {
+      "codec": "h264",
+      "name": "offset",
+      "sha256": "ad1e1ec37f9b99a325491f09fc0d4a2d2da44cdd4a78aa466543a8f42137877c"
+    },
+    {
+      "codec": "h264",
+      "name": "fragmented",
+      "sha256": "c78b7006a83be4826b16927f334fe20c4d8cea5f69b71b25f38da993c7678113"
+    },
+    {
+      "codec": "h264",
+      "name": "fullrange_sar",
+      "sha256": "2f5150865afe7b6d923b9160c47e620c2f5769be8f5312657566d443cc173c4c"
+    },
+    {
+      "codec": "h264",
+      "name": "nvenc",
+      "sha256": "9c5dab9786ec493c45cc266f86096d80e59e3e26ad4455e9fe23b60fdba07904"
+    },
+    {
+      "codec": "h265",
+      "name": "closed",
+      "sha256": "9a028abfcd8d39d05d54b559228b642bde9eef45bb3ef41d6f50a2f0d5b6df10"
+    },
+    {
+      "codec": "h265",
+      "name": "open",
+      "sha256": "214cdd18b39e3ee43e2344eeaa115f54bb10991211472150174f8f51293334ca"
+    },
+    {
+      "codec": "h265",
+      "name": "main10",
+      "sha256": "a10de1683d5b0b3a2dfd154b6cbde136f27dfa23542ce3fe9677c1411502cd15"
+    },
+    {
+      "codec": "h265",
+      "name": "vfr",
+      "sha256": "310a4b53aa7c649b445ee737eaf2a6d1397ef292825ee9c881be037431bb3fcf"
+    },
+    {
+      "codec": "h265",
+      "name": "ntsc",
+      "sha256": "22363fe29ddcfa6090ace254292dbb0828299969e4ecc7a81cfe6817cf628795"
+    },
+    {
+      "codec": "h265",
+      "name": "offset",
+      "sha256": "23db89892cef60cc1ad86e3cbe1d57f2c5ef696f5cfa4fb34e8309b0f2fa3b53"
+    },
+    {
+      "codec": "h265",
+      "name": "fragmented",
+      "sha256": "d8548b28cfd054552f062657978e3497335559cebb2d2997d2d8084971bbe89d"
+    },
+    {
+      "codec": "h265",
+      "name": "multislice",
+      "sha256": "a4dc2ce0f1e2e0f17de63b26da02c1b3bd06aa10d27ad1eff004a0aab79a0284"
+    },
+    {
+      "codec": "h265",
+      "name": "color_sar",
+      "sha256": "d15f223ec5a8a3c26717872de6e55c543ab3d2d26636f2e90c3048747206601d"
+    },
+    {
+      "codec": "h265",
+      "name": "radl",
+      "sha256": "fde1612faa29d6b1548ba2f6ab08cdcd58d565e50869c82621ec3390286b6300"
+    },
+    {
+      "codec": "h265",
+      "name": "nvenc",
+      "sha256": "366d5b967ebb5440e32d905505c98a5e72a91a85307acff14ee0e263cdd81a11"
+    }
+  ]
+}

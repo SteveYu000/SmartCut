@@ -87,9 +87,13 @@ struct Muxer {
     }
 };
 static bool descriptions(const Options &options, const Layout &layout, AVCodecID codec) {
-    bool result = false;
+    bool result = codec == AV_CODEC_ID_AV1;
     for (const auto &option : options.output_options)
         if (option_stem(option) == "tag" && layout.matches(option, layout.video)) {
+            if (codec == AV_CODEC_ID_AV1) {
+                require(option.value == "av01", "AV1 requires the av01 sample entry");
+                continue;
+            }
             auto inband = codec == AV_CODEC_ID_H264 ? "avc3" : "hev1",
                  outband = codec == AV_CODEC_ID_H264 ? "avc1" : "hvc1";
             require(option.value == inband || option.value == outband,
@@ -103,7 +107,9 @@ static void validate_video_format(const Options &options, const Layout &layout, 
         if (layout.matches(option, layout.video)) {
             auto stem = option_stem(option);
             if (stem == "pix_fmt")
-                require(av_get_pix_fmt(option.value.c_str()) == input.stream->codecpar->format,
+                require(av_get_pix_fmt(option.value.c_str()) ==
+                            encoder_pixel_format(input.stream->codecpar->codec_id,
+                                                 input.stream->codecpar->format),
                         "-pix_fmt must match the copied source; pixel conversion needs a full "
                         "transcode");
             if (stem == "aspect") {
@@ -158,7 +164,9 @@ static void mux(Input &input, const Index &idx, const Plan &plan, const Options 
         output_indices[mapped.output] = stream->index;
         if (mapped.type == AVMEDIA_TYPE_VIDEO) {
             const auto &first = plan.units.front();
-            auto *params = first.copy ? input.stream->codecpar : first.encoded->params.get();
+            auto *params = first.copy ? (idx.codec == AV_CODEC_ID_AV1 ? idx.av1_params.get()
+                                                                      : input.stream->codecpar)
+                                      : first.encoded->params.get();
             if (stsd)
                 check(avcodec_parameters_copy(stream->codecpar, params), "Copy video parameters");
             else {
@@ -167,7 +175,8 @@ static void mux(Input &input, const Index &idx, const Plan &plan, const Options 
                       "Copy in-band video configuration");
             }
             stream->codecpar->codec_tag =
-                idx.codec == AV_CODEC_ID_H264
+                idx.codec == AV_CODEC_ID_AV1 ? MKTAG('a', 'v', '0', '1')
+                : idx.codec == AV_CODEC_ID_H264
                     ? (stsd ? MKTAG('a', 'v', 'c', '1') : MKTAG('a', 'v', 'c', '3'))
                     : (stsd ? MKTAG('h', 'v', 'c', '1') : MKTAG('h', 'e', 'v', '1'));
             stream->time_base = input.stream->time_base;
@@ -495,7 +504,7 @@ int run(const Options &requested) {
         layout.matching->streams[layout.video]->time_base = video_input->stream->time_base;
         if (name == "copy")
             require(plan->encoded == 0,
-                    "Frame-exact boundaries require an encoder; use -c:v libx264 or -c:v libx265");
+                    "Frame-exact boundaries require a matching video encoder (-c:v)");
         else {
             encoder_values = video_options(options, layout, encoder);
             auto validate = make_encoder(*video_input, encoder, encoder_values);

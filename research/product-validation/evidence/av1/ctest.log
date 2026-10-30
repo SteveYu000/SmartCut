@@ -1,0 +1,55 @@
+Start testing: Oct 30 17:49 中国标准时间
+----------------------------------------------------------
+1/2 Testing: cli_help
+1/2 Test: cli_help
+Command: "E:/DesktopPlus/Works/Code/SmartCut/build/Release/smartcut.exe" "--help"
+Directory: E:/DesktopPlus/Works/Code/SmartCut/build
+"cli_help" start time: Oct 30 17:49 中国标准时间
+Output:
+----------------------------------------------------------
+SmartCut 1.0.0 - H.264 / HEVC / AV1 MP4 smart rendering
+Usage: smartcut [global options] [-ss TIME] -i INPUT [-ss TIME] [-to TIME | -t TIME]
+                [-map 0:v:0?] [-map 0:a:0?] [-map 0:s?] [encoding options] OUTPUT.mp4
+Example: smartcut -hide_banner -y -i input.mp4 -ss 1:0:1 -to 2:0:1
+         -map 0:v:0? -map 0:a:0? -c:v:0 libx264 -preset:v:0 slower
+         -c:a:0 aac -b:a:0 192k output.mp4
+Video encoder options apply only to re-encoded boundaries. The codec must
+match the source. Audio/subtitles use the original FFmpeg command pipeline
+over the entire selected interval, including -c:a copy / -c:s copy.
+Supported input: local MP4, one selected progressive H.264/HEVC/AV1 video,
+fixed configuration, 4:2:0 8/10 bit. Multiple audio/subtitle tracks allowed.
+Video filters, frame-rate/geometry conversion, multiple inputs/outputs are
+rejected. Encoder options use FFmpeg AVOptions; no CRF/preset/B-frame override.
+  --keep-frames A:B  exact display-frame range, end exclusive; repeat for video-only cuts
+  --report FILE     JSON plan, encoder settings and copy/encode counts
+  --analyze         validate settings and show plan without writing output
+  --ffmpeg FILE     original FFmpeg executable (default: beside smartcut)
+  --work-dir DIR    parent for a private temporary directory
+  --keep-work       retain temporary files for diagnosis
+  -y / -n           atomic overwrite / refuse overwrite; existing files are
+                    preserved on any encoding or validation failure
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"cli_help" end time: Oct 30 17:49 中国标准时间
+"cli_help" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: cli_options
+2/2 Test: cli_options
+Command: "E:/DesktopPlus/Works/Code/SmartCut/build/Release/smartcut_unit_tests.exe"
+Directory: E:/DesktopPlus/Works/Code/SmartCut/build
+"cli_options" start time: Oct 30 17:49 中国标准时间
+Output:
+----------------------------------------------------------
+CLI option tests passed
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"cli_options" end time: Oct 30 17:49 中国标准时间
+"cli_options" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 30 17:49 中国标准时间

@@ -1,0 +1,4282 @@
+{
+  "executable_sha256": "f54faec076631e59fc6c956f85feaf399960c7925e5fa35ad7e4be8af2e3deb6",
+  "encoder": "libsvtav1",
+  "cases": [
+    {
+      "fixture": "svt",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-full.json",
+        "--keep-frames",
+        "0:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-full.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4f79be9d27b746d023abec00864775a138a24ffed3a98b3be3a8e09461d78982",
+      "optimized_copy_frames": 240,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-full.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.1136
+      },
+      "archived_log": "logs/libsvtav1-svt-full.log",
+      "log_sha256": "a648450560c94ed5af251ef9875fa41ca0d70b26aa6e918aef5e46a0090297df"
+    },
+    {
+      "fixture": "svt",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 203,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.637358409195755,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "856addb421581fc6e34d45856dc70f023bc3cd0271b1044cb3542074d8cbd976",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-partial.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.675367
+      },
+      "archived_log": "logs/libsvtav1-svt-partial.log",
+      "log_sha256": "2663fce094687bb198d8c3852afa38364fe3ebda3710ebc2c332905453bbb828"
+    },
+    {
+      "fixture": "svt",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 167,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.637358409195755,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "6c791ab754eaacf853ef4ec1edcf14134123186630a389a50f5393ffaf22f597",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-multi.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.558862
+      },
+      "archived_log": "logs/libsvtav1-svt-multi.log",
+      "log_sha256": "d1033515a680817257ff734462eccfe856708491eb0c07d210bc0751dd4a8028"
+    },
+    {
+      "fixture": "svt",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-aligned.json",
+        "--keep-frames",
+        "24:216",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-aligned.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0e72dbc509d22d5373e39d48a69604d4e485702cfc8e6bbe472af3113556cdbb",
+      "optimized_copy_frames": 192,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-aligned.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 98304,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.126551
+      },
+      "archived_log": "logs/libsvtav1-svt-aligned.log",
+      "log_sha256": "dad0d79f83199085503bb61acfac43eeaabcd3c4cd1ef26df11347d7c40b88e2"
+    },
+    {
+      "fixture": "svt",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.033719068796046,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "c12a0d8bf46c430466794746fee077c58affa69f07fc9972e1f62d4278e743e4",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-one.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 512,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.267319
+      },
+      "archived_log": "logs/libsvtav1-svt-one.log",
+      "log_sha256": "416b0a1985ec6d1ff9bbe139603e1ece2cc10617f5916eb50cc6e74ec0311cc8"
+    },
+    {
+      "fixture": "svt",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.033719068796046,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4c3f06f6ad59e9d2a68981e95fd65fdbb798e80e333dd607a6ea5cefed23d52c",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tiny.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.539331
+      },
+      "archived_log": "logs/libsvtav1-svt-tiny.log",
+      "log_sha256": "fb31d99319747409c8ee2436cbd7bb22da4c225e3ccfe48216b077b8672d7507"
+    },
+    {
+      "fixture": "svt",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-copy_gap.json",
+        "--keep-frames",
+        "24:72",
+        "--keep-frames",
+        "120:192",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-copy_gap.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "2f503871b95f9786152a81af6555eacb8d7c3b17383034c4d54adb5549423813",
+      "optimized_copy_frames": 120,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-copy_gap.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 61440,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.14881
+      },
+      "archived_log": "logs/libsvtav1-svt-copy_gap.log",
+      "log_sha256": "dcee53ac3ee91a898a9615d6c9a0dbcabe775770601fcd0e14b775462c206ce8"
+    },
+    {
+      "fixture": "svt",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tail.json",
+        "--keep-frames",
+        "213:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tail.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\svt-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.0848651793568,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "d0dcd11d0264881f804bcf4be103f821e2b6aa6ca3f73989cbba7096efad524e",
+      "optimized_copy_frames": 24,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\svt-tail.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "duration_ticks": 13824,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0927254
+      },
+      "archived_log": "logs/libsvtav1-svt-tail.log",
+      "log_sha256": "93f405aa616fb0c8379bf598fc7af8f27bc96da1557c978711ed843e502a9ca0"
+    },
+    {
+      "fixture": "main10",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-full.json",
+        "--keep-frames",
+        "0:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-full.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "dcff79182fa5dbb6d4faa006437c922c4b3dbe9868d80ae77c79d0f9ced30dbe",
+      "optimized_copy_frames": 240,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-full.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0876461
+      },
+      "archived_log": "logs/libsvtav1-main10-full.log",
+      "log_sha256": "7d2907b5574f52f7be2a124b26e01951f4b03df008d037df1f178248511b657c"
+    },
+    {
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 203,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.824300700353135,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "7b33849811ae75db7d1d8df7c315af7cb28f0ebb99b9335b2910d881c8fc88c7",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-partial.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.256985
+      },
+      "archived_log": "logs/libsvtav1-main10-partial.log",
+      "log_sha256": "def9453bd1272ce517fea3dde97c3e138fc3b3e61df938002bc590890fd851c7"
+    },
+    {
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 165,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.824300700353135,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "629b1c030d5aff68253c277f50383aab18f6821e7137676bb4956bc610c4443b",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-multi.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 1.06026
+      },
+      "archived_log": "logs/libsvtav1-main10-multi.log",
+      "log_sha256": "0aaf97711a4f79b6e7a20cea6c08487ffba093dbcf4f97f9746cb95c1ea3a947"
+    },
+    {
+      "fixture": "main10",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-aligned.json",
+        "--keep-frames",
+        "24:216",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-aligned.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "ff2a2dadf2aa715d2e218d7a5b6e3166afd684db05354a93b60faf8e655f747a",
+      "optimized_copy_frames": 192,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-aligned.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 98304,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.363377
+      },
+      "archived_log": "logs/libsvtav1-main10-aligned.log",
+      "log_sha256": "b800a23086017e3d9cf5d118188893f62b7452bab09c5d20f524a61017540686"
+    },
+    {
+      "fixture": "main10",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.916052393406254,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "2326eb61ed495f7d9f3b0ac4b9567629f15c9c25307acdfe95998ebf5f897504",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-one.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 512,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0794625
+      },
+      "archived_log": "logs/libsvtav1-main10-one.log",
+      "log_sha256": "b564b022fd7f0168496244e558a9a4bc52dc056dec6ad5d9505fafe6a60ba436"
+    },
+    {
+      "fixture": "main10",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.916052393406254,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "6c955318740cf0c9d831556e62f75f4c48b2c7a43443ef89a5bed099b2fc7354",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tiny.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.163854
+      },
+      "archived_log": "logs/libsvtav1-main10-tiny.log",
+      "log_sha256": "c2e0a39a3e5e7df5a78eccd85692d699915cd23ff0e6058ce0757539b022a7a1"
+    },
+    {
+      "fixture": "main10",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-copy_gap.json",
+        "--keep-frames",
+        "24:72",
+        "--keep-frames",
+        "120:192",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-copy_gap.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4d0053384eb330687da8beb84449299f74e3e9c21278aa95ad374f36303cc957",
+      "optimized_copy_frames": 120,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-copy_gap.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 61440,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0443486
+      },
+      "archived_log": "logs/libsvtav1-main10-copy_gap.log",
+      "log_sha256": "1ac5fde0d1185debec75c6288f028c9581471344dfa801de6fbdfd72c5b4b56f"
+    },
+    {
+      "fixture": "main10",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tail.json",
+        "--keep-frames",
+        "213:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tail.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\main10-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.367894258779266,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "f70c01b8bac7260c5b0180062d68327a4b1e6f8afce0e1916c9fbc82dbabe4fc",
+      "optimized_copy_frames": 24,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\main10-tail.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "duration_ticks": 13824,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0878729
+      },
+      "archived_log": "logs/libsvtav1-main10-tail.log",
+      "log_sha256": "9ccefa4062508630ae6133955ea7c6aa270bcb52a50f135d33c7b7adaa19da0c"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-full.json",
+        "--keep-frames",
+        "0:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-full.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 12.76,
+      "expected_duration_seconds": 12.76,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "3611e4276bc6f98faccd9c6fe90ddfd301290500846f1c8fcf8532b09ee46481",
+      "optimized_copy_frames": 240,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-full.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 163328,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0415414
+      },
+      "archived_log": "logs/libsvtav1-vfr-full.log",
+      "log_sha256": "a648450560c94ed5af251ef9875fa41ca0d70b26aa6e918aef5e46a0090297df"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 203,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 43.365923751862105,
+      "duration_seconds": 11.4,
+      "expected_duration_seconds": 11.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "5022fe29367a4cd673e8461652b57ed688fcbf6e8b115b4157fa9f01941d4c52",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-partial.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 145920,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0940753
+      },
+      "archived_log": "logs/libsvtav1-vfr-partial.log",
+      "log_sha256": "2663fce094687bb198d8c3852afa38364fe3ebda3710ebc2c332905453bbb828"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 164,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.99918768004144,
+      "duration_seconds": 10.4,
+      "expected_duration_seconds": 10.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "8ef63e59935abb38baf1a53a5b94c07cb8c007b6660bf3972ca318617b2547ea",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-multi.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 133120,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.158777
+      },
+      "archived_log": "logs/libsvtav1-vfr-multi.log",
+      "log_sha256": "d1033515a680817257ff734462eccfe856708491eb0c07d210bc0751dd4a8028"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-aligned.json",
+        "--keep-frames",
+        "24:216",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-aligned.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 10.24,
+      "expected_duration_seconds": 10.24,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "fe2676b6910dc7eda43edc7c7670f8e563622c0242b2f20c36d528d6fa5ede5b",
+      "optimized_copy_frames": 192,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-aligned.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 131072,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0418436
+      },
+      "archived_log": "logs/libsvtav1-vfr-aligned.log",
+      "log_sha256": "dad0d79f83199085503bb61acfac43eeaabcd3c4cd1ef26df11347d7c40b88e2"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.979351993357106,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "7e568545100ebd2ff26de3c417bb2d4a4d4f8c3dcb9085d8289f18f371e5f772",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-one.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.617975
+      },
+      "archived_log": "logs/libsvtav1-vfr-one.log",
+      "log_sha256": "416b0a1985ec6d1ff9bbe139603e1ece2cc10617f5916eb50cc6e74ec0311cc8"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.979351993357106,
+      "duration_seconds": 0.12,
+      "expected_duration_seconds": 0.12,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4eab4f3e46dde67ce8dbf9907fff66f59609ed675f12531b94b214adb5efea1c",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tiny.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1536,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0735242
+      },
+      "archived_log": "logs/libsvtav1-vfr-tiny.log",
+      "log_sha256": "fb31d99319747409c8ee2436cbd7bb22da4c225e3ccfe48216b077b8672d7507"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-copy_gap.json",
+        "--keep-frames",
+        "24:72",
+        "--keep-frames",
+        "120:192",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-copy_gap.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 6.4,
+      "expected_duration_seconds": 6.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "ac967873f06f52477e2617ea9e22f3bc487363470c9dcbea5fe3ba8b37c3d1c9",
+      "optimized_copy_frames": 120,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-copy_gap.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 81920,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.100684
+      },
+      "archived_log": "logs/libsvtav1-vfr-copy_gap.log",
+      "log_sha256": "dcee53ac3ee91a898a9615d6c9a0dbcabe775770601fcd0e14b775462c206ce8"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tail.json",
+        "--keep-frames",
+        "213:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tail.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\vfr-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.213565208198105,
+      "duration_seconds": 1.4,
+      "expected_duration_seconds": 1.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "93d90fa85d276a6b7fafac0a0846e2c30289e294590d58444591be2e83b59ec4",
+      "optimized_copy_frames": 24,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\vfr-tail.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "duration_ticks": 17920,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.158117
+      },
+      "archived_log": "logs/libsvtav1-vfr-tail.log",
+      "log_sha256": "93f405aa616fb0c8379bf598fc7af8f27bc96da1557c978711ed843e502a9ca0"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-full.json",
+        "--keep-frames",
+        "0:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-full.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "dc589d35eddf7d9de6fb0ae0d68d67a11995426840319a0179d27fc10bcbe831",
+      "optimized_copy_frames": 240,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-full.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 122880,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 0,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.248519
+      },
+      "archived_log": "logs/libsvtav1-nvenc-full.log",
+      "log_sha256": "a648450560c94ed5af251ef9875fa41ca0d70b26aa6e918aef5e46a0090297df"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-partial.json",
+        "--keep-frames",
+        "13:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-partial.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 203,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.68616271144908,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "e93a05a0a695254f8c7f61b4c388410c8171f7a9f21c2d859e577b54182c57a5",
+      "optimized_copy_frames": 203,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-partial.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "duration_ticks": 109568,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.169818
+      },
+      "archived_log": "logs/libsvtav1-nvenc-partial.log",
+      "log_sha256": "2663fce094687bb198d8c3852afa38364fe3ebda3710ebc2c332905453bbb828"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-multi.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-multi.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 166,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.68616271144908,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "9caec0af9577184434b958dee45db7e81ded945e0ea7aab214316fefe86c5a3e",
+      "optimized_copy_frames": 164,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-multi.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "duration_ticks": 99840,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 13,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 81,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "encode",
+            "begin": 100,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 227,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.167054
+      },
+      "archived_log": "logs/libsvtav1-nvenc-multi.log",
+      "log_sha256": "d1033515a680817257ff734462eccfe856708491eb0c07d210bc0751dd4a8028"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-aligned.json",
+        "--keep-frames",
+        "24:216",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-aligned.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "7f46e78ace79a68d9cf463261f1064529fd8566b16ddea128e63552ddabe3c45",
+      "optimized_copy_frames": 192,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-aligned.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 98304,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 72,
+            "end": 96,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 96,
+            "end": 120,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 192,
+            "end": 216,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0411215
+      },
+      "archived_log": "logs/libsvtav1-nvenc-aligned.log",
+      "log_sha256": "dad0d79f83199085503bb61acfac43eeaabcd3c4cd1ef26df11347d7c40b88e2"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-one.json",
+        "--keep-frames",
+        "23:24",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-one.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.599822775210306,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "8d5c107023b9ffbaf543130753e5537198093a7b3243fbba383973603d88ce22",
+      "optimized_copy_frames": 0,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-one.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 512,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0842126
+      },
+      "archived_log": "logs/libsvtav1-nvenc-one.log",
+      "log_sha256": "416b0a1985ec6d1ff9bbe139603e1ece2cc10617f5916eb50cc6e74ec0311cc8"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tiny.json",
+        "--keep-frames",
+        "23:25",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tiny.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 1,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.599822775210306,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "7d83f96b4e2540b4d5ea7bf5922dd5f175d49673977f8a367a0aed987ed197e4",
+      "optimized_copy_frames": 1,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tiny.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 1,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "duration_ticks": 1024,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 23,
+            "end": 24,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 25,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0722959
+      },
+      "archived_log": "logs/libsvtav1-nvenc-tiny.log",
+      "log_sha256": "fb31d99319747409c8ee2436cbd7bb22da4c225e3ccfe48216b077b8672d7507"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-copy_gap.json",
+        "--keep-frames",
+        "24:72",
+        "--keep-frames",
+        "120:192",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-copy_gap.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "6419a321bc92097ef57451a54d1840c1e1ef4b5e40d185141d0422c238eae9d6",
+      "optimized_copy_frames": 120,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-copy_gap.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "duration_ticks": 61440,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "copy",
+            "begin": 24,
+            "end": 48,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 48,
+            "end": 72,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 120,
+            "end": 144,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 144,
+            "end": 168,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 168,
+            "end": 192,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.0405347
+      },
+      "archived_log": "logs/libsvtav1-nvenc-copy_gap.log",
+      "log_sha256": "dcee53ac3ee91a898a9615d6c9a0dbcabe775770601fcd0e14b775462c206ce8"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\build\\Release\\smartcut.exe",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-an",
+        "-sn",
+        "-c:v:0",
+        "libsvtav1",
+        "-preset",
+        "8",
+        "-crf",
+        "18",
+        "-svtav1-params",
+        "lp=4",
+        "--report",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tail.json",
+        "--keep-frames",
+        "213:240",
+        "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tail.mp4"
+      ],
+      "output": "research\\product-validation\\av1-20261030-173843\\nvenc-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.27463449185068,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "fa8230a2a699deab37b59356ab847de1f6bdb872e9fb3df01dc7f6e5314b6620",
+      "optimized_copy_frames": 24,
+      "copy_errors": [],
+      "plan": {
+        "status": "completed",
+        "tool": "smartcut",
+        "version": "1.0.0",
+        "ffmpeg_libraries": "n8.1.3-24-g92611900bb-20261025",
+        "ffmpeg_executable": "${REPO}\\build\\Release\\ffmpeg.exe",
+        "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "output": "${REPO}\\research\\product-validation\\av1-20261030-173843\\nvenc-tail.mp4",
+        "video_encoder": "libsvtav1",
+        "video_options": {
+          "crf": "18",
+          "preset": "8",
+          "svtav1-params": "lp=4"
+        },
+        "mapped_streams": [
+          {
+            "input_index": 0,
+            "requested_output_index": 0,
+            "type": "video"
+          }
+        ],
+        "time_base": [
+          1,
+          12800
+        ],
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "duration_ticks": 13824,
+        "decode_delay_ticks": 0,
+        "signed_composition_offsets": false,
+        "lossless_full_encode_fallback": false,
+        "units": [
+          {
+            "mode": "encode",
+            "begin": 213,
+            "end": 216,
+            "cra_to_bla": false
+          },
+          {
+            "mode": "copy",
+            "begin": 216,
+            "end": 240,
+            "cra_to_bla": false
+          }
+        ],
+        "elapsed_seconds": 0.482283
+      },
+      "archived_log": "logs/libsvtav1-nvenc-tail.log",
+      "log_sha256": "93f405aa616fb0c8379bf598fc7af8f27bc96da1557c978711ed843e502a9ca0"
+    }
+  ],
+  "summary": {
+    "total": 32,
+    "passed": 32
+  }
+}

@@ -71,6 +71,7 @@ CMakeUserPresets.json
 /research/product-validation/parameters-20*/
 /research/product-validation/timestamps-20*/
 /research/product-validation/run-20*/
+/research/product-validation/av1-20*/
 /research/product-validation/*-debug.*
 
 # Local validation pointers and exploratory state (canonical evidence is kept).

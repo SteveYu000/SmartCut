@@ -33,7 +33,7 @@ unset(FFMPEG_INCLUDE_DIR CACHE)
 find_path(FFMPEG_INCLUDE_DIR libavformat/avformat.h
   PATHS "${FFMPEG_ROOT}/include" NO_DEFAULT_PATH REQUIRED)
 message(STATUS "FFmpeg SDK: ${FFMPEG_ROOT}")
-add_library(smartcut_core src/platform.cpp src/cli.cpp src/video.cpp src/app.cpp)
+add_library(smartcut_core src/platform.cpp src/cli.cpp src/video.cpp src/av1.cpp src/app.cpp)
 target_include_directories(smartcut_core PUBLIC src)
 target_include_directories(smartcut_core SYSTEM PUBLIC "${FFMPEG_INCLUDE_DIR}")
 target_link_libraries(smartcut_core PUBLIC ${avformat_LIBRARY} ${avcodec_LIBRARY} ${avutil_LIBRARY})
