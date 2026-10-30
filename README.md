@@ -16,11 +16,9 @@
 4. 本项目遵循“不重复造轮子”的原则，尽量复用ffmpeg已有的组件，自己只写最核心的部分。
 
 ## 项目阶段
-- [x] mp4/avc编码的可行方案已经通过测试[测试报告](research/h264/docs/IMPLEMENTATION_REPORT.md)。
+- [x] 项目已支持mp4 with avc/hevc/av1。
 - [x] ~~mp4/avc 的第二套实现：C# + 官方 FFmpeg 进程管线，含音频轨，165 个端到端与逻辑用例通过[实现说明](research/pipeline/README.md)。（方案已抛弃）~~
-- [x] mp4/hevc 编码的可行方案已完成限定输入范围的测试：[设计与测试结论](research/h265/docs/IMPLEMENTATION_REPORT.md)，[源码及复现步骤](research/h265/README.md)。
-- [x] 已完成首个实现，支持avc、hevc编码。
-- [ ] 正在研究mp4/av1 编码的可行方案。
+- [ ] 正在研究mkv容器方案。
 
 ## 构建
 

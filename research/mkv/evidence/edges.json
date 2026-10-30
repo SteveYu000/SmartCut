@@ -1,0 +1,88 @@
+{
+  "prototype_sha256": "cb9d690770f9eccd0c02bc4714d53a75c1cdc40235953a91577b4f4825b9c6b4",
+  "cases": [
+    {
+      "name": "hevc-zlib-explicit-progressive",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\hevc-zlib-progressive.mkv",
+        "--compression",
+        "0:zlib",
+        "--field-order",
+        "0:0",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv"
+      ],
+      "input_sha256": "8a0f5a191d93b17a4a971bd8dffde1d3ef65a5b71c4f10549d5eb56931b97bce",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\hevc-zlib-progressive.mkv",
+        "--keep-frames",
+        "13:227",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\hevc-zlib-cut.mkv"
+      ],
+      "exit_code": 1,
+      "passed": false,
+      "error": "mkv-research: Only positively identified progressive video is supported\r\n"
+    },
+    {
+      "name": "reject-unrepresentable-millisecond-grid",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-f",
+        "lavfi",
+        "-i",
+        "testsrc2=size=192x128:rate=2000:duration=0.04",
+        "-c:v",
+        "libx264",
+        "-g",
+        "20",
+        "-bf",
+        "0",
+        "-pix_fmt",
+        "yuv420p",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\high-rate.mp4"
+      ],
+      "remux_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\high-rate.mkv",
+        "--timestamp-scale",
+        "1000",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\high-rate.mp4"
+      ],
+      "input_sha256": "1c318d21dc896666315b69e2c2ef4d960b0391623328bf1901c487bdcd59f676",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\high-rate.mkv",
+        "--keep-frames",
+        "0:80",
+        "-c:v",
+        "copy",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\edges-20261031-000903\\high-rate-out.mkv"
+      ],
+      "exit_code": 1,
+      "error": "mkv-research: Millisecond Matroska time base cannot represent this decode schedule\r\n",
+      "passed": true
+    }
+  ]
+}

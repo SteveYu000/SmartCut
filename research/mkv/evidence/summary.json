@@ -1,0 +1,127 @@
+{
+  "matrix": {
+    "prototype": {
+      "cases": 110,
+      "passed": 104,
+      "issues": {
+        "av1_multiple_sequence_headers": 6,
+        "av1_codec_private_fields": 3
+      },
+      "codecs": {
+        "h264": {
+          "cases": 40,
+          "passed": 40,
+          "strict_decode_and_count": 40,
+          "max_pts_error_ms": 0.0
+        },
+        "hevc": {
+          "cases": 35,
+          "passed": 35,
+          "strict_decode_and_count": 35,
+          "max_pts_error_ms": 0.0
+        },
+        "av1": {
+          "cases": 35,
+          "passed": 29,
+          "strict_decode_and_count": 35,
+          "max_pts_error_ms": 0.0
+        }
+      }
+    },
+    "deepregular": {
+      "cases": 110,
+      "passed": 64,
+      "issues": {
+        "decoded_display_pts": 24,
+        "display_pts": 24,
+        "block_duration": 15,
+        "segment_duration": 15,
+        "av1_multiple_sequence_headers": 22,
+        "av1_codec_private_fields": 5,
+        "metadata_sample_aspect_ratio": 5
+      },
+      "codecs": {
+        "h264": {
+          "cases": 40,
+          "passed": 31,
+          "strict_decode_and_count": 40,
+          "max_pts_error_ms": 36.0
+        },
+        "hevc": {
+          "cases": 35,
+          "passed": 26,
+          "strict_decode_and_count": 35,
+          "max_pts_error_ms": 36.0
+        },
+        "av1": {
+          "cases": 35,
+          "passed": 7,
+          "strict_decode_and_count": 35,
+          "max_pts_error_ms": 36.0
+        }
+      }
+    },
+    "skeskinen": {
+      "cases": 110,
+      "passed": 47,
+      "issues": {
+        "block_duration": 52,
+        "segment_duration": 45,
+        "process_exit": 10,
+        "av1_multiple_sequence_headers": 22,
+        "av1_codec_private_fields": 9,
+        "seek": 2,
+        "metadata_sample_aspect_ratio": 5
+      },
+      "codecs": {
+        "h264": {
+          "cases": 40,
+          "passed": 25,
+          "strict_decode_and_count": 40,
+          "max_pts_error_ms": 0.0
+        },
+        "hevc": {
+          "cases": 35,
+          "passed": 17,
+          "strict_decode_and_count": 25,
+          "max_pts_error_ms": 0.0
+        },
+        "av1": {
+          "cases": 35,
+          "passed": 5,
+          "strict_decode_and_count": 35,
+          "max_pts_error_ms": 0.0
+        }
+      }
+    }
+  },
+  "experiments": {
+    "experiments": {
+      "cases": 33,
+      "passed": 26,
+      "not_passed": [
+        "h264-closed_b3_id0-headers-extradata",
+        "h264-closed_b3_id0-seek-headers-seams",
+        "hevc-closed-headers-extradata",
+        "hevc-closed-seek-headers-seams",
+        "hevc-open-compressed-input",
+        "h264-ffmpeg81-vfr-remux",
+        "hevc-ffmpeg81-vfr-remux"
+      ]
+    },
+    "streams": {
+      "cases": 5,
+      "passed": 5,
+      "not_passed": []
+    },
+    "edges": {
+      "cases": 2,
+      "passed": 1,
+      "not_passed": [
+        "hevc-zlib-explicit-progressive"
+      ]
+    }
+  },
+  "total_matrix_attempts": 330,
+  "extra_cases": 40
+}

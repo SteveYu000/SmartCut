@@ -1,0 +1,4157 @@
+{
+  "prototype_sha256": "cb9d690770f9eccd0c02bc4714d53a75c1cdc40235953a91577b4f4825b9c6b4",
+  "ffmpeg": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "mkvmerge": "mkvmerge v103.0 ('The Darkness') 64-bit",
+  "mkvmerge_sha256": "e66056a12f5b99a43c37f11374a0b08648a1cef7a0c99e0c15786e95abfc5ddd",
+  "cases": [
+    {
+      "name": "av1-svt-partial-reject",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-partial-reject.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-partial-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-svt-partial-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-svt-partial-full",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-partial-full.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-partial-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-svt-partial-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 214,
+        "decoded_frames": 251,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 42.05435221181999,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 1,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "a566bf8de3def2d18192073ee8deaa81e310483ba302331f771cfc0ee58a21eb"
+    },
+    {
+      "name": "av1-svt-multi-reject",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-multi-reject.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-multi-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-svt-multi-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 164,
+        "encoded_frames": 31,
+        "decoded_frames": 48,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 7800,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 81,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 100,
+            "end": 120,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 2720
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3520
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4480
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5440
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6400
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7360
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-svt-multi-full",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-multi-full.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-multi-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-svt-multi-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 195,
+        "decoded_frames": 260,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 7800,
+        "units": [
+          {
+            "begin": 13,
+            "end": 81,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 100,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 2720
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 7.8,
+      "expected_duration": 7.8,
+      "min_psnr_db": 42.08359302694639,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 97,
+          "time": 3.88,
+          "passed": true
+        },
+        {
+          "index": 187,
+          "time": 7.48,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 3,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 7800.0,
+        "cue_count": 2,
+        "block_count": 195,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "0a5c0c2749a4727941b14af84cb7ac162a9a506921fee8ac8cda8520e69f930b"
+    },
+    {
+      "name": "av1-svt-tail-reject",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-tail-reject.json",
+        "--keep-frames",
+        "213:240",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-tail-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-svt-tail-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 1080,
+        "units": [
+          {
+            "begin": 213,
+            "end": 216,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 120
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-svt-tail-full",
+      "input_sha256": "fe127f95a2badafbad91a712ac3999784372582b6df1a13d482b5d987e3ffa95",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-svt.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-tail-full.json",
+        "--keep-frames",
+        "213:240",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-svt-tail-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-svt-tail-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 27,
+        "decoded_frames": 72,
+        "spool_bytes": 551510,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 1080,
+        "units": [
+          {
+            "begin": 213,
+            "end": 240,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 1.08,
+      "expected_duration": 1.08,
+      "min_psnr_db": 42.49643274786407,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 13,
+          "time": 0.52,
+          "passed": true
+        },
+        {
+          "index": 19,
+          "time": 0.76,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 1,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 1080.0,
+        "cue_count": 1,
+        "block_count": 27,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "820679561d4efa88b805a8ff8b2a6663b29bab22638b4acccdaf94b9d6bd6ccd"
+    },
+    {
+      "name": "av1-rav1e-partial-reject",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-partial-reject.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-partial-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-partial-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 64,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 64,
+            "end": 88,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2040
+          },
+          {
+            "begin": 88,
+            "end": 112,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3000
+          },
+          {
+            "begin": 112,
+            "end": 128,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3960
+          },
+          {
+            "begin": 128,
+            "end": 152,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4600
+          },
+          {
+            "begin": 152,
+            "end": 176,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5560
+          },
+          {
+            "begin": 176,
+            "end": 200,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6520
+          },
+          {
+            "begin": 200,
+            "end": 224,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7480
+          },
+          {
+            "begin": 224,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 8440
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-rav1e-partial-full",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-partial-full.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-partial-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-partial-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 214,
+        "decoded_frames": 251,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 42.04495832512272,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 1,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "807f1422b709b69beca675770654432d8a3240594c8f81647a53f483e90fc135"
+    },
+    {
+      "name": "av1-rav1e-multi-reject",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-multi-reject.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-multi-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-multi-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 172,
+        "encoded_frames": 23,
+        "decoded_frames": 48,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 7800,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 64,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 64,
+            "end": 81,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2040
+          },
+          {
+            "begin": 100,
+            "end": 112,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 2720
+          },
+          {
+            "begin": 112,
+            "end": 128,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3200
+          },
+          {
+            "begin": 128,
+            "end": 152,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3840
+          },
+          {
+            "begin": 152,
+            "end": 176,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4800
+          },
+          {
+            "begin": 176,
+            "end": 200,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5760
+          },
+          {
+            "begin": 200,
+            "end": 224,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6720
+          },
+          {
+            "begin": 224,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7680
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-rav1e-multi-full",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-multi-full.json",
+        "--keep-frames",
+        "13:81",
+        "--keep-frames",
+        "100:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-multi-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-multi-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 195,
+        "decoded_frames": 268,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 7800,
+        "units": [
+          {
+            "begin": 13,
+            "end": 81,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 100,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 2720
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 7.8,
+      "expected_duration": 7.8,
+      "min_psnr_db": 42.19737693820123,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 97,
+          "time": 3.88,
+          "passed": true
+        },
+        {
+          "index": 187,
+          "time": 7.48,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 3,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 7800.0,
+        "cue_count": 2,
+        "block_count": 195,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "33ac34932440d2b6b8c13aaf6219a2419e86baea1e604200a012a4fe9e1ae77d"
+    },
+    {
+      "name": "av1-rav1e-tail-reject",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "reject",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-tail-reject.json",
+        "--keep-frames",
+        "213:240",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-tail-reject.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-tail-reject.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "rejected-sequence-change",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 2,
+        "copied_frames": 16,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 1080,
+        "units": [
+          {
+            "begin": 213,
+            "end": 224,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 224,
+            "end": 240,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          }
+        ]
+      },
+      "passed": true,
+      "expected": "reject mixed AV1 sequence headers before publishing"
+    },
+    {
+      "name": "av1-rav1e-tail-full",
+      "input_sha256": "f8d477eb3f769f662bc371b62fd2053ddc8177515c53784094b1a8407a0b2af7",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-rav1e.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--av1-policy",
+        "full",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-tail-full.json",
+        "--keep-frames",
+        "213:240",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-rav1e-tail-full.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-rav1e-tail-full.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "full",
+        "decision": "explicit-full-reencode",
+        "sequence_headers_before_policy": 2,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 0,
+        "encoded_frames": 27,
+        "decoded_frames": 64,
+        "spool_bytes": 333658,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 1080,
+        "units": [
+          {
+            "begin": 213,
+            "end": 240,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 0,
+      "max_pts_error_ms": 0.0,
+      "duration": 1.08,
+      "expected_duration": 1.08,
+      "min_psnr_db": 42.683050714798405,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 13,
+          "time": 0.52,
+          "passed": true
+        },
+        {
+          "index": 19,
+          "time": 0.76,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 1,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 1080.0,
+        "cue_count": 1,
+        "block_count": 27,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "5bc73e53a23901b00c96fe91eb98d8402813f24a67a7b1f03e7db0d726800151"
+    },
+    {
+      "name": "h264-closed_b3_id0-headers-all",
+      "input_sha256": "03062d25b3ebd3c045115b79876b869a4d867200165a4ea5d044d7215a142f10",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--header-mode",
+        "all",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-headers-all.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-headers-all.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-headers-all.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 192,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 40.085325930670166,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          }
+        ]
+      },
+      "output_sha256": "6f77d00d342e467049c5026fcb33ade15435c8340f8c4ecbe94e5795fc7bffea",
+      "ablation": true
+    },
+    {
+      "name": "h264-closed_b3_id0-headers-extradata",
+      "input_sha256": "03062d25b3ebd3c045115b79876b869a4d867200165a4ea5d044d7215a142f10",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--header-mode",
+        "extradata",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-headers-extradata.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-headers-extradata.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-headers-extradata.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "extradata",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": false,
+      "issues": [
+        "decoded_display_pts",
+        "strict_decode"
+      ],
+      "expected_frames": 214,
+      "decoded_frames": null,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": null,
+      "frame_errors": [
+        "strict decode: coding MB 9 0, bytestream 1940\r\n[h264 @ 00000000032a1080] reference count 3 overflow\r\n[h264 @ 00000000032a0b40] Reference 3 >= 2\r\n[h264 @ 00000000032a0b40] error while decoding MB 0 0, bytestream 1475\r\n[h264 @ 0000000003273ac0] Reference 2 >= 2\r\n[h264 @ 0000000003273ac0] error while decoding MB 1 1, bytestream 1430\r\n[h264 @ 00000000032fb100] reference count overflow\r\n[h264 @ 00000000032fb100] decode_slice_header error\r\n[h264 @ 0000000000bce100] Missing reference picture\r\n[h264 @ 0000000000bce100] decode_slice_header error\r\n[h264 @ 000000000321de40] Missing reference picture\r\n[h264 @ 000000000321de40] decode_slice_header error\r\n[h264 @ 000000000321e780] Missing reference picture\r\n[h264 @ 000000000321e780] decode_slice_header error\r\n[h264 @ 00000000033af180] reference count overflow\r\n[h264 @ 00000000033af180] decode_slice_header error\r\n[h264 @ 00000000033d6b00] Missing reference picture\r\n[h264 @ 00000000033d6b00] decode_slice_header error\r\n[h264 @ 00000000033ef3c0] mmco: unref short failure\r\n[vist#0:0/h264 @ 0000000000af2f00] [dec:h264 @ 0000000000ae9300] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000af2f00] [dec:h264 @ 0000000000ae9300] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000000af2f00] [dec:h264 @ 0000000000ae9300] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 0000000000af2f00] [dec:h264 @ 0000000000ae9300] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n"
+      ],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          }
+        ]
+      },
+      "output_sha256": "f88f79891291ee981b0fd95da23df39c70f117d503ddc4effa38e50687e3ceb0",
+      "ablation": true
+    },
+    {
+      "name": "h264-closed_b3_id0-seek-headers-all",
+      "input_sha256": "03062d25b3ebd3c045115b79876b869a4d867200165a4ea5d044d7215a142f10",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--header-mode",
+        "all",
+        "-g",
+        "3",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-seek-headers-all.json",
+        "--keep-frames",
+        "0:239",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-seek-headers-all.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-seek-headers-all.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 216,
+        "encoded_frames": 23,
+        "decoded_frames": 24,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 9560,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 960
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2880
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3840
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4800
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5760
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6720
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7680
+          },
+          {
+            "begin": 216,
+            "end": 239,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8640
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 239,
+      "decoded_frames": 239,
+      "exact_picture_and_pixels": 216,
+      "expected_copy_frames": 216,
+      "max_pts_error_ms": 0.0,
+      "duration": 9.56,
+      "expected_duration": 9.56,
+      "min_psnr_db": 40.254096968977755,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 119,
+          "time": 4.76,
+          "passed": true
+        },
+        {
+          "index": 231,
+          "time": 9.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 17,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 9560.0,
+        "cue_count": 17,
+        "block_count": 239,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "b5d9c80a789b9ce8fe70ab448da4416e492fbae1faddd2dc309061086c691509"
+          }
+        ]
+      },
+      "output_sha256": "2c2e18755b221c92baaba7aceac0ab0a7b11ce9715efd86bc163ab59743b9795",
+      "ablation": true,
+      "tail_key_seek": true
+    },
+    {
+      "name": "h264-closed_b3_id0-seek-headers-seams",
+      "input_sha256": "03062d25b3ebd3c045115b79876b869a4d867200165a4ea5d044d7215a142f10",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--header-mode",
+        "seams",
+        "-g",
+        "3",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-seek-headers-seams.json",
+        "--keep-frames",
+        "0:239",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-seek-headers-seams.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-seek-headers-seams.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "seams",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 216,
+        "encoded_frames": 23,
+        "decoded_frames": 24,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 9560,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 960
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2880
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3840
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4800
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5760
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6720
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7680
+          },
+          {
+            "begin": 216,
+            "end": 239,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8640
+          }
+        ]
+      },
+      "passed": false,
+      "issues": [
+        "seek"
+      ],
+      "expected_frames": 239,
+      "decoded_frames": 239,
+      "exact_picture_and_pixels": 216,
+      "expected_copy_frames": 216,
+      "max_pts_error_ms": 0.0,
+      "duration": 9.56,
+      "expected_duration": 9.56,
+      "min_psnr_db": 40.254096968977755,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 119,
+          "time": 4.76,
+          "passed": true
+        },
+        {
+          "index": 231,
+          "time": 9.24,
+          "passed": false,
+          "error": "strict decode: [h264 @ 00000000037ba700] left block unavailable for requested intra4x4 mode -1\r\n[h264 @ 00000000037ba700] error while decoding MB 0 0, bytestream 3800\r\n[vist#0:0/h264 @ 00000000015b4300] [dec:h264 @ 00000000037b9300] Decoding error: Invalid data found when processing input\r\n[vist#0:0/h264 @ 00000000015b4300] [dec:h264 @ 00000000037b9300] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 00000000015b4300] [dec:h264 @ 00000000037b9300] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 00000000015b4300] [dec:h264 @ 00000000037b9300] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/rawvideo @ 000000000168ed40] [enc:rawvideo @ 000000000162b500] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 000000000168ed40] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/rawvideo @ 000000000168ed40] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/rawvideo @ 0000000001644f80] Nothing was written into output file, because at least one of its streams received no packets.\r\n"
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 17,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 9560.0,
+        "cue_count": 17,
+        "block_count": 239,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "b5d9c80a789b9ce8fe70ab448da4416e492fbae1faddd2dc309061086c691509"
+          }
+        ]
+      },
+      "output_sha256": "961e0dbfd79f57614434f40319468c417173d279c0ffe5a5099adc9f7568eb6b",
+      "ablation": true,
+      "tail_key_seek": false,
+      "tail_key_error": "strict decode: [h264 @ 0000000003ae7840] left block unavailable for requested intra4x4 mode -1\r\n[h264 @ 0000000003ae7840] error while decoding MB 0 0, bytestream 3594\r\n[vist#0:0/h264 @ 0000000001522900] [dec:h264 @ 00000000015223c0] Decoding error: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000001522900] [dec:h264 @ 00000000015223c0] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/h264 @ 0000000001522900] [dec:h264 @ 00000000015223c0] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/h264 @ 0000000001522900] [dec:h264 @ 00000000015223c0] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/rawvideo @ 0000000003ae60c0] [enc:rawvideo @ 000000000159ba00] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 0000000003ae60c0] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/rawvideo @ 0000000003ae60c0] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/rawvideo @ 00000000015dfd00] Nothing was written into output file, because at least one of its streams received no packets.\r\n"
+    },
+    {
+      "name": "hevc-closed-headers-all",
+      "input_sha256": "30c3b06099a58bd82193255fd67581d6f4b02907b4681ca27fc09bbab44f34a4",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-closed.mkv",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--header-mode",
+        "all",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-headers-all.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-headers-all.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/hevc-closed-headers-all.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "hevc",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 521228,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 192,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 40.49248171460359,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "f8efb2e3e9d4bc772a83bf9d58f815bb3c9c774d90fa63b7a78c2f94b4f85648"
+          }
+        ]
+      },
+      "output_sha256": "d48cb2fca615ef4ab0a37f085b7aa50843c6948b81697b6c6b9cacc0e54394a6",
+      "ablation": true
+    },
+    {
+      "name": "hevc-closed-headers-extradata",
+      "input_sha256": "30c3b06099a58bd82193255fd67581d6f4b02907b4681ca27fc09bbab44f34a4",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-closed.mkv",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--header-mode",
+        "extradata",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-headers-extradata.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-headers-extradata.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/hevc-closed-headers-extradata.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "hevc",
+        "header_mode": "extradata",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 521228,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": false,
+      "issues": [
+        "decoded_display_pts",
+        "strict_decode"
+      ],
+      "expected_frames": 214,
+      "decoded_frames": null,
+      "exact_picture_and_pixels": 0,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": null,
+      "frame_errors": [
+        "strict decode: [hevc @ 00000000049367c0] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038ed340] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038ec0c0] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038ec800] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038ec480] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038102c0] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038295c0] alignment_bit_equal_to_one=0\r\n[hevc @ 000000000385ed80] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038745c0] alignment_bit_equal_to_one=0\r\n[hevc @ 000000000388b080] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038a0780] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038b6a80] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038cad80] alignment_bit_equal_to_one=0\r\n[hevc @ 00000000038e1480] alignment_bit_equal_to_one=0\r\n[hevc @ 000000000490fe00] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 00000000012114c0] [dec:hevc @ 0000000001207900] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 00000000012114c0] [dec:hevc @ 0000000001207900] Error processing packet in decoder: Invalid data found when processing input\r\n[hevc @ 000000000491a4c0] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 00000000012114c0] [dec:hevc @ 0000000001207900] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 00000000012114c0] [dec:hevc @ 0000000001207900] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n"
+      ],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "f8efb2e3e9d4bc772a83bf9d58f815bb3c9c774d90fa63b7a78c2f94b4f85648"
+          }
+        ]
+      },
+      "output_sha256": "becef63c88a73164fc02d3cb80b906b3187edc6ea414bed8f9e20bf5f80e9f89",
+      "ablation": true
+    },
+    {
+      "name": "hevc-closed-seek-headers-all",
+      "input_sha256": "30c3b06099a58bd82193255fd67581d6f4b02907b4681ca27fc09bbab44f34a4",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-closed.mkv",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--header-mode",
+        "all",
+        "-g",
+        "3",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-seek-headers-all.json",
+        "--keep-frames",
+        "0:239",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-seek-headers-all.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/hevc-closed-seek-headers-all.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "hevc",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 216,
+        "encoded_frames": 23,
+        "decoded_frames": 24,
+        "spool_bytes": 521228,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 9560,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 960
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2880
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3840
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4800
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5760
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6720
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7680
+          },
+          {
+            "begin": 216,
+            "end": 239,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8640
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 239,
+      "decoded_frames": 239,
+      "exact_picture_and_pixels": 216,
+      "expected_copy_frames": 216,
+      "max_pts_error_ms": 0.0,
+      "duration": 9.56,
+      "expected_duration": 9.56,
+      "min_psnr_db": 39.37253223312445,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 119,
+          "time": 4.76,
+          "passed": true
+        },
+        {
+          "index": 231,
+          "time": 9.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 17,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 9560.0,
+        "cue_count": 17,
+        "block_count": 239,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "6cfb509075e157cdb47de53e54358c9157083bd682a0a3802370aa5c1ee962b3"
+          }
+        ]
+      },
+      "output_sha256": "4e4c2a96b6f748cc50e945019cdc41d9362ae2a784885304723dd53d0c0e1b2f",
+      "ablation": true,
+      "tail_key_seek": true
+    },
+    {
+      "name": "hevc-closed-seek-headers-seams",
+      "input_sha256": "30c3b06099a58bd82193255fd67581d6f4b02907b4681ca27fc09bbab44f34a4",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-closed.mkv",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--header-mode",
+        "seams",
+        "-g",
+        "3",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-seek-headers-seams.json",
+        "--keep-frames",
+        "0:239",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-closed-seek-headers-seams.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/hevc-closed-seek-headers-seams.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "hevc",
+        "header_mode": "seams",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 216,
+        "encoded_frames": 23,
+        "decoded_frames": 24,
+        "spool_bytes": 521228,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 9560,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 960
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2880
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3840
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4800
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5760
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6720
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7680
+          },
+          {
+            "begin": 216,
+            "end": 239,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8640
+          }
+        ]
+      },
+      "passed": false,
+      "issues": [
+        "seek"
+      ],
+      "expected_frames": 239,
+      "decoded_frames": 239,
+      "exact_picture_and_pixels": 216,
+      "expected_copy_frames": 216,
+      "max_pts_error_ms": 0.0,
+      "duration": 9.56,
+      "expected_duration": 9.56,
+      "min_psnr_db": 39.37253223312445,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 119,
+          "time": 4.76,
+          "passed": true
+        },
+        {
+          "index": 231,
+          "time": 9.24,
+          "passed": false,
+          "error": "strict decode: [hevc @ 0000000003044980] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 0000000000c04200] [dec:hevc @ 0000000000bf51c0] Decoding error: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000c04200] [dec:hevc @ 0000000000bf51c0] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000000c04200] [dec:hevc @ 0000000000bf51c0] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000000c04200] [dec:hevc @ 0000000000bf51c0] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/rawvideo @ 000000000301dd80] [enc:rawvideo @ 0000000000c78900] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 000000000301dd80] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/rawvideo @ 000000000301dd80] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/rawvideo @ 0000000000cbfc00] Nothing was written into output file, because at least one of its streams received no packets.\r\n"
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 17,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 9560.0,
+        "cue_count": 17,
+        "block_count": 239,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "6cfb509075e157cdb47de53e54358c9157083bd682a0a3802370aa5c1ee962b3"
+          }
+        ]
+      },
+      "output_sha256": "b69f7597589f52a6751d8e5f871c08d0af30877e9cefa0edea3c18c8e5cc8d66",
+      "ablation": true,
+      "tail_key_seek": false,
+      "tail_key_error": "strict decode: [hevc @ 0000000003b3d280] alignment_bit_equal_to_one=0\r\n[vist#0:0/hevc @ 0000000001603000] [dec:hevc @ 00000000015eef80] Decoding error: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000001603000] [dec:hevc @ 00000000015eef80] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/hevc @ 0000000001603000] [dec:hevc @ 00000000015eef80] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/hevc @ 0000000001603000] [dec:hevc @ 00000000015eef80] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n[vost#0:0/rawvideo @ 0000000003b18ec0] [enc:rawvideo @ 0000000001679c00] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 0000000003b18ec0] Task finished with error code: -22 (Invalid argument)\r\n[vost#0:0/rawvideo @ 0000000003b18ec0] Terminating thread with return code -22 (Invalid argument)\r\n[out#0/rawvideo @ 00000000016bf900] Nothing was written into output file, because at least one of its streams received no packets.\r\n"
+    },
+    {
+      "name": "h264-closed_b3_id0-compressed-input",
+      "input_sha256": "d762bd7a9b514b14772e915eedc79ca4176edac573c5d2df6e7410e1d11c8ad0",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-zlib.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-compressed-input.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-compressed-input.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-compressed-input.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 192,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 40.085325930670166,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          }
+        ]
+      },
+      "output_sha256": "a2c37ca783ccdbf89b64e4320ce824fa0b58177e0b75ad12003c715031817aac",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-zlib.mkv",
+        "--compression",
+        "0:zlib",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv"
+      ]
+    },
+    {
+      "name": "h264-closed_b3_id0-mp4-to-mkv",
+      "input_sha256": "733a93ba2c92f471bb0c3959ff81f8832dfd94dd7f81d5b1b71936a09e681ae3",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\run-20261027-125923\\source-closed_b3_id0.mp4",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-mp4-to-mkv.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-mp4-to-mkv.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/h264-closed_b3_id0-mp4-to-mkv.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "mov,mp4,m4a,3gp,3g2,mj2",
+        "codec": "h264",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 523865,
+        "spool_packets": 240,
+        "input_time_base": "1/12800",
+        "duration_ticks": 109568,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5632
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 17920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 30208
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 42496
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 54784
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 67072
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 79360
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 91648
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 103936
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 192,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 40.085325930670166,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "b54bbb940213f93464ab70981ec6a2580778f9a04ec1f9844b96c3f42a3269d9"
+          }
+        ]
+      },
+      "output_sha256": "9c70bd19e2607eee462f81ceda9f4b54ec9b1fdea50488c1571136e908ab790f"
+    },
+    {
+      "name": "h264-closed_b3_id0-mkvmerge-split",
+      "passed": true,
+      "control_only": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-closed_b3_id0-split.mkv",
+        "--split",
+        "parts:00:00:00.520-00:00:09.080",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv"
+      ],
+      "requested_frames": [
+        13,
+        227
+      ],
+      "observed_first_frame": 24,
+      "observed_last_frame": 239,
+      "frame_count": 216,
+      "all_pixels_original": true
+    },
+    {
+      "name": "hevc-open-compressed-input",
+      "input_sha256": "efacfda5d34646a741f67c516564a4bcf8ba900c9d096c5ef2ef72a879f09dcf",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-zlib.mkv",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-compressed-input.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-compressed-input.mkv"
+      ],
+      "exit_code": 1,
+      "output": "test-data/experiments-20261031-000421/hevc-open-compressed-input.mkv",
+      "passed": false,
+      "error": "mkv-research: Only positively identified progressive video is supported\r\n",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-zlib.mkv",
+        "--compression",
+        "0:zlib",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv"
+      ]
+    },
+    {
+      "name": "hevc-open-mp4-to-mkv",
+      "input_sha256": "214cdd18b39e3ee43e2344eeaa115f54bb10991211472150174f8f51293334ca",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h265\\test-data\\fixtures\\source-open.mp4",
+        "-c:v",
+        "libx265",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "-x265-params",
+        "log-level=error:pools=none",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-mp4-to-mkv.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-mp4-to-mkv.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/hevc-open-mp4-to-mkv.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "mov,mp4,m4a,3gp,3g2,mj2",
+        "codec": "hevc",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 189,
+        "encoded_frames": 25,
+        "decoded_frames": 80,
+        "spool_bytes": 516526,
+        "spool_packets": 240,
+        "input_time_base": "1/12800",
+        "duration_ticks": 109568,
+        "units": [
+          {
+            "begin": 13,
+            "end": 21,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 21,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 4096
+          },
+          {
+            "begin": 24,
+            "end": 45,
+            "copy": true,
+            "patch_cra": true,
+            "output_start": 5632
+          },
+          {
+            "begin": 45,
+            "end": 69,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 16384
+          },
+          {
+            "begin": 69,
+            "end": 93,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 28672
+          },
+          {
+            "begin": 93,
+            "end": 117,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 40960
+          },
+          {
+            "begin": 117,
+            "end": 141,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 53248
+          },
+          {
+            "begin": 141,
+            "end": 165,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 65536
+          },
+          {
+            "begin": 165,
+            "end": 189,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 77824
+          },
+          {
+            "begin": 189,
+            "end": 213,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 90112
+          },
+          {
+            "begin": 213,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 102400
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 189,
+      "expected_copy_frames": 189,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 41.025308933344526,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 11,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 11,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "f8efb2e3e9d4bc772a83bf9d58f815bb3c9c774d90fa63b7a78c2f94b4f85648"
+          }
+        ]
+      },
+      "output_sha256": "24addcf39dd7044e3c8cb39c2cba5075d5b1203f5d6c3f07c81c3a076ca02e6f"
+    },
+    {
+      "name": "hevc-open-mkvmerge-split",
+      "passed": true,
+      "control_only": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-open-split.mkv",
+        "--split",
+        "parts:00:00:00.520-00:00:09.080",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv"
+      ],
+      "requested_frames": [
+        13,
+        227
+      ],
+      "observed_first_frame": 24,
+      "observed_last_frame": 239,
+      "frame_count": 216,
+      "all_pixels_original": true
+    },
+    {
+      "name": "av1-aom-compressed-input",
+      "input_sha256": "805b242e51ae729d3c5ea4440bced725810893d3265cd678cd1fa12866af931c",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-zlib.mkv",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-compressed-input.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-compressed-input.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-aom-compressed-input.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 1,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "spool_bytes": 385551,
+        "spool_packets": 240,
+        "input_time_base": "1/1000",
+        "duration_ticks": 8560,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 440
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1400
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2360
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3320
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4280
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5240
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 6200
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 7160
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 8120
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 203,
+      "expected_copy_frames": 203,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 43.25078517537398,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "0991c8dcf1cc1ef57b2d245e8991ecc3d157100f562a75d2b5ca9670300f9404",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-zlib.mkv",
+        "--compression",
+        "0:zlib",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-aom.mkv"
+      ]
+    },
+    {
+      "name": "av1-aom-mp4-to-mkv",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-threads",
+        "4",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-mp4-to-mkv.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-mp4-to-mkv.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/av1-aom-mp4-to-mkv.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "mov,mp4,m4a,3gp,3g2,mj2",
+        "codec": "av1",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 1,
+        "sequence_headers_after_policy": 1,
+        "copied_frames": 203,
+        "encoded_frames": 11,
+        "decoded_frames": 24,
+        "spool_bytes": 385551,
+        "spool_packets": 240,
+        "input_time_base": "1/12800",
+        "duration_ticks": 109568,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5632
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 17920
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 30208
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 42496
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 54784
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 67072
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 79360
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 91648
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 103936
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 203,
+      "expected_copy_frames": 203,
+      "max_pts_error_ms": 0.0,
+      "duration": 8.56,
+      "expected_duration": 8.56,
+      "min_psnr_db": 43.25078517537398,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.24,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 4.28,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 8.24,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 8560.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "705020f38ac2673b1c6e4bb217ea5d079f4f0bea61487b8d3af2e6abbe85c88b"
+    },
+    {
+      "name": "av1-aom-mkvmerge-split",
+      "passed": true,
+      "control_only": true,
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-aom-split.mkv",
+        "--split",
+        "parts:00:00:00.520-00:00:09.080",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-aom.mkv"
+      ],
+      "requested_frames": [
+        13,
+        227
+      ],
+      "observed_first_frame": 24,
+      "observed_last_frame": 239,
+      "frame_count": 216,
+      "all_pixels_original": true
+    },
+    {
+      "name": "microsecond-input",
+      "input_sha256": "566759eda606e206f018cbd6c4e9dc397b7776f00c5ec2299ee51da8e40e7f78",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\ntsc-microsecond.mkv",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "medium",
+        "-crf",
+        "18",
+        "--report",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\microsecond-input.json",
+        "--keep-frames",
+        "13:227",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\microsecond-input.mkv"
+      ],
+      "exit_code": 0,
+      "output": "test-data/experiments-20261031-000421/microsecond-input.mkv",
+      "plan": {
+        "ffmpeg": "9.0.2-full_build-www.gyan.dev",
+        "input_format": "matroska,webm",
+        "codec": "h264",
+        "header_mode": "all",
+        "av1_policy": "reject",
+        "decision": "smart-render",
+        "sequence_headers_before_policy": 0,
+        "sequence_headers_after_policy": 0,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 35,
+        "spool_bytes": 500591,
+        "spool_packets": 240,
+        "input_time_base": "1/1000000",
+        "duration_ticks": 7140466,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 0
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 367033
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1167833
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 1968633
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 2769433
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 3570233
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 4371033
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5171833
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true,
+            "patch_cra": false,
+            "output_start": 5972633
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false,
+            "patch_cra": false,
+            "output_start": 6773433
+          }
+        ]
+      },
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_picture_and_pixels": 192,
+      "expected_copy_frames": 192,
+      "max_pts_error_ms": 0.5,
+      "duration": 7.14,
+      "expected_duration": 7.140466,
+      "min_psnr_db": 39.70393284700846,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [
+        {
+          "index": 6,
+          "time": 0.2,
+          "passed": true
+        },
+        {
+          "index": 107,
+          "time": 3.57,
+          "passed": true
+        },
+        {
+          "index": 206,
+          "time": 6.874,
+          "passed": true
+        }
+      ],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 0,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 7140.0,
+        "cue_count": 10,
+        "block_count": 214,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 33366666,
+            "codec_private_sha256": "7a6f417210807a7cae15d963ee07bf348b112b0a65390e6152df9888fce29193"
+          }
+        ]
+      },
+      "output_sha256": "a4694903dd9d1495e11693670c3af52582af3e1e674a73294e4288e83d219978",
+      "fixture_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\mkvtoolnix-103.0-win64\\mkvtoolnix\\mkvmerge.exe",
+        "-o",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\ntsc-microsecond.mkv",
+        "--timestamp-scale",
+        "1000",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\test-data\\run-20261027-125923\\source-ntsc.mp4"
+      ]
+    },
+    {
+      "name": "h264-ffmpeg81-vfr-remux",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-vfr.mkv",
+        "-map",
+        "0:v:0",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\h264-old-ffmpeg-remux.mkv"
+      ],
+      "exit_code": 0,
+      "control_only": true,
+      "passed": false,
+      "issues": [
+        "block_duration"
+      ],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_picture_and_pixels": 240,
+      "expected_copy_frames": null,
+      "max_pts_error_ms": 0.0,
+      "duration": 12.76,
+      "expected_duration": 12.76,
+      "min_psnr_db": null,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [
+        [
+          2,
+          0.04,
+          0.08
+        ],
+        [
+          3,
+          0.08,
+          0.04
+        ],
+        [
+          8,
+          0.04,
+          0.08
+        ],
+        [
+          10,
+          0.08,
+          0.04
+        ],
+        [
+          11,
+          0.04,
+          0.08
+        ],
+        [
+          14,
+          0.04,
+          0.08
+        ],
+        [
+          15,
+          0.08,
+          0.04
+        ],
+        [
+          16,
+          0.08,
+          0.04
+        ]
+      ],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 240,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 12760.0,
+        "cue_count": 10,
+        "block_count": 240,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 53166666,
+            "codec_private_sha256": "b5d9c80a789b9ce8fe70ab448da4416e492fbae1faddd2dc309061086c691509"
+          }
+        ]
+      },
+      "output_sha256": "c1d46512d9fb8b78d92bcc80283ec7893c0bf63e532e18f62315be2f56bd5212"
+    },
+    {
+      "name": "hevc-ffmpeg81-vfr-remux",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-vfr.mkv",
+        "-map",
+        "0:v:0",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\hevc-old-ffmpeg-remux.mkv"
+      ],
+      "exit_code": 0,
+      "control_only": true,
+      "passed": false,
+      "issues": [
+        "block_duration"
+      ],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_picture_and_pixels": 240,
+      "expected_copy_frames": null,
+      "max_pts_error_ms": 0.0,
+      "duration": 12.76,
+      "expected_duration": 12.76,
+      "min_psnr_db": null,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [
+        [
+          2,
+          0.04,
+          0.08
+        ],
+        [
+          3,
+          0.08,
+          0.04
+        ],
+        [
+          8,
+          0.04,
+          0.08
+        ],
+        [
+          10,
+          0.08,
+          0.04
+        ],
+        [
+          11,
+          0.04,
+          0.08
+        ],
+        [
+          14,
+          0.04,
+          0.08
+        ],
+        [
+          15,
+          0.08,
+          0.04
+        ],
+        [
+          16,
+          0.08,
+          0.04
+        ]
+      ],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 0,
+      "av1_config_errors": [],
+      "seeks": [],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 240,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 12760.0,
+        "cue_count": 10,
+        "block_count": 240,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEGH/ISO/HEVC",
+            "type": 1,
+            "default_duration_ns": 53166666,
+            "codec_private_sha256": "c04d34cc8c1778072c40a53d025c956e19f5b0b9ded659079e200e4b2f8056dc"
+          }
+        ]
+      },
+      "output_sha256": "7b4eb45eb547f22043650a4418ef626fd47fca98c4f63d17ab4a1c4dfe504a45"
+    },
+    {
+      "name": "av1-ffmpeg81-vfr-remux",
+      "command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\av1-vfr.mkv",
+        "-map",
+        "0:v:0",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\experiments-20261031-000421\\av1-old-ffmpeg-remux.mkv"
+      ],
+      "exit_code": 0,
+      "control_only": true,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_picture_and_pixels": 240,
+      "expected_copy_frames": null,
+      "max_pts_error_ms": 0.0,
+      "duration": 12.76,
+      "expected_duration": 12.76,
+      "min_psnr_db": null,
+      "frame_errors": [],
+      "copy_errors": [],
+      "block_duration_errors": [],
+      "inferred_block_durations": 0,
+      "av1_sequence_count": 1,
+      "av1_config_errors": [],
+      "seeks": [],
+      "ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 240,
+        "discard_padding": [],
+        "attachments": 0,
+        "chapters": 0,
+        "segment_count": 1,
+        "duration_ticks": 12760.0,
+        "cue_count": 10,
+        "block_count": 240,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_AV1",
+            "type": 1,
+            "default_duration_ns": 53166666,
+            "codec_private_sha256": "729fc986ead9205292b686073314454b99b8c52b93bef9650a8ebc340f76cf47"
+          }
+        ]
+      },
+      "output_sha256": "4d054e631f1e87fa8ee7ab2da57a0f40e3ccb0da3c88aa2984efca31c2a68a5d"
+    }
+  ]
+}

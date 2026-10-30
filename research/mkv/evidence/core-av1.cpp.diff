@@ -1,0 +1,53 @@
+--- src/av1.cpp
++++ research-build/av1.cpp
+@@ -1,7 +1,7 @@
+ // SPDX-License-Identifier: GPL-3.0-or-later
+ // AV1 temporal-unit indexing and boundary encoding, based on research/av1.
+ // FFmpeg owns coding and av1C/stsd serialization; tile/reference data is opaque.
+-#include "media.hpp"
++#include "mkv_input.hpp"
+ #include <algorithm>
+ #include <cstring>
+ #include <limits>
+@@ -202,7 +202,11 @@
+             check(result, "Decode AV1 boundary");
+     };
+     const auto &epoch = idx.epochs[unit.epoch];
+-    for (size_t i = epoch.packet_begin; i < epoch.packet_end && sent < unit.end - unit.begin; ++i) {
++    // Explicit whole-selection fallback can span several source epochs.
++    size_t last_epoch = unit.epoch;
++    while (last_epoch + 1 < idx.epochs.size() && idx.epochs[last_epoch].end < unit.end)
++        ++last_epoch;
++    for (size_t i = epoch.packet_begin; i < idx.epochs[last_epoch].packet_end && sent < unit.end - unit.begin; ++i) {
+         auto p = read(input, idx.samples[i]);
+         check(avcodec_send_packet(decoder.get(), p.get()), "Send AV1 source sample");
+         receive_frames();
+@@ -230,12 +234,12 @@
+     idx.codec = AV_CODEC_ID_AV1;
+     auto *par = input.stream->codecpar;
+     auto sequence = sequence_of(par->extradata, static_cast<size_t>(par->extradata_size));
+-    const int64_t length = avio_size(input.raw);
++    const int64_t length = std::numeric_limits<int64_t>::max();
+     require(length >= 0, "Cannot determine AV1 input size");
+     auto p = packet();
+     int result;
+     std::vector<size_t> keys;
+-    while ((result = av_read_frame(input.format.value, p.get())) >= 0) {
++    while ((result = research_read_packet(input, p.get())) >= 0) {
+         cancellation_point();
+         if (p->stream_index == input.video) {
+             require(p->pts != AV_NOPTS_VALUE && p->pts == p->dts && p->duration > 0,
+@@ -263,7 +267,12 @@
+                             "Changing AV1 sample descriptions are unsupported as input");
+             }
+             if (!idx.samples.empty()) {
+-                const auto &last = idx.samples.back();
++                auto &last = idx.samples.back();
++                // DefaultDuration is in ns, but packet PTS is quantized to ms.
++                // A one-tick discrepancy is rounding, not evidence of CFR.
++                if (is_matroska(input) && p->pts > last.pts &&
++                    std::abs(p->pts - last.pts - last.duration) <= 1)
++                    last.duration = p->pts - last.pts;
+                 require(p->pts > last.pts && p->pts - last.pts == last.duration,
+                         "AV1 temporal-unit durations must be continuous");
+             }

@@ -1,0 +1,57 @@
+--- src/video.cpp
++++ research-build/video.cpp
+@@ -1,7 +1,7 @@
+ // SPDX-License-Identifier: GPL-3.0-or-later
+ // IDR / CRA planning and parameter-set switching are derived from this
+ // repository's validated research/h264 and research/h265 implementations.
+-#include "media.hpp"
++#include "mkv_input.hpp"
+ #include <algorithm>
+ #include <cstring>
+ #include <iostream>
+@@ -34,18 +34,19 @@
+             "Selected video stream is missing");
+     stream = format.value->streams[video];
+     auto *p = stream->codecpar;
+-    require(std::string(format.value->iformat->name).find("mov") != std::string::npos,
++    require((std::string(format.value->iformat->name).find("mov") != std::string::npos ||
++             std::string(format.value->iformat->name).find("matroska") != std::string::npos),
+             "Smart rendering currently requires MP4 input");
+     require(p->codec_id == AV_CODEC_ID_H264 || p->codec_id == AV_CODEC_ID_HEVC ||
+                 p->codec_id == AV_CODEC_ID_AV1,
+             "Selected video must be H.264, HEVC or AV1");
+     bool avc = p->codec_id == AV_CODEC_ID_H264;
+     bool av1 = p->codec_id == AV_CODEC_ID_AV1;
+-    require(avc   ? (p->codec_tag == MKTAG('a', 'v', 'c', '1') ||
++    require(is_matroska(*this) || (avc   ? (p->codec_tag == MKTAG('a', 'v', 'c', '1') ||
+                      p->codec_tag == MKTAG('a', 'v', 'c', '3'))
+             : av1 ? p->codec_tag == MKTAG('a', 'v', '0', '1')
+                   : (p->codec_tag == MKTAG('h', 'v', 'c', '1') ||
+-                     p->codec_tag == MKTAG('h', 'e', 'v', '1')),
++                     p->codec_tag == MKTAG('h', 'e', 'v', '1'))),
+             "Unsupported or encrypted MP4 video sample entry");
+     require(av1 || p->field_order == AV_FIELD_PROGRESSIVE,
+             "Only positively identified progressive video is supported");
+@@ -202,18 +203,18 @@
+     read_configuration(idx, input.stream->codecpar);
+     auto p = packet();
+     int result;
+-    int64_t length = avio_size(input.raw);
++    int64_t length = std::numeric_limits<int64_t>::max();
+     require(length >= 0, "Cannot determine the input file size");
+-    while ((result = av_read_frame(input.format.value, p.get())) >= 0) {
++    while ((result = research_read_packet(input, p.get())) >= 0) {
+         cancellation_point();
+         if (p->stream_index == input.video) {
+-            require(p->pts != AV_NOPTS_VALUE && p->dts != AV_NOPTS_VALUE,
++            require(p->pts != AV_NOPTS_VALUE && (is_matroska(input) || p->dts != AV_NOPTS_VALUE),
+                     "Video samples require PTS and DTS");
+             require(!(p->flags & (AV_PKT_FLAG_CORRUPT | AV_PKT_FLAG_DISCARD)),
+                     "Corrupt or edit-list discard video samples are unsupported");
+             require(p->pos >= 0 && p->size > 0 && p->pos <= length - p->size,
+                     "Video samples must be directly addressable in the MP4");
+-            require(idx.samples.empty() || p->dts > idx.samples.back().dts,
++            require(is_matroska(input) || idx.samples.empty() || p->dts > idx.samples.back().dts,
+                     "Video DTS must increase strictly");
+             for (int i = 0; i < p->side_data_elems; ++i) {
+                 auto &side = p->side_data[i];

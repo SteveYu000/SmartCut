@@ -8,6 +8,7 @@
 | [h264](h264/README.md) | H.264 C++ 实现、CMake、独立验证器；`test-data/` 为本地验收及探索媒体 |
 | [h265](h265/README.md) | HEVC C++ 实现、CMake、上游对比与容器/解码验证；`test-data/` 为本地媒体与证据 |
 | [av1](av1/REPORT.md) | MP4/AV1 研究；重点对比 DeepRegular Rust 实现，含 C++/FFmpeg 原型、VFR/av1C 反例、120 项主测试和尾部复制实验；[构建与复现](av1/README.md) |
+| [mkv](mkv/REPORT.md) | Matroska 的 AVC/HEVC/AV1 Smart Rendering；C++ 原型、DeepRegular/skeskinen 对照、330 次主矩阵尝试、AV1 配置限制、参数集跳转消融和音频字幕验证；[构建与复现](mkv/README.md) |
 | [product-validation / AV1](product-validation/AV1_REPORT.md) | AV1 正式产品接入与尾部复制优化；多编码器、音频字幕、硬解与既有 AVC/HEVC 回归验证 |
 | [pipeline](pipeline/README.md) | 原始 C# / FFmpeg 进程实现、逻辑与集成测试 |
 | [h264-pipeline-comparison](h264-pipeline-comparison/REPORT.md) | 效率对比、原管线完整复测、VFR 和音频诊断、测试记录 |

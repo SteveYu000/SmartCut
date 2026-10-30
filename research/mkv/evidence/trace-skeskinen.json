@@ -1,0 +1,1602 @@
+{
+  "pyav_version": "16.0.1",
+  "libraries": {
+    "libavutil": [
+      60,
+      8,
+      100
+    ],
+    "libavcodec": [
+      62,
+      11,
+      100
+    ],
+    "libavformat": [
+      62,
+      3,
+      100
+    ],
+    "libavdevice": [
+      62,
+      1,
+      100
+    ],
+    "libavfilter": [
+      11,
+      4,
+      100
+    ],
+    "libswscale": [
+      9,
+      1,
+      100
+    ],
+    "libswresample": [
+      6,
+      1,
+      100
+    ]
+  },
+  "argv": [
+    "smartcut",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\trace-skeskinen\\output.mkv",
+    "--frames",
+    "--keep",
+    "13,226"
+  ],
+  "error": "Traceback (most recent call last):\n  File \"E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\tests\\trace_skeskinen.py\", line 29, in <module>\n    try:runpy.run_module('smartcut',run_name='__main__')\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen runpy>\", line 229, in run_module\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\skeskinen-smartcut\\smartcut\\__main__.py\", line 292, in <module>\n    main()\n  File \"E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\skeskinen-smartcut\\smartcut\\__main__.py\", line 278, in main\n    exception_value = smart_cut(source, segments, args.output,\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\DesktopPlus\\Works\\Code\\SmartCut\\sources\\skeskinen-smartcut\\smartcut\\smart_cut.py\", line 193, in smart_cut\n    output_av_container.mux(packet)\n  File \"av/container/output.py\", line 450, in av.container.output.OutputContainer.mux\n  File \"av/container/output.py\", line 474, in av.container.output.OutputContainer.mux_one\n  File \"av/container/core.pyx\", line 318, in av.container.core.Container.err_check\n  File \"av/error.pyx\", line 424, in av.error.err_check\nav.error.ValueError: [Errno 22] Invalid argument: 'E:\\\\DesktopPlus\\\\Works\\\\Code\\\\SmartCut\\\\research\\\\mkv\\\\test-data\\\\trace-skeskinen\\\\output.mkv'; last error log: [matroska] pts (-520) < dts (201) in stream 0\n",
+  "packets": [
+    {
+      "before": {
+        "pts": 0,
+        "dts": -80,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 0,
+        "dts": -80,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 160,
+        "dts": -40,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 160,
+        "dts": -40,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 80,
+        "dts": 0,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 80,
+        "dts": 0,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 40,
+        "dts": 40,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 40,
+        "dts": 40,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 120,
+        "dts": 80,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 120,
+        "dts": 80,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 280,
+        "dts": 120,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 280,
+        "dts": 120,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 240,
+        "dts": 160,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 240,
+        "dts": 160,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 200,
+        "dts": 200,
+        "duration": 0,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 200,
+        "dts": 200,
+        "duration": 0,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": -520,
+        "dts": null,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": -520,
+        "dts": 201,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": -360,
+        "dts": null,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": -360,
+        "dts": 202,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 440,
+        "dts": 240,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 440,
+        "dts": 240,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 600,
+        "dts": 400,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 600,
+        "dts": 400,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 520,
+        "dts": 440,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 520,
+        "dts": 440,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 480,
+        "dts": 480,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 480,
+        "dts": 480,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 560,
+        "dts": 520,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 560,
+        "dts": 520,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 760,
+        "dts": 560,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 760,
+        "dts": 560,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 680,
+        "dts": 600,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 680,
+        "dts": 600,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 640,
+        "dts": 640,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 640,
+        "dts": 640,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 720,
+        "dts": 680,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 720,
+        "dts": 680,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 920,
+        "dts": 720,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 920,
+        "dts": 720,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 840,
+        "dts": 760,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 840,
+        "dts": 760,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 800,
+        "dts": 800,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 800,
+        "dts": 800,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 880,
+        "dts": 840,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 880,
+        "dts": 840,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1080,
+        "dts": 880,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1080,
+        "dts": 880,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1000,
+        "dts": 920,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1000,
+        "dts": 920,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 960,
+        "dts": 960,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 960,
+        "dts": 960,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1040,
+        "dts": 1000,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1040,
+        "dts": 1000,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1240,
+        "dts": 1040,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1240,
+        "dts": 1040,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1160,
+        "dts": 1080,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1160,
+        "dts": 1080,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1120,
+        "dts": 1120,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1120,
+        "dts": 1120,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    },
+    {
+      "before": {
+        "pts": 1200,
+        "dts": 1160,
+        "duration": 40,
+        "time_base": "1/1000"
+      },
+      "after": {
+        "pts": 1200,
+        "dts": 1160,
+        "duration": 40,
+        "time_base": "1/1000"
+      }
+    }
+  ],
+  "ffmpeg_log": [
+    [
+      48,
+      "AVFormatContext",
+      "Opening 'E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv' for reading\n"
+    ],
+    [
+      48,
+      "file",
+      "Setting default whitelist 'file,crypto,data'\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "Format matroska,webm probed with size=2048 and score=100\n"
+    ],
+    [
+      48,
+      "",
+      "st:0 removing common factor 1000000 from timebase\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "Before avformat_find_stream_info() pos: 3064 bytes read:32768 seeks:0 nb_streams:1\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VUI\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding PPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SEI\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "All info found\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "After avformat_find_stream_info() pos: 13095 bytes read:32768 seeks:0 frames:3\n"
+    ],
+    [
+      48,
+      "AVFormatContext",
+      "Opening 'E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\hevc-open.mkv' for reading\n"
+    ],
+    [
+      48,
+      "file",
+      "Setting default whitelist 'file,crypto,data'\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "Format matroska,webm probed with size=2048 and score=100\n"
+    ],
+    [
+      48,
+      "",
+      "st:0 removing common factor 1000000 from timebase\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "Before avformat_find_stream_info() pos: 3064 bytes read:32768 seeks:0 nb_streams:1\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VUI\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding PPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SEI\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "All info found\n"
+    ],
+    [
+      48,
+      "matroska,webm",
+      "After avformat_find_stream_info() pos: 13095 bytes read:32768 seeks:0 frames:3\n"
+    ],
+    [
+      48,
+      "file",
+      "Setting default whitelist 'file,crypto,data'\n"
+    ],
+    [
+      48,
+      "matroska",
+      "get_metadata_duration returned: 9600000\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Write early duration from metadata = 9600\n"
+    ],
+    [
+      48,
+      "",
+      "detected 24 logical cores\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 32(VPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 33(SPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Main profile bitstream\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding VUI\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 34(PPS), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding PPS\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 39(SEI_PREFIX), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoding SEI\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 20(IDR_N_LP), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Format yuv420p chosen by get_format().\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/0.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/1.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/2.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/3.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/4.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/5.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/6.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/7.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/8.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/9.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/10.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/11.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/12.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/13.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/0.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/14.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/4.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/15.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/2.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/16.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/3.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/8.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/6.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/1.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/17.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/7.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/5.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/18.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/19.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/20.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/12.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/10.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/11.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/9.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/16.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/14.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/15.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/13.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/20.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/18.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/19.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/17.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: cpuid.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: bitdepth.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: no-splice.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: rc.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: stats-write.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: stats-read.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: zone-count.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Invalid value for overscan: 0.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Invalid value for display-window: 0.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Invalid value for cll: 0,0.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Invalid value for refine-analysis-type: 0.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: no-svt.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Invalid value for scenecut-aware-qp: 0conformance-window-offsets.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: right.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: bottom.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: decoder-max-rate.\n"
+    ],
+    [
+      24,
+      "libx265",
+      "Unknown option: no-alpha.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 20(IDR_N_LP), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/0.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/1.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/2.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/3.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/4.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/5.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/6.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/0.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/7.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/8.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/9.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/10.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/11.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/12.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/13.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/14.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/4.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/15.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/2.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/16.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/3.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/1.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/17.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 0(TRAIL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/8.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/18.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 21(CRA_NUT), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/19.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/6.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 9(RASL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/20.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/7.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/5.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 8(RASL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/12.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/21.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/24.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 8(RASL_N), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/22.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "nal_unit_type: 1(TRAIL_R), nuh_layer_id: 0, temporal_id: 0\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/10.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/23.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/24.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Output frame with POC 0/28.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/9.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/11.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/16.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/28.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/14.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/15.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/13.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/20.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/18.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/19.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/17.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/22.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/21.\n"
+    ],
+    [
+      48,
+      "hevc",
+      "Decoded frame with POC 0/23.\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Starting new cluster with timestamp 0 at offset 3059 bytes\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 4879 with pts 0, dts -80, duration 0 at relative offset 9 in cluster at offset 3059. TrackNumber 1, keyframe 1\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 3469 with pts 160, dts -40, duration 0 at relative offset 4896 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 2115 with pts 80, dts 0, duration 0 at relative offset 8372 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 1458 with pts 40, dts 40, duration 0 at relative offset 10494 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 1406 with pts 120, dts 80, duration 0 at relative offset 11959 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 2791 with pts 280, dts 120, duration 0 at relative offset 13372 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 1685 with pts 240, dts 160, duration 0 at relative offset 16170 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "Writing block of size 1530 with pts 200, dts 200, duration 0 at relative offset 17862 in cluster at offset 3059. TrackNumber 1, keyframe 0\n"
+    ],
+    [
+      16,
+      "matroska",
+      "pts (-520) < dts (201) in stream 0\n"
+    ],
+    [
+      48,
+      "matroska",
+      "end duration = 280\n"
+    ],
+    [
+      48,
+      "matroska",
+      "stream 0 end duration = 280\n"
+    ],
+    [
+      40,
+      "AVIOContext",
+      "Statistics: 22493 bytes written, 0 seeks, 1 writeouts\n"
+    ]
+  ]
+}

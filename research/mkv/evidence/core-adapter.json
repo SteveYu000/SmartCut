@@ -1,0 +1,10 @@
+{
+  "video.cpp": {
+    "source_lf_sha256": "0b2c7d3eff995eee463f1d8c758271791f6d3af1d1ac898763062e1d62cedfac",
+    "adapted_lf_sha256": "c9b32d83b121e49cac4f147a74029ca4afca2386baefa545dcc41682323feda6"
+  },
+  "av1.cpp": {
+    "source_lf_sha256": "9aa175b3f032e4dea1e849f4c470d2d2e27c77979f8df823500971489b0a8aeb",
+    "adapted_lf_sha256": "fa0db97998484ff34a6851cb980030a809866253036c3984146cdbaf1616cff9"
+  }
+}

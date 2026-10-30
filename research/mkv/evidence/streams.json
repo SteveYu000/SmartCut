@@ -1,0 +1,926 @@
+{
+  "ffmpeg": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "fixture_command": [
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+    "-f",
+    "lavfi",
+    "-i",
+    "sine=frequency=440:sample_rate=48000:duration=9.6",
+    "-i",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\captions.srt",
+    "-i",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\captions.ass",
+    "-i",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\chapters.txt",
+    "-map",
+    "0:v",
+    "-map",
+    "1:a",
+    "-map",
+    "1:a",
+    "-map",
+    "2:s",
+    "-map",
+    "3:s",
+    "-c:v",
+    "copy",
+    "-c:a:0",
+    "aac",
+    "-b:a:0",
+    "128k",
+    "-c:a:1",
+    "libopus",
+    "-b:a:1",
+    "96k",
+    "-c:s",
+    "copy",
+    "-map_metadata",
+    "4",
+    "-map_chapters",
+    "4",
+    "-attach",
+    "C:\\Windows\\Fonts\\consola.ttf",
+    "-metadata:s:t",
+    "mimetype=application/x-truetype-font",
+    "-metadata:s:a:0",
+    "language=eng",
+    "-metadata:s:a:1",
+    "language=jpn",
+    "-metadata:s:s:0",
+    "language=eng",
+    "-metadata:s:s:1",
+    "language=chi",
+    "-avoid_negative_ts",
+    "disabled",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv"
+  ],
+  "fixture_sha256": "40dd92e1e8f9d5f69c291409b08851eff3d5fffafcf7c47cb7fa0a5e65ccd8e0",
+  "font_sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+  "video_command": [
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\build\\Release\\mkv-smartcut.exe",
+    "-v",
+    "error",
+    "-y",
+    "-i",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\fixtures\\h264-closed_b3_id0.mkv",
+    "--keep-frames",
+    "13:227",
+    "-c:v",
+    "libx264",
+    "-crf",
+    "18",
+    "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv"
+  ],
+  "prototype_sha256": "cb9d690770f9eccd0c02bc4714d53a75c1cdc40235953a91577b4f4825b9c6b4",
+  "cases": [
+    {
+      "name": "aac-copy",
+      "passed": true,
+      "issues": [],
+      "auxiliary_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv",
+        "-ss",
+        "0.52",
+        "-to",
+        "9.08",
+        "-map",
+        "0:a:0",
+        "-map",
+        "0:s",
+        "-map",
+        "0:t",
+        "-map_metadata",
+        "0",
+        "-map_chapters",
+        "0",
+        "-c:a",
+        "copy",
+        "-c:s",
+        "copy",
+        "-c:t",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-copy-aux.mkv"
+      ],
+      "combine_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-copy-aux.mkv",
+        "-map",
+        "0:v",
+        "-map",
+        "1:a",
+        "-map",
+        "1:s",
+        "-map",
+        "1:t",
+        "-map_metadata",
+        "1",
+        "-map_chapters",
+        "1",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-copy-combined.mkv"
+      ],
+      "streams": [
+        {
+          "codec": "aac",
+          "packet_count": 401,
+          "packets_equal": true,
+          "decoded_pcm_equal": true,
+          "decoded_samples": 409600
+        },
+        {
+          "codec": "subrip",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ass",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ttf",
+          "packet_count": 0,
+          "packets_equal": true
+        }
+      ],
+      "auxiliary_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 4,
+        "block_count": 405,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "A_AAC",
+            "codec_delay_ns": 21333333,
+            "type": 2,
+            "default_duration_ns": 21333333,
+            "codec_private_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+          },
+          {
+            "number": 2,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 12,
+        "block_count": 619,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          },
+          {
+            "number": 2,
+            "codec_id": "A_AAC",
+            "codec_delay_ns": 21333333,
+            "type": 2,
+            "default_duration_ns": 21333333,
+            "codec_private_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 4,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_sha256": "27d09aecd13465e2cf55c919e1459ec41cb50e30183ff38d16f190a9101b50d1"
+    },
+    {
+      "name": "opus-copy",
+      "passed": true,
+      "issues": [],
+      "auxiliary_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv",
+        "-ss",
+        "0.52",
+        "-to",
+        "9.08",
+        "-map",
+        "0:a:1",
+        "-map",
+        "0:s",
+        "-map",
+        "0:t",
+        "-map_metadata",
+        "0",
+        "-map_chapters",
+        "0",
+        "-c:a",
+        "copy",
+        "-c:s",
+        "copy",
+        "-c:t",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-copy-aux.mkv"
+      ],
+      "combine_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-copy-aux.mkv",
+        "-map",
+        "0:v",
+        "-map",
+        "1:a",
+        "-map",
+        "1:s",
+        "-map",
+        "1:t",
+        "-map_metadata",
+        "1",
+        "-map_chapters",
+        "1",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-copy-combined.mkv"
+      ],
+      "streams": [
+        {
+          "codec": "opus",
+          "packet_count": 428,
+          "packets_equal": true,
+          "decoded_pcm_equal": true,
+          "decoded_samples": 410568
+        },
+        {
+          "codec": "subrip",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ass",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ttf",
+          "packet_count": 0,
+          "packets_equal": true
+        }
+      ],
+      "auxiliary_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 4,
+        "block_count": 432,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "A_OPUS",
+            "codec_delay_ns": 6500000,
+            "seek_preroll_ns": 80000000,
+            "type": 2,
+            "codec_private_sha256": "21701d1a08824aed1bb94053e240c792bd0c3634bcdf21e5b9b405732fd6df8b"
+          },
+          {
+            "number": 2,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 12,
+        "block_count": 646,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          },
+          {
+            "number": 2,
+            "codec_id": "A_OPUS",
+            "codec_delay_ns": 6500000,
+            "seek_preroll_ns": 80000000,
+            "type": 2,
+            "codec_private_sha256": "21701d1a08824aed1bb94053e240c792bd0c3634bcdf21e5b9b405732fd6df8b"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 4,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_sha256": "8f807b6e9c83617304ca0f2457a4eecd397ef4a1c54fc2d67bf99aecbe4c3d59"
+    },
+    {
+      "name": "aac-encode",
+      "passed": true,
+      "issues": [],
+      "auxiliary_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv",
+        "-ss",
+        "0.52",
+        "-to",
+        "9.08",
+        "-map",
+        "0:a:0",
+        "-map",
+        "0:s",
+        "-map",
+        "0:t",
+        "-map_metadata",
+        "0",
+        "-map_chapters",
+        "0",
+        "-c:a",
+        "aac",
+        "-c:s",
+        "copy",
+        "-c:t",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-encode-aux.mkv"
+      ],
+      "combine_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-encode-aux.mkv",
+        "-map",
+        "0:v",
+        "-map",
+        "1:a",
+        "-map",
+        "1:s",
+        "-map",
+        "1:t",
+        "-map_metadata",
+        "1",
+        "-map_chapters",
+        "1",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\aac-encode-combined.mkv"
+      ],
+      "streams": [
+        {
+          "codec": "aac",
+          "packet_count": 403,
+          "packets_equal": true,
+          "decoded_pcm_equal": true,
+          "decoded_samples": 411648
+        },
+        {
+          "codec": "subrip",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ass",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ttf",
+          "packet_count": 0,
+          "packets_equal": true
+        }
+      ],
+      "auxiliary_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 5,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 4,
+        "block_count": 407,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "A_AAC",
+            "codec_delay_ns": 21333333,
+            "type": 2,
+            "default_duration_ns": 21333333,
+            "codec_private_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+          },
+          {
+            "number": 2,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 5,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 12,
+        "block_count": 621,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          },
+          {
+            "number": 2,
+            "codec_id": "A_AAC",
+            "codec_delay_ns": 21333333,
+            "type": 2,
+            "default_duration_ns": 21333333,
+            "codec_private_sha256": "643b0e23faf2831be78dddd3de11c0f1b4aac4d4f762554c9bdaab7cc1e9e409"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 4,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_sha256": "bcb2bc011c2c4a0d32decc26e791df67dfdf6536933b56f021463259cb1fa02c"
+    },
+    {
+      "name": "opus-encode",
+      "passed": true,
+      "issues": [],
+      "auxiliary_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv",
+        "-ss",
+        "0.52",
+        "-to",
+        "9.08",
+        "-map",
+        "0:a:1",
+        "-map",
+        "0:s",
+        "-map",
+        "0:t",
+        "-map_metadata",
+        "0",
+        "-map_chapters",
+        "0",
+        "-c:a",
+        "libopus",
+        "-c:s",
+        "copy",
+        "-c:t",
+        "copy",
+        "-b:a",
+        "96k",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-encode-aux.mkv"
+      ],
+      "combine_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-encode-aux.mkv",
+        "-map",
+        "0:v",
+        "-map",
+        "1:a",
+        "-map",
+        "1:s",
+        "-map",
+        "1:t",
+        "-map_metadata",
+        "1",
+        "-map_chapters",
+        "1",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\opus-encode-combined.mkv"
+      ],
+      "streams": [
+        {
+          "codec": "opus",
+          "packet_count": 429,
+          "packets_equal": true,
+          "decoded_pcm_equal": true,
+          "decoded_samples": 410880
+        },
+        {
+          "codec": "subrip",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ass",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ttf",
+          "packet_count": 0,
+          "packets_equal": true
+        }
+      ],
+      "auxiliary_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 5,
+        "discard_padding": [
+          13500000
+        ],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 4,
+        "block_count": 433,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "A_OPUS",
+            "codec_delay_ns": 6500000,
+            "seek_preroll_ns": 80000000,
+            "type": 2,
+            "default_duration_ns": 20000000,
+            "codec_private_sha256": "21701d1a08824aed1bb94053e240c792bd0c3634bcdf21e5b9b405732fd6df8b"
+          },
+          {
+            "number": 2,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 5,
+        "discard_padding": [
+          13500000
+        ],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 12,
+        "block_count": 647,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          },
+          {
+            "number": 2,
+            "codec_id": "A_OPUS",
+            "codec_delay_ns": 6500000,
+            "seek_preroll_ns": 80000000,
+            "type": 2,
+            "codec_private_sha256": "21701d1a08824aed1bb94053e240c792bd0c3634bcdf21e5b9b405732fd6df8b"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 4,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_sha256": "4090aeba9bd47ed16aa0c0bbe0739eeaa2ed6735a6d8d26c92a1dc743a69b645"
+    },
+    {
+      "name": "flac-encode",
+      "passed": true,
+      "issues": [],
+      "auxiliary_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\audio-subtitle-source.mkv",
+        "-ss",
+        "0.52",
+        "-to",
+        "9.08",
+        "-map",
+        "0:a:0",
+        "-map",
+        "0:s",
+        "-map",
+        "0:t",
+        "-map_metadata",
+        "0",
+        "-map_chapters",
+        "0",
+        "-c:a",
+        "flac",
+        "-c:s",
+        "copy",
+        "-c:t",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\flac-encode-aux.mkv"
+      ],
+      "combine_command": [
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\deps\\ffmpeg-9.0.2-full_build-shared\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-y",
+        "-copyts",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\smart-video.mkv",
+        "-i",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\flac-encode-aux.mkv",
+        "-map",
+        "0:v",
+        "-map",
+        "1:a",
+        "-map",
+        "1:s",
+        "-map",
+        "1:t",
+        "-map_metadata",
+        "1",
+        "-map_chapters",
+        "1",
+        "-c",
+        "copy",
+        "-avoid_negative_ts",
+        "disabled",
+        "E:\\DesktopPlus\\Works\\Code\\SmartCut\\research\\mkv\\test-data\\streams-20261031-000450\\flac-encode-combined.mkv"
+      ],
+      "streams": [
+        {
+          "codec": "flac",
+          "packet_count": 642,
+          "packets_equal": true,
+          "decoded_pcm_equal": true,
+          "decoded_samples": 410880
+        },
+        {
+          "codec": "subrip",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ass",
+          "packet_count": 2,
+          "packets_equal": true
+        },
+        {
+          "codec": "ttf",
+          "packet_count": 0,
+          "packets_equal": true
+        }
+      ],
+      "auxiliary_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 2,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 4,
+        "block_count": 646,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "A_FLAC",
+            "type": 2,
+            "default_duration_ns": 13333333,
+            "codec_private_sha256": "8359ccf1ee956c97b902b889fdda21817c8bfdef5481d881ed4b251eef3a8906"
+          },
+          {
+            "number": 2,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_ebml": {
+        "timestamp_scale_ns": 1000000,
+        "codec_states": 0,
+        "cluster_count": 10,
+        "block_durations": 4,
+        "discard_padding": [],
+        "attachments": 1,
+        "chapters": 1,
+        "segment_count": 1,
+        "duration_ticks": 8980.0,
+        "cue_count": 12,
+        "block_count": 860,
+        "laced_blocks": 0,
+        "tracks": [
+          {
+            "number": 1,
+            "codec_id": "V_MPEG4/ISO/AVC",
+            "type": 1,
+            "default_duration_ns": 40000000,
+            "codec_private_sha256": "5d9d87385e444f1d8fa2fb6d279002ccbae7000f9397802fae9617df27c50d12"
+          },
+          {
+            "number": 2,
+            "codec_id": "A_FLAC",
+            "type": 2,
+            "codec_private_sha256": "8359ccf1ee956c97b902b889fdda21817c8bfdef5481d881ed4b251eef3a8906"
+          },
+          {
+            "number": 3,
+            "codec_id": "S_TEXT/UTF8",
+            "type": 17,
+            "codec_private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "number": 4,
+            "codec_id": "S_TEXT/ASS",
+            "type": 17,
+            "codec_private_sha256": "0b829e053bee8af4aeee5dce4924ba249501a6a0f651d7840a44de6776f80db8"
+          }
+        ]
+      },
+      "output_sha256": "cdee8734922f2f5b0edff97c308d78b207d861dc16070ccc4a16e84eed59f127"
+    }
+  ]
+}

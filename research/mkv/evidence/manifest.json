@@ -1,0 +1,226 @@
+{
+  "prototype_exe_sha256": "cb9d690770f9eccd0c02bc4714d53a75c1cdc40235953a91577b4f4825b9c6b4",
+  "ffmpeg_exe_sha256": "b1a495a71491bf208f95043ca06654ad76d59738533ec8ff237a759e29abd2a3",
+  "ffmpeg_version": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers\r\nbuilt with gcc 16.2.0 (Rev3, Built by MSYS2 project)\r\nconfiguration: --enable-gpl --enable-version3 --enable-shared --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper\r\nlibavutil      61.  1.102 / 61.  1.102\r\nlibavcodec     63.  1.102 / 63.  1.102\r\nlibavformat    63.  1.102 / 63.  1.102\r\nlibavdevice    63.  1.102 / 63.  1.102\r\nlibavfilter    12.  1.102 / 12.  1.102\r\nlibswscale     10.  1.102 / 10.  1.102\r\nlibswresample   7.  1.102 /  7.  1.102\r\n\r\nExiting with exit code 0\r\n",
+  "ffmpeg_sdk_package": {
+    "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-full_build-shared.7z",
+    "published_sha256": "4d2060a8b34a940aa47d785142055bb92a63053781e55f2ace4546edd519a8f5"
+  },
+  "git_head_at_archive": "6ff9df5273df8bb1e75b919135d0645f48086442",
+  "files": {
+    "research/mkv/src/main.cpp": {
+      "sha256": "834a5498eb3a88d03ad96aaf1955b9e6c5236ddb132bf6ff31f1d827c1ca33d4",
+      "lf_sha256": "834a5498eb3a88d03ad96aaf1955b9e6c5236ddb132bf6ff31f1d827c1ca33d4"
+    },
+    "research/mkv/src/mkv_input.cpp": {
+      "sha256": "c04fb2338924474b4877667f665a7dfc5dab024e2787810ddea9ea3b5c5a907d",
+      "lf_sha256": "c04fb2338924474b4877667f665a7dfc5dab024e2787810ddea9ea3b5c5a907d"
+    },
+    "research/mkv/src/mkv_input.hpp": {
+      "sha256": "79bac5479efda1b589f582c912a8e1b41f41d4f61dd3a85911dae535d591d875",
+      "lf_sha256": "79bac5479efda1b589f582c912a8e1b41f41d4f61dd3a85911dae535d591d875"
+    },
+    "research/mkv/tests/archive.py": {
+      "sha256": "4554b31a918c295dfc228e56a40446c362be33e9fb42fcd0b541b656d5907477",
+      "lf_sha256": "4554b31a918c295dfc228e56a40446c362be33e9fb42fcd0b541b656d5907477"
+    },
+    "research/mkv/tests/common.py": {
+      "sha256": "250f65246e61841ea17f4e8e1d9f6395aaca08d32bd14285c94c9d8e879078bb",
+      "lf_sha256": "250f65246e61841ea17f4e8e1d9f6395aaca08d32bd14285c94c9d8e879078bb"
+    },
+    "research/mkv/tests/ebml.py": {
+      "sha256": "9f615fe937a60a8e29c1a6b46a13d5cb5421de435a5d057a8a475185edc7ae35",
+      "lf_sha256": "9f615fe937a60a8e29c1a6b46a13d5cb5421de435a5d057a8a475185edc7ae35"
+    },
+    "research/mkv/tests/edge_cases.py": {
+      "sha256": "cb679413656a87434ae37accec3d76d3819ff2218e8b58a33419af749b265293",
+      "lf_sha256": "cb679413656a87434ae37accec3d76d3819ff2218e8b58a33419af749b265293"
+    },
+    "research/mkv/tests/experiments.py": {
+      "sha256": "26991c19cbd42ded01c89e6b95004ef897bd24aa9c1fd228d874d6b696408c7b",
+      "lf_sha256": "26991c19cbd42ded01c89e6b95004ef897bd24aa9c1fd228d874d6b696408c7b"
+    },
+    "research/mkv/tests/fixtures.py": {
+      "sha256": "43a22287a6e76e7c61713e8f2cfcf55b74bc437b6d4ba2afee29eca045c270f3",
+      "lf_sha256": "43a22287a6e76e7c61713e8f2cfcf55b74bc437b6d4ba2afee29eca045c270f3"
+    },
+    "research/mkv/tests/matrix.py": {
+      "sha256": "a4fffcb528151f2b48d2652c84dd72d750e6022a1f468b2f48320de3fa4fe6b5",
+      "lf_sha256": "a4fffcb528151f2b48d2652c84dd72d750e6022a1f468b2f48320de3fa4fe6b5"
+    },
+    "research/mkv/tests/recheck.py": {
+      "sha256": "83951758ff6163535eacfa7754fb342d61804826aae10e7b37d8526ffed9c810",
+      "lf_sha256": "83951758ff6163535eacfa7754fb342d61804826aae10e7b37d8526ffed9c810"
+    },
+    "research/mkv/tests/streams.py": {
+      "sha256": "67928790dd5557349b8a12727469f577ab5cf67cb74fae7ba000ed59ff2f0cf2",
+      "lf_sha256": "67928790dd5557349b8a12727469f577ab5cf67cb74fae7ba000ed59ff2f0cf2"
+    },
+    "research/mkv/tests/trace_skeskinen.py": {
+      "sha256": "68b89bd21b1b13b20ea2309355a8ce861c35bea75b67bdad4d96e4bcf84c3cce",
+      "lf_sha256": "68b89bd21b1b13b20ea2309355a8ce861c35bea75b67bdad4d96e4bcf84c3cce"
+    },
+    "research/mkv/prepare_core.py": {
+      "sha256": "e4596e792962e995f527dbb685a930a9ec73793828c313661d8528374c97ad2b",
+      "lf_sha256": "e4596e792962e995f527dbb685a930a9ec73793828c313661d8528374c97ad2b"
+    },
+    "research/mkv/CMakeLists.txt": {
+      "sha256": "dcb065b21aa3f46ad1ac1e42b73103c9940a755361c3830f055855b978012404",
+      "lf_sha256": "dcb065b21aa3f46ad1ac1e42b73103c9940a755361c3830f055855b978012404"
+    },
+    "src/media.hpp": {
+      "sha256": "60b19c6f83e70214dc219ded3239003fade274d474357f2f0bfd084b1f9bcbeb",
+      "lf_sha256": "404adbf635b94b97f7328bc8c058fa54843ed2e5e67442d25eeb57245f4491ff"
+    },
+    "src/video.cpp": {
+      "sha256": "2b587916fe89e42517935bb6490266982111f3439ca633d7511ae7f9fe272d99",
+      "lf_sha256": "0b2c7d3eff995eee463f1d8c758271791f6d3af1d1ac898763062e1d62cedfac"
+    },
+    "src/av1.cpp": {
+      "sha256": "9aa175b3f032e4dea1e849f4c470d2d2e27c77979f8df823500971489b0a8aeb",
+      "lf_sha256": "9aa175b3f032e4dea1e849f4c470d2d2e27c77979f8df823500971489b0a8aeb"
+    },
+    "src/cli.cpp": {
+      "sha256": "3f50a621a1718c21cef428202876d6589148794b62fb3dc0ff3b7648351db34b",
+      "lf_sha256": "c63394d849141fb4365ae1b8226173a7400222dd37a811ab705b8d7e8c7309fe"
+    },
+    "src/platform.cpp": {
+      "sha256": "3359a81d23618f151c937d27a2dcc7927757faffad5a8aa8eade9331e50def01",
+      "lf_sha256": "3359a81d23618f151c937d27a2dcc7927757faffad5a8aa8eade9331e50def01"
+    },
+    "research/h264/tests/integration.py": {
+      "sha256": "0417e784bc208f6e853747bbf2f4f67858028bd23a200dde2d3a36fec6a0646d",
+      "lf_sha256": "0417e784bc208f6e853747bbf2f4f67858028bd23a200dde2d3a36fec6a0646d"
+    },
+    "research/h265/tests/common.py": {
+      "sha256": "786e187b6469da5569013c2dd7e6ce7265913794a4a2166e88beba333205aa93",
+      "lf_sha256": "786e187b6469da5569013c2dd7e6ce7265913794a4a2166e88beba333205aa93"
+    },
+    "research/av1/tests/fixtures.py": {
+      "sha256": "695654a1adbd8f98293c580ceaf838d078fae24ac9020c4bebd1b2fab3962bcd",
+      "lf_sha256": "695654a1adbd8f98293c580ceaf838d078fae24ac9020c4bebd1b2fab3962bcd"
+    },
+    "research/av1/tests/common.py": {
+      "sha256": "d7e8838463da7c4c3c4064c02b0f8f5718238129e0e819b540befd43ccbdd10e",
+      "lf_sha256": "d7e8838463da7c4c3c4064c02b0f8f5718238129e0e819b540befd43ccbdd10e"
+    },
+    "research/av1/tests/sequence.py": {
+      "sha256": "bd3cf1c535e05ac9925a62136138e7b867788313b2031c39495b255a51f4d70c",
+      "lf_sha256": "bd3cf1c535e05ac9925a62136138e7b867788313b2031c39495b255a51f4d70c"
+    },
+    "tests/prepare_fixtures.py": {
+      "sha256": "802957290db99cc8ddbc92068bda538648ffee190880fa037b92c4da2405db2b",
+      "lf_sha256": "fffcaa47aad0496564657fe67f270ccc93a931397720bae16438ef1a6695c777"
+    }
+  },
+  "upstream": [
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\matroskaenc.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/matroskaenc.c",
+      "sha256": "087df6ac8ffaa6bbceb61c6d61aa7f0ee0f1a19cc71f73df5bd0fde6a76f3e1c"
+    },
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\matroskadec.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/matroskadec.c",
+      "sha256": "0c88b1ca79de4501fade5864304443493fbbfa26cd21bf95013ee89f186bcfd8"
+    },
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\av1.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/av1.c",
+      "sha256": "06f04fca422b1259405a57edad0782a93205ca208e200ca44e4acdad4a15bf24"
+    },
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\avc.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/avc.c",
+      "sha256": "8a74c0ec2a9a2729dfbe50ce70bcb7a022ecb6132ce0195e11af4718ee89adbe"
+    },
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\hevc.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/hevc.c",
+      "sha256": "4953625e3e0a5747e766e4ed2c75047e5bfcb5c0abbd2b93083bd307cab559fc"
+    },
+    {
+      "path": "sources\\ffmpeg-n9.0.2-matroska\\matroska.h",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n9.0.2/libavformat/matroska.h",
+      "sha256": "f6822e901ba324b9c90b0ef1068e53566484c442a16430b3cf3fa653fc14d45f"
+    },
+    {
+      "name": "mkvtoolnix-64-bit-103.0.7z",
+      "url": "https://mkvtoolnix.download/windows/releases/103.0/mkvtoolnix-64-bit-103.0.7z",
+      "sha256": "01d76dbfdbd5615d9e02f69b0710d1429a902d47a98c8eee33bd884c4fcb3cbf",
+      "bytes": 31400293
+    },
+    {
+      "name": "mkvmerge.html",
+      "url": "https://mkvtoolnix.download/doc/mkvmerge.html",
+      "sha256": "e8c4ef60229aafd2dcc3c7b738e4ced691a1efb576bf29de15eefe388b2127ed",
+      "bytes": 233598
+    },
+    {
+      "name": "codec_specs.html",
+      "url": "https://www.matroska.org/technical/codec_specs.html",
+      "sha256": "57882d5ec5e579106b2b850e90fb491a6428a9029e14336ef83aa03f78291295",
+      "bytes": 82358
+    },
+    {
+      "name": "cluster_helper.cpp",
+      "url": "https://codeberg.org/mbunkus/mkvtoolnix/raw/tag/release-103.0/src/merge/cluster_helper.cpp",
+      "sha256": "684fb124d0af0410eaf279b9ceda43bb453e52da832f56465caa0dd56ceaa032",
+      "bytes": 35556
+    },
+    {
+      "name": "p_av1.cpp",
+      "url": "https://codeberg.org/mbunkus/mkvtoolnix/raw/tag/release-103.0/src/output/p_av1.cpp",
+      "sha256": "ea4a1f7edecd307c64b791a1806dfbe7a9ce6e48a0df9d88720ba703d47f95af",
+      "bytes": 3915
+    },
+    {
+      "name": "p_avc.cpp",
+      "url": "https://codeberg.org/mbunkus/mkvtoolnix/raw/tag/release-103.0/src/output/p_avc.cpp",
+      "sha256": "d60d52d5439f4d1ddc76b60ac2058bc123d84e9391cdc7237113f9bec1f7b7ef",
+      "bytes": 6582
+    },
+    {
+      "name": "p_hevc.cpp",
+      "url": "https://codeberg.org/mbunkus/mkvtoolnix/raw/tag/release-103.0/src/output/p_hevc.cpp",
+      "sha256": "b297265ab48fd39dcc5ea478eb3117981e756ac6a9f1f3c593cbf92f96ca6bdd",
+      "bytes": 6236
+    },
+    {
+      "project": "DeepRegular-SmartCut-v0.8.37",
+      "commit": "d670099e9df622b9b9120fc46411e6154985b269",
+      "path": "rust/crates/core/src/cut.rs",
+      "sha256": "c2f7a60caf36b246342c0c4470bc3fff41cf0a47c5f952541e8972be8b8b572c"
+    },
+    {
+      "project": "DeepRegular-SmartCut-v0.8.37",
+      "commit": "d670099e9df622b9b9120fc46411e6154985b269",
+      "path": "rust/crates/core/src/input.rs",
+      "sha256": "1c7d2d9d5e4f48984f9a15db7cbde9735467f2656e758f04eff2c00d3d23b7fa"
+    },
+    {
+      "project": "DeepRegular-SmartCut-v0.8.37",
+      "commit": "d670099e9df622b9b9120fc46411e6154985b269",
+      "path": "rust/crates/core/src/sound.rs",
+      "sha256": "d7de223accd798cb605ebd98ab52334e47002e219dad6cf087299d4420a7ef53"
+    },
+    {
+      "project": "skeskinen-smartcut",
+      "commit": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+      "path": "smartcut/video_cutter.py",
+      "sha256": "06982fc7f45aba105a19192b5c9717da5d827d60468461621ab0f449043d4697"
+    },
+    {
+      "project": "skeskinen-smartcut",
+      "commit": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+      "path": "smartcut/media_container.py",
+      "sha256": "920a897c8edbb4396a0b8b378f8c3db0e529e610e78ac84b8141d996a6fcd7b6"
+    },
+    {
+      "project": "skeskinen-smartcut",
+      "commit": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+      "path": "smartcut/smart_cut.py",
+      "sha256": "1be9aa32639a84670009d4153dd81f89239ecbfbe70a9b872bbd1d82442c0cc0"
+    }
+  ]
+}
