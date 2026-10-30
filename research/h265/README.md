@@ -6,23 +6,35 @@ Windows、C++20、CMake + MSVC。对指定的显示帧区间精确剪切：保�
 
 ## 构建
 
-安装 Visual Studio 2026 的 C++ 工具；使用 VS 2022 时将生成器改为 `Visual Studio 17 2022`，该版本未在本机验证。安装 Python 仅为下载 SDK 和运行测试，CLI 本身不依赖 Python。
+安装 Visual Studio 2026 的“使用 C++ 的桌面开发”和 CMake 4.2 或更高版本，预设使用 Windows x64。安装 Python 仅为下载 SDK 和运行测试，CLI 本身不依赖 Python。
+
+自行下载包含 libx265 的 FFmpeg 共享开发包，SDK 根目录应包含 `include/` 头文件、`lib/` 下 MSVC 可链接的导入库和 `bin/` 下的 DLL；视频测试另需 `bin/ffmpeg.exe` 与 `bin/ffprobe.exe`。在本目录执行，将示例路径替换为实际 SDK 根目录：
 
 ```powershell
-python scripts/fetch_ffmpeg.py
-cmake --preset msvc
+cmake --preset msvc -DFFMPEG_ROOT="C:/SDK/ffmpeg"
 cmake --build --preset release
 ctest --preset release
 ```
 
-已有 SDK 时可直接指定：
+也可运行 `python scripts/fetch_ffmpeg.py` 下载历史测试使用的 SDK。脚本按 [ffmpeg-sdk.json](scripts/ffmpeg-sdk.json) 中固定的 URL、大小和 SHA-256 下载、校验并解压到本目录的 `deps/`。下载完成后仍需将解压出的实际 SDK 根目录传给 `-DFFMPEG_ROOT`。
+
+首次配置也可使用环境变量：
 
 ```powershell
-cmake -S . -B build -G "Visual Studio 18 2026" -A x64 -DFFMPEG_ROOT="C:/SDK/ffmpeg"
-cmake --build build --config Release
+$env:FFMPEG_ROOT = "C:/SDK/ffmpeg"
+cmake --preset msvc
 ```
 
-`FFMPEG_ROOT` 应含 `include/`、`lib/` 和 `bin/`。构建后 DLL 会复制到本地 EXE 目录，二者均被 Git 忽略。
+命令行或 CMake 缓存中的非空 `FFMPEG_ROOT` 优先于环境变量。更换 SDK 时重新执行带 `-DFFMPEG_ROOT` 的配置命令并构建，头文件、导入库和运行库应来自同一套 SDK。生成的 `build/Release/smart_render.exe` 旁会复制所选 SDK 的 DLL；SDK 和构建产物均被 Git 忽略。
+
+使用 VS 2022 时另建构建目录并选择对应生成器，该版本未在本机验证：
+
+```powershell
+cmake -S . -B build-vs2022 -G "Visual Studio 17 2022" -A x64 -DFFMPEG_ROOT="C:/SDK/ffmpeg"
+cmake --build build-vs2022 --config Release
+```
+
+已验证的 SDK 为 FFmpeg 8.1 系列；不能据此保证其他版本的封装行为相同。
 
 ## 使用
 

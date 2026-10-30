@@ -49,23 +49,35 @@ C++20 实现，使用 FFmpeg 公开 API。完整的 IDR 区间直接复制，剪
 
 ## MSVC 构建
 
-准备 Visual Studio 的“使用 C++ 的桌面开发”、CMake 与 Python 3.12。项目不需要 FFmpeg 源码编译，也不需要 x264 的独立开发包：通过 FFmpeg 的 `libx264` 编码器封装调用。
+准备 Visual Studio 2026 的“使用 C++ 的桌面开发”和 CMake 4.2 或更高版本，预设使用 Windows x64。Python 3.12 用于下载 SDK 和运行测试，CLI 本身不依赖 Python。项目通过 FFmpeg 的 `libx264` 编码器封装调用，无需独立的 x264 开发包。
+
+自行下载包含 libx264 的 FFmpeg 共享开发包，SDK 根目录应包含 `include/`、MSVC 可链接的 `lib/*.lib` 和 `bin/*.dll`；视频测试另需 `bin/ffmpeg.exe` 与 `bin/ffprobe.exe`。在本目录执行，将示例路径替换为实际 SDK 根目录：
 
 ```powershell
-python scripts/fetch_ffmpeg.py
-cmake --preset msvc
+cmake --preset msvc -DFFMPEG_ROOT="C:/SDK/ffmpeg"
 cmake --build --preset release
 ctest --preset release
 ```
 
-下载脚本固定 BtbN FFmpeg 8.1 SDK 的 URL、大小和 SHA-256，支持续传。`CMakePresets.json` 使用本机实际验证的 `Visual Studio 18 2026`；也可另行指定生成器：
+也可运行 `python scripts/fetch_ffmpeg.py` 下载历史测试使用的 SDK。脚本按 [ffmpeg-sdk.json](scripts/ffmpeg-sdk.json) 中固定的 BtbN FFmpeg 8.1 SDK URL、大小和 SHA-256 下载、校验并解压到本目录的 `deps/`，支持续传。下载完成后仍需将解压出的实际 SDK 根目录传给 `-DFFMPEG_ROOT`。
+
+首次配置也可使用环境变量：
+
+```powershell
+$env:FFMPEG_ROOT = "C:/SDK/ffmpeg"
+cmake --preset msvc
+```
+
+命令行或 CMake 缓存中的非空 `FFMPEG_ROOT` 优先于环境变量。更换 SDK 时重新执行带 `-DFFMPEG_ROOT` 的配置命令并构建，头文件、导入库和运行库应来自同一套 SDK。生成的 `build/Release/smart_render.exe` 旁会复制所选 SDK 的 DLL。
+
+`CMakePresets.json` 使用本机实际验证的 `Visual Studio 18 2026`；也可另建构建目录并指定生成器：
 
 ```powershell
 cmake -S . -B build-vs2022 -G "Visual Studio 17 2022" -A x64 -DFFMPEG_ROOT="C:/sdk/ffmpeg"
 cmake --build build-vs2022 --config Release
 ```
 
-VS 2022 命令是配置示例，未在本次机器上实测。依赖需要 `include/`、MSVC 可链接的 `lib/*.lib` 和 `bin/*.dll`。`stsd` 路线依赖本次使用的 FFmpeg 8.1 movmuxer 行为，不能假定任意旧版本都等价。
+VS 2022 命令是配置示例，未在本次机器上实测。`stsd` 路线依赖本次使用的 FFmpeg 8.1 movmuxer 行为，不能假定任意旧版本都等价。
 
 ## 重现测试
 
@@ -78,6 +90,8 @@ python tests/integration.py --with-nvenc
 # 替换为上一命令打印的结果目录：
 python tests/experiments.py --suite-dir test-output/run-YYYYMMDD-HHMMSS
 ```
+
+使用自行下载的 SDK 时，以上 `tests/integration.py` 命令需追加 `--ffmpeg-bin "C:/SDK/ffmpeg/bin"`。`tests/experiments.py` 仍从下载脚本生成的 `deps/` 目录定位历史固定 SDK。
 
 `ctest` 只运行 CLI 帮助的启动检查；视频正确性由上述 Python 集成测试完成。默认完整集成测试不依赖 GPU，含 244 个导出用例；启用 NVENC 为 264 个。每次测试新建结果目录，不删除既有数据。测试会生成素材并消耗磁盘空间。
 

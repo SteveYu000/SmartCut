@@ -1,0 +1,765 @@
+{
+  "exe_sha256": "6c8cc698b4fba79310a652510543d1b5f3c398dce860735358b26078d5e0508d",
+  "matrix": "research\\av1\\test-data\\matrix-20261030-025559",
+  "cases": [
+    {
+      "case": "libaom-decode-aom",
+      "input": "test-data/matrix-20261030-025559/aom-partial.mp4",
+      "input_sha256": "c1525c447652cd60e6acd623308d1e12f3c83af8ae68cdd818fe39455ec0ffea",
+      "passed": true
+    },
+    {
+      "case": "libaom-decode-svt",
+      "input": "test-data/matrix-20261030-025559/svt-partial.mp4",
+      "input_sha256": "fd09dd080a39b850ab08dc978cf206b7a44d239a88fa2397a3101fd62b3ee328",
+      "passed": true
+    },
+    {
+      "case": "seek-svt-0",
+      "input": "test-data/matrix-20261030-025559/svt-partial.mp4",
+      "input_sha256": "fd09dd080a39b850ab08dc978cf206b7a44d239a88fa2397a3101fd62b3ee328",
+      "sample": 0,
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "case": "seek-svt-11",
+      "input": "test-data/matrix-20261030-025559/svt-partial.mp4",
+      "input_sha256": "fd09dd080a39b850ab08dc978cf206b7a44d239a88fa2397a3101fd62b3ee328",
+      "sample": 11,
+      "seconds": 0.44,
+      "passed": true
+    },
+    {
+      "case": "seek-svt-203",
+      "input": "test-data/matrix-20261030-025559/svt-partial.mp4",
+      "input_sha256": "fd09dd080a39b850ab08dc978cf206b7a44d239a88fa2397a3101fd62b3ee328",
+      "sample": 203,
+      "seconds": 8.12,
+      "passed": true
+    },
+    {
+      "case": "libaom-decode-rav1e",
+      "input": "test-data/matrix-20261030-025559/rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "passed": true
+    },
+    {
+      "case": "seek-rav1e-0",
+      "input": "test-data/matrix-20261030-025559/rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "sample": 0,
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "case": "seek-rav1e-11",
+      "input": "test-data/matrix-20261030-025559/rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "sample": 11,
+      "seconds": 0.44,
+      "passed": true
+    },
+    {
+      "case": "seek-rav1e-211",
+      "input": "test-data/matrix-20261030-025559/rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "sample": 211,
+      "seconds": 8.44,
+      "passed": true
+    },
+    {
+      "case": "nvdec-rav1e",
+      "input": "test-data/matrix-20261030-025559/rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "passed": false,
+      "error": "strict decode: [av1_cuvid @ 0000000002cfd180] Video height 112 not within range from 128 to 8192\r\n[vist#0:0/av1 @ 000000000078acc0] [dec:av1_cuvid @ 000000000077f000] Error while opening decoder: Invalid argument\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n",
+      "status": "unsupported_source_dimensions"
+    },
+    {
+      "case": "libaom-decode-main10",
+      "input": "test-data/matrix-20261030-025559/main10-partial.mp4",
+      "input_sha256": "63dc4c1d42902c15b0b2c386784f647213dc9256fb6421e341d226c3f9f3121b",
+      "passed": true
+    },
+    {
+      "case": "seek-main10-0",
+      "input": "test-data/matrix-20261030-025559/main10-partial.mp4",
+      "input_sha256": "63dc4c1d42902c15b0b2c386784f647213dc9256fb6421e341d226c3f9f3121b",
+      "sample": 0,
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "case": "seek-main10-11",
+      "input": "test-data/matrix-20261030-025559/main10-partial.mp4",
+      "input_sha256": "63dc4c1d42902c15b0b2c386784f647213dc9256fb6421e341d226c3f9f3121b",
+      "sample": 11,
+      "seconds": 0.44,
+      "passed": true
+    },
+    {
+      "case": "seek-main10-203",
+      "input": "test-data/matrix-20261030-025559/main10-partial.mp4",
+      "input_sha256": "63dc4c1d42902c15b0b2c386784f647213dc9256fb6421e341d226c3f9f3121b",
+      "sample": 203,
+      "seconds": 8.12,
+      "passed": true
+    },
+    {
+      "case": "nvdec-main10",
+      "input": "test-data/matrix-20261030-025559/main10-partial.mp4",
+      "input_sha256": "63dc4c1d42902c15b0b2c386784f647213dc9256fb6421e341d226c3f9f3121b",
+      "passed": false,
+      "error": "strict decode: [av1_cuvid @ 0000000002e1d640] Video height 112 not within range from 128 to 8192\r\n[vist#0:0/av1 @ 0000000000771340] [dec:av1_cuvid @ 0000000002dc0800] Error while opening decoder: Invalid argument\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n",
+      "status": "unsupported_source_dimensions"
+    },
+    {
+      "case": "libaom-decode-vfr",
+      "input": "test-data/matrix-20261030-025559/vfr-partial.mp4",
+      "input_sha256": "9197318b1bf3bac772bf28f8a9a79c02170f0115723ad0fc5cc45479d805e267",
+      "passed": true
+    },
+    {
+      "case": "seek-vfr-0",
+      "input": "test-data/matrix-20261030-025559/vfr-partial.mp4",
+      "input_sha256": "9197318b1bf3bac772bf28f8a9a79c02170f0115723ad0fc5cc45479d805e267",
+      "sample": 0,
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "case": "seek-vfr-11",
+      "input": "test-data/matrix-20261030-025559/vfr-partial.mp4",
+      "input_sha256": "9197318b1bf3bac772bf28f8a9a79c02170f0115723ad0fc5cc45479d805e267",
+      "sample": 11,
+      "seconds": 0.6,
+      "passed": true
+    },
+    {
+      "case": "seek-vfr-203",
+      "input": "test-data/matrix-20261030-025559/vfr-partial.mp4",
+      "input_sha256": "9197318b1bf3bac772bf28f8a9a79c02170f0115723ad0fc5cc45479d805e267",
+      "sample": 203,
+      "seconds": 10.84,
+      "passed": true
+    },
+    {
+      "case": "libaom-decode-ntsc",
+      "input": "test-data/matrix-20261030-025559/ntsc-partial.mp4",
+      "input_sha256": "3e3f7631f684260c016244453f24a98cd8351816d85cc6f833b367c5cfd3686f",
+      "passed": true
+    },
+    {
+      "case": "libaom-decode-color_sar",
+      "input": "test-data/matrix-20261030-025559/color_sar-partial.mp4",
+      "input_sha256": "2f3c8eab8d61171b9f398828310ed88d0efa42b5b2e428bb8a294688986284b4",
+      "passed": true
+    },
+    {
+      "case": "libaom-decode-nvenc",
+      "input": "test-data/matrix-20261030-025559/nvenc-partial.mp4",
+      "input_sha256": "2a245185c17e96dd4a5008140643ff0a34c0931547af19fe4f715da3d719c66d",
+      "passed": true
+    },
+    {
+      "case": "seek-nvenc-0",
+      "input": "test-data/matrix-20261030-025559/nvenc-partial.mp4",
+      "input_sha256": "2a245185c17e96dd4a5008140643ff0a34c0931547af19fe4f715da3d719c66d",
+      "sample": 0,
+      "seconds": 0.0,
+      "passed": true
+    },
+    {
+      "case": "seek-nvenc-11",
+      "input": "test-data/matrix-20261030-025559/nvenc-partial.mp4",
+      "input_sha256": "2a245185c17e96dd4a5008140643ff0a34c0931547af19fe4f715da3d719c66d",
+      "sample": 11,
+      "seconds": 0.44,
+      "passed": true
+    },
+    {
+      "case": "seek-nvenc-203",
+      "input": "test-data/matrix-20261030-025559/nvenc-partial.mp4",
+      "input_sha256": "2a245185c17e96dd4a5008140643ff0a34c0931547af19fe4f715da3d719c66d",
+      "sample": 203,
+      "seconds": 8.12,
+      "passed": true
+    },
+    {
+      "case": "nvdec-nvenc",
+      "input": "test-data/matrix-20261030-025559/nvenc-partial.mp4",
+      "input_sha256": "2a245185c17e96dd4a5008140643ff0a34c0931547af19fe4f715da3d719c66d",
+      "passed": false,
+      "error": "strict decode: [av1_cuvid @ 00000000033c1380] Video height 112 not within range from 128 to 8192\r\n[vist#0:0/av1 @ 0000000000dfde00] [dec:av1_cuvid @ 00000000033c0e00] Error while opening decoder: Invalid argument\r\nError opening output file -.\r\nError opening output files: Invalid argument\r\n",
+      "status": "unsupported_source_dimensions"
+    },
+    {
+      "case": "ablation-rav1e",
+      "input_sha256": "1b2b6dbeb0833dc5f75400939c7b1023d833c81e7ff589f029c5241ac6b12cd3",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-rav1e.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\ablation-rav1e.mp4",
+        "--keep",
+        "13:227",
+        "--experimental-single-config"
+      ],
+      "expected_failure": "av1C_field_mismatch",
+      "validation": {
+        "passed": false,
+        "issues": [
+          "av1C_field_mismatch"
+        ],
+        "expected_frames": 214,
+        "decoded_frames": 214,
+        "exact_packets_at_expected_positions": 200,
+        "expected_copy_frames": 200,
+        "confirmed_copy_frames": 200,
+        "copy_efficiency_passed": true,
+        "copied_pixel_mismatches": [],
+        "barcode_errors": [],
+        "min_psnr_db": 42.878892831646375,
+        "duration_seconds": 8.56,
+        "expected_duration_seconds": 8.56,
+        "sample_descriptions": 1,
+        "config_sequence_differences": [
+          0,
+          211
+        ],
+        "av1C_field_errors": [
+          {
+            "sample": 0,
+            "description": 1,
+            "fields": {
+              "seq_level_idx_0": [
+                31,
+                0
+              ]
+            }
+          },
+          {
+            "sample": 211,
+            "description": 1,
+            "fields": {
+              "seq_level_idx_0": [
+                31,
+                0
+              ]
+            }
+          }
+        ],
+        "sample_entry_errors": [],
+        "sync_errors": [],
+        "output_sha256": "131d27e2a75732151afbe32c2a6398884d8722720ba6780952e660a00a3db2f7"
+      },
+      "passed": true,
+      "output_sha256": "131d27e2a75732151afbe32c2a6398884d8722720ba6780952e660a00a3db2f7"
+    },
+    {
+      "case": "ablation-svt",
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\ablation-svt.mp4",
+        "--keep",
+        "13:227",
+        "--experimental-single-config",
+        "--experimental-drop-copy-sequence"
+      ],
+      "expected_failure": "decode_or_sync",
+      "passed": true,
+      "observed_failure": "strict decode: epeated frame header OBU.\r\n[libdav1d @ 000000000308ad40] Failed to read unit 0 (type 6): Invalid data found when processing input.\r\n[libdav1d @ 000000000308ad40] Failed to parse temporal unit.\r\n[libdav1d @ 000000000308ad40] Invalid repeated frame header OBU.\r\n[libdav1d @ 000000000308ad40] Failed to read unit 0 (type 6): Invalid data found when processing input.\r\n[libdav1d @ 000000000308ad40] Failed to parse temporal unit.\r\n[libdav1d @ 000000000308ad40] Invalid repeated frame header OBU.\r\n[libdav1d @ 000000000308ad40] Failed to read unit 0 (type 6): Invalid data found when processing input.\r\n[libdav1d @ 000000000308ad40] Failed to parse temporal unit.\r\n[libdav1d @ 000000000308ad40] Invalid repeated frame header OBU.\r\n[libdav1d @ 000000000308ad40] Failed to read unit 0 (type 3): Invalid data found when processing input.\r\n[libdav1d @ 000000000308ad40] Failed to parse temporal unit.\r\n[vist#0:0/av1 @ 0000000000a9ad40] [dec:libdav1d @ 000000000308b280] Error submitting packet to decoder: Invalid data found when processing input\r\n[vist#0:0/av1 @ 0000000000a9ad40] [dec:libdav1d @ 000000000308b280] Error processing packet in decoder: Invalid data found when processing input\r\n[vist#0:0/av1 @ 0000000000a9ad40] [dec:libdav1d @ 000000000308b280] Task finished with error code: -1094995529 (Invalid data found when processing input)\r\n[vist#0:0/av1 @ 0000000000a9ad40] [dec:libdav1d @ 000000000308b280] Terminating thread with return code -1094995529 (Invalid data found when processing input)\r\n",
+      "output_sha256": "9f08fc5821d2f04d60e288a4e382169c7259b32cfb692526235eccde574c59eb"
+    },
+    {
+      "case": "normalize-false-sync",
+      "input": "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\false-sync.mp4",
+      "input_sha256": "60d2b9761472781476cf3055591f42df40315e89ce7ffd4fa2c76b00751f7b40",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\false-sync.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\false-sync-out.mp4",
+        "--keep",
+        "0:240"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true,
+      "base_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "patch": {
+        "offset": 386208,
+        "before": "00000019",
+        "after": "00000018"
+      },
+      "validation": {
+        "passed": true,
+        "issues": [],
+        "expected_frames": 240,
+        "decoded_frames": 240,
+        "exact_packets_at_expected_positions": 240,
+        "expected_copy_frames": 240,
+        "confirmed_copy_frames": 240,
+        "copy_efficiency_passed": true,
+        "copied_pixel_mismatches": [],
+        "barcode_errors": [],
+        "min_psnr_db": null,
+        "duration_seconds": 9.6,
+        "expected_duration_seconds": 9.6,
+        "sample_descriptions": 1,
+        "config_sequence_differences": [],
+        "av1C_field_errors": [],
+        "sample_entry_errors": [],
+        "sync_errors": [],
+        "output_sha256": "2cbc07dd28e0e08f93100bf52b80e501379d2431ccf9a96bbedd58a361ff029f"
+      },
+      "output_sha256": "2cbc07dd28e0e08f93100bf52b80e501379d2431ccf9a96bbedd58a361ff029f"
+    },
+    {
+      "case": "reject-changed-input-sequence",
+      "input": "${REPO}\\research\\av1\\test-data\\matrix-20261030-025559\\rav1e-partial.mp4",
+      "input_sha256": "e4096861c26b461d195e934de3c82d0d33a47078daaf9d2114fa8dc83d7d4f45",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025559\\rav1e-partial.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\changed-input-sequence-out.mp4",
+        "--keep",
+        "0:100"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Changing sequence headers in the input are not supported\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-out-of-range",
+      "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\out-of-range-out.mp4",
+        "--keep",
+        "0:241"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Invalid frame range\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-overlap",
+      "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\overlap-out.mp4",
+        "--keep",
+        "13:40",
+        "--keep",
+        "30:60"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Ranges must be ordered and disjoint\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-negative-range",
+      "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\negative-range-out.mp4",
+        "--keep",
+        "-1:24"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Frame numbers must be nonnegative\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-empty-range",
+      "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\empty-range-out.mp4",
+        "--keep",
+        "24:24"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Invalid frame range\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-wrong-encoder",
+      "input": "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\wrong-encoder-out.mp4",
+        "--keep",
+        "13:227",
+        "--encoder",
+        "libx264"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: An AV1 encoder is required\r\n",
+      "passed": true
+    },
+    {
+      "case": "reject-non-av1",
+      "input": "${REPO}\\research\\h264\\test-data\\run-20261027-125923\\source-closed_b3_id0.mp4",
+      "input_sha256": "733a93ba2c92f471bb0c3959ff81f8832dfd94dd7f81d5b1b71936a09e681ae3",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\h264\\test-data\\run-20261027-125923\\source-closed_b3_id0.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\non-av1-out.mp4",
+        "--keep",
+        "13:227"
+      ],
+      "exit_code": 1,
+      "stderr": "av1_smart_render: Unencrypted av01 video is required\r\n",
+      "passed": true
+    },
+    {
+      "case": "protect-output",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-output.mp4",
+        "--keep",
+        "13:227",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-output.json"
+      ],
+      "preserved_sha256": "794c82deadd5ea23b487b5295673785a6038738434f44d127e04f8c1bc3be816",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "case": "protect-temporary",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-temporary.mp4",
+        "--keep",
+        "13:227",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-temporary.json"
+      ],
+      "preserved_sha256": "794c82deadd5ea23b487b5295673785a6038738434f44d127e04f8c1bc3be816",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "case": "protect-report",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-report.mp4",
+        "--keep",
+        "13:227",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\protected-report.json"
+      ],
+      "preserved_sha256": "794c82deadd5ea23b487b5295673785a6038738434f44d127e04f8c1bc3be816",
+      "exit_code": 1,
+      "passed": true
+    },
+    {
+      "case": "unicode-and-adjacent",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\中文 空格源.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\中文 空格剪切.mp4",
+        "--keep",
+        "13:24",
+        "--keep",
+        "24:48"
+      ],
+      "passed": true,
+      "issues": [],
+      "expected_frames": 35,
+      "decoded_frames": 35,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 43.44795500537671,
+      "duration_seconds": 1.4,
+      "expected_duration_seconds": 1.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sample_entry_errors": [],
+      "sync_errors": [],
+      "output_sha256": "ceafaac2f06f205c82818c4f2651c3c1c3c8b2414c3108eb4bfaa8b5186c78ed"
+    },
+    {
+      "case": "nvdec-128-aom",
+      "source": "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-aom.mp4",
+      "input_sha256": "354311840fe86095b8cc930b06d171f61b1d46c3203da778d393fbeabbf7769f",
+      "raw_rgb_sha256": "dde224d1a3772f406b90831f924e8815fcdbb7c22c3ce63f4c4a2f1969660b27",
+      "generation_command": [
+        "${REPO}\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "192x128",
+        "-framerate",
+        "25",
+        "-i",
+        "-",
+        "-an",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-b:v",
+        "0",
+        "-g",
+        "24",
+        "-lag-in-frames",
+        "16",
+        "-auto-alt-ref",
+        "1",
+        "-row-mt",
+        "1",
+        "-threads",
+        "4",
+        "-pix_fmt",
+        "yuv420p",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-aom.mp4"
+      ],
+      "cut_command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-aom.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-cut-aom.mp4",
+        "--keep",
+        "13:227",
+        "--encoder",
+        "libsvtav1"
+      ],
+      "validation": {
+        "passed": true,
+        "issues": [],
+        "expected_frames": 214,
+        "decoded_frames": 214,
+        "exact_packets_at_expected_positions": 192,
+        "expected_copy_frames": 192,
+        "confirmed_copy_frames": 192,
+        "copy_efficiency_passed": true,
+        "copied_pixel_mismatches": [],
+        "barcode_errors": [],
+        "min_psnr_db": 42.76152754846635,
+        "duration_seconds": 8.56,
+        "expected_duration_seconds": 8.56,
+        "sample_descriptions": 2,
+        "config_sequence_differences": [],
+        "av1C_field_errors": [],
+        "sample_entry_errors": [],
+        "sync_errors": [],
+        "output_sha256": "cc95eb470fa35c814f46169284b60b17e2b70386b107d505f2ac07692c2acb5b"
+      },
+      "hardware_pixels_equal": true,
+      "passed": true
+    },
+    {
+      "case": "nvdec-128-main10",
+      "source": "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-main10.mp4",
+      "input_sha256": "dd63bff1b3f865b40daab78355c2b9bdf4498c20493c47efaad56500b24b2743",
+      "raw_rgb_sha256": "dde224d1a3772f406b90831f924e8815fcdbb7c22c3ce63f4c4a2f1969660b27",
+      "generation_command": [
+        "${REPO}\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "192x128",
+        "-framerate",
+        "25",
+        "-i",
+        "-",
+        "-an",
+        "-c:v",
+        "libaom-av1",
+        "-cpu-used",
+        "6",
+        "-crf",
+        "18",
+        "-b:v",
+        "0",
+        "-g",
+        "24",
+        "-lag-in-frames",
+        "16",
+        "-auto-alt-ref",
+        "1",
+        "-row-mt",
+        "1",
+        "-threads",
+        "4",
+        "-pix_fmt",
+        "yuv420p10le",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-main10.mp4"
+      ],
+      "cut_command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-cut-main10.mp4",
+        "--keep",
+        "13:227",
+        "--encoder",
+        "libsvtav1"
+      ],
+      "validation": {
+        "passed": true,
+        "issues": [],
+        "expected_frames": 214,
+        "decoded_frames": 214,
+        "exact_packets_at_expected_positions": 192,
+        "expected_copy_frames": 192,
+        "confirmed_copy_frames": 192,
+        "copy_efficiency_passed": true,
+        "copied_pixel_mismatches": [],
+        "barcode_errors": [],
+        "min_psnr_db": 42.78767200500162,
+        "duration_seconds": 8.56,
+        "expected_duration_seconds": 8.56,
+        "sample_descriptions": 2,
+        "config_sequence_differences": [],
+        "av1C_field_errors": [],
+        "sample_entry_errors": [],
+        "sync_errors": [],
+        "output_sha256": "c8c4a3bcaf9ba1946d5db3170b54e4affc6329d099defa72acd406b090bb72fe"
+      },
+      "hardware_pixels_equal": true,
+      "passed": true
+    },
+    {
+      "case": "nvdec-128-nvenc",
+      "source": "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-nvenc.mp4",
+      "input_sha256": "03e3f56f18d96d256b687a7f8cb10dd4707d10a852ce47d9faff6638377cee1b",
+      "raw_rgb_sha256": "dde224d1a3772f406b90831f924e8815fcdbb7c22c3ce63f4c4a2f1969660b27",
+      "generation_command": [
+        "${REPO}\\research\\h264\\deps\\ffmpeg-n8.1.3-24-g92611900bb-win64-gpl-shared-8.1\\bin\\ffmpeg.exe",
+        "-v",
+        "error",
+        "-f",
+        "rawvideo",
+        "-pixel_format",
+        "rgb24",
+        "-video_size",
+        "192x128",
+        "-framerate",
+        "25",
+        "-i",
+        "-",
+        "-an",
+        "-c:v",
+        "av1_nvenc",
+        "-preset",
+        "p4",
+        "-rc",
+        "constqp",
+        "-qp",
+        "18",
+        "-g",
+        "24",
+        "-pix_fmt",
+        "yuv420p",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-nvenc.mp4"
+      ],
+      "cut_command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\experiments-20261030-030443\\hw-cut-nvenc.mp4",
+        "--keep",
+        "13:227",
+        "--encoder",
+        "libaom-av1"
+      ],
+      "validation": {
+        "passed": true,
+        "issues": [],
+        "expected_frames": 214,
+        "decoded_frames": 214,
+        "exact_packets_at_expected_positions": 192,
+        "expected_copy_frames": 192,
+        "confirmed_copy_frames": 192,
+        "copy_efficiency_passed": true,
+        "copied_pixel_mismatches": [],
+        "barcode_errors": [],
+        "min_psnr_db": 43.28395203002164,
+        "duration_seconds": 8.56,
+        "expected_duration_seconds": 8.56,
+        "sample_descriptions": 2,
+        "config_sequence_differences": [],
+        "av1C_field_errors": [],
+        "sample_entry_errors": [],
+        "sync_errors": [],
+        "output_sha256": "1d424e3560b6f6fad71dcc9c12c543c02af2c97f4ce1dc1912cfdaeae819a911"
+      },
+      "hardware_pixels_equal": true,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 43,
+    "passed": 40,
+    "unsupported_source_dimensions": 3
+  }
+}

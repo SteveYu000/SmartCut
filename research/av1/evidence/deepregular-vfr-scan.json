@@ -1,0 +1,469 @@
+{
+  "runs": [
+    {
+      "deepregular_version": "smartcut 0.8.37",
+      "deepregular_exe_sha256": "8ccd600af97d5f1f8ae9ad029624126540c2ba8556158af4efd79dc3b2386175",
+      "deepregular_commit": "d670099e9df622b9b9120fc46411e6154985b269",
+      "skeskinen_commit": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+      "index_mode": "scan"
+    }
+  ],
+  "cases": [
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-full.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "0.000000000000-12.760000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts"
+      ],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 12.76,
+      "expected_duration_seconds": 12.76,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "b47488c1320da8ab9bd89a5f0aca22470b9d1c70ca721735a9d21e12a33904a4",
+      "seconds": 0.3368345999988378,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-full.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-full.log",
+      "log_sha256": "ea9ff9b4083e33fca2260a6af5f48c534b4bdab8c8cd3f734f849a3f6c07ef8b"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-partial.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "0.680000000000-12.080000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.902340244362925,
+      "duration_seconds": 11.430833333333334,
+      "expected_duration_seconds": 11.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [
+        0,
+        203
+      ],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "745ae65eab1a55ab82ef7180600d2669042425c70814cc07a48b33b82940ef24",
+      "seconds": 0.5010886999953073,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-partial.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-partial.log",
+      "log_sha256": "d98152fec209122034d3aef5325c69c17742f1453b4584154522941d737dbdc6"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-multi.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "0.680000000000-4.320000000000",
+        "--keep",
+        "5.320000000000-12.080000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 144,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 40.60582710283597,
+      "duration_seconds": 10.44725,
+      "expected_duration_seconds": 10.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [
+        0,
+        59,
+        68,
+        184
+      ],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4ff8c70b8261182198d0f321ddad6f26387ec3773b50dc7fb9d5ddd5ca078466",
+      "seconds": 0.7392836999933934,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-multi.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-multi.log",
+      "log_sha256": "d113fa2b8bc7b044130ced95b1ddc0a9601d90d09272c389202f99664dd34881"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-aligned.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "1.280000000000-11.520000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 10.208,
+      "expected_duration_seconds": 10.24,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "3b5e60ab2057f4a4908798554a447bed8c6045b95073e10ca5c07802fa18d031",
+      "seconds": 0.2678664999984903,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-aligned.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-aligned.log",
+      "log_sha256": "77c7bf73208e8e7043ef5158dc6fab0f636f41eb50ccee3c081fcbbd6b360e21"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-one.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "1.200000000000-1.280000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "duration"
+      ],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 54.924514431559345,
+      "duration_seconds": 0.05316666666666667,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [
+        0
+      ],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "ae489b3a9ef93fc98e34542596d6461a38aea2484282f5d5f218b92eabdd9e8f",
+      "seconds": 0.2411474000036833,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-one.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-one.log",
+      "log_sha256": "aa4bd97dacdcdf6a25c5081202ec1db69bbee5a42d0b06606138bdad47a47580"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-tiny.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "1.200000000000-1.320000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 45.402083623523524,
+      "duration_seconds": 0.13291666666666666,
+      "expected_duration_seconds": 0.12,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [
+        0
+      ],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "47869b65572eff23f580a31b9e801ad74e621f4b918d8dd4fd6f6bdd7911fcbe",
+      "seconds": 0.24367309999797726,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-tiny.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-tiny.log",
+      "log_sha256": "c01dc8d167357b8df8f276ec913dd772e3900a37b4db4d897dd1f9a2cca17ee7"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-copy_gap.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "1.280000000000-3.840000000000",
+        "--keep",
+        "6.400000000000-10.240000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 6.353416666666667,
+      "expected_duration_seconds": 6.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "1bbf622f7b3f49b8d533ddc190ca62825aab0555d1c782c9d11a5271440cb708",
+      "seconds": 0.24994729999889387,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-copy_gap.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-copy_gap.log",
+      "log_sha256": "8be221cf05f682277a4d52dbf59bb5a05aebaf980637e4e0d6b514d2694e1931"
+    },
+    {
+      "project": "deepregular",
+      "fixture": "vfr",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-025651\\deepregular-vfr-tail.mp4",
+        "--no-chapters",
+        "--index",
+        "scan",
+        "--keep",
+        "11.360000000000-12.760000000000"
+      ],
+      "cwd": "${REPO}",
+      "exit_code": 0,
+      "passed": false,
+      "issues": [
+        "packet_pts",
+        "decoded_pts",
+        "duration"
+      ],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 36.80045258255835,
+      "duration_seconds": 1.4089166666666666,
+      "expected_duration_seconds": 1.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [
+        0
+      ],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "d687eb535d181082d0fb29318268105d7b12f5a6708ecd06ddd546af792a89f8",
+      "seconds": 0.30131470000196714,
+      "output": "test-data/upstream-20261030-025651/deepregular-vfr-tail.mp4",
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/upstream-20261030-025651-deepregular-vfr-tail.log",
+      "log_sha256": "38c216a40194a9d8148a5e2b31efe8f2b5608bcf18528fa9a6726e9d91228549"
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "passed": 0,
+    "issues": {
+      "packet_pts": 7,
+      "decoded_pts": 7,
+      "duration": 7
+    }
+  }
+}

@@ -1,0 +1,2919 @@
+{
+  "runs": [
+    {
+      "exe_sha256": "6c8cc698b4fba79310a652510543d1b5f3c398dce860735358b26078d5e0508d",
+      "encoder": "libsvtav1"
+    }
+  ],
+  "cases": [
+    {
+      "fixture": "svt",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-full.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-full.json",
+        "--keep",
+        "0:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0c29e6a1fe7d84a90eb1646763ec8a06d8343aef4ac4c10daaee14203cf6d874",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.339601900006528,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "svt",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-partial.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-partial.json",
+        "--keep",
+        "13:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.637358409195755,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "2f458052b736a26608dc62c7888808fe1b2be41cf29fcc8fba2022a1efaee667",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 48,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.40378469999996014,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-svt-partial.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "svt",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-multi.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-multi.json",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 147,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.637358409195755,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4fcfaa9c8e1860616b2fa08acfc63cd0f55f7c10b3f6325687b6a697b3815879",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 96,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 81,
+            "copy": false
+          },
+          {
+            "begin": 100,
+            "end": 120,
+            "copy": false
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.4678864999950747,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-svt-multi.log",
+      "log_sha256": "1b13192938d043a9b5a3ff9bdc629c0c9e8ff74fce2b1e0fcf677e83a37353d8"
+    },
+    {
+      "fixture": "svt",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-aligned.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-aligned.json",
+        "--keep",
+        "24:216"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "1b68d3a4a271f3d4064c2ef3ead602d7b79651f11a01713b05370e37322c1e97",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.26894320000428706,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "svt",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-one.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-one.json",
+        "--keep",
+        "23:24"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.033719068796046,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "b8c6ff33638bf253493d8cb2e5d5348fe5e8f5940b98206045fd669dd9e6a05c",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.20927369999844814,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-svt-one.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    },
+    {
+      "fixture": "svt",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-tiny.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-tiny.json",
+        "--keep",
+        "23:25"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.033719068796046,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "044207d4ce6a9c0030df290953e3ae88245d9bacca3fe59be1b828c29ff9ea63",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 2,
+        "decoded_frames": 48,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 25,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.2275429000001168,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-svt-tiny.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "svt",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-copy_gap.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-copy_gap.json",
+        "--keep",
+        "24:72",
+        "--keep",
+        "120:192"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "34e66ba3397ed9cfef5fb4038f3537c82704fe0cf7271cbec14a884f901b4a1b",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.22231810000084806,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "svt",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "c08e27697f85f726e83587d1683b4218af2df2bac707e1c5cd0f43bcfa63cf1c",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-svt.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-tail.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\svt-tail.json",
+        "--keep",
+        "213:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/svt-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.0848651793568,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "9d7a9d2038aa2f5add9d833e8c4ac19c3533292297c4cf309d0637a7fdfebcec",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 213,
+            "end": 216,
+            "copy": false
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.20904760000121314,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-svt-tail.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    },
+    {
+      "fixture": "main10",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-full.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-full.json",
+        "--keep",
+        "0:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "df848b24c9a9757212b1015e94920250682c5bd029fc792ff7e0ab5a22171847",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.3075777000049129,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "main10",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-partial.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-partial.json",
+        "--keep",
+        "13:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.824300700353135,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "181c9c15aa5c673c12dbfb69cdaddf89aa89971442988a9c80747b1e07a8b00f",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 48,
+        "configuration_switches": 3,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.394778399997449,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-main10-partial.log",
+      "log_sha256": "f1c0a67b6ba652d74b4e23f077779731f00661eb5c2b1cf95cd03683b50fda24"
+    },
+    {
+      "fixture": "main10",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-multi.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-multi.json",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 145,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.781187011848836,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0357e797101281aeaedc550017c1ee3aa3969d30c51d97977b0e8e46b51e2fbe",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 96,
+        "configuration_switches": 5,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 81,
+            "copy": false
+          },
+          {
+            "begin": 100,
+            "end": 120,
+            "copy": false
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.47799749999830965,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-main10-multi.log",
+      "log_sha256": "86c577e540a3c9471b59e3cf01678988b9e1aeeab98522a4d8053b4af64e188f"
+    },
+    {
+      "fixture": "main10",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-aligned.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-aligned.json",
+        "--keep",
+        "24:216"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "4c64adcebff0818622da47776cf8aa627aa9a47cc35647063067c8c93850ed25",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.2641273999979603,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "main10",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-one.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-one.json",
+        "--keep",
+        "23:24"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.916052393406254,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "665820889e8647d2309d87ad31a546677c88a1ada12c9923741a9e6bcc2f92e3",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.1998648000007961,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-main10-one.log",
+      "log_sha256": "6c4176848e3f9ec6e255831882fc48ec53608bc179717eef23117bc2fcef4924"
+    },
+    {
+      "fixture": "main10",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-tiny.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-tiny.json",
+        "--keep",
+        "23:25"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 47.916052393406254,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "d5689d6d36d77e1424f9e0b70a7a2cfb8ccb2b021932c44f3846990eab434fda",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 2,
+        "decoded_frames": 48,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 25,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.2354542999964906,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-main10-tiny.log",
+      "log_sha256": "f1c0a67b6ba652d74b4e23f077779731f00661eb5c2b1cf95cd03683b50fda24"
+    },
+    {
+      "fixture": "main10",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-copy_gap.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-copy_gap.json",
+        "--keep",
+        "24:72",
+        "--keep",
+        "120:192"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "f684b728a4dbbac3a47e05c1b7545cae821cd8a384d8450eb388a9b762d57cac",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.26693879999947967,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "main10",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-tail.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\main10-tail.json",
+        "--keep",
+        "213:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/main10-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.367894258779266,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "7f1ccc5275215d9fe161c1285a8295cf40c490948ae9e625e76d5f8071b367ef",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "configuration_switches": 2,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 71,
+        "units": [
+          {
+            "begin": 213,
+            "end": 216,
+            "copy": false
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.23007939999661176,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-main10-tail.log",
+      "log_sha256": "6c4176848e3f9ec6e255831882fc48ec53608bc179717eef23117bc2fcef4924"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-full.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-full.json",
+        "--keep",
+        "0:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 12.76,
+      "expected_duration_seconds": 12.76,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "12afb3e22273edab2c29e7a6b5c5514806bd36b09752145c1c963fe53fddbbe5",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.3418736999956309,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "vfr",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-partial.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-partial.json",
+        "--keep",
+        "13:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 43.36250923964725,
+      "duration_seconds": 11.4,
+      "expected_duration_seconds": 11.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "1de70fdd5696da2179cbc15d346b3faad306d5b3a0fb2950b74c2b22296dcfe7",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 48,
+        "configuration_switches": 3,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.42777829999977257,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-vfr-partial.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-multi.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-multi.json",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 144,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.96352230327326,
+      "duration_seconds": 10.4,
+      "expected_duration_seconds": 10.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "e93fa97da05028edbb6de65fbd0d2c0a450872b0b2e94a7ea7bd38a718ac9414",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 96,
+        "configuration_switches": 5,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 81,
+            "copy": false
+          },
+          {
+            "begin": 100,
+            "end": 120,
+            "copy": false
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.4978103999965242,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-vfr-multi.log",
+      "log_sha256": "1b13192938d043a9b5a3ff9bdc629c0c9e8ff74fce2b1e0fcf677e83a37353d8"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-aligned.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-aligned.json",
+        "--keep",
+        "24:216"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 10.24,
+      "expected_duration_seconds": 10.24,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "b27668866a66ca8faf5ac4b788c642b154e76b63b99e6424c54914dc4e575235",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.2926794000013615,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "vfr",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-one.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-one.json",
+        "--keep",
+        "23:24"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.979351993357106,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "10d0b2d270a93baa08988962c98c33e37e805da4080e631287aca5b95e4e8d88",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.19308879999880446,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-vfr-one.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-tiny.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-tiny.json",
+        "--keep",
+        "23:25"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.933121600609255,
+      "duration_seconds": 0.12,
+      "expected_duration_seconds": 0.12,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0ebdcf2ce87d13263af3d8d2016251c7784f5fa9c0da220618c9877f379de3f4",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 2,
+        "decoded_frames": 48,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 25,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.22785610000573797,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-vfr-tiny.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "vfr",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-copy_gap.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-copy_gap.json",
+        "--keep",
+        "24:72",
+        "--keep",
+        "120:192"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 6.4,
+      "expected_duration_seconds": 6.4,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "1ebecba8a382595017c18fbbe759160879a417b849db8bf6fda0ca170b99bdc3",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.24662810000154423,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "vfr",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-tail.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\vfr-tail.json",
+        "--keep",
+        "213:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/vfr-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.213565208198105,
+      "duration_seconds": 1.4,
+      "expected_duration_seconds": 1.4,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "a324eb436e1cd137ec8d04b39727a6a9bc656398f3a98f000a72f6726e7b1d3f",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "configuration_switches": 2,
+        "hidden_frames_in_source": 71,
+        "show_existing_in_source": 54,
+        "units": [
+          {
+            "begin": 213,
+            "end": 216,
+            "copy": false
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.21551099999487633,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-vfr-tail.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "full",
+      "ranges": [
+        [
+          0,
+          240
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-full.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-full.json",
+        "--keep",
+        "0:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-full.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 240,
+      "decoded_frames": 240,
+      "exact_packets_at_expected_positions": 240,
+      "expected_copy_frames": 240,
+      "confirmed_copy_frames": 240,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 9.6,
+      "expected_duration_seconds": 9.6,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "22f8dcfbda503aca0a97b16692ff2bf6cafa0740e12ee3a848766ea3c8d9a5db",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 240,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 0,
+            "end": 24,
+            "copy": true
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.31830099999933736,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "partial",
+      "ranges": [
+        [
+          13,
+          227
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-partial.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-partial.json",
+        "--keep",
+        "13:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-partial.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 214,
+      "decoded_frames": 214,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.68616271144908,
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "a40bba4b872d4cbbf7a271859b92c28aa929e152adc961ec9a087c10dc001ccf",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 22,
+        "decoded_frames": 48,
+        "configuration_switches": 3,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.4661340000020573,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-nvenc-partial.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "multi",
+      "ranges": [
+        [
+          13,
+          81
+        ],
+        [
+          100,
+          227
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-multi.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-multi.json",
+        "--keep",
+        "13:81",
+        "--keep",
+        "100:227"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-multi.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 195,
+      "decoded_frames": 195,
+      "exact_packets_at_expected_positions": 146,
+      "expected_copy_frames": 144,
+      "confirmed_copy_frames": 144,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 42.68616271144908,
+      "duration_seconds": 7.8,
+      "expected_duration_seconds": 7.8,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "afd5a8a37488ab8d38fac28d7668fec467b8ee3c807e51b75a9fc05cda229d96",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 144,
+        "encoded_frames": 51,
+        "decoded_frames": 96,
+        "configuration_switches": 5,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 13,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 81,
+            "copy": false
+          },
+          {
+            "begin": 100,
+            "end": 120,
+            "copy": false
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          },
+          {
+            "begin": 216,
+            "end": 227,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.5308775000012247,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-nvenc-multi.log",
+      "log_sha256": "1b13192938d043a9b5a3ff9bdc629c0c9e8ff74fce2b1e0fcf677e83a37353d8"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "aligned",
+      "ranges": [
+        [
+          24,
+          216
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-aligned.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-aligned.json",
+        "--keep",
+        "24:216"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-aligned.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 192,
+      "decoded_frames": 192,
+      "exact_packets_at_expected_positions": 192,
+      "expected_copy_frames": 192,
+      "confirmed_copy_frames": 192,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 7.68,
+      "expected_duration_seconds": 7.68,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "0d2c27655f770e9e1a4b56d9dc44fcac10b418811662633b9220d2f9a124cd4f",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 192,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 72,
+            "end": 96,
+            "copy": true
+          },
+          {
+            "begin": 96,
+            "end": 120,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          },
+          {
+            "begin": 192,
+            "end": 216,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.35821049999503884,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "one",
+      "ranges": [
+        [
+          23,
+          24
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-one.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-one.json",
+        "--keep",
+        "23:24"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-one.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 1,
+      "decoded_frames": 1,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.599822775210306,
+      "duration_seconds": 0.04,
+      "expected_duration_seconds": 0.04,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "3043f46db217aff97233e7e7a3d0576317f6bdf77310b9d14bd05e32b03efcf8",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 1,
+        "decoded_frames": 24,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.20859689999633702,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-nvenc-one.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "tiny",
+      "ranges": [
+        [
+          23,
+          25
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-tiny.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-tiny.json",
+        "--keep",
+        "23:25"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-tiny.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 2,
+      "decoded_frames": 2,
+      "exact_packets_at_expected_positions": 0,
+      "expected_copy_frames": 0,
+      "confirmed_copy_frames": 0,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 46.599822775210306,
+      "duration_seconds": 0.08,
+      "expected_duration_seconds": 0.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "bd876ad94388684851bd1968203ed121c5ab3072c078bb78e5ced38e25052d0d",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 0,
+        "encoded_frames": 2,
+        "decoded_frames": 48,
+        "configuration_switches": 1,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 23,
+            "end": 24,
+            "copy": false
+          },
+          {
+            "begin": 24,
+            "end": 25,
+            "copy": false
+          }
+        ]
+      },
+      "seconds": 0.2437659999995958,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-nvenc-tiny.log",
+      "log_sha256": "d5a7b1b562f1019d69bd6e863b579e8f206aebe71f0a277cbf5c914eecbb2bb9"
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "copy_gap",
+      "ranges": [
+        [
+          24,
+          72
+        ],
+        [
+          120,
+          192
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-copy_gap.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-copy_gap.json",
+        "--keep",
+        "24:72",
+        "--keep",
+        "120:192"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-copy_gap.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 120,
+      "decoded_frames": 120,
+      "exact_packets_at_expected_positions": 120,
+      "expected_copy_frames": 120,
+      "confirmed_copy_frames": 120,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": null,
+      "duration_seconds": 4.8,
+      "expected_duration_seconds": 4.8,
+      "sample_descriptions": 1,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "d8cc73dedad49e5f3ec55ed2a33adea93114ac1ccedbfc32d1e10b8dd4eb191a",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 120,
+        "encoded_frames": 0,
+        "decoded_frames": 0,
+        "configuration_switches": 0,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 24,
+            "end": 48,
+            "copy": true
+          },
+          {
+            "begin": 48,
+            "end": 72,
+            "copy": true
+          },
+          {
+            "begin": 120,
+            "end": 144,
+            "copy": true
+          },
+          {
+            "begin": 144,
+            "end": 168,
+            "copy": true
+          },
+          {
+            "begin": 168,
+            "end": 192,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.30455870000150753,
+      "validation_errors": [],
+      "sample_entry_errors": []
+    },
+    {
+      "fixture": "nvenc",
+      "cut": "tail",
+      "ranges": [
+        [
+          213,
+          240
+        ]
+      ],
+      "input_sha256": "bf5c0f6d382d0e80ef23b08c11e6ded0dfd5451c9dcb08fc96cbc65ab63dd8a8",
+      "command": [
+        "${REPO}\\research\\av1\\build\\Release\\av1_smart_render.exe",
+        "-i",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-nvenc.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-tail.mp4",
+        "--encoder",
+        "libsvtav1",
+        "--report",
+        "${REPO}\\research\\av1\\test-data\\matrix-20261030-025651\\nvenc-tail.json",
+        "--keep",
+        "213:240"
+      ],
+      "output": "test-data/matrix-20261030-025651/nvenc-tail.mp4",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [],
+      "expected_frames": 27,
+      "decoded_frames": 27,
+      "exact_packets_at_expected_positions": 24,
+      "expected_copy_frames": 24,
+      "confirmed_copy_frames": 24,
+      "copy_efficiency_passed": true,
+      "copied_pixel_mismatches": [],
+      "barcode_errors": [],
+      "min_psnr_db": 44.27463449185068,
+      "duration_seconds": 1.08,
+      "expected_duration_seconds": 1.08,
+      "sample_descriptions": 2,
+      "config_sequence_differences": [],
+      "av1C_field_errors": [],
+      "sync_errors": [],
+      "output_sha256": "e54d22d7e48c1d32f35dbc1356d3bf70971815d3122b1ff51b0a2cc4f5319ab0",
+      "plan": {
+        "input_frames": 240,
+        "copied_frames": 24,
+        "encoded_frames": 3,
+        "decoded_frames": 24,
+        "configuration_switches": 2,
+        "hidden_frames_in_source": 110,
+        "show_existing_in_source": 110,
+        "units": [
+          {
+            "begin": 213,
+            "end": 216,
+            "copy": false
+          },
+          {
+            "begin": 216,
+            "end": 240,
+            "copy": true
+          }
+        ]
+      },
+      "seconds": 0.256765500002075,
+      "validation_errors": [],
+      "sample_entry_errors": [],
+      "log": "evidence/logs/matrix-20261030-025651-nvenc-tail.log",
+      "log_sha256": "783bfd094f9940567385e428a738805565055d19a425a24a923abd19a5f81aad"
+    }
+  ],
+  "summary": {
+    "total": 32,
+    "passed": 32,
+    "issues": {}
+  }
+}

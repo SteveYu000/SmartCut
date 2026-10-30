@@ -1,0 +1,96 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\fixtures\source-ntsc.mp4
+        av1 192x112 29.970fps  has_b_frames=0  dur=8.008s  start=0.000s
+        10 access points, mean GOP 0.801s, open GOPs measured only where the cut lands  [container seek table]
+
+plan  : 2 range(s), 6.506s output
+  keep 0.434 -> 2.703
+    reencode     0.434 ->    0.801  ( 0.367s, 11 frames)
+        copy     0.801 ->    2.402  ( 1.602s, 48 frames)
+    reencode     2.402 ->    2.703  ( 0.300s, 9 frames)
+  keep 3.337 -> 7.574
+    reencode     3.337 ->    4.004  ( 0.667s, 20 frames)
+        copy     4.004 ->    7.207  ( 3.203s, 96 frames)
+    reencode     7.207 ->    7.574  ( 0.367s, 11 frames)
+        copied 4.805s (73.8%), re-encoded 1.702s (26.2%)
+
+render:  audio smart
+         0 of 0 sound track(s), 0 of 0 caption stream(s)
+wrote E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\upstream-20261030-024722\deepregular-ntsc-multi.mp4
+
+STDERR
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0-18-gd653d6c1
+Svt[info]: SVT [build]  :	GCC 14.2.0	 64 bit
+Svt[info]: LIB Build date: Mar  9 2025 11:48:54
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 178
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 192 / 112 / 30000 / 1001
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 8 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 600 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / target bitrate (kbps)				: VBR / 464 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0-18-gd653d6c1
+Svt[info]: SVT [build]  :	GCC 14.2.0	 64 bit
+Svt[info]: LIB Build date: Mar  9 2025 11:48:54
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 178
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 192 / 112 / 30000 / 1001
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 8 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 600 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / target bitrate (kbps)				: VBR / 464 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0-18-gd653d6c1
+Svt[info]: SVT [build]  :	GCC 14.2.0	 64 bit
+Svt[info]: LIB Build date: Mar  9 2025 11:48:54
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 178
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 192 / 112 / 30000 / 1001
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 8 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 600 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / target bitrate (kbps)				: VBR / 464 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [version]:	SVT-AV1 Encoder Lib v3.0.0-18-gd653d6c1
+Svt[info]: SVT [build]  :	GCC 14.2.0	 64 bit
+Svt[info]: LIB Build date: Mar  9 2025 11:48:54
+Svt[info]: -------------------------------------------
+Svt[info]: Level of Parallelism: 6
+Svt[info]: Number of PPCS 178
+Svt[info]: [asm level on system : up to avx2]
+Svt[info]: [asm level selected : up to avx2]
+Svt[info]: -------------------------------------------
+Svt[info]: SVT [config]: main profile	tier (auto)	level (auto)
+Svt[info]: SVT [config]: width / height / fps numerator / fps denominator 		: 192 / 112 / 30000 / 1001
+Svt[info]: SVT [config]: bit-depth / color format 					: 8 / YUV420
+Svt[info]: SVT [config]: preset / tune / pred struct 					: 8 / PSNR / random access
+Svt[info]: SVT [config]: gop size / mini-gop size / key-frame type 			: 600 / 16 / key frame
+Svt[info]: SVT [config]: BRC mode / target bitrate (kbps)				: VBR / 464 
+Svt[info]: SVT [config]: AQ mode / variance boost 					: 2 / 0
+Svt[info]: SVT [config]: sharpness / luminance-based QP bias 			: 0 / 0
+Svt[info]: Svt[info]: -------------------------------------------

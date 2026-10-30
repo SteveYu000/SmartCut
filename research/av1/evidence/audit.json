@@ -1,0 +1,478 @@
+{
+  "research_date": "2026-10-30",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 617.42",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "cmake": "4.3.1-msvc1",
+    "msvc": "19.51.36260",
+    "windows_sdk": "10.0.26100.0",
+    "ffmpeg": "ffmpeg version n8.1.3-24-g92611900bb-20261025 Copyright (c) 2000-2026 the FFmpeg developers\r\nbuilt with gcc 16.2.0 (crosstool-NG 1.29.0.7_b1a94f6)\r\nconfiguration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --enable-shared --disable-static --disable-w32threads --enable-pthreads --enable-iconv --enable-zlib --enable-libxml2 --enable-libvmaf --disable-libxcb --disable-xlib --enable-fontconfig --enable-libharfbuzz --enable-libfreetype --enable-libfribidi --enable-lcms2 --enable-vulkan --enable-libshaderc --enable-libdav1d --enable-libvorbis --enable-librav1e --enable-librsvg --disable-libpulse --enable-gmp --enable-lzma --enable-liblcevc-dec --enable-opencl --enable-amf --enable-libaom --enable-avisynth --enable-chromaprint --enable-libdavs2 --enable-libdvdread --enable-libdvdnav --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribb24 --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-libplacebo --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-libzmq --enable-lv2 --enable-libvpl --enable-openal --enable-liboapv --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsnappy --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-vapoursynth --enable-libvidstab --enable-libvvenc --disable-whisper --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-libs=-lgomp --extra-ldflags=-pthread --extra-ldexeflags= --cc=x86_64-w64-mingw32-gcc --cxx=x86_64-w64-mingw32-g++ --ar=x86_64-w64-mingw32-gcc-ar --ranlib=x86_64-w64-mingw32-gcc-ranlib --nm=x86_64-w64-mingw32-gcc-nm --extra-version=20261025\r\nlibavutil      60. 26.103 / 60. 26.103\r\nlibavcodec     62. 28.103 / 62. 28.103\r\nlibavformat    62. 12.103 / 62. 12.103\r\nlibavdevice    62.  3.103 / 62.  3.103\r\nlibavfilter    11. 14.103 / 11. 14.103\r\nlibswscale      9.  5.103 /  9.  5.103\r\nlibswresample   6.  3.103 /  6.  3.103\r\n\r\nExiting with exit code 0\r\n",
+    "ffmpeg_exe_sha256": "f7768f45764a9bd357ba75c782897563e073de2f0b5ea31249edcb346da17365",
+    "ffprobe_exe_sha256": "ce3ec47cbc13f00c4603e1fa7111b6c187d0ae431f287db9d5aa42cc0e8cb655",
+    "deepregular_libraries": {
+      "avcodec": {
+        "version": [
+          61,
+          19,
+          101
+        ],
+        "file": "sources/DeepRegular-SmartCut-0.8.37-win64/smartcut/avcodec-61.dll",
+        "sha256": "0209f3620970037bbade73939e53bd51f4422b3a79f290b130c2eb1224087cf7"
+      },
+      "avformat": {
+        "version": [
+          61,
+          7,
+          100
+        ],
+        "file": "sources/DeepRegular-SmartCut-0.8.37-win64/smartcut/avformat-61.dll",
+        "sha256": "233cd46f0f5860c032d65d7bd124ae945470883b85e1d1bc248991fe8115a28e"
+      },
+      "avutil": {
+        "version": [
+          59,
+          39,
+          100
+        ],
+        "file": "sources/DeepRegular-SmartCut-0.8.37-win64/smartcut/avutil-59.dll",
+        "sha256": "2e6cd0a65a892c3af3d0cc1b6588e2ed8304c0e22e7488b7629e2b3e98cd8573"
+      }
+    },
+    "deepregular_svt": "3.0.0-18-gd653d6c1",
+    "research_svt": "4.2.0-151-g5ed9ffbcb",
+    "pyav": "16.0.1",
+    "pyav_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    }
+  },
+  "sources": {
+    "DeepRegular/SmartCut": {
+      "local": "sources/DeepRegular-SmartCut-v0.8.37",
+      "commit": "d670099e9df622b9b9120fc46411e6154985b269",
+      "tag": "v0.8.37",
+      "status": ""
+    },
+    "skeskinen/smartcut": {
+      "local": "sources/skeskinen-smartcut",
+      "commit": "73821ea01c29a4dca81a8865ef7d348d04bb0810",
+      "tag": null,
+      "status": ""
+    },
+    "MediaMolder/mediamolder": {
+      "local": "sources/mediamolder",
+      "commit": "9e51f8f761588e2e3c5ef87e9f11dfd5c091ac58",
+      "tag": null
+    },
+    "mifi/lossless-cut": {
+      "local": "sources/lossless-cut",
+      "commit": "3ef357d88d51d8a2a36e5bf3c041b3a269bfbc5a",
+      "tag": null
+    }
+  },
+  "release": {
+    "url": "https://github.com/DeepRegular/SmartCut/releases/download/v0.8.37/smartcut-portable-x64-0.8.37.zip",
+    "archive_bytes": 70179456,
+    "archive_sha256": "6e0e9a787149ed6b0391c524c7bdd23582697e1d94893b14f17af211af423d2f",
+    "cli_sha256": "8ccd600af97d5f1f8ae9ad029624126540c2ba8556158af4efd79dc3b2386175",
+    "version": "smartcut 0.8.37"
+  },
+  "prototype_exe_sha256": "6c8cc698b4fba79310a652510543d1b5f3c398dce860735358b26078d5e0508d",
+  "vfr_counterexample": {
+    "input_sha256": "e22196667d043b44d54732373b240137acc0c8d6975679fcfe33471831515df6",
+    "output_sha256": "b47488c1320da8ab9bd89a5f0aca22470b9d1c70ca721735a9d21e12a33904a4",
+    "command": [
+      "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+      "${REPO}\\research\\av1\\test-data\\fixtures\\source-vfr.mp4",
+      "-o",
+      "${REPO}\\research\\av1\\test-data\\upstream-20261030-023948\\deepregular-vfr-full.mp4",
+      "--no-chapters",
+      "--keep",
+      "0.000000000000-12.760000000000"
+    ],
+    "expected_first_nine_seconds": [
+      0.0,
+      0.04,
+      0.08,
+      0.16,
+      0.2,
+      0.24,
+      0.32,
+      0.36,
+      0.4
+    ],
+    "actual_first_nine_seconds": [
+      0.0,
+      0.05316666666666667,
+      0.07975,
+      0.1595,
+      0.21266666666666667,
+      0.23925,
+      0.319,
+      0.37216666666666665,
+      0.39875
+    ],
+    "max_abs_pts_error_seconds": 0.01325,
+    "output_time_base": "1/12000",
+    "source_avg_frame_rate": "6000/319",
+    "source_r_frame_rate": "25/1"
+  },
+  "counterexamples": [
+    {
+      "project": "deepregular",
+      "fixture": "rav1e",
+      "cut": "partial",
+      "input_sha256": "1b2b6dbeb0833dc5f75400939c7b1023d833c81e7ff589f029c5241ac6b12cd3",
+      "output_sha256": "ff7968dd8cda62715847bd9bd41d62476d0223bcdadfd3d5b0f48844672e1cc9",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-rav1e.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-024722\\deepregular-rav1e-partial.mp4",
+        "--no-chapters",
+        "--keep",
+        "0.520000000000-9.080000000000"
+      ],
+      "issues": [
+        "av1C_field_mismatch"
+      ],
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "av1C_field_errors": [
+        {
+          "sample": 0,
+          "description": 1,
+          "fields": {
+            "seq_level_idx_0": [
+              31,
+              0
+            ]
+          }
+        },
+        {
+          "sample": 211,
+          "description": 1,
+          "fields": {
+            "seq_level_idx_0": [
+              31,
+              0
+            ]
+          }
+        }
+      ],
+      "input_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      },
+      "output_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    },
+    {
+      "project": "deepregular",
+      "fixture": "color_sar",
+      "cut": "partial",
+      "input_sha256": "a72490cae1efda7edfecf878df92ed077636d4a27e22211e4ce03016c66cf196",
+      "output_sha256": "0ffec38aff9289ac60a26baa571a9f593cac489b10e9b93d04c2788eb6c9305c",
+      "command": [
+        "${REPO}\\sources\\DeepRegular-SmartCut-0.8.37-win64\\smartcut\\smartcut-cli.exe",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-color_sar.mp4",
+        "-o",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-024722\\deepregular-color_sar-partial.mp4",
+        "--no-chapters",
+        "--keep",
+        "0.520000000000-9.080000000000"
+      ],
+      "issues": [
+        "metadata_sample_aspect_ratio"
+      ],
+      "duration_seconds": 8.56,
+      "expected_duration_seconds": 8.56,
+      "av1C_field_errors": [],
+      "input_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "4:3",
+        "color_range": "pc",
+        "color_space": "bt709",
+        "color_transfer": null,
+        "color_primaries": null
+      },
+      "output_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "pc",
+        "color_space": "bt709",
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    },
+    {
+      "project": "skeskinen",
+      "fixture": "aom",
+      "cut": "partial",
+      "input_sha256": "814495dc27fcf99301b7a28727d6b40d14ce0c7b1e94510963acdf28199835cf",
+      "output_sha256": "04fb4725629f646b52e76493c0c3d0622f1753c4dc9e0f4457b2b0f1910e0870",
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-aom.mp4",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-023948\\skeskinen-aom-partial.mp4",
+        "--frames",
+        "--keep",
+        "13,226"
+      ],
+      "issues": [
+        "duration"
+      ],
+      "duration_seconds": 8.520078125,
+      "expected_duration_seconds": 8.56,
+      "av1C_field_errors": [],
+      "input_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      },
+      "output_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    },
+    {
+      "project": "skeskinen",
+      "fixture": "main10",
+      "cut": "partial",
+      "input_sha256": "2158beb7b629c22e351208c975c38917d295a1f7ba9481432b09706150756af5",
+      "output_sha256": "1a05ec9097221810f0d820675a392d9b149e88a878c08b3b6fe6e20ac2c65777",
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-main10.mp4",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-023948\\skeskinen-main10-partial.mp4",
+        "--frames",
+        "--keep",
+        "13,226"
+      ],
+      "issues": [
+        "duration",
+        "av1C_field_mismatch"
+      ],
+      "duration_seconds": 8.520078125,
+      "expected_duration_seconds": 8.56,
+      "av1C_field_errors": [
+        {
+          "sample": 0,
+          "description": 1,
+          "fields": {
+            "high_bitdepth": [
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "sample": 203,
+          "description": 1,
+          "fields": {
+            "high_bitdepth": [
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "input_stream": {
+        "pix_fmt": "yuv420p10le",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      },
+      "output_stream": {
+        "pix_fmt": "yuv420p10le",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    },
+    {
+      "project": "skeskinen",
+      "fixture": "color_sar",
+      "cut": "partial",
+      "input_sha256": "a72490cae1efda7edfecf878df92ed077636d4a27e22211e4ce03016c66cf196",
+      "output_sha256": "e8117f2ce0ad5ae8efa9a9d2382c5c7e249c0dccff6eef0fe0960246980a9719",
+      "command": [
+        "C:\\Users\\Steve\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "smartcut",
+        "${REPO}\\research\\av1\\test-data\\fixtures\\source-color_sar.mp4",
+        "${REPO}\\research\\av1\\test-data\\upstream-20261030-024722\\skeskinen-color_sar-partial.mp4",
+        "--frames",
+        "--keep",
+        "13,226"
+      ],
+      "issues": [
+        "metadata_sample_aspect_ratio",
+        "metadata_color_range",
+        "metadata_color_space",
+        "duration"
+      ],
+      "duration_seconds": 8.520078125,
+      "expected_duration_seconds": 8.56,
+      "av1C_field_errors": [],
+      "input_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "4:3",
+        "color_range": "pc",
+        "color_space": "bt709",
+        "color_transfer": null,
+        "color_primaries": null
+      },
+      "output_stream": {
+        "pix_fmt": "yuv420p",
+        "sample_aspect_ratio": "1:1",
+        "color_range": "tv",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null
+      }
+    }
+  ],
+  "summary": {
+    "matrix": {
+      "total": 88,
+      "passed": 88,
+      "issues": {}
+    },
+    "svt-boundaries": {
+      "total": 32,
+      "passed": 32,
+      "issues": {}
+    },
+    "upstream": {
+      "total": 176,
+      "passed": 95,
+      "issues": {
+        "duration": 53,
+        "av1C_field_mismatch": 29,
+        "packet_pts": 7,
+        "decoded_pts": 7,
+        "metadata_sample_aspect_ratio": 16,
+        "metadata_color_range": 5,
+        "metadata_color_space": 5
+      }
+    },
+    "deepregular-vfr-scan": {
+      "total": 8,
+      "passed": 0,
+      "issues": {
+        "packet_pts": 7,
+        "decoded_pts": 7,
+        "duration": 7
+      }
+    },
+    "tail-copy": {
+      "total": 11,
+      "passed": 11
+    },
+    "experiments": {
+      "total": 43,
+      "passed": 40,
+      "unsupported_source_dimensions": 3
+    },
+    "deepregular": {
+      "total": 88,
+      "passed": 60,
+      "copy_efficiency_passed": 88,
+      "issues": {
+        "packet_pts": 7,
+        "decoded_pts": 7,
+        "duration": 7,
+        "av1C_field_mismatch": 12,
+        "metadata_sample_aspect_ratio": 8
+      }
+    },
+    "skeskinen": {
+      "total": 88,
+      "passed": 35,
+      "copy_efficiency_passed": 88,
+      "issues": {
+        "duration": 46,
+        "av1C_field_mismatch": 17,
+        "metadata_sample_aspect_ratio": 8,
+        "metadata_color_range": 5,
+        "metadata_color_space": 5
+      }
+    }
+  },
+  "source_sha256": {
+    "src/main.cpp": "3a7bcc31e7cf37a4670affe0b14aa389a869a594c52f2c07d8679b7052aab375",
+    "tests/archive.py": "f78915573401ef1561be807d5c5e3e7ee6451c95fa096337e4752edf8f1a353e",
+    "tests/common.py": "d7e8838463da7c4c3c4064c02b0f8f5718238129e0e819b540befd43ccbdd10e",
+    "tests/experiments.py": "a5dd3982042d198160393b11c6cffe2ccb1582b593413f1e52ae0c214861b9e8",
+    "tests/fixtures.py": "695654a1adbd8f98293c580ceaf838d078fae24ac9020c4bebd1b2fab3962bcd",
+    "tests/integration.py": "42c1ec75d90566bbd3785dafaa5f26942917e53ba6344b42791afc1e6d496c8f",
+    "tests/sequence.py": "bd3cf1c535e05ac9925a62136138e7b867788313b2031c39495b255a51f4d70c",
+    "tests/tail_copy.py": "fb4f952e3c0b3a82cdca9dccf63cad6e18211dd43a496da591ec171c425c8689",
+    "tests/upstream.py": "2cda1bf61172d82aa50334487db7c93ffa1fdf4e0a1291307dac21bcf4fd6a64",
+    "CMakeLists.txt": "2df2234cef2ee99f7dca237eb9220166a3966914db7c2b856f8d4f5f150cec7c",
+    "CMakePresets.json": "df8e5a9c82538a10df39ea6a8d1891f1b8272c884034059228366efd5511f28c",
+    "requirements-test.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+  }
+}

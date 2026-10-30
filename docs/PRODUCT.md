@@ -1,6 +1,6 @@
 # SmartCut CLI 使用与构建
 
-本目录对应根目录 `src/` 中的正式 CLI。历史研究报告与原型继续保留在 `research/`；根 README 的内容不作修改。
+本文对应根目录 `src/` 中的正式 CLI。历史研究报告与原型继续保留在 `research/`。
 
 SmartCut 对 MP4 中的一路 H.264 或 HEVC 视频执行逐帧切割：安全的完整访问点区间复制压缩视频，仅重编码边界。音频、字幕交给原版 FFmpeg 处理整个选区，再由 libavformat 合成输出。
 
@@ -16,7 +16,9 @@ cmake --build --preset release --parallel 1 -- /nodeReuse:false
 ctest --preset release
 ```
 
-如未指定 SDK，CMake 会在根 `deps/ffmpeg-*` 和现有 `research/h264/deps/` 下寻找唯一的匹配目录。生成的 `build/Release/smartcut.exe` 旁会复制运行所需的 DLL 和原版 FFmpeg。SDK 与构建产物不纳入 Git。
+开发者自行下载共享 SDK，通过 `-DFFMPEG_ROOT="SDK根目录"` 指定位置；也可在首次配置或缓存变量为空时使用 `FFMPEG_ROOT` 环境变量。命令行/缓存中的非空设置优先于环境变量。未指定时，CMake 会给出配置提示。生成的 `build/Release/smartcut.exe` 旁会复制所选 SDK 的 DLL 和原版 FFmpeg。SDK 与构建产物不纳入 Git。
+
+更换 SDK 后重新执行上述配置命令，头文件与导入库会全部从新位置查找，避免沿用旧路径缓存。此设置仅选择编译使用的 SDK；更换 ABI 主版本后仍需重新构建并验证。根项目与 `research/h264`、`research/h265` 使用相同的 `FFMPEG_ROOT` 配置方式。
 
 不同版本的 Visual Studio 可另建构建目录，手动选择对应生成器；上述预设验证的是 VS 2026。POSIX 平台保留了平台封装，但本轮未在 Linux/macOS 构建验收。
 

@@ -1,0 +1,14 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\fixtures\source-color_sar.mp4
+        av1 192x112 25.000fps  has_b_frames=0  dur=9.600s  start=0.000s
+        10 access points, mean GOP 0.960s, open GOPs measured only where the cut lands  [container seek table]
+
+plan  : 1 range(s), 7.680s output
+  keep 0.960 -> 8.640
+        copy     0.960 ->    8.640  ( 7.680s, 192 frames)
+        copied 7.680s (100.0%), re-encoded 0.000s (0.0%)
+
+render:  audio smart
+         0 of 0 sound track(s), 0 of 0 caption stream(s)
+wrote E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\upstream-20261030-024722\deepregular-color_sar-aligned.mp4
+
+STDERR

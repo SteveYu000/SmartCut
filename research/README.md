@@ -7,6 +7,7 @@
 | [source-review](source-review/REPORT.md) | 开源项目源码与 issue 调查；Markdown、PDF、Word 报告，报告生成器及 `evidence/` 采集记录 |
 | [h264](h264/README.md) | H.264 C++ 实现、CMake、独立验证器；`test-data/` 为本地验收及探索媒体 |
 | [h265](h265/README.md) | HEVC C++ 实现、CMake、上游对比与容器/解码验证；`test-data/` 为本地媒体与证据 |
+| [av1](av1/REPORT.md) | MP4/AV1 研究；重点对比 DeepRegular Rust 实现，含 C++/FFmpeg 原型、VFR/av1C 反例、120 项主测试和尾部复制实验；[构建与复现](av1/README.md) |
 | [pipeline](pipeline/README.md) | 原始 C# / FFmpeg 进程实现、逻辑与集成测试 |
 | [h264-pipeline-comparison](h264-pipeline-comparison/REPORT.md) | 效率对比、原管线完整复测、VFR 和音频诊断、测试记录 |
 | [losslesscut-comparison](losslesscut-comparison/REPORT.md) | 官方 LosslessCut 同素材测试；运行脚本、独立检查器、逐例结果和本地导出 |

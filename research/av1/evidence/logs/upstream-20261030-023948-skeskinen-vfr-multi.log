@@ -1,0 +1,4 @@
+Smart cut completed successfully. Output saved to E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\upstream-20261030-023948\skeskinen-vfr-multi.mp4
+
+STDERR
+  0%|          | 0/10 [00:00<?, ?it/s] 30%|███       | 3/10 [00:02<00:06,  1.15it/s] 70%|███████   | 7/10 [00:10<00:04,  1.63s/it]100%|██████████| 10/10 [00:10<00:00,  1.03it/s]11it [00:13,  1.28s/it]                        11it [00:13,  1.24s/it]

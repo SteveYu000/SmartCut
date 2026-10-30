@@ -1,0 +1,16 @@
+input : E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\fixtures\source-vfr.mp4
+        av1 192x112 18.809fps  has_b_frames=0  dur=12.773s  start=0.000s
+        10 access points, mean GOP 1.280s, all closed  [packet scan]
+
+plan  : 2 range(s), 6.400s output
+  keep 1.280 -> 3.840
+        copy     1.280 ->    3.840  ( 2.560s, 49 frames)
+  keep 6.400 -> 10.240
+        copy     6.400 ->   10.240  ( 3.840s, 73 frames)
+        copied 6.400s (100.0%), re-encoded 0.000s (0.0%)
+
+render:  audio smart
+         0 of 0 sound track(s), 0 of 0 caption stream(s)
+wrote E:\DesktopPlus\Works\Code\SmartCut\research\av1\test-data\upstream-20261030-025651\deepregular-vfr-copy_gap.mp4
+
+STDERR

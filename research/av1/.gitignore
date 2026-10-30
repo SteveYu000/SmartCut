@@ -1,0 +1,7 @@
+/local/
+/test-data/upstream-*/
+/test-data/matrix-*/
+/test-data/experiments-*/
+/test-data/fixtures/*.log
+*.scidx
+*.smartcut-index
